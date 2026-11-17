@@ -1,0 +1,501 @@
+Date,Analyst,Department,TestType,TestsPerformed,NumberOfOOS,Username
+2026-01-05,Ashley Lewis,Chemistry,Potency (Solution),3,1,ALewis
+2026-01-05,Michael Miller,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,MMiller
+2026-01-05,Renee Simmons,Microbiology,USP <85> Bacterial Endotoxins Test,1,1,RSimmons
+2026-01-05,Ryan Estrada,Chemistry,Potency (Peptides),2,1,REstrada
+2026-01-06,Chelsea Sloan,Chemistry,Potency (Solution),4,1,CSloan
+2026-01-06,Michael Mitchell,Chemistry,Potency (Solution),3,1,MMitchell
+2026-01-06,Travis Mora,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,TMora
+2026-01-07,John Melton,Chemistry,Potency (Peptides),6,2,JMelton
+2026-01-07,Justin Palmer,Chemistry,Potency (Peptides),2,1,JPalmer
+2026-01-07,Kyle Young,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,KYoung
+2026-01-08,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,SEdwards
+2026-01-09,Jennifer Tran,Chemistry,Potency (Solution),6,1,JTran
+2026-01-10,Corey Schwartz,Chemistry,Potency (Non-Solution),4,1,CSchwartz
+2026-01-10,Hannah Freeman,Chemistry,Potency (Solution),6,2,HFreeman
+2026-01-10,Jaime Burns,Chemistry,Potency (Solution),3,1,JBurns
+2026-01-10,Jennifer Tran,Chemistry,Potency (Peptides),4,1,JTran
+2026-01-10,John Melton,Chemistry,Potency (Peptides),3,1,JMelton
+2026-01-10,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,18,1,KBaker
+2026-01-11,Kevin Cooper,Chemistry,Potency (Solution),7,1,KCooper
+2026-01-11,Laurie Collins,Chemistry,Potency (Solution),5,1,LCollins
+2026-01-11,Morgan Hill,Microbiology,USP <71> Sterility Test,2,1,MHill
+2026-01-11,Morgan Hill,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,MHill
+2026-01-12,Anna Thomas,Chemistry,Potency (Solution),10,1,AThomas
+2026-01-12,Kristen Garcia,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,KGarcia
+2026-01-12,Phillip Burke,Chemistry,Potency (Non-Solution),2,1,PBurke
+2026-01-12,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,SEdwards
+2026-01-13,Elizabeth Brewer,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,EBrewer
+2026-01-14,Jennifer Tran,Chemistry,Potency (Solution),3,1,JTran
+2026-01-15,Corey Schwartz,Chemistry,Potency (Peptides),3,1,CSchwartz
+2026-01-15,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,3,1,JChapman
+2026-01-15,Kathleen Schultz,Chemistry,Potency (Solution),3,1,KSchultz
+2026-01-15,Rachel Lloyd,Chemistry,Potency (Peptides),2,1,RLloyd
+2026-01-15,Rachel Lloyd,Chemistry,Potency (Solution),6,1,RLloyd
+2026-01-15,Shawn Jensen,Chemistry,Potency (Solution),1,1,SJensen
+2026-01-15,Veronica Simpson,Chemistry,Potency (Peptides),11,1,VSimpson
+2026-01-15,Veronica Simpson,Chemistry,Potency (Solution),8,1,VSimpson
+2026-01-16,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,22,1,AMcgee
+2026-01-16,Bruce Snow,Chemistry,Identification by HPLC,1,1,BSnow
+2026-01-16,Jennifer Tran,Chemistry,Potency (Solution),5,1,JTran
+2026-01-16,Justin Palmer,Chemistry,Potency (Solution),4,1,JPalmer
+2026-01-16,Kathleen Schultz,Chemistry,Potency (Peptides),4,1,KSchultz
+2026-01-16,Veronica Simpson,Chemistry,Potency (Non-Solution),5,1,VSimpson
+2026-01-17,Michael Mitchell,Chemistry,Potency (Solution),4,1,MMitchell
+2026-01-17,Thomas Jefferson,Chemistry,Potency (Solution),3,1,TJefferson
+2026-01-18,David Elliott,Chemistry,Potency (Solution),4,1,DElliott
+2026-01-18,Elizabeth Brewer,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,EBrewer
+2026-01-18,Kyle Young,Microbiology,USP <85> Bacterial Endotoxins Test,13,1,KYoung
+2026-01-18,Leslie Hudson,Chemistry,Potency (Solution),4,1,LHudson
+2026-01-18,Michael King,Chemistry,Potency (Solution),6,1,MKing
+2026-01-18,Rachel Williamson,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,RWilliamson
+2026-01-19,Jay Wilson,Chemistry,Potency (Peptides),3,1,JWilson
+2026-01-19,Jessica Ruiz,Chemistry,Potency (Peptides),2,1,JRuiz
+2026-01-19,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,JChapman
+2026-01-20,Christopher Terry,Microbiology,USP <85> Bacterial Endotoxins Test,15,1,CTerry
+2026-01-20,Frederick Murphy,Chemistry,Potency (Solution),2,1,FMurphy
+2026-01-20,Jay Wilson,Chemistry,Potency (Solution),3,1,JWilson
+2026-01-20,Jennifer Tran,Chemistry,Potency (Peptides),2,1,JTran
+2026-01-20,Kristen Garcia,Microbiology,USP <71> Sterility Test,6,1,KGarcia
+2026-01-20,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,12,1,LFreeman
+2026-01-20,Rachael Torres,Chemistry,Potency (Non-Solution),4,1,RTorres
+2026-01-20,Veronica Simpson,Chemistry,Potency (Solution),11,1,VSimpson
+2026-01-21,Brian Proctor,Microbiology,USP <71> Sterility Test,3,1,BProctor
+2026-01-21,David Thompson,Chemistry,Potency (Peptides),4,1,DThompson
+2026-01-21,David Thompson,Chemistry,Potency (Solution),4,1,DThompson
+2026-01-21,Hannah Freeman,Chemistry,Potency (Solution),3,1,HFreeman
+2026-01-21,Jaime Burns,Chemistry,Potency (Solution),3,1,JBurns
+2026-01-21,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,15,1,KBaker
+2026-01-22,Chelsea Sloan,Chemistry,Potency (Solution),3,1,CSloan
+2026-01-22,Jaime Burns,Chemistry,Potency (Peptides),1,1,JBurns
+2026-01-22,Kimberly Fisher,Chemistry,Potency (Peptides),3,1,KFisher
+2026-01-22,Renee Simmons,Microbiology,USP <71> Sterility Test,10,1,RSimmons
+2026-01-22,Thomas Jefferson,Chemistry,Potency (Non-Solution),1,1,TJefferson
+2026-01-23,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,26,1,AMcgee
+2026-01-23,Anthony Williams,Microbiology,USP <71> Sterility Test,3,1,AWilliams
+2026-01-23,Evan Steele,Chemistry,Potency (Solution),7,1,ESteele
+2026-01-23,Karen Adams,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,KAdams
+2026-01-23,Kevin Cooper,Chemistry,Potency (Peptides),4,1,KCooper
+2026-01-23,Laura Lewis,Microbiology,USP <85> Bacterial Endotoxins Test,4,1,LLewis
+2026-01-24,Chelsea Sloan,Chemistry,Potency (Solution),10,1,CSloan
+2026-01-24,David Sandoval,Chemistry,Potency (Peptides),2,1,DSandoval
+2026-01-24,Hannah Freeman,Chemistry,Potency (Solution),6,1,HFreeman
+2026-01-24,Jeffrey Dodson,Microbiology,USP <85> Bacterial Endotoxins Test,11,1,JDodson
+2026-01-24,Kerry Baker,Microbiology,USP <71> Sterility Test,16,1,KBaker
+2026-01-24,Kyle Young,Microbiology,USP <85> Bacterial Endotoxins Test,11,1,KYoung
+2026-01-24,Laura Lewis,Microbiology,Environmental Monitoring Plate Read,1,1,LLewis
+2026-01-24,Phillip Burke,Chemistry,Potency (Solution),2,1,PBurke
+2026-01-25,Jesse Jones,Chemistry,Potency (Peptides),4,1,JJones
+2026-01-25,Laurie Collins,Chemistry,Potency (Solution),2,1,LCollins
+2026-01-25,Morgan Hill,Microbiology,USP <71> Sterility Test,8,1,MHill
+2026-01-25,Patrick Lopez,Chemistry,Potency (Non-Solution),2,1,PLopez
+2026-01-26,Kathleen Calhoun,Microbiology,Environmental Monitoring Plate Read,2,1,KCalhoun
+2026-01-26,Kimberly Weber,Microbiology,USP <85> Bacterial Endotoxins Test,16,1,KWeber
+2026-01-26,Logan Freeman,Microbiology,USP <71> Sterility Test,9,1,LFreeman
+2026-01-26,Marco Myers,Chemistry,Potency (Solution),2,1,MMyers
+2026-01-27,Anthony Williams,Microbiology,USP <71> Sterility Test,4,1,AWilliams
+2026-01-27,Bruce Snow,Chemistry,Potency (Peptides),6,1,BSnow
+2026-01-27,Jennifer Tran,Chemistry,Potency (Solution),4,1,JTran
+2026-01-27,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,JChapman
+2026-01-27,Leslie Hudson,Chemistry,Potency (Peptides),1,1,LHudson
+2026-01-28,Adrian Frey,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,AFrey
+2026-01-28,Alexandria Moore,Chemistry,Potency (Peptides),2,1,AMoore
+2026-01-28,David Elliott,Chemistry,Potency (Peptides),2,1,DElliott
+2026-01-28,Ethan Underwood,Microbiology,USP <71> Sterility Test,10,1,EUnderwood
+2026-01-28,Michael King,Chemistry,Potency (Peptides),1,1,MKing
+2026-01-28,Ralph Shepherd,Microbiology,Environmental Monitoring Plate Read,5,1,RShepherd
+2026-01-30,Justin Palmer,Chemistry,Potency (Solution),8,1,JPalmer
+2026-01-30,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,13,1,KBaker
+2026-01-30,Michael Miller,Microbiology,Glove Fingertip Plate Read,3,1,MMiller
+2026-01-30,Morgan Hill,Microbiology,USP <71> Sterility Test,3,1,MHill
+2026-01-31,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,41,2,AMcgee
+2026-01-31,Carolyn Johnson,Chemistry,Potency (Solution),6,1,CJohnson
+2026-01-31,Christy Pollard,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,CPollard
+2026-01-31,Johnny Sandoval,Chemistry,Potency (Non-Solution),4,2,JSandoval
+2026-01-31,Kathleen Calhoun,Microbiology,USP <85> Bacterial Endotoxins Test,4,1,KCalhoun
+2026-01-31,Kristen Garcia,Microbiology,Environmental Monitoring Plate Read,1,1,KGarcia
+2026-01-31,Rachael Torres,Chemistry,Potency (Solution),7,1,RTorres
+2026-01-31,Renee Simmons,Microbiology,USP <71> Sterility Test,4,1,RSimmons
+2026-02-01,Anthony Williams,Microbiology,USP <71> Sterility Test,7,1,AWilliams
+2026-02-01,Jennifer Tran,Chemistry,Potency (Non-Solution),3,1,JTran
+2026-02-01,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,23,1,KBaker
+2026-02-01,Michael Miller,Microbiology,USP <71> Sterility Test,13,1,MMiller
+2026-02-01,Rachael Torres,Chemistry,Potency (Solution),10,1,RTorres
+2026-02-01,Shannon Edwards,Microbiology,USP <71> Sterility Test,13,1,SEdwards
+2026-02-02,Brian Proctor,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,BProctor
+2026-02-02,Christina Choi,Chemistry,Potency (Non-Solution),3,1,CChoi
+2026-02-02,Jesse Jones,Chemistry,Potency (Solution),5,1,JJones
+2026-02-02,Rachel Lloyd,Chemistry,Potency (Solution),9,1,RLloyd
+2026-02-02,Ralph Shepherd,Microbiology,USP <85> Bacterial Endotoxins Test,12,1,RShepherd
+2026-02-02,Savannah Pham,Chemistry,Potency (Solution),2,1,SPham
+2026-02-02,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,SEdwards
+2026-02-03,Jaime Burns,Chemistry,Potency (Non-Solution),1,1,JBurns
+2026-02-03,Kerry Baker,Microbiology,USP <71> Sterility Test,19,1,KBaker
+2026-02-03,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,16,2,KBaker
+2026-02-03,Kristen Garcia,Microbiology,USP <71> Sterility Test,10,1,KGarcia
+2026-02-03,Phillip Burke,Chemistry,Potency (Solution),4,1,PBurke
+2026-02-04,Adrian Frey,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,AFrey
+2026-02-04,Alan Mcgee,Microbiology,USP <71> Sterility Test,32,1,AMcgee
+2026-02-04,Charles Fuentes,Chemistry,Potency (Solution),8,1,CFuentes
+2026-02-04,Jeffrey Dodson,Microbiology,Bioburden Testing,1,1,JDodson
+2026-02-04,Kyle Young,Microbiology,USP <71> Sterility Test,11,1,KYoung
+2026-02-05,Amanda Rivera,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,ARivera
+2026-02-05,Shannon Edwards,Microbiology,USP <71> Sterility Test,16,1,SEdwards
+2026-02-06,Anthony Williams,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,AWilliams
+2026-02-06,Kerry Baker,Microbiology,USP <71> Sterility Test,19,1,KBaker
+2026-02-06,Rebecca Daniel,Microbiology,USP <71> Sterility Test,11,1,RDaniel
+2026-02-06,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,SEdwards
+2026-02-07,Anthony Williams,Microbiology,USP <71> Sterility Test,1,1,AWilliams
+2026-02-07,Carolyn Patel,Microbiology,USP <71> Sterility Test,3,1,CPatel
+2026-02-07,Carolyn Patel,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,CPatel
+2026-02-07,Daniel Smith,Chemistry,Potency (Solution),4,1,DSmith
+2026-02-07,David Elliott,Chemistry,Potency (Peptides),1,1,DElliott
+2026-02-07,Jeffrey Dodson,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,JDodson
+2026-02-07,Justin Palmer,Chemistry,Potency (Solution),4,1,JPalmer
+2026-02-08,Elizabeth Brewer,Microbiology,USP <71> Sterility Test,11,1,EBrewer
+2026-02-08,Jesse Jones,Chemistry,Potency (Peptides),1,1,JJones
+2026-02-08,Leslie Hudson,Chemistry,Potency (Peptides),3,1,LHudson
+2026-02-08,Thomas Jefferson,Chemistry,Potency (Solution),6,1,TJefferson
+2026-02-09,Leslie Hudson,Chemistry,Potency (Peptides),1,1,LHudson
+2026-02-09,Rachael Torres,Chemistry,Potency (Solution),6,1,RTorres
+2026-02-09,Roger Colon,Microbiology,USP <85> Bacterial Endotoxins Test,16,1,RColon
+2026-02-10,Bruce Snow,Chemistry,Potency (Peptides),4,1,BSnow
+2026-02-10,Hannah Freeman,Chemistry,Potency (Solution),3,1,HFreeman
+2026-02-10,Jay Wilson,Chemistry,Potency (Peptides),1,1,JWilson
+2026-02-10,Jennifer Tran,Chemistry,Potency (Solution),7,1,JTran
+2026-02-10,Rachel Williamson,Microbiology,USP <71> Sterility Test,16,1,RWilliamson
+2026-02-11,Alan Mcgee,Microbiology,Environmental Monitoring Plate Read,6,1,AMcgee
+2026-02-11,Amanda Rivera,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,ARivera
+2026-02-11,Jim Lewis,Chemistry,Potency (Non-Solution),1,1,JLewis
+2026-02-11,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,JChapman
+2026-02-11,Logan Freeman,Microbiology,USP <71> Sterility Test,12,1,LFreeman
+2026-02-11,Matthew Arnold,Chemistry,Potency (Solution),4,1,MArnold
+2026-02-11,Patrick Lopez,Chemistry,Potency (Solution),4,1,PLopez
+2026-02-11,Teresa Bartlett,Chemistry,Potency (Peptides),4,1,TBartlett
+2026-02-12,Anna Thomas,Chemistry,Potency (Solution),8,1,AThomas
+2026-02-12,Chelsea Sloan,Chemistry,Potency (Peptides),5,1,CSloan
+2026-02-12,Ethan Underwood,Microbiology,USP <71> Sterility Test,11,1,EUnderwood
+2026-02-12,Jennifer Tran,Chemistry,Potency (Solution),5,1,JTran
+2026-02-12,Kerry Baker,Microbiology,USP <71> Sterility Test,23,1,KBaker
+2026-02-12,Laura Lewis,Microbiology,USP <71> Sterility Test,22,1,LLewis
+2026-02-12,Matthew Arnold,Chemistry,Potency (Solution),6,2,MArnold
+2026-02-13,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,44,1,AMcgee
+2026-02-13,Chelsea Sloan,Chemistry,Potency (Solution),3,1,CSloan
+2026-02-13,Evan Steele,Chemistry,Potency (Solution),12,1,ESteele
+2026-02-13,John Melton,Chemistry,Potency (Solution),15,1,JMelton
+2026-02-13,Justin Palmer,Chemistry,Potency (Solution),2,1,JPalmer
+2026-02-13,Megan Johnson,Chemistry,Potency (Solution),10,1,MJohnson
+2026-02-13,Rebecca Daniel,Microbiology,USP <71> Sterility Test,12,1,RDaniel
+2026-02-14,Frederick Murphy,Chemistry,Potency (Peptides),2,1,FMurphy
+2026-02-14,Kristen Garcia,Microbiology,USP <71> Sterility Test,8,1,KGarcia
+2026-02-14,Laura Lewis,Microbiology,Environmental Monitoring Plate Read,4,1,LLewis
+2026-02-15,Alan Mcgee,Microbiology,Rapid Sterility (BacT/Alert),2,1,AMcgee
+2026-02-15,Bruce Snow,Chemistry,Potency (Solution),8,1,BSnow
+2026-02-15,Charles Fuentes,Chemistry,Potency (Solution),10,1,CFuentes
+2026-02-16,Alan Mcgee,Microbiology,USP <71> Sterility Test,37,1,AMcgee
+2026-02-16,Jonathan Moon,Microbiology,USP <71> Sterility Test,17,1,JMoon
+2026-02-16,Kerry Baker,Microbiology,Growth Promotion,1,1,KBaker
+2026-02-16,Kristen Garcia,Microbiology,USP <85> Bacterial Endotoxins Test,11,1,KGarcia
+2026-02-16,Kyle Young,Microbiology,USP <85> Bacterial Endotoxins Test,11,1,KYoung
+2026-02-16,Michael King,Chemistry,Potency (Peptides),5,1,MKing
+2026-02-17,Justin Palmer,Chemistry,Potency (Peptides),4,1,JPalmer
+2026-02-17,Rebecca Daniel,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,RDaniel
+2026-02-18,Adrian Frey,Microbiology,USP <71> Sterility Test,17,1,AFrey
+2026-02-18,Megan Johnson,Chemistry,Potency (Peptides),3,1,MJohnson
+2026-02-19,Carolyn Johnson,Chemistry,Potency (Solution),3,1,CJohnson
+2026-02-19,Kimberly Weber,Microbiology,Environmental Monitoring Plate Read,1,1,KWeber
+2026-02-19,Renee Simmons,Microbiology,USP <71> Sterility Test,4,1,RSimmons
+2026-02-19,Roger Colon,Microbiology,USP <71> Sterility Test,22,1,RColon
+2026-02-20,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,37,2,AMcgee
+2026-02-20,Amanda Rivera,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,ARivera
+2026-02-20,Carolyn Patel,Microbiology,USP <71> Sterility Test,9,1,CPatel
+2026-02-20,Corey Schwartz,Chemistry,Potency (Solution),9,1,CSchwartz
+2026-02-20,Elizabeth Brewer,Microbiology,USP <71> Sterility Test,9,1,EBrewer
+2026-02-20,Logan Freeman,Microbiology,USP <71> Sterility Test,11,1,LFreeman
+2026-02-20,Michael King,Chemistry,Potency (Solution),6,1,MKing
+2026-02-20,Shawn Jensen,Chemistry,Potency (Peptides),1,1,SJensen
+2026-02-21,Jaime Burns,Chemistry,Potency (Solution),10,1,JBurns
+2026-02-21,James Decker,Chemistry,Potency (Solution),3,1,JDecker
+2026-02-21,Shannon Edwards,Microbiology,Rapid Sterility (BacT/Alert),2,1,SEdwards
+2026-02-21,Teresa Bartlett,Chemistry,Potency (Solution),11,1,TBartlett
+2026-02-22,Alan Mcgee,Microbiology,USP <71> Sterility Test,41,1,AMcgee
+2026-02-22,David Thompson,Chemistry,Potency (Solution),6,1,DThompson
+2026-02-22,Kerry Baker,Microbiology,USP <71> Sterility Test,27,1,KBaker
+2026-02-22,Matthew Arnold,Chemistry,Potency (Non-Solution),4,1,MArnold
+2026-02-22,Mia Vazquez,Chemistry,Potency (Solution),1,1,MVazquez
+2026-02-22,Michael King,Chemistry,Potency (Peptides),3,1,MKing
+2026-02-22,Rachel Williamson,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,RWilliamson
+2026-02-22,Renee Simmons,Microbiology,USP <61> Microbial Enumeration,1,1,RSimmons
+2026-02-22,Veronica Simpson,Chemistry,Potency (Solution),12,1,VSimpson
+2026-02-23,Alan Mcgee,Microbiology,USP <71> Sterility Test,43,1,AMcgee
+2026-02-23,John Hill,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,JHill
+2026-02-23,Laura Lewis,Microbiology,USP <71> Sterility Test,14,1,LLewis
+2026-02-23,Megan Johnson,Chemistry,Potency (Non-Solution),1,1,MJohnson
+2026-02-24,Jesse Jones,Chemistry,Potency (Solution),4,1,JJones
+2026-02-24,John Hill,Microbiology,USP <71> Sterility Test,7,1,JHill
+2026-02-24,Juan Moreno,Chemistry,Potency (Solution),4,1,JMoreno
+2026-02-24,Michael King,Chemistry,Potency (Solution),7,1,MKing
+2026-02-25,Adrian Frey,Microbiology,USP <71> Sterility Test,11,1,AFrey
+2026-02-25,Corey Schwartz,Chemistry,Potency (Solution),4,1,CSchwartz
+2026-02-25,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,13,1,KBaker
+2026-02-25,Kristen Garcia,Microbiology,USP <71> Sterility Test,22,1,KGarcia
+2026-02-25,Leslie Hudson,Chemistry,Potency (Solution),3,1,LHudson
+2026-02-25,Marco Myers,Chemistry,Potency (Solution),2,1,MMyers
+2026-02-25,Rachel Williamson,Microbiology,USP <85> Bacterial Endotoxins Test,12,1,RWilliamson
+2026-02-25,Teresa Bartlett,Chemistry,Potency (Non-Solution),2,1,TBartlett
+2026-02-26,John Hill,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,JHill
+2026-02-26,Jonathan Moon,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,JMoon
+2026-02-26,Kimberly Le,Chemistry,Potency (Solution),1,1,KLe
+2026-02-26,Kristina Williams,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,KWilliams
+2026-02-27,John Hill,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,JHill
+2026-02-27,Kerry Baker,Microbiology,USP <61> Microbial Enumeration,1,1,KBaker
+2026-02-27,Kimberly Weber,Microbiology,USP <71> Sterility Test,13,1,KWeber
+2026-02-27,Morgan Hill,Microbiology,USP <71> Sterility Test,14,1,MHill
+2026-02-27,Patrick Lopez,Chemistry,Potency (Solution),7,1,PLopez
+2026-02-28,Jesse Jones,Chemistry,Potency (Solution),5,1,JJones
+2026-02-28,John Hill,Microbiology,USP <71> Sterility Test,2,1,JHill
+2026-02-28,John Melton,Chemistry,Potency (Solution),15,1,JMelton
+2026-02-28,Patrick Lopez,Chemistry,Potency (Peptides),3,1,PLopez
+2026-02-28,Patrick Lopez,Chemistry,Potency (Solution),7,1,PLopez
+2026-03-01,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,35,1,AMcgee
+2026-03-01,John Melton,Chemistry,Potency (Peptides),8,1,JMelton
+2026-03-01,John Melton,Chemistry,Potency (Solution),21,1,JMelton
+2026-03-01,Justin Palmer,Chemistry,Potency (Peptides),2,1,JPalmer
+2026-03-01,Kristen Garcia,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,KGarcia
+2026-03-01,Lauren Guzman,Chemistry,Potency (Non-Solution),2,1,LGuzman
+2026-03-01,Teresa Bartlett,Chemistry,Potency (Solution),8,1,TBartlett
+2026-03-02,Cheryl Berry,Microbiology,USP <85> Bacterial Endotoxins Test,3,1,CBerry
+2026-03-02,Elizabeth Brewer,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,EBrewer
+2026-03-02,Maria Foley,Chemistry,Potency (Solution),5,1,MFoley
+2026-03-02,Michelle Brooks,Chemistry,Potency (Solution),2,1,MBrooks
+2026-03-02,Teresa Miller,Chemistry,Potency (Solution),2,1,TMiller
+2026-03-03,Alan Mcgee,Microbiology,USP <71> Sterility Test,46,1,AMcgee
+2026-03-03,Anthony Williams,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,AWilliams
+2026-03-03,Christopher Terry,Microbiology,USP <71> Sterility Test,18,1,CTerry
+2026-03-03,Jennifer Wilson,Microbiology,USP <71> Sterility Test,7,1,JWilson
+2026-03-03,Jonathan Moon,Microbiology,Media Fill Incubation,1,1,JMoon
+2026-03-03,Laura Lewis,Microbiology,USP <71> Sterility Test,15,1,LLewis
+2026-03-03,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,LFreeman
+2026-03-03,Rachael Torres,Chemistry,Potency (Solution),6,1,RTorres
+2026-03-03,Thomas Jefferson,Chemistry,Potency (Solution),2,1,TJefferson
+2026-03-04,Christopher Terry,Microbiology,USP <71> Sterility Test,18,1,CTerry
+2026-03-04,David Elliott,Chemistry,Potency (Solution),1,1,DElliott
+2026-03-04,Harry Davis,Chemistry,Potency (Non-Solution),1,1,HDavis
+2026-03-04,Jeffrey Dodson,Microbiology,USP <71> Sterility Test,6,1,JDodson
+2026-03-04,Kyle Young,Microbiology,USP <71> Sterility Test,13,1,KYoung
+2026-03-04,Nicholas Barnett,Chemistry,Potency (Solution),3,1,NBarnett
+2026-03-05,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,22,1,AMcgee
+2026-03-05,Jaime Burns,Chemistry,Potency (Solution),5,1,JBurns
+2026-03-05,Kristen Garcia,Microbiology,Environmental Monitoring Plate Read,1,1,KGarcia
+2026-03-05,Michael King,Chemistry,Potency (Peptides),4,1,MKing
+2026-03-05,Rachael Torres,Chemistry,Potency (Solution),3,1,RTorres
+2026-03-05,Rachel Lloyd,Chemistry,Potency (Peptides),4,1,RLloyd
+2026-03-05,Ralph Shepherd,Microbiology,Environmental Monitoring Plate Read,3,1,RShepherd
+2026-03-05,Savannah Pham,Chemistry,Potency (Non-Solution),1,1,SPham
+2026-03-05,Veronica Simpson,Chemistry,Potency (Solution),7,1,VSimpson
+2026-03-06,Alan Mcgee,Microbiology,USP <71> Sterility Test,36,1,AMcgee
+2026-03-06,Hannah Freeman,Chemistry,Potency (Solution),6,1,HFreeman
+2026-03-06,Laurie Collins,Chemistry,Potency (Non-Solution),1,1,LCollins
+2026-03-06,Rachael Torres,Chemistry,Potency (Solution),11,1,RTorres
+2026-03-06,Rebecca Daniel,Microbiology,USP <71> Sterility Test,13,1,RDaniel
+2026-03-07,Amanda Rivera,Microbiology,USP <71> Sterility Test,11,1,ARivera
+2026-03-07,Chelsea Sloan,Chemistry,Potency (Solution),5,1,CSloan
+2026-03-07,Elizabeth Brewer,Microbiology,Environmental Monitoring Plate Read,1,1,EBrewer
+2026-03-07,Logan Freeman,Microbiology,Rapid Sterility (BacT/Alert),1,1,LFreeman
+2026-03-07,Michael King,Chemistry,Potency (Non-Solution),3,1,MKing
+2026-03-07,Michael King,Chemistry,Potency (Solution),8,1,MKing
+2026-03-07,Rachel Williamson,Microbiology,USP <71> Sterility Test,6,1,RWilliamson
+2026-03-07,Roger Colon,Microbiology,USP <71> Sterility Test,20,1,RColon
+2026-03-07,Veronica Simpson,Chemistry,Potency (Solution),10,1,VSimpson
+2026-03-08,Carolyn Johnson,Chemistry,Potency (Solution),6,1,CJohnson
+2026-03-08,Hannah Freeman,Chemistry,Potency (Solution),7,1,HFreeman
+2026-03-08,John Melton,Chemistry,Potency (Peptides),8,1,JMelton
+2026-03-08,Rachel Lloyd,Chemistry,Potency (Solution),4,1,RLloyd
+2026-03-08,Ralph Shepherd,Microbiology,USP <85> Bacterial Endotoxins Test,14,1,RShepherd
+2026-03-08,Scott Smith,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,SSmith
+2026-03-08,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,12,1,SEdwards
+2026-03-09,Adrian Frey,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,AFrey
+2026-03-10,Ashley Robertson,Chemistry,Potency (Peptides),1,1,ARobertson
+2026-03-10,Carolyn Johnson,Chemistry,Potency (Solution),3,1,CJohnson
+2026-03-10,David Thompson,Chemistry,Potency (Non-Solution),1,1,DThompson
+2026-03-10,Michael King,Chemistry,Potency (Solution),8,1,MKing
+2026-03-10,Sean Weaver,Chemistry,Potency (Solution),3,1,SWeaver
+2026-03-10,Shannon Edwards,Microbiology,USP <71> Sterility Test,10,1,SEdwards
+2026-03-11,Amanda Rivera,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,ARivera
+2026-03-11,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,LFreeman
+2026-03-11,Ralph Shepherd,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,RShepherd
+2026-03-12,Rachael Torres,Chemistry,Potency (Non-Solution),2,1,RTorres
+2026-03-13,Brian Proctor,Microbiology,USP <85> Bacterial Endotoxins Test,3,1,BProctor
+2026-03-13,Chelsea Sloan,Chemistry,Potency (Solution),6,1,CSloan
+2026-03-13,Corey Schwartz,Chemistry,Potency (Solution),7,1,CSchwartz
+2026-03-13,Hannah Freeman,Chemistry,Potency (Peptides),3,1,HFreeman
+2026-03-13,Jaime Burns,Chemistry,Potency (Peptides),1,1,JBurns
+2026-03-13,Jennifer Tran,Chemistry,Potency (Solution),5,1,JTran
+2026-03-13,Justin Palmer,Chemistry,Potency (Solution),2,1,JPalmer
+2026-03-13,Kathleen Calhoun,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,KCalhoun
+2026-03-13,Rebecca Daniel,Microbiology,USP <788> Particulate Matter,1,1,RDaniel
+2026-03-13,Shannon Edwards,Microbiology,USP <71> Sterility Test,5,1,SEdwards
+2026-03-13,Veronica Simpson,Chemistry,Potency (Solution),12,1,VSimpson
+2026-03-14,Evan Steele,Chemistry,Potency (Solution),5,1,ESteele
+2026-03-14,Jennifer Wilson,Microbiology,USP <71> Sterility Test,5,1,JWilson
+2026-03-15,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,49,2,AMcgee
+2026-03-15,Bruce Snow,Chemistry,Potency (Solution),4,1,BSnow
+2026-03-15,Frederick Murphy,Chemistry,Potency (Solution),4,1,FMurphy
+2026-03-15,Jesse Jones,Chemistry,Potency (Solution),7,1,JJones
+2026-03-15,Kevin Cooper,Chemistry,Potency (Non-Solution),1,1,KCooper
+2026-03-15,Michael Mitchell,Chemistry,Potency (Solution),3,1,MMitchell
+2026-03-15,Teresa Miller,Chemistry,Potency (Solution),5,1,TMiller
+2026-03-16,Alan Mcgee,Microbiology,Glove Fingertip Plate Read,2,1,AMcgee
+2026-03-16,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,29,1,AMcgee
+2026-03-16,Ashley Lewis,Chemistry,Potency (Peptides),3,1,ALewis
+2026-03-16,Jeffrey Dodson,Microbiology,USP <71> Sterility Test,12,1,JDodson
+2026-03-16,John Melton,Chemistry,USP Monograph - Cottonseed Oil,1,1,JMelton
+2026-03-16,Laura Lewis,Microbiology,USP <71> Sterility Test,16,1,LLewis
+2026-03-16,Michael King,Chemistry,Potency (Peptides),3,1,MKing
+2026-03-16,Teresa Bartlett,Chemistry,Potency (Solution),3,1,TBartlett
+2026-03-17,Anthony Williams,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,AWilliams
+2026-03-17,Ashley Lewis,Chemistry,Potency (Solution),10,1,ALewis
+2026-03-17,Chelsea Sloan,Chemistry,Potency (Solution),6,1,CSloan
+2026-03-17,Cheryl Berry,Microbiology,USP <71> Sterility Test,9,1,CBerry
+2026-03-17,Jennifer Tran,Chemistry,Potency (Solution),6,1,JTran
+2026-03-17,Kathleen Calhoun,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,KCalhoun
+2026-03-18,Chelsea Sloan,Chemistry,Potency (Solution),7,1,CSloan
+2026-03-18,Jasmine Dorsey,Chemistry,Potency (Non-Solution),1,1,JDorsey
+2026-03-18,John Melton,Chemistry,Potency (Peptides),5,1,JMelton
+2026-03-18,Jonathan Moon,Microbiology,Environmental Monitoring Plate Read,3,1,JMoon
+2026-03-18,Kathleen Schultz,Chemistry,Potency (Solution),5,1,KSchultz
+2026-03-18,Matthew Arnold,Chemistry,Potency (Peptides),7,1,MArnold
+2026-03-18,Rachel Lloyd,Chemistry,Potency (Solution),7,1,RLloyd
+2026-03-18,Rebecca Daniel,Microbiology,Glove Fingertip Plate Read,2,1,RDaniel
+2026-03-18,Shannon Edwards,Microbiology,USP <71> Sterility Test,14,1,SEdwards
+2026-03-19,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,27,1,AMcgee
+2026-03-19,Chelsea Sloan,Chemistry,Potency (Peptides),3,1,CSloan
+2026-03-19,Leslie Hudson,Chemistry,Potency (Non-Solution),1,1,LHudson
+2026-03-20,Alan Mcgee,Microbiology,USP <71> Sterility Test,33,1,AMcgee
+2026-03-20,Charles Fuentes,Chemistry,Potency (Solution),5,1,CFuentes
+2026-03-20,Jaime Burns,Chemistry,Potency (Solution),5,1,JBurns
+2026-03-20,Jessica Ruiz,Chemistry,Potency (Non-Solution),1,1,JRuiz
+2026-03-20,Juan Moreno,Chemistry,Potency (Solution),1,1,JMoreno
+2026-03-20,Kathleen Calhoun,Microbiology,USP <71> Sterility Test,4,1,KCalhoun
+2026-03-21,Amanda Stafford,Chemistry,Potency (Solution),8,1,AStafford
+2026-03-21,Evan Steele,Chemistry,Potency (Solution),8,1,ESteele
+2026-03-21,Johnny Sandoval,Chemistry,Potency (Solution),3,1,JSandoval
+2026-03-21,Matthew Arnold,Chemistry,Potency (Solution),4,1,MArnold
+2026-03-22,Alan Mcgee,Microbiology,USP <71> Sterility Test,44,1,AMcgee
+2026-03-22,Cathy Powell,Chemistry,Assay & Impurities,1,1,CPowell
+2026-03-22,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,JChapman
+2026-03-22,Justin Palmer,Chemistry,Potency (Solution),3,2,JPalmer
+2026-03-22,Veronica Simpson,Chemistry,Potency (Peptides),7,1,VSimpson
+2026-03-23,David Elliott,Chemistry,Potency (Non-Solution),1,1,DElliott
+2026-03-23,Ralph Shepherd,Microbiology,USP <71> Sterility Test,12,1,RShepherd
+2026-03-24,Alan Mcgee,Microbiology,USP <71> Sterility Test,61,1,AMcgee
+2026-03-24,Logan Freeman,Microbiology,USP <71> Sterility Test,13,1,LFreeman
+2026-03-24,Ralph Shepherd,Microbiology,Glove Fingertip Plate Read,2,1,RShepherd
+2026-03-25,Amanda Rivera,Microbiology,Glove Fingertip Plate Read,1,1,ARivera
+2026-03-25,Christina Miller,Chemistry,Potency (Solution),2,1,CMiller
+2026-03-25,Michael Miller,Microbiology,Rapid Sterility (BacT/Alert),1,1,MMiller
+2026-03-26,Jonathan Moon,Microbiology,USP <71> Sterility Test,11,1,JMoon
+2026-03-26,Rebecca Daniel,Microbiology,USP <71> Sterility Test,14,1,RDaniel
+2026-03-27,Ethan Underwood,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,EUnderwood
+2026-03-27,John Melton,Chemistry,Potency (Non-Solution),3,1,JMelton
+2026-03-27,Kristen Garcia,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,KGarcia
+2026-03-27,Rachael Torres,Chemistry,Potency (Solution),8,1,RTorres
+2026-03-27,William Kramer,Chemistry,Potency (Solution),1,1,WKramer
+2026-03-28,Anthony Williams,Microbiology,USP <788> Particulate Matter,1,1,AWilliams
+2026-03-28,Carolyn Johnson,Chemistry,Potency (Solution),6,1,CJohnson
+2026-03-28,John Hill,Microbiology,Rapid Sterility (BacT/Alert),2,1,JHill
+2026-03-28,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,LFreeman
+2026-03-28,Nicholas Barnett,Chemistry,Potency (Peptides),2,1,NBarnett
+2026-03-28,Sean Weaver,Chemistry,Potency (Solution),2,1,SWeaver
+2026-03-28,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,SEdwards
+2026-03-29,Carolyn Johnson,Chemistry,Potency (Solution),4,1,CJohnson
+2026-03-29,Christopher Terry,Microbiology,USP <71> Sterility Test,13,1,CTerry
+2026-03-29,Christopher Terry,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,CTerry
+2026-03-29,George Richards,Chemistry,Potency (Solution),7,1,GRichards
+2026-03-29,John Melton,Chemistry,Potency (Solution),12,1,JMelton
+2026-03-29,Laurie Collins,Chemistry,Potency (Solution),5,1,LCollins
+2026-03-29,Leslie Hudson,Chemistry,Potency (Solution),5,1,LHudson
+2026-03-29,Tammy Smith,Chemistry,Potency (Solution),6,1,TSmith
+2026-03-30,Adrian Frey,Microbiology,USP <71> Sterility Test,10,2,AFrey
+2026-03-30,James Decker,Chemistry,Potency (Non-Solution),1,1,JDecker
+2026-03-30,Kerry Baker,Microbiology,USP <85> Bacterial Endotoxins Test,29,1,KBaker
+2026-03-31,Alan Mcgee,Microbiology,USP <71> Sterility Test,34,1,AMcgee
+2026-03-31,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,27,1,AMcgee
+2026-03-31,Laura Lewis,Microbiology,USP <85> Bacterial Endotoxins Test,13,1,LLewis
+2026-03-31,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,LFreeman
+2026-03-31,Rachael Torres,Chemistry,Potency (Non-Solution),2,1,RTorres
+2026-03-31,Savannah Pham,Chemistry,Potency (Solution),1,1,SPham
+2026-03-31,Teresa Miller,Chemistry,Potency (Solution),3,1,TMiller
+2026-04-01,John Melton,Chemistry,Potency (Peptides),6,1,JMelton
+2026-04-01,Rachael Torres,Chemistry,Potency (Solution),11,1,RTorres
+2026-04-01,Rachel Lloyd,Chemistry,Potency (Peptides),2,1,RLloyd
+2026-04-01,Roger Colon,Microbiology,USP <85> Bacterial Endotoxins Test,5,1,RColon
+2026-04-01,Zachary Rodriguez,Chemistry,Potency (Solution),5,1,ZRodriguez
+2026-04-02,Phillip Burke,Chemistry,Potency (Peptides),1,1,PBurke
+2026-04-03,Alan Mcgee,Microbiology,Glove Fingertip Plate Read,2,1,AMcgee
+2026-04-03,Kathleen Calhoun,Microbiology,USP <71> Sterility Test,7,1,KCalhoun
+2026-04-03,Mark Proctor,Chemistry,Assay & Impurities,1,1,MProctor
+2026-04-03,Michael King,Chemistry,Potency (Solution),10,1,MKing
+2026-04-03,Rachael Torres,Chemistry,Potency (Peptides),4,1,RTorres
+2026-04-04,Adrian Frey,Microbiology,USP <85> Bacterial Endotoxins Test,12,1,AFrey
+2026-04-04,Carolyn Patel,Microbiology,Rapid Sterility (BacT/Alert),1,1,CPatel
+2026-04-04,Corey Schwartz,Chemistry,Potency (Solution),3,1,CSchwartz
+2026-04-04,Evan Steele,Chemistry,Potency (Solution),8,1,ESteele
+2026-04-04,Johnny Sandoval,Chemistry,Potency (Solution),11,1,JSandoval
+2026-04-04,Laura Lewis,Microbiology,Environmental Monitoring Plate Read,2,1,LLewis
+2026-04-04,Laura Lewis,Microbiology,USP <85> Bacterial Endotoxins Test,17,1,LLewis
+2026-04-04,Lauren Guzman,Chemistry,Potency (Non-Solution),2,1,LGuzman
+2026-04-04,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,18,1,LFreeman
+2026-04-04,Nicholas Barnett,Chemistry,Potency (Solution),4,1,NBarnett
+2026-04-05,Jonathan Moon,Microbiology,USP <71> Sterility Test,8,1,JMoon
+2026-04-05,Teresa Bartlett,Chemistry,Potency (Solution),7,1,TBartlett
+2026-04-05,Veronica Simpson,Chemistry,Potency (Peptides),3,1,VSimpson
+2026-04-06,Tammy Smith,Chemistry,Potency (Peptides),4,1,TSmith
+2026-04-07,Amanda Martinez,Chemistry,Potency (Solution),5,1,AMartinez
+2026-04-07,Christopher Terry,Microbiology,USP <85> Bacterial Endotoxins Test,13,1,CTerry
+2026-04-07,Harry Davis,Chemistry,Potency (Solution),3,1,HDavis
+2026-04-07,Jennifer Wilson,Microbiology,USP <85> Bacterial Endotoxins Test,4,1,JWilson
+2026-04-07,Patrick Lopez,Chemistry,USP <1225> Method Verification,1,1,PLopez
+2026-04-07,Veronica Simpson,Chemistry,Potency (Non-Solution),5,1,VSimpson
+2026-04-07,Zachary Rodriguez,Chemistry,Potency (Non-Solution),2,1,ZRodriguez
+2026-04-08,Alan Mcgee,Microbiology,USP <71> Sterility Test,41,1,AMcgee
+2026-04-08,Ashley Lewis,Chemistry,Potency (Solution),6,1,ALewis
+2026-04-08,Rachel Lloyd,Chemistry,Potency (Peptides),6,1,RLloyd
+2026-04-08,Renee Simmons,Microbiology,USP <71> Sterility Test,7,1,RSimmons
+2026-04-09,Megan Johnson,Chemistry,Potency (Peptides),2,1,MJohnson
+2026-04-09,Rebecca Daniel,Microbiology,USP <71> Sterility Test,14,1,RDaniel
+2026-04-10,Daniel Smith,Chemistry,Potency (Solution),2,1,DSmith
+2026-04-10,Jacqueline White,Chemistry,Potency (Solution),5,1,JWhite
+2026-04-10,Jaime Burns,Chemistry,Potency (Non-Solution),2,1,JBurns
+2026-04-10,Kerry Baker,Microbiology,USP <71> Sterility Test,19,1,KBaker
+2026-04-10,Laurie Collins,Chemistry,Identification by HPLC,1,1,LCollins
+2026-04-10,Traci Bell,Chemistry,Potency (Solution),1,1,TBell
+2026-04-10,Travis Mora,Microbiology,USP <85> Bacterial Endotoxins Test,9,1,TMora
+2026-04-11,Jim Lewis,Chemistry,Potency (Peptides),2,1,JLewis
+2026-04-11,Leslie Hudson,Chemistry,Potency (Solution),4,1,LHudson
+2026-04-11,Tammy Smith,Chemistry,Potency (Solution),5,1,TSmith
+2026-04-12,Alan Mcgee,Microbiology,USP <85> Bacterial Endotoxins Test,46,1,AMcgee
+2026-04-12,Hannah Freeman,Chemistry,Potency (Solution),5,1,HFreeman
+2026-04-12,Jennifer Wilson,Microbiology,USP <85> Bacterial Endotoxins Test,6,1,JWilson
+2026-04-12,Justin Palmer,Chemistry,Potency (Solution),7,1,JPalmer
+2026-04-12,Matthew Arnold,Chemistry,Potency (Solution),4,1,MArnold
+2026-04-12,Shannon Edwards,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,SEdwards
+2026-04-12,Thomas Jefferson,Chemistry,Potency (Solution),3,1,TJefferson
+2026-04-13,Chelsea Sloan,Chemistry,Potency (Peptides),2,1,CSloan
+2026-04-13,Laura Lewis,Microbiology,USP <85> Bacterial Endotoxins Test,20,1,LLewis
+2026-04-13,Laurie Collins,Chemistry,Potency (Non-Solution),1,1,LCollins
+2026-04-13,Rachel Lloyd,Chemistry,Potency (Peptides),6,1,RLloyd
+2026-04-13,Veronica Simpson,Chemistry,Potency (Peptides),5,1,VSimpson
+2026-04-14,Alexandria Moore,Chemistry,Potency (Solution),7,1,AMoore
+2026-04-14,David Sandoval,Chemistry,Potency (Solution),2,1,DSandoval
+2026-04-14,Joshua Chapman,Microbiology,USP <85> Bacterial Endotoxins Test,8,1,JChapman
+2026-04-14,Kathleen Calhoun,Microbiology,USP <85> Bacterial Endotoxins Test,7,1,KCalhoun
+2026-04-14,Kyle Young,Microbiology,USP <71> Sterility Test,12,1,KYoung
+2026-04-14,Logan Freeman,Microbiology,USP <85> Bacterial Endotoxins Test,10,1,LFreeman
+2026-04-14,Michael Miller,Microbiology,USP <71> Sterility Test,7,1,MMiller
+2026-04-14,Nicholas Barnett,Chemistry,Potency (Non-Solution),4,1,NBarnett
+2026-04-14,Rebecca Daniel,Microbiology,USP <85> Bacterial Endotoxins Test,11,1,RDaniel
+2026-04-15,Amanda Martinez,Chemistry,Potency (Solution),4,1,AMartinez
+2026-04-15,Anna Thomas,Chemistry,Potency (Solution),9,1,AThomas
+2026-04-15,Jennifer Wilson,Microbiology,USP <71> Sterility Test,4,1,JWilson
+2026-04-15,Scott Smith,Microbiology,USP <71> Sterility Test,7,1,SSmith

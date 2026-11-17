@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.0
+faker>=24.0
+xlsxwriter>=3.1
+# optional, only for export_model_code.py: pbixray
+openpyxl>=3.1
+# optional, to read SQL Server directly in integrated_kpi_report.py: pyodbc

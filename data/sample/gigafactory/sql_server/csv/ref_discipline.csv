@@ -1,0 +1,11 @@
+Discipline_Code,Discipline,Discipline_Group
+CIV,Civil,Construction
+STR,Structural,Construction
+ARC,Architectural,Construction
+MEC,Mechanical / HVAC,Mechanical
+PPG,Process Piping,Mechanical
+PLB,Plumbing & Process Drains,Mechanical
+ELE,Electrical,Electrical
+INC,Instrumentation & Controls,Electrical
+FPR,Fire Protection & Life Safety,Mechanical
+PEQ,Process Equipment Install & Hookup,Process

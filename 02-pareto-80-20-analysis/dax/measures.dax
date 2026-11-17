@@ -1,0 +1,980 @@
+// Measures exported from the report model.
+// Paste into DAX query view and click "Update model with changes" to recreate them.
+
+DEFINE
+    MEASURE 'Parameter'[Pareto Value] =
+        SELECTEDVALUE('Parameter'[Parameter], 0.25)
+
+    MEASURE 'AllData'[Total Revenue] =
+        CALCULATE(SUM(AllData[Price]))
+
+    MEASURE 'AllData'[Client Vol Run Total] =
+        CALCULATE(
+            [Total Test Volume],
+            WINDOW(
+                1,ABS,
+                0,REL,
+                ALLSELECTED('Client split category'[Client]),
+                ORDERBY([Total Test Volume], DESC)
+        ))
+
+    MEASURE 'AllData'[Client Vol Rank] =
+        IF(
+            [Total Test Volume],
+            RANKX(
+                ALL('Client split category'[Client]),
+                [Total Test Volume],,
+                DESC,Dense
+            )
+        )
+
+    MEASURE 'AllData'[Client Vol Denom] =
+        CALCULATE(
+            [Total Test Volume],
+            REMOVEFILTERS('Client split category'[Client])
+        )
+
+    MEASURE 'AllData'[Client Vol Cum. %] =
+        IF(
+            [Total Test Volume],
+            CALCULATE(
+                [Client Vol Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL, 
+                    ALL('Client split category'[Client]),
+                    ORDERBY([Total Test Volume], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Client Vol Contrib Run Total] =
+        IF(
+            [Total Test Volume], 
+            CALCULATE(
+                [Client Vol Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL,
+                    ALL('Client split category'[Client]),
+                    ORDERBY([Total Test Volume], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Client Vol Contrib %] =
+        If(
+            [Total Test Volume],
+                DIVIDE(
+                [Total Test Volume],
+                [Client Vol Denom]
+            )
+        )
+
+    MEASURE 'AllData'[Client Vol] =
+        IF(
+            [Total Test Volume] && ISINSCOPE('Client split category'[Client]),
+            SELECTEDVALUE('Client split category'[Client]),        
+            VAR Tble = 
+                FILTER(
+                    ADDCOLUMNS(
+                        SUMMARIZE('Client split category','Client split category'[Client], 'Client split category'[Category]),
+                        "Test",
+                            VAR RT = 
+                            CALCULATE(
+                                DIVIDE(
+                                    [Total Test Volume],
+                                    CALCULATE(
+                                        [Total Test Volume],
+                                        ALL('Client split category'[Client])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALL('Client split category'[Client]),
+                                    ORDERBY([Total Test Volume], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Client split category'[Category] = "A+"
+                        ), 
+                    [Test]
+                )
+            RETURN
+                IF(
+                    CALCULATE(
+                        [Total Test Volume],
+                        tble
+                    ) <> BLANK(),
+                    "Client Test Vol " & FORMAT(
+                        CALCULATE(
+                            [Total Test Volume],
+                            Tble
+                        ), "$0.0"
+                    ) & " | " & COUNTROWS(Tble) & " Clients Test Vol"
+                )
+        )
+
+    MEASURE 'AllData'[Client Rev Test] =
+        IF(
+            ISINSCOPE( 'Client split category'[Client]), 
+            BLANK(),
+            COUNTROWS(
+                FILTER(
+                    SUMMARIZE(
+                        'Client split category','Client split category'[Client], 'Client split category'[Category],
+                        "Test",
+                            VAR RT = 
+                             CALCULATE(
+                                DIVIDE(
+                                    [Total Revenue],
+                                    CALCULATE(
+                                        CALCULATE(
+                                            [Total Revenue],
+                                            ALLEXCEPT('Client split category', 'Client split category'[Category])
+                                        ),
+                                        KEEPFILTERS('Client split category'[Client])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALLEXCEPT('Client split category', 'Client split category'[Category]),
+                                    ORDERBY([Total Revenue], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Client split category'[Category] = "A+"
+                        ), 
+                    [Test]
+                )
+             )
+        )
+
+    MEASURE 'AllData'[Client Rev Run Total] =
+        CALCULATE(
+            [Total Revenue],
+            WINDOW(
+                1,ABS,
+                0,REL,
+                ALLSELECTED('Client split category'[Client]),
+                ORDERBY([Total Revenue], DESC)
+        ))
+
+    MEASURE 'AllData'[Client Rev RT Split] =
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE('Client split category'[Category])= "A+" &&
+            [Client Rev Contrib Run Total] <= [Pareto Value],
+            [Client Rev Contrib Run Total],
+        
+            SELECTEDVALUE('Client split category'[Category]) = "Others" &&
+            [Client Rev Contrib Run Total] > [Pareto Value],
+            [Client Rev Contrib Run Total]
+        )
+
+    MEASURE 'AllData'[Client Rev Rank] =
+        IF(
+            [Total Revenue],
+            RANKX(
+                ALL('Client split category'[Client]),
+                [Total Revenue],,
+                DESC,Dense
+            )
+        )
+
+    MEASURE 'AllData'[Client Rev Denom] =
+        CALCULATE(
+            [Total Revenue],
+            REMOVEFILTERS('Client split category'[Client])
+        )
+
+    MEASURE 'AllData'[Client Rev Cum. %] =
+        IF(
+            [Total Revenue],
+            CALCULATE(
+                [Client Rev Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL, 
+                    ALL('Client split category'[Client]),
+                    ORDERBY([Total Revenue], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Client Rev Contrib Run Total] =
+        IF(
+            [Total Revenue], 
+            CALCULATE(
+                [Client Rev Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL,
+                    ALL('Client split category'[Client]),
+                    ORDERBY([Total Revenue], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Client Rev Contrib %] =
+        If(
+            [Total Revenue],
+                DIVIDE(
+                [Total Revenue],
+                [Client Rev Denom]
+            )
+        )
+
+    MEASURE 'AllData'[Client Rev] =
+        IF(
+            [Total Revenue] && ISINSCOPE('Client split category'[Client]),
+            SELECTEDVALUE('Client split category'[Client]),        
+            VAR Tble = 
+                FILTER(
+                    ADDCOLUMNS(
+                        SUMMARIZE('Client split category','Client split category'[Client], 'Client split category'[Category]),
+                        "Test",
+                            VAR RT = 
+                            CALCULATE(
+                                DIVIDE(
+                                    [Total Revenue],
+                                    CALCULATE(
+                                        [Total Revenue],
+                                        ALL('Client split category'[Client])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALL('Client split category'[Client]),
+                                    ORDERBY([Total Revenue], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Client split category'[Category] = "A+"
+                        ), 
+                    [Test]
+                )
+            RETURN
+                IF(
+                    CALCULATE(
+                        [Total Revenue],
+                        tble
+                    ) <> BLANK(),
+                    "Total Revenue " & FORMAT(
+                        CALCULATE(
+                            [Total Revenue],
+                            Tble
+                        ), "$0.0"
+                    ) & " | " & COUNTROWS(Tble) & " Clients"
+                )
+        )
+
+    MEASURE 'AllData'[Total Test Volume] =
+        COUNT(AllData[Test_Name])
+
+    MEASURE 'AllData'[Test Rev Contrib %] =
+        If(
+            [Total Revenue],
+                DIVIDE(
+                [Total Revenue],
+                [Test Rev Denom]
+            )
+        )
+
+    MEASURE 'AllData'[Test Rev Contrib Run Total] =
+        IF(
+            [Total Revenue], 
+            CALCULATE(
+                [Test Rev Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL,
+                    ALL('Test split category'[Tests]),
+                    ORDERBY([Total Revenue], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Test Rev Cum. %] =
+        IF(
+            [Total Revenue],
+            CALCULATE(
+                [Test Rev Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL, 
+                    ALL('Test split category'[Tests]),
+                    ORDERBY([Total Revenue], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Test Rev Denom] =
+        CALCULATE(
+            [Total Revenue],
+            REMOVEFILTERS('Test split category'[Tests])
+        )
+
+    MEASURE 'AllData'[Test Rev Rank] =
+        IF(
+            [Total Revenue],
+            RANKX(
+                ALL('Test split category'[Tests]),
+                [Total Revenue],,
+                DESC,Dense
+            )
+        )
+
+    MEASURE 'AllData'[Test Rev RT Split] =
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE('Test split category'[Category])= "A+" &&
+            [Test Rev Contrib Run Total] <= [Pareto Value],
+            [Test Rev Contrib Run Total],
+        
+            SELECTEDVALUE('Test split category'[Category]) = "Others" &&
+            [Test Rev Contrib Run Total] > [Pareto Value],
+            [Test Rev Contrib Run Total]
+        )
+
+    MEASURE 'AllData'[Test Rev Run Total] =
+        CALCULATE(
+            [Total Revenue],
+            WINDOW(
+                1,ABS,
+                0,REL,
+                ALLSELECTED('Test split category'[Tests]),
+                ORDERBY([Total Revenue], DESC)
+        ))
+
+    MEASURE 'AllData'[Test Test] =
+        IF(
+            ISINSCOPE( 'Test split category'[Tests]), 
+            BLANK(),
+            COUNTROWS(
+                FILTER(
+                    SUMMARIZE(
+                        'Test split category','Test split category'[Tests], 'Test split category'[Category],
+                        "Test Test",
+                            VAR RT = 
+                             CALCULATE(
+                                DIVIDE(
+                                    [Total Revenue],
+                                    CALCULATE(
+                                        CALCULATE(
+                                            [Total Revenue],
+                                            ALLEXCEPT('Test split category', 'Test split category'[Category])
+                                        ),
+                                        KEEPFILTERS('Test split category'[Tests])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALLEXCEPT('Test split category', 'Test split category'[Category]),
+                                    ORDERBY([Total Revenue], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Test split category'[Category] = "A+"
+                        ), 
+                    [Test Test]
+                )
+             )
+        )
+
+    MEASURE 'AllData'[Test Vol] =
+        IF(
+            [Total Test Volume] && ISINSCOPE('Test split category'[Tests]),
+            SELECTEDVALUE('Client split category'[Client]),        
+            VAR Tble = 
+                FILTER(
+                    ADDCOLUMNS(
+                        SUMMARIZE('Test split category','Test split category'[Tests], 'Test split category'[Category]),
+                        "Test's Vol ",
+                            VAR RT = 
+                            CALCULATE(
+                                DIVIDE(
+                                    [Total Test Volume],
+                                    CALCULATE(
+                                        [Total Test Volume],
+                                        ALL('Test split category'[Tests])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALL('Test split category'[Tests]),
+                                    ORDERBY([Total Test Volume], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Test split category'[Category] = "A+"
+                        ), 
+                    [Test's Vol ]
+                )
+            RETURN
+                IF(
+                    CALCULATE(
+                        [Total Test Volume],
+                        tble
+                    ) <> BLANK(),
+                    "Total Test Vol " & FORMAT(
+                        CALCULATE(
+                            [Total Test Volume],
+                            Tble
+                        ), "$0.0"
+                    ) & " | " & COUNTROWS(Tble) & " Test Vol"
+                )
+        )
+
+    MEASURE 'AllData'[Test Vol Contrib %] =
+        If(
+            [Total Test Volume],
+                DIVIDE(
+                [Total Test Volume],
+                [Test Vol Denom]
+            )
+        )
+
+    MEASURE 'AllData'[Test Vol Contrib Run Total] =
+        IF(
+            [Total Test Volume], 
+            CALCULATE(
+                [Test Vol Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL,
+                    ALL('Test split category'[Tests]),
+                    ORDERBY([Total Test Volume], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Test Vol Cum. %] =
+        IF(
+            [Total Test Volume],
+            CALCULATE(
+                [Test Vol Contrib %],
+                WINDOW(
+                    1, ABS,
+                    0, REL, 
+                    ALL('Test split category'[Tests]),
+                    ORDERBY([Total Test Volume], DESC)
+                )
+            )
+        )
+
+    MEASURE 'AllData'[Test Vol Denom] =
+        CALCULATE(
+            [Total Test Volume],
+            REMOVEFILTERS('Test split category'[Tests])
+        )
+
+    MEASURE 'AllData'[Test Vol Rank] =
+        IF(
+            [Total Test Volume],
+            RANKX(
+                ALL('Test split category'[Tests]),
+                [Total Test Volume],,
+                DESC,Dense
+            )
+        )
+
+    MEASURE 'AllData'[Test Vol RT Split] =
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE('Test split category'[Category])= "A+" &&
+            [Test Vol Contrib Run Total] <= [Pareto Value],
+            [Test Vol Contrib Run Total],
+        
+            SELECTEDVALUE('Test split category'[Category]) = "Others" &&
+            [Test Vol Contrib Run Total] > [Pareto Value],
+            [Test Vol Contrib Run Total]
+        )
+
+    MEASURE 'AllData'[Test Vol Run Total] =
+        CALCULATE(
+            [Total Test Volume],
+            WINDOW(
+                1,ABS,
+                0,REL,
+                ALLSELECTED('Test split category'[Tests]),
+                ORDERBY([Total Test Volume], DESC)
+        ))
+
+    MEASURE 'AllData'[Test's Vol] =
+        IF(
+            ISINSCOPE( 'Test split category'[Tests]), 
+            BLANK(),
+            COUNTROWS(
+                FILTER(
+                    SUMMARIZE(
+                        'Test split category','Test split category'[Tests], 'Test split category'[Category],
+                        "Test's Vol",
+                            VAR RT = 
+                             CALCULATE(
+                                DIVIDE(
+                                    [Total Test Volume],
+                                    CALCULATE(
+                                        CALCULATE(
+                                            [Total Test Volume],
+                                            ALLEXCEPT('Test split category', 'Test split category'[Category])
+                                        ),
+                                        KEEPFILTERS('Test split category'[Tests])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALLEXCEPT('Test split category', 'Test split category'[Category]),
+                                    ORDERBY([Total Test Volume], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Test split category'[Category] = "A+"
+                        ), 
+                    [Test's Vol]
+                )
+             )
+        )
+
+    MEASURE 'AllData'[Tests Rev] =
+        IF(
+            [Total Revenue] && ISINSCOPE('Test split category'[Tests]),
+            SELECTEDVALUE('Test split category'[Tests]),        
+            VAR Tble = 
+                FILTER(
+                    ADDCOLUMNS(
+                        SUMMARIZE('Test split category','Test split category'[Tests], 'Test split category'[Category]),
+                        "Test Test",
+                            VAR RT = 
+                            CALCULATE(
+                                DIVIDE(
+                                    [Total Revenue],
+                                    CALCULATE(
+                                        [Total Revenue],
+                                        ALL('Test split category'[Tests])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALL('Test split category'[Tests]),
+                                    ORDERBY([Total Revenue], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Test split category'[Category] = "A+"
+                        ), 
+                    [Test Test]
+                )
+            RETURN
+                IF(
+                    CALCULATE(
+                        [Total Revenue],
+                        tble
+                    ) <> BLANK(),
+                    "Total Revenue " & FORMAT(
+                        CALCULATE(
+                            [Total Revenue],
+                            Tble
+                        ), "$0.0"
+                    ) & " | " & COUNTROWS(Tble) & " Tests Rev"
+                )
+        )
+
+    MEASURE 'AllData'[Total Test Types] =
+        DISTINCTCOUNT(AllData[Test_Name])
+
+    MEASURE 'AllData'[Client Vol RT Split] =
+        SWITCH(
+            TRUE(),
+            SELECTEDVALUE('Client split category'[Category])= "A+" &&
+            [Client Vol Contrib Run Total] <= [Pareto Value],
+            [Client Vol Contrib Run Total],
+        
+            SELECTEDVALUE('Client split category'[Category]) = "Others" &&
+            [Client Vol Contrib Run Total] > [Pareto Value],
+            [Client Vol Contrib Run Total]
+        )
+
+    MEASURE 'AllData'[Client Vol Test] =
+        IF(
+            ISINSCOPE( 'Client split category'[Client]), 
+            BLANK(),
+            COUNTROWS(
+                FILTER(
+                    SUMMARIZE(
+                        'Client split category','Client split category'[Client], 'Client split category'[Category],
+                        "Client Vol Test",
+                            VAR RT = 
+                             CALCULATE(
+                                DIVIDE(
+                                    [Total Test Volume],
+                                    CALCULATE(
+                                        CALCULATE(
+                                            [Total Test Volume],
+                                            ALLEXCEPT('Client split category', 'Client split category'[Category])
+                                        ),
+                                        KEEPFILTERS('Client split category'[Client])
+                                    )
+                                ),
+                                WINDOW(
+                                    1, ABS,
+                                    0, REL, 
+                                    ALLEXCEPT('Client split category', 'Client split category'[Category]),
+                                    ORDERBY([Total Test Volume], DESC)
+                                )
+                            )
+                            VAR Th = [Pareto Value]
+                    RETURN
+                            RT <= Th && 'Client split category'[Category] = "A+"
+                        ), 
+                    [Client Vol]
+                )
+             )
+        )
+
+    MEASURE 'AllData'[A+ Client Count (Rev)] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Client split category',
+                        'Client split category'[Client],
+                        'Client split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Revenue],
+                                CALCULATE(
+                                    [Total Revenue],
+                                    ALL('Client split category'[Client])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Client split category'[Client]),
+                                ORDERBY([Total Revenue], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Client split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            COUNTROWS(Tble)
+
+    MEASURE 'AllData'[A+ Clients % (Rev) - work on this] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        -- Get all active clients (regardless of calendar filter!)
+        VAR AllActiveClients =
+            CALCULATE(
+                DISTINCTCOUNT('AllData'[Client_Facility]),
+                REMOVEFILTERS(DimCalendar)
+            )
+        -- Find Pareto A+ clients (based on criteria and mapping from split category)
+        VAR ParetoAPlusClients =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'AllData',
+                        'AllData'[Client_Facility]
+                    ),
+                    "IsAPlusPareto",
+                    VAR ClientCategory =
+                        LOOKUPVALUE(
+                            'Client split category'[Category],
+                            'Client split category'[Client],
+                            'AllData'[Client_Facility]
+                        )
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Revenue],
+                                CALCULATE(
+                                    [Total Revenue],
+                                    ALL('AllData'[Client_Facility])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('AllData'[Client_Facility]),
+                                ORDERBY([Total Revenue], DESC)
+                            )
+                        )
+                    RETURN RT <= selectedPareto && ClientCategory = "A+"
+                ),
+                [IsAPlusPareto]
+            )
+        VAR APlusCount = COUNTROWS(ParetoAPlusClients)
+        RETURN
+            DIVIDE(APlusCount, AllActiveClients) * 100
+
+    MEASURE 'AllData'[Total Clients] =
+        CALCULATE(
+                DISTINCTCOUNT(AllData[Client_Facility]))
+
+    MEASURE 'AllData'[A+ Clients Total Revenue] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Client split category',
+                        'Client split category'[Client],
+                        'Client split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Revenue],
+                                CALCULATE(
+                                    [Total Revenue],
+                                    ALL('Client split category'[Client])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Client split category'[Client]),
+                                ORDERBY([Total Revenue], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Client split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            CALCULATE([Total Revenue], Tble)
+
+    MEASURE 'AllData'[A+ Client Count (Vol)] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Client split category',
+                        'Client split category'[Client],
+                        'Client split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Test Volume],
+                                CALCULATE(
+                                    [Total Test Volume],
+                                    ALL('Client split category'[Client])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Client split category'[Client]),
+                                ORDERBY([Total Test Volume], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Client split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            COUNTROWS(Tble)
+
+    MEASURE 'AllData'[A+ Clients Total Volume] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Client split category',
+                        'Client split category'[Client],
+                        'Client split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Test Volume],
+                                CALCULATE(
+                                    [Total Test Volume],
+                                    ALL('Client split category'[Client])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Client split category'[Client]),
+                                ORDERBY([Total Test Volume], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Client split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            CALCULATE([Total Test Volume], Tble)
+
+    MEASURE 'AllData'[A+ Test Count (Rev)] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Test split category',
+                        'Test split category'[Tests],
+                        'Test split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Revenue],
+                                CALCULATE(
+                                    [Total Revenue],
+                                    ALL('Test split category'[Tests])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Test split category'[Tests]),
+                                ORDERBY([Total Revenue], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Test split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            COUNTROWS(Tble)
+
+    MEASURE 'AllData'[A+ Test Count (Vol)] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Test split category',
+                        'Test split category'[Tests],
+                        'Test split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Test Volume],
+                                CALCULATE(
+                                    [Total Test Volume],
+                                    ALL('Test split category'[Tests])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Test split category'[Tests]),
+                                ORDERBY([Total Test Volume], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Test split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            COUNTROWS(Tble)
+
+    MEASURE 'AllData'[A+ Tests Total Revenue] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Test split category',
+                        'Test split category'[Tests],
+                        'Test split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Revenue],
+                                CALCULATE(
+                                    [Total Revenue],
+                                    ALL('Test split category'[Tests])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Test split category'[Tests]),
+                                ORDERBY([Total Revenue], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Test split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            CALCULATE([Total Revenue], Tble)
+
+    MEASURE 'AllData'[A+ Tests Total Volume] =
+        VAR selectedPareto = SELECTEDVALUE(Parameter[Parameter])
+        VAR Tble =
+            FILTER (
+                ADDCOLUMNS (
+                    SUMMARIZE(
+                        'Test split category',
+                        'Test split category'[Tests],
+                        'Test split category'[Category]
+                    ),
+                    "Test",
+                    VAR RT =
+                        CALCULATE (
+                            DIVIDE (
+                                [Total Test Volume],
+                                CALCULATE(
+                                    [Total Test Volume],
+                                    ALL('Test split category'[Tests])
+                                )
+                            ),
+                            WINDOW (
+                                1, ABS,
+                                0, REL,
+                                ALL('Test split category'[Tests]),
+                                ORDERBY([Total Test Volume], DESC)
+                            )
+                        )
+                    VAR Th = selectedPareto
+                    RETURN RT <= Th && 'Test split category'[Category] = "A+"
+                ),
+                [Test]
+            )
+        RETURN
+            CALCULATE([Total Test Volume], Tble)
+
+EVALUATE { 1 }

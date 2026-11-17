@@ -1,0 +1,50 @@
+Area_Code,Building_Code,Building,Level,Zone,Area_Sort
+CELL-L1-N1,CELL,Cell Manufacturing Building,L1 Electrode,N1,1
+CELL-L1-N2,CELL,Cell Manufacturing Building,L1 Electrode,N2,2
+CELL-L1-N3,CELL,Cell Manufacturing Building,L1 Electrode,N3,3
+CELL-L1-S1,CELL,Cell Manufacturing Building,L1 Electrode,S1,4
+CELL-L1-S2,CELL,Cell Manufacturing Building,L1 Electrode,S2,5
+CELL-L1-S3,CELL,Cell Manufacturing Building,L1 Electrode,S3,6
+CELL-L2-N1,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,N1,7
+CELL-L2-N2,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,N2,8
+CELL-L2-N3,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,N3,9
+CELL-L2-S1,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,S1,10
+CELL-L2-S2,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,S2,11
+CELL-L2-S3,CELL,Cell Manufacturing Building,L2 Assembly Dry Room,S3,12
+CELL-L3-N1,CELL,Cell Manufacturing Building,L3 Formation & Aging,N1,13
+CELL-L3-N2,CELL,Cell Manufacturing Building,L3 Formation & Aging,N2,14
+CELL-L3-N3,CELL,Cell Manufacturing Building,L3 Formation & Aging,N3,15
+CELL-L3-S1,CELL,Cell Manufacturing Building,L3 Formation & Aging,S1,16
+CELL-L3-S2,CELL,Cell Manufacturing Building,L3 Formation & Aging,S2,17
+CELL-L3-S3,CELL,Cell Manufacturing Building,L3 Formation & Aging,S3,18
+CELL-Roof-N1,CELL,Cell Manufacturing Building,Roof,N1,19
+CELL-Roof-N2,CELL,Cell Manufacturing Building,Roof,N2,20
+CELL-Roof-N3,CELL,Cell Manufacturing Building,Roof,N3,21
+CELL-Roof-S1,CELL,Cell Manufacturing Building,Roof,S1,22
+CELL-Roof-S2,CELL,Cell Manufacturing Building,Roof,S2,23
+CELL-Roof-S3,CELL,Cell Manufacturing Building,Roof,S3,24
+CUB-L1-E,CUB,Central Utility Building,L1,E,25
+CUB-L1-C,CUB,Central Utility Building,L1,C,26
+CUB-L1-W,CUB,Central Utility Building,L1,W,27
+CUB-L2-E,CUB,Central Utility Building,L2,E,28
+CUB-L2-C,CUB,Central Utility Building,L2,C,29
+CUB-L2-W,CUB,Central Utility Building,L2,W,30
+CUB-Roof-E,CUB,Central Utility Building,Roof,E,31
+CUB-Roof-C,CUB,Central Utility Building,Roof,C,32
+CUB-Roof-W,CUB,Central Utility Building,Roof,W,33
+OSB-L1-A,OSB,Office Support Building,L1,A,34
+OSB-L2-A,OSB,Office Support Building,L2,A,35
+NRU-Grade-N,NRU,NMP Solvent Recovery Plant,Grade,N,36
+NRU-Grade-S,NRU,NMP Solvent Recovery Plant,Grade,S,37
+ELB-L1-A,ELB,Electrolyte & Chemical Storage,L1,A,38
+ELB-L2-A,ELB,Electrolyte & Chemical Storage,L2,A,39
+WWT-Grade-A,WWT,Wastewater Treatment,Grade,A,40
+WWT-Grade-B,WWT,Wastewater Treatment,Grade,B,41
+WWT-L1-A,WWT,Wastewater Treatment,L1,A,42
+WWT-L1-B,WWT,Wastewater Treatment,L1,B,43
+SUB-Grade-A,SUB,Main Substation,Grade,A,44
+SUB-Grade-B,SUB,Main Substation,Grade,B,45
+UGS-Below-N,UGS,Site Underground & Civil,Below Grade,N,46
+UGS-Below-S,UGS,Site Underground & Civil,Below Grade,S,47
+UGS-Below-E,UGS,Site Underground & Civil,Below Grade,E,48
+UGS-Below-W,UGS,Site Underground & Civil,Below Grade,W,49

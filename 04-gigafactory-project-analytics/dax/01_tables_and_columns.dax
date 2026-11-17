@@ -1,0 +1,77 @@
+// =====================================================================
+// Project Saguaro (fictional battery cell gigafactory)
+// Calculated tables and columns
+// Add each one with Modeling > New table / New column.
+// =====================================================================
+
+
+// ---------- Home table for measures (Modeling > New table) ----------
+_Measures = ROW ( "x", BLANK () )
+// After the measures are added, hide the [x] column. The table icon
+// changes to a calculator and moves to the top of the Data pane.
+
+
+// ---------- Date table (Modeling > New table) ----------
+// Then: Table tools > Mark as date table > Date column = [Date]
+dim_date =
+VAR StartDate = DATE ( 2024, 1, 1 )
+VAR EndDate = DATE ( 2027, 12, 31 )
+RETURN
+    ADDCOLUMNS (
+        CALENDAR ( StartDate, EndDate ),
+        "Year", YEAR ( [Date] ),
+        "Month No", MONTH ( [Date] ),
+        "Month", FORMAT ( [Date], "MMM" ),
+        "Year Month", FORMAT ( [Date], "YYYY-MM" ),
+        "Quarter", "Q" & FORMAT ( [Date], "Q" ),
+        "Year Quarter", YEAR ( [Date] ) & " Q" & FORMAT ( [Date], "Q" ),
+        "Week Ending", [Date] + MOD ( 6 - WEEKDAY ( [Date], 1 ), 7 )   // Friday week-ending, matches progress data
+    )
+// Sort dim_date[Month] by dim_date[Month No].
+
+
+// ---------- Calculated columns ----------
+
+// fact_rfi: age bucket as of the data date (closed RFIs use their close date)
+fact_rfi[Age Days] =
+VAR DataDate = MAX ( project_info[Data_Date] )
+VAR EndDate =
+    IF ( ISBLANK ( fact_rfi[Date_Closed] ), DataDate, fact_rfi[Date_Closed] )
+RETURN
+    INT ( EndDate - fact_rfi[Date_Raised] )
+
+fact_rfi[Age Bucket] =
+SWITCH (
+    TRUE (),
+    fact_rfi[Age Days] <= 7, "0-7 days",
+    fact_rfi[Age Days] <= 14, "8-14 days",
+    fact_rfi[Age Days] <= 30, "15-30 days",
+    "Over 30 days"
+)
+
+fact_rfi[Age Bucket Sort] =
+SWITCH ( fact_rfi[Age Bucket], "0-7 days", 1, "8-14 days", 2, "15-30 days", 3, 4 )
+// Sort [Age Bucket] by [Age Bucket Sort].
+
+// fact_procurement: float = days between forecast delivery and required-on-site
+fact_procurement[Float Days] =
+INT ( fact_procurement[ROS_Date] - fact_procurement[Forecast_Delivery_Date] )
+
+// fact_document_revisions: review cycle time for documents returned by the reviewer
+fact_document_revisions[Review Cycle Days] =
+IF (
+    NOT ISBLANK ( fact_document_revisions[Review_Return_Date] ),
+    INT ( fact_document_revisions[Review_Return_Date] - fact_document_revisions[Actual_Issue_Date] )
+)
+
+// dim_subsystem: completion status label used in the turnover tracker
+dim_subsystem[MC Status] =
+VAR DataDate = MAX ( project_info[Data_Date] )
+RETURN
+    SWITCH (
+        TRUE (),
+        NOT ISBLANK ( dim_subsystem[Actual_Turnover_Date] ), "Turned Over",
+        NOT ISBLANK ( dim_subsystem[Actual_MC_Date] ), "Mechanically Complete",
+        dim_subsystem[Planned_MC_Date] < DataDate, "Behind Plan",
+        "In Progress"
+    )

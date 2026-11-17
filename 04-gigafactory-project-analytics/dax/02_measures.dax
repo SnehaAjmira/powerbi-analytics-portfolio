@@ -1,0 +1,462 @@
+// =====================================================================
+// Project Saguaro (fictional battery cell gigafactory)
+// All measures, written for Power BI DAX query view.
+//
+// How to load them in one step:
+//   1. Create the _Measures and dim_date tables first (01_tables_and_columns.dax).
+//   2. Open DAX query view, paste this whole file, and click Run.
+//   3. Click "Update model with changes" above DEFINE. Every measure is
+//      added to the _Measures table.
+//
+// Conventions
+//   * dim_date has ONE active relationship to each fact table (see model/relationships.md).
+//     Other date columns are filtered directly with REMOVEFILTERS ( dim_date ).
+//   * "(Cum)" measures are for S-curves on a date axis. Actual curves stop at the data date.
+//   * KPI measures without "(Cum)" are evaluated as of the data date.
+// =====================================================================
+
+DEFINE
+
+    // ------------------------------------------------------------ General
+    MEASURE '_Measures'[Data Date] = MAX ( project_info[Data_Date] )
+
+    MEASURE '_Measures'[Curve End Date] =
+        // last date on the axis, capped at the data date (used by actual curves and KPIs)
+        MIN ( MAX ( dim_date[Date] ), [Data Date] )
+
+    // ------------------------------------------------------------ Engineering: documents
+    MEASURE '_Measures'[Documents] =
+        CALCULATE ( DISTINCTCOUNT ( fact_document_revisions[Doc_No] ), REMOVEFILTERS ( dim_date ) )
+
+    MEASURE '_Measures'[IFC Planned (Cum)] =
+        VAR d = MAX ( dim_date[Date] )
+        RETURN
+            CALCULATE (
+                COUNTROWS ( fact_document_revisions ),
+                REMOVEFILTERS ( dim_date ),
+                fact_document_revisions[Revision] = "0",
+                fact_document_revisions[Planned_Issue_Date] <= d
+            )
+
+    MEASURE '_Measures'[IFC Actual (Cum)] =
+        VAR d = MAX ( dim_date[Date] )
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE (
+                    COUNTROWS ( fact_document_revisions ),
+                    REMOVEFILTERS ( dim_date ),
+                    fact_document_revisions[Revision] = "0",
+                    fact_document_revisions[Actual_Issue_Date] <= d
+                )
+            )
+
+    MEASURE '_Measures'[IFC % Planned] =
+        VAR dd = [Data Date]
+        RETURN
+            DIVIDE (
+                CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),
+                    fact_document_revisions[Revision] = "0", fact_document_revisions[Planned_Issue_Date] <= dd ),
+                CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),
+                    fact_document_revisions[Revision] = "0" )
+            )
+
+    MEASURE '_Measures'[IFC % Complete] =
+        VAR dd = [Data Date]
+        RETURN
+            DIVIDE (
+                CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),
+                    fact_document_revisions[Revision] = "0", fact_document_revisions[Actual_Issue_Date] <= dd ),
+                CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),
+                    fact_document_revisions[Revision] = "0" )
+            )
+
+    MEASURE '_Measures'[IFC Variance (pts)] = ( [IFC % Complete] - [IFC % Planned] ) * 100
+
+    MEASURE '_Measures'[IFC Behind Plan] =
+        // documents whose IFC was planned by the data date but not yet issued
+        VAR dd = [Data Date]
+        RETURN
+            CALCULATE (
+                COUNTROWS ( fact_document_revisions ),
+                REMOVEFILTERS ( dim_date ),
+                fact_document_revisions[Revision] = "0",
+                fact_document_revisions[Planned_Issue_Date] <= dd,
+                ISBLANK ( fact_document_revisions[Actual_Issue_Date] )
+            )
+
+    MEASURE '_Measures'[Reviews Outstanding] =
+        CALCULATE (
+            COUNTROWS ( fact_document_revisions ),
+            REMOVEFILTERS ( dim_date ),
+            NOT ISBLANK ( fact_document_revisions[Review_Due_Date] ),
+            ISBLANK ( fact_document_revisions[Review_Return_Date] )
+        )
+
+    MEASURE '_Measures'[Reviews Overdue] =
+        VAR dd = [Data Date]
+        RETURN
+            CALCULATE (
+                COUNTROWS ( fact_document_revisions ),
+                REMOVEFILTERS ( dim_date ),
+                NOT ISBLANK ( fact_document_revisions[Review_Due_Date] ),
+                ISBLANK ( fact_document_revisions[Review_Return_Date] ),
+                fact_document_revisions[Review_Due_Date] < dd
+            )
+
+    MEASURE '_Measures'[Avg Review Cycle (days)] =
+        AVERAGE ( fact_document_revisions[Review Cycle Days] )
+
+    MEASURE '_Measures'[First-Pass Approval %] =
+        // share of first submissions (Rev A) returned Code 1 or 2
+        VAR Returned =
+            CALCULATE ( COUNTROWS ( fact_document_revisions ),
+                fact_document_revisions[Revision] = "A", fact_document_revisions[Review_Code] <> "" )
+        VAR Approved =
+            CALCULATE ( COUNTROWS ( fact_document_revisions ),
+                fact_document_revisions[Revision] = "A", fact_document_revisions[Review_Code] IN { "1", "2" } )
+        RETURN DIVIDE ( Approved, Returned )
+
+    // ------------------------------------------------------------ Engineering: RFIs
+    MEASURE '_Measures'[RFIs Raised] = COUNTROWS ( fact_rfi )
+
+    MEASURE '_Measures'[RFIs Open] =
+        // open as of the axis date (or the data date on a card)
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE (
+                    COUNTROWS ( fact_rfi ),
+                    REMOVEFILTERS ( dim_date ),
+                    fact_rfi[Status] <> "Void",
+                    fact_rfi[Date_Raised] <= d,
+                    ISBLANK ( fact_rfi[Date_Closed] ) || fact_rfi[Date_Closed] > d
+                )
+            )
+
+    MEASURE '_Measures'[RFIs Overdue] =
+        // no response yet and past the required date
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE (
+                    COUNTROWS ( fact_rfi ),
+                    REMOVEFILTERS ( dim_date ),
+                    fact_rfi[Status] <> "Void",
+                    fact_rfi[Date_Raised] <= d,
+                    fact_rfi[Date_Required] < d,
+                    ISBLANK ( fact_rfi[Date_Responded] ) || fact_rfi[Date_Responded] > d
+                )
+            )
+
+    MEASURE '_Measures'[Avg Days to Respond] =
+        AVERAGEX (
+            FILTER ( fact_rfi, NOT ISBLANK ( fact_rfi[Date_Responded] ) ),
+            INT ( fact_rfi[Date_Responded] - fact_rfi[Date_Raised] )
+        )
+
+    MEASURE '_Measures'[RFI On-Time Response %] =
+        VAR Responded = FILTER ( fact_rfi, NOT ISBLANK ( fact_rfi[Date_Responded] ) )
+        RETURN
+            DIVIDE (
+                COUNTROWS ( FILTER ( Responded, fact_rfi[Date_Responded] <= fact_rfi[Date_Required] ) ),
+                COUNTROWS ( Responded )
+            )
+
+    MEASURE '_Measures'[RFIs with Cost Impact] =
+        CALCULATE ( COUNTROWS ( fact_rfi ), fact_rfi[Cost_Impact] = "Y" )
+
+    // ------------------------------------------------------------ Submittals
+    MEASURE '_Measures'[Submittals] = COUNTROWS ( fact_submittals )
+
+    MEASURE '_Measures'[Submittals Under Review] =
+        CALCULATE ( COUNTROWS ( fact_submittals ), REMOVEFILTERS ( dim_date ), fact_submittals[Status] = "Under Review" )
+
+    MEASURE '_Measures'[Submittals Overdue] =
+        VAR dd = [Data Date]
+        RETURN
+            CALCULATE (
+                COUNTROWS ( fact_submittals ),
+                REMOVEFILTERS ( dim_date ),
+                fact_submittals[Status] = "Under Review",
+                fact_submittals[Date_Due] < dd
+            )
+
+    MEASURE '_Measures'[Submittal Approval %] =
+        DIVIDE (
+            CALCULATE ( COUNTROWS ( fact_submittals ),
+                fact_submittals[Action_Code] IN { "A - Approved", "B - Approved as Noted" } ),
+            CALCULATE ( COUNTROWS ( fact_submittals ), fact_submittals[Status] = "Returned" )
+        )
+
+    MEASURE '_Measures'[Avg Submittal Turnaround (days)] =
+        AVERAGEX (
+            FILTER ( fact_submittals, NOT ISBLANK ( fact_submittals[Date_Returned] ) ),
+            INT ( fact_submittals[Date_Returned] - fact_submittals[Date_Submitted] )
+        )
+
+    // ------------------------------------------------------------ Procurement
+    MEASURE '_Measures'[PO Value] = SUM ( fact_procurement[Line_Value_USD] )
+
+    MEASURE '_Measures'[PO Lines] = COUNTROWS ( fact_procurement )
+
+    MEASURE '_Measures'[Lines Delivered %] =
+        DIVIDE (
+            CALCULATE ( COUNTROWS ( fact_procurement ), NOT ISBLANK ( fact_procurement[Actual_Delivery_Date] ) ),
+            [PO Lines]
+        )
+
+    MEASURE '_Measures'[Delivered On Time %] =
+        VAR Delivered = FILTER ( fact_procurement, NOT ISBLANK ( fact_procurement[Actual_Delivery_Date] ) )
+        RETURN
+            DIVIDE (
+                COUNTROWS ( FILTER ( Delivered, fact_procurement[Actual_Delivery_Date] <= fact_procurement[ROS_Date] ) ),
+                COUNTROWS ( Delivered )
+            )
+
+    MEASURE '_Measures'[Lines Late vs ROS] =
+        CALCULATE ( COUNTROWS ( fact_procurement ), fact_procurement[Expediting_Status] = "Late vs ROS" )
+
+    MEASURE '_Measures'[Value at Risk] =
+        CALCULATE ( [PO Value], fact_procurement[Expediting_Status] IN { "Late vs ROS", "At Risk" } )
+
+    MEASURE '_Measures'[Avg Float (open lines, days)] =
+        CALCULATE (
+            AVERAGE ( fact_procurement[Float Days] ),
+            ISBLANK ( fact_procurement[Actual_Delivery_Date] )
+        )
+
+    MEASURE '_Measures'[Long-Lead Items Open] =
+        CALCULATE (
+            COUNTROWS ( fact_procurement ),
+            fact_procurement[Long_Lead] = "Y",
+            ISBLANK ( fact_procurement[Actual_Delivery_Date] )
+        )
+
+    // ------------------------------------------------------------ Construction: earned value (hours)
+    MEASURE '_Measures'[Budget Hours] = SUM ( dim_cwp[Budget_Hours] )
+
+    MEASURE '_Measures'[Planned Hours (Cum)] =
+        VAR d = MAX ( dim_date[Date] )
+        RETURN
+            CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),
+                fact_progress_weekly[Week_Ending] <= d )
+
+    MEASURE '_Measures'[Earned Hours (Cum)] =
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),
+                    fact_progress_weekly[Week_Ending] <= d )
+            )
+
+    MEASURE '_Measures'[Actual Hours (Cum)] =
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE ( SUM ( fact_progress_weekly[Actual_Hours] ), REMOVEFILTERS ( dim_date ),
+                    fact_progress_weekly[Week_Ending] <= d )
+            )
+
+    MEASURE '_Measures'[Planned % (Cum)] = DIVIDE ( [Planned Hours (Cum)], [Budget Hours] )
+
+    MEASURE '_Measures'[Earned % (Cum)] = DIVIDE ( [Earned Hours (Cum)], [Budget Hours] )
+
+    MEASURE '_Measures'[Planned % to Date] =
+        VAR dd = [Data Date]
+        RETURN
+            DIVIDE (
+                CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),
+                    fact_progress_weekly[Week_Ending] <= dd ),
+                [Budget Hours]
+            )
+
+    MEASURE '_Measures'[Earned % to Date] =
+        DIVIDE ( CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ) ), [Budget Hours] )
+
+    MEASURE '_Measures'[SPI] =
+        // schedule performance index, cumulative to the axis date / data date
+        VAR d = [Curve End Date]
+        VAR Earned =
+            CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),
+                fact_progress_weekly[Week_Ending] <= d )
+        VAR Planned =
+            CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),
+                fact_progress_weekly[Week_Ending] <= d )
+        RETURN IF ( MIN ( dim_date[Date] ) <= [Data Date], DIVIDE ( Earned, Planned ) )
+
+    MEASURE '_Measures'[CPI] =
+        // cost (hours) performance index: earned / actual
+        VAR d = [Curve End Date]
+        VAR Earned =
+            CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),
+                fact_progress_weekly[Week_Ending] <= d )
+        VAR Actual =
+            CALCULATE ( SUM ( fact_progress_weekly[Actual_Hours] ), REMOVEFILTERS ( dim_date ),
+                fact_progress_weekly[Week_Ending] <= d )
+        RETURN IF ( MIN ( dim_date[Date] ) <= [Data Date], DIVIDE ( Earned, Actual ) )
+
+    MEASURE '_Measures'[Productivity Factor] = DIVIDE ( 1, [CPI] )   // > 1.0 means more hours spent than earned
+
+    MEASURE '_Measures'[Weekly SPI] =
+        DIVIDE ( SUM ( fact_progress_weekly[Earned_Hours] ), SUM ( fact_progress_weekly[Planned_Hours] ) )
+
+    MEASURE '_Measures'[SPI Status Color] =
+        SWITCH ( TRUE (), ISBLANK ( [SPI] ), "#BFBFBF", [SPI] >= 0.98, "#2E7D32", [SPI] >= 0.92, "#F4B183", "#C00000" )
+
+    MEASURE '_Measures'[CPI Status Color] =
+        SWITCH ( TRUE (), ISBLANK ( [CPI] ), "#BFBFBF", [CPI] >= 0.98, "#2E7D32", [CPI] >= 0.92, "#F4B183", "#C00000" )
+
+    // ------------------------------------------------------------ Completions: tags, ITRs, punch, turnover
+    MEASURE '_Measures'[Tags] = CALCULATE ( COUNTROWS ( fact_tag_register ), REMOVEFILTERS ( dim_date ) )
+
+    MEASURE '_Measures'[Tags Installed %] =
+        DIVIDE (
+            CALCULATE ( COUNTROWS ( fact_tag_register ), REMOVEFILTERS ( dim_date ),
+                fact_tag_register[Install_Status] = "Installed" ),
+            [Tags]
+        )
+
+    MEASURE '_Measures'[ITR A Total] =
+        CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = "A" )
+
+    MEASURE '_Measures'[ITR A Complete] =
+        CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = "A",
+            NOT ISBLANK ( fact_itr[Completed_Date] ) )
+
+    MEASURE '_Measures'[ITR A %] = DIVIDE ( [ITR A Complete], [ITR A Total] )
+
+    MEASURE '_Measures'[ITR B Total] =
+        CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = "B" )
+
+    MEASURE '_Measures'[ITR B Complete] =
+        CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = "B",
+            NOT ISBLANK ( fact_itr[Completed_Date] ) )
+
+    MEASURE '_Measures'[ITR B %] = DIVIDE ( [ITR B Complete], [ITR B Total] )
+
+    MEASURE '_Measures'[ITR Planned (Cum)] =
+        VAR d = MAX ( dim_date[Date] )
+        RETURN
+            CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Planned_Date] <= d )
+
+    MEASURE '_Measures'[ITR Completed (Cum)] =
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Completed_Date] <= d )
+            )
+
+    MEASURE '_Measures'[ITRs Behind Plan] =
+        VAR dd = [Data Date]
+        RETURN
+            CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ),
+                fact_itr[Planned_Date] <= dd, ISBLANK ( fact_itr[Completed_Date] ) )
+
+    MEASURE '_Measures'[Punch Open] =
+        // open as of the axis date (burndown) or the data date (card)
+        VAR d = [Curve End Date]
+        RETURN
+            IF (
+                MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE (
+                    COUNTROWS ( fact_punch ),
+                    REMOVEFILTERS ( dim_date ),
+                    fact_punch[Date_Raised] <= d,
+                    ISBLANK ( fact_punch[Date_Cleared] ) || fact_punch[Date_Cleared] > d
+                )
+            )
+
+    MEASURE '_Measures'[Punch A Open] = CALCULATE ( [Punch Open], fact_punch[Category] = "A" )
+
+    MEASURE '_Measures'[Punch Raised] = COUNTROWS ( fact_punch )
+
+    MEASURE '_Measures'[Punch Cleared] =
+        CALCULATE ( COUNTROWS ( fact_punch ), USERELATIONSHIP ( fact_punch[Date_Cleared], dim_date[Date] ) )
+
+    MEASURE '_Measures'[Punch Overdue] =
+        VAR dd = [Data Date]
+        RETURN
+            CALCULATE ( COUNTROWS ( fact_punch ), REMOVEFILTERS ( dim_date ),
+                fact_punch[Status] = "Open", fact_punch[Target_Date] < dd )
+
+    MEASURE '_Measures'[Subsystems] = COUNTROWS ( dim_subsystem )
+
+    MEASURE '_Measures'[MC Planned (Cum)] =
+        // dim_subsystem has no relationship to dim_date, so the axis date is applied directly
+        VAR d = MAX ( dim_date[Date] )
+        RETURN CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Planned_MC_Date] <= d )
+
+    MEASURE '_Measures'[MC Actual (Cum)] =
+        VAR d = [Curve End Date]
+        RETURN
+            IF ( MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Actual_MC_Date] <= d ) )
+
+    MEASURE '_Measures'[Turnover Planned (Cum)] =
+        VAR d = MAX ( dim_date[Date] )
+        RETURN CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Planned_Turnover_Date] <= d )
+
+    MEASURE '_Measures'[Turnover Actual (Cum)] =
+        VAR d = [Curve End Date]
+        RETURN
+            IF ( MIN ( dim_date[Date] ) <= [Data Date],
+                CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Actual_Turnover_Date] <= d ) )
+
+    MEASURE '_Measures'[Subsystems Behind MC Plan] =
+        CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[MC Status] = "Behind Plan" )
+
+    MEASURE '_Measures'[Subsystem Ready for MC] =
+        // for a subsystem table visual: all A sheets done and no open category A punch
+        IF (
+            HASONEVALUE ( dim_subsystem[Subsystem_Code] ),
+            IF ( [ITR A %] = 1 && COALESCE ( [Punch A Open], 0 ) = 0, "Ready", "Not Ready" )
+        )
+
+    // ------------------------------------------------------------ Safety
+    MEASURE '_Measures'[Manhours] = SUM ( fact_safety_weekly[Manhours] )
+
+    MEASURE '_Measures'[Recordables] = SUM ( fact_safety_weekly[Recordables] )
+
+    MEASURE '_Measures'[TRIR] =
+        // total recordable incident rate per 200,000 hours (OSHA basis)
+        DIVIDE ( [Recordables] * 200000, [Manhours] )
+
+    MEASURE '_Measures'[LTIR] =
+        DIVIDE ( SUM ( fact_safety_weekly[Lost_Time_Injuries] ) * 200000, [Manhours] )
+
+    MEASURE '_Measures'[TRIR Rolling 12M] =
+        CALCULATE ( [TRIR], DATESINPERIOD ( dim_date[Date], MAX ( dim_date[Date] ), -12, MONTH ) )
+
+    MEASURE '_Measures'[Near Miss Ratio] =
+        // near misses reported per recordable (higher = stronger reporting culture)
+        DIVIDE ( SUM ( fact_safety_weekly[Near_Misses] ), [Recordables] )
+
+    // ------------------------------------------------------------ Quality
+    MEASURE '_Measures'[NCRs Raised] = COUNTROWS ( fact_ncr )
+
+    MEASURE '_Measures'[NCRs Open] =
+        CALCULATE ( COUNTROWS ( fact_ncr ), REMOVEFILTERS ( dim_date ), fact_ncr[Status] = "Open" )
+
+    MEASURE '_Measures'[Avg Days to Close NCR] =
+        AVERAGEX (
+            FILTER ( fact_ncr, NOT ISBLANK ( fact_ncr[Date_Closed] ) ),
+            INT ( fact_ncr[Date_Closed] - fact_ncr[Date_Opened] )
+        )
+
+EVALUATE
+ROW (
+    "Data Date", [Data Date],
+    "IFC % Complete", [IFC % Complete],
+    "RFIs Open", [RFIs Open],
+    "SPI", [SPI],
+    "CPI", [CPI],
+    "ITR A %", [ITR A %],
+    "Punch A Open", [Punch A Open],
+    "TRIR", [TRIR]
+)

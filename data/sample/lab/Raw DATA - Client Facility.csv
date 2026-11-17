@@ -1,0 +1,501 @@
+ClientFacilityName,BillTo_City,BillTo_StateProvince,BillTo_Country,Date,Active Client,Region,Test Facility,AccountNo,Facility_Type
+Northstar Northgate Apothecary,Dallas,TX,USA,2022-05-03,Yes,South,US Central,AC100000,503A
+Horizon Bayou Specialty Pharmacy,Oakland,CA,USA,2026-10-02,Yes,West,US Central,AC100001,503A
+Oakridge Brightwater Pharmacy,Richmond,VA,USA,2022-02-02,Yes,South,US Central,AC100002,503A
+Summit Magnolia Wellness Pharmacy,Mesa,AZ,USA,2026-09-17,Yes,West,US Central,AC100003,503A
+Beacon Fry Compounding Pharmacy,Plano,TX,USA,2022-09-05,Yes,South,US Central,AC100004,503A
+Liberty Northstar Outsourcing Facility,El Paso,TX,USA,2022-12-01,Yes,South,US Central,AC100005,503B
+Mesa Harbor Pharma Services,Dallas,TX,USA,2022-02-27,Yes,South,US Central,AC100006,503B
+Highland Mcdonald Compounding Pharmacy,Sugar Land,TX,USA,2022-08-04,Yes,South,US Central,AC100007,503A
+Maple Pioneer Compounding Center,Dallas,TX,USA,2022-07-11,Yes,South,US Central,AC100008,503A
+Redwood Northgate Specialty Pharmacy,Boise,ID,USA,2021-03-04,Yes,West,US Central,AC100009,503A
+Sage Simpson Apothecary,Tulsa,OK,USA,2021-07-23,Yes,South,US Central,AC100010,503A
+Mesa Allen Compounding Center,Beverly Hills,CA,USA,2021-04-24,Yes,West,US Central,AC100011,503A
+Summit Swanson Wellness Pharmacy,Sugar Land,TX,USA,2026-05-24,Yes,South,US Central,AC100012,503A
+Trinity Sterling Compounding Center,Torrance,CA,USA,2024-04-07,Yes,West,US Central,AC100013,503A
+Liberty Adams Specialty Pharmacy,Minneapolis,MN,USA,2021-12-20,Yes,Midwest,US Central,AC100014,503A
+Evergreen Houston Laboratories,San Diego,CA,USA,2021-05-15,Yes,West,US Central,AC100015,GMP
+Trinity Moss Compounding Pharmacy,Dallas,TX,USA,2021-03-11,Yes,South,US Central,AC100016,503A
+Horizon Freeman Rx,Savannah,GA,USA,2022-01-28,Yes,South,US Central,AC100017,503A
+Sage Olson Pharmacy,El Paso,TX,USA,2024-01-31,Yes,South,US Central,AC100018,503A
+Union Brightwater Compounding Pharmacy,Austin,TX,USA,2023-07-29,Yes,South,US Central,AC100019,503A
+Desert Highland Family Pharmacy,Irvine,CA,USA,2023-05-10,Yes,West,US Central,AC100020,503A
+Bayou Romero Rx,Torrance,CA,USA,2022-06-19,Yes,West,US Central,AC100021,503A
+Apex Highland Rx,Plano,TX,USA,2021-07-14,Yes,South,US Central,AC100022,503A
+Southpoint Smith Pharmacy,Honolulu,HI,USA,2024-02-14,Yes,West,US Central,AC100023,503A
+Sage Pinnacle Compounding Pharmacy,Houston,TX,USA,2023-04-29,Yes,South,US Central,AC100024,503A
+Southpoint Redwood Compounding Pharmacy,Houston,TX,USA,2024-02-20,Yes,South,US Central,AC100025,503A
+Apex Coleman Compounding Center,Sugar Land,TX,USA,2023-05-06,Yes,South,US Central,AC100026,503A
+Summit Sierra Compounding Center,The Woodlands,TX,USA,2021-09-20,Yes,South,US Central,AC100027,503A
+Mesa Snyder Wellness Pharmacy,Irvine,CA,USA,2021-01-27,Yes,West,US Central,AC100028,503A
+Mesa Barrett Sterile Outsourcing,Sacramento,CA,USA,2022-07-02,Yes,West,US Central,AC100029,503B
+Sierra Shelton Apothecary,Torrance,CA,USA,2021-04-03,Yes,West,US Central,AC100030,503A
+Pinnacle Unity Specialty Pharmacy,Beverly Hills,CA,USA,2021-06-25,Yes,West,US Central,AC100031,503A
+Copper Brown Compounding Center,Los Angeles,CA,USA,2021-01-29,Yes,West,US Central,AC100032,503A
+Golden Estrada Sterile Outsourcing,Oakland,CA,USA,2022-04-10,Yes,West,US Central,AC100033,503B
+Aspen Roth Apothecary,New Orleans,LA,USA,2022-09-22,Yes,South,US Central,AC100034,503A
+Redwood Aspen Wellness Pharmacy,San Jose,CA,USA,2021-11-24,Yes,West,US Central,AC100035,503A
+Copper Brown Family Pharmacy,Lubbock,TX,USA,2021-11-01,Yes,South,US Central,AC100036,503A
+Pioneer Snyder Rx,Phoenix,AZ,USA,2024-10-14,Yes,West,US Central,AC100037,503A
+Aspen Thompson Pharmaceuticals,Knoxville,TN,USA,2021-12-13,Yes,South,US Central,AC100038,GMP
+Meadow Pioneer Compounding Pharmacy,Oakland,CA,USA,2022-03-02,Yes,West,US Central,AC100039,503A
+Sage Mason Compounding Pharmacy,Irvine,CA,USA,2021-11-11,Yes,West,US Central,AC100040,503A
+Sage Griffin Apothecary,New York,NY,USA,2024-03-15,Yes,Northeast,US Central,AC100041,503A
+Aspen Mendez Apothecary,Las Vegas,NV,USA,2021-10-14,Yes,West,US Central,AC100042,503A
+Beacon Jarvis Family Pharmacy,Memphis,TN,USA,2021-05-25,Yes,South,US Central,AC100043,503A
+Cedar Keystone Apothecary,El Paso,TX,USA,2022-08-08,Yes,South,US Central,AC100044,503A
+Maple Russell Biologics,El Paso,TX,USA,2022-01-08,Yes,South,US Central,AC100045,GMP
+Sierra Meadow Compounding Pharmacy,Nashville,TN,USA,2022-10-28,Yes,South,US Central,AC100046,503A
+Riverbend Garcia Pharmacy,Los Angeles,CA,USA,2024-03-06,Yes,West,US Central,AC100047,503A
+Sierra Porter Specialty Pharmacy,Houston,TX,USA,2023-03-18,Yes,South,US Central,AC100048,503A
+Evergreen Redwood Apothecary,San Jose,CA,USA,2021-05-05,Yes,West,US Central,AC100049,503A
+Bayou Hanson Apothecary,Sacramento,CA,USA,2021-04-23,Yes,West,US Central,AC100050,503A
+Gulf Monroe Sterile Outsourcing,Knoxville,TN,USA,2021-10-27,Yes,South,US Central,AC100051,503B
+Beacon Copper Pharmacy,Seattle,WA,USA,2023-08-17,Yes,West,US Central,AC100052,503A
+Stonebridge Thompson Compounding Pharmacy,Irvine,CA,USA,2024-10-25,Yes,West,US Central,AC100053,503A
+Liberty Mckenzie Apothecary,The Woodlands,TX,USA,2021-01-22,Yes,South,US Central,AC100054,503A
+Coastal Falcon Apothecary,Los Angeles,CA,USA,2022-10-11,Yes,West,US Central,AC100055,503A
+Apex Trinity Rx,Dallas,TX,USA,2022-09-27,Yes,South,US Central,AC100056,503A
+Trinity Copper Specialty Pharmacy,Beverly Hills,CA,USA,2021-08-21,Yes,West,US Central,AC100057,503A
+Cedar Gray Wellness Pharmacy,Sacramento,CA,USA,2024-05-27,Yes,West,US Central,AC100058,503A
+Beacon Robinson Rx,Newark,NJ,USA,2022-07-10,Yes,Northeast,US Central,AC100059,503A
+Summit Apex Compounding Center,New York,NY,USA,2022-10-24,Yes,Northeast,US Central,AC100060,503A
+Liberty Baker Rx,Dallas,TX,USA,2026-06-26,Yes,South,US Central,AC100061,503A
+Maple Westfield Biologics,El Paso,TX,USA,2022-10-22,Yes,South,US Central,AC100062,GMP
+Desert Valentine Wellness Pharmacy,Los Angeles,CA,USA,2021-10-26,Yes,West,US Central,AC100063,503A
+Beacon Garcia Rx,Raleigh,NC,USA,2021-05-14,Yes,South,US Central,AC100064,503A
+Meadow Small Wellness Pharmacy,Sacramento,CA,USA,2021-11-30,Yes,West,US Central,AC100065,503A
+Southpoint Casey Compounding Center,The Woodlands,TX,USA,2025-02-24,Yes,South,US Central,AC100066,503A
+Heritage Vista Pharmaceuticals,Memphis,TN,USA,2022-07-21,Yes,South,US Central,AC100067,GMP
+Northstar Jones Compounding Pharmacy,Jacksonville,FL,USA,2022-07-22,Yes,South,US Central,AC100068,503A
+Apex Mesa Rx,Lubbock,TX,USA,2022-07-24,Yes,South,US Central,AC100069,503A
+Highland Morrow Outsourcing Facility,San Antonio,TX,USA,2021-11-27,Yes,South,US Central,AC100070,503B
+Oakridge Southpoint Rx,Knoxville,TN,USA,2024-02-24,Yes,South,US Central,AC100071,503A
+Granite Pinnacle Compounding Pharmacy,Austin,TX,USA,2021-07-23,Yes,South,US Central,AC100072,503A
+Coastal Orchard Specialty Pharmacy,Cincinnati,OH,USA,2022-02-27,Yes,Midwest,US Central,AC100073,503A
+Riverbend Moore Outsourcing Facility,Irvine,CA,USA,2026-05-16,Yes,West,US Central,AC100074,503B
+Frontier Apex Apothecary,Oakland,CA,USA,2022-03-04,Yes,West,US Central,AC100075,503A
+Meadow Martinez Pharmacy,Sugar Land,TX,USA,2022-07-21,Yes,South,US Central,AC100076,503A
+Lone Star Santos Apothecary,El Paso,TX,USA,2024-01-09,Yes,South,US Central,AC100077,503A
+Horizon Westfield Pharma Services,Fort Worth,TX,USA,2024-06-14,Yes,South,US Central,AC100078,503B
+Redwood Simon Rx,New York,NY,USA,2022-11-01,Yes,Northeast,US Central,AC100079,503A
+Meadow Acevedo Pharma Services,Rochester,NY,USA,2021-02-20,Yes,Northeast,US Central,AC100080,503B
+Coastal Pacheco Pharma Services,Oakland,CA,USA,2023-10-04,Yes,West,US Central,AC100081,503B
+Sierra Lakeside Compounding Center,Irvine,CA,USA,2023-04-19,Yes,West,US Central,AC100082,503A
+Clearwater Liberty Compounding Pharmacy,Orlando,FL,USA,2024-01-11,Yes,South,US Central,AC100083,503A
+Juniper Hanson Apothecary,El Paso,TX,USA,2023-06-28,Yes,South,US Central,AC100084,503A
+Lone Star Riverbend Compounding Center,Sacramento,CA,USA,2022-09-26,Yes,West,US Central,AC100085,503A
+Copper Meadow Family Pharmacy,Beverly Hills,CA,USA,2022-06-11,Yes,West,US Central,AC100086,503A
+Northstar Richards Apothecary,Oakland,CA,USA,2026-05-30,Yes,West,US Central,AC100087,503A
+Riverbend Alvarado Family Pharmacy,Raleigh,NC,USA,2026-04-03,Yes,South,US Central,AC100088,503A
+Lone Star Thompson Pharmacy,Austin,TX,USA,2022-12-12,Yes,South,US Central,AC100089,503A
+Northstar Brightwater Compounding Pharmacy,Miami,FL,USA,2022-03-12,Yes,South,US Central,AC100090,503A
+Heritage Lone Star Rx,Los Angeles,CA,USA,2026-03-17,Yes,West,US Central,AC100091,503A
+Redwood Kennedy Family Pharmacy,Newport Beach,CA,USA,2022-11-17,Yes,West,US Central,AC100092,503A
+Silver Creek Bluebonnet Rx,Tucson,AZ,USA,2022-04-29,Yes,West,US Central,AC100093,503A
+Pioneer Taylor Pharma Services,Birmingham,AL,USA,2021-04-28,Yes,South,US Central,AC100094,503B
+Harbor Scott Compounding Center,Orlando,FL,USA,2025-09-30,Yes,South,US Central,AC100095,503A
+Granite Joseph Rx,Fresno,CA,USA,2023-08-23,Yes,West,US Central,AC100096,503A
+Canyon Castro Rx,Plano,TX,USA,2022-05-06,Yes,South,US Central,AC100097,503A
+Evergreen Rangel Rx,Dallas,TX,USA,2021-08-29,Yes,South,US Central,AC100098,503A
+Eastside Evans Rx,Knoxville,TN,USA,2021-04-28,Yes,South,US Central,AC100099,503A
+Aspen Davis Life Sciences,Tulsa,OK,USA,2021-06-28,Yes,South,US Central,AC100100,GMP
+Frontier Duncan Specialty Pharmacy,San Antonio,TX,USA,2022-01-25,Yes,South,US Central,AC100101,503A
+Crescent Evergreen Biologics,El Paso,TX,USA,2026-01-11,Yes,South,US Central,AC100102,GMP
+Brightwater Gibson Apothecary,Torrance,CA,USA,2026-03-30,Yes,West,US Central,AC100103,503A
+Union Gordon Pharma Services,Little Rock,AR,USA,2022-07-07,Yes,South,US Central,AC100104,503B
+Westfield Willow Sterile Outsourcing,Torrance,CA,USA,2024-08-04,Yes,West,US Central,AC100105,503B
+Trinity Trevino Apothecary,Oakland,CA,USA,2023-04-16,Yes,West,US Central,AC100106,503A
+Sierra Brightwater Rx,Raleigh,NC,USA,2023-12-22,Yes,South,US Central,AC100107,503A
+Westfield Smith Compounding Pharmacy,Nashville,TN,USA,2023-01-08,Yes,South,US Central,AC100108,503A
+Westfield Martinez Family Pharmacy,Fort Worth,TX,USA,2021-11-13,Yes,South,US Central,AC100109,503A
+Apex Brown Rx,Lubbock,TX,USA,2023-06-22,Yes,South,US Central,AC100110,503A
+Maple Huff Life Sciences,Oakland,CA,USA,2022-01-26,Yes,West,US Central,AC100111,GMP
+Summit Liberty Compounding Pharmacy,Las Vegas,NV,USA,2022-01-31,Yes,West,US Central,AC100112,503A
+Willow Anderson Apothecary,Anchorage,AK,USA,2021-02-01,Yes,West,US Central,AC100113,503A
+Maple Davis Specialty Pharmacy,Irvine,CA,USA,2022-07-21,Yes,West,US Central,AC100114,503A
+Brightwater Northgate Pharmacy,Brooklyn,NY,USA,2022-09-16,Yes,Northeast,US Central,AC100115,503A
+Heritage Buck Apothecary,Birmingham,AL,USA,2022-09-07,Yes,South,US Central,AC100116,503A
+Westfield Apex Compounding Center,San Diego,CA,USA,2022-09-08,Yes,West,US Central,AC100117,503A
+Apex Jones Specialty Pharmacy,Fort Worth,TX,USA,2021-05-03,Yes,South,US Central,AC100118,503A
+Desert Montgomery Pharmacy,The Woodlands,TX,USA,2026-06-24,Yes,South,US Central,AC100119,503A
+Mesa Adams Compounding Center,Oakland,CA,USA,2021-06-03,Yes,West,US Central,AC100120,503A
+Beacon Hutchinson Compounding Pharmacy,Fresno,CA,USA,2021-06-17,Yes,West,US Central,AC100121,503A
+Trinity Hendricks Pharmacy,Brooklyn,NY,USA,2026-05-18,Yes,Northeast,US Central,AC100122,503A
+Northstar Torres Rx,Baton Rouge,LA,USA,2024-09-20,Yes,South,US Central,AC100123,503A
+Liberty Young Pharma Services,San Antonio,TX,USA,2023-05-23,Yes,South,US Central,AC100124,503B
+Lakeside Apex Rx,Baltimore,MD,USA,2023-03-27,Yes,South,US Central,AC100125,503A
+Golden Pinnacle Outsourcing Facility,Knoxville,TN,USA,2023-12-08,Yes,South,US Central,AC100126,503B
+Silver Creek Garcia Laboratories,Fort Worth,TX,USA,2021-04-09,Yes,South,US Central,AC100127,GMP
+Westfield Smith Family Pharmacy,Sugar Land,TX,USA,2021-11-08,Yes,South,US Central,AC100128,503A
+Bluebonnet Lester Pharmacy,Charleston,SC,USA,2021-05-25,Yes,South,US Central,AC100129,503A
+Desert Coastal Compounding Pharmacy,Salt Lake City,UT,USA,2021-01-09,Yes,West,US Central,AC100130,503A
+Sterling Beasley Family Pharmacy,Miami,FL,USA,2021-05-05,Yes,South,US Central,AC100131,503A
+Willow Unity Apothecary,Chandler,AZ,USA,2021-03-16,Yes,West,US Central,AC100132,503A
+Unity Westfield Rx,St. Louis,MO,USA,2023-08-19,Yes,Midwest,US Central,AC100133,503A
+Crescent Smith Specialty Pharmacy,Oakland,CA,USA,2021-09-02,Yes,West,US Central,AC100134,503A
+Sierra Donaldson Apothecary,Dallas,TX,USA,2023-02-06,Yes,South,US Central,AC100135,503A
+Willow Chandler Life Sciences,Irvine,CA,USA,2025-05-27,Yes,West,US Central,AC100136,GMP
+Crescent Carroll Rx,Lubbock,TX,USA,2022-08-22,Yes,South,US Central,AC100137,503A
+Gulf Hunter Specialty Pharmacy,Newport Beach,CA,USA,2022-09-05,Yes,West,US Central,AC100138,503A
+Gulf Heritage Specialty Pharmacy,Houston,TX,USA,2024-10-10,Yes,South,US Central,AC100139,503A
+Mesa Cedar Pharmacy,Austin,TX,USA,2026-05-31,Yes,South,US Central,AC100140,503A
+Lone Star Silver Creek Sterile Outsourcing,San Antonio,TX,USA,2022-03-01,Yes,South,US Central,AC100141,503B
+Highland Mcgee Wellness Pharmacy,Boise,ID,USA,2022-11-29,Yes,West,US Central,AC100142,503A
+Southpoint Trinity Compounding Center,Plano,TX,USA,2026-08-01,Yes,South,US Central,AC100143,503A
+Northstar Banks Biologics,Tucson,AZ,USA,2021-07-13,Yes,West,US Central,AC100144,GMP
+Apex Morris Apothecary,Los Angeles,CA,USA,2022-11-19,Yes,West,US Central,AC100145,503A
+Lakeside Clark Apothecary,San Diego,CA,USA,2023-02-01,Yes,West,US Central,AC100146,503A
+Summit Northstar Compounding Pharmacy,Los Angeles,CA,USA,2026-08-04,Yes,West,US Central,AC100147,503A
+Vista Holmes Rx,San Jose,CA,USA,2021-04-07,Yes,West,US Central,AC100148,503A
+Copper Silver Creek Specialty Pharmacy,Torrance,CA,USA,2024-04-22,Yes,West,US Central,AC100149,503A
+Stonebridge Jones Wellness Pharmacy,San Diego,CA,USA,2021-05-18,Yes,West,US Central,AC100150,503A
+Granite Cortez Rx,Baltimore,MD,USA,2023-12-06,Yes,South,US Central,AC100151,503A
+Mesa Phillips Rx,Newport Beach,CA,USA,2022-11-25,Yes,West,US Central,AC100152,503A
+Union Falcon Pharmacy,Fresno,CA,USA,2022-05-12,Yes,West,US Central,AC100153,503A
+Highland Prairie Apothecary,Oakland,CA,USA,2025-11-19,Yes,West,US Central,AC100154,503A
+Mesa Thomas Pharma Services,Denver,CO,USA,2022-03-09,Yes,West,US Central,AC100155,503B
+Sterling Taylor Apothecary,Charleston,SC,USA,2024-09-07,Yes,South,US Central,AC100156,503A
+Heritage Charles Compounding Center,The Woodlands,TX,USA,2022-08-17,Yes,South,US Central,AC100157,503A
+Aspen Stonebridge Rx,Beverly Hills,CA,USA,2022-06-07,Yes,West,US Central,AC100158,503A
+Magnolia Northgate Apothecary,Dallas,TX,USA,2021-11-14,Yes,South,US Central,AC100159,503A
+Maple Gray Pharmacy,Brooklyn,NY,USA,2022-05-02,Yes,Northeast,US Central,AC100160,503A
+Redwood Velazquez Rx,San Jose,CA,USA,2022-02-13,Yes,West,US Central,AC100161,503A
+Union Liberty Wellness Pharmacy,Torrance,CA,USA,2023-02-12,Yes,West,US Central,AC100162,503A
+Golden Fry Specialty Pharmacy,Boca Raton,FL,USA,2026-07-08,Yes,South,US Central,AC100163,503A
+Lone Star Collins Wellness Pharmacy,Denver,CO,USA,2023-04-01,Yes,West,US Central,AC100164,503A
+Summit Hernandez Pharmacy,Fort Worth,TX,USA,2022-02-24,Yes,South,US Central,AC100165,503A
+Clearwater Oakridge Rx,Fort Worth,TX,USA,2025-07-28,Yes,South,US Central,AC100166,503A
+Aspen Allison Family Pharmacy,Fresno,CA,USA,2022-04-17,Yes,West,US Central,AC100167,503A
+Prairie Bell Wellness Pharmacy,Denver,CO,USA,2022-07-16,Yes,West,US Central,AC100168,503A
+Sterling Oakridge Pharma Services,Sugar Land,TX,USA,2026-01-09,Yes,South,US Central,AC100169,503B
+Magnolia Johnson Rx,Torrance,CA,USA,2026-07-05,Yes,West,US Central,AC100170,503A
+Brightwater Middleton Pharmacy,Sugar Land,TX,USA,2022-06-15,Yes,South,US Central,AC100171,503A
+Lakeside Gray Family Pharmacy,Knoxville,TN,USA,2022-05-30,Yes,South,US Central,AC100172,503A
+Meadow Lakeside Sterile Outsourcing,Seattle,WA,USA,2022-07-06,Yes,West,US Central,AC100173,503B
+Lone Star Bush Wellness Pharmacy,Austin,TX,USA,2021-01-17,Yes,South,US Central,AC100174,503A
+Juniper Patterson Apothecary,Columbia,SC,USA,2022-05-22,Yes,South,US Central,AC100175,503A
+Liberty Owen Family Pharmacy,Salt Lake City,UT,USA,2024-06-11,Yes,West,US Central,AC100176,503A
+Evergreen Silver Creek Pharmacy,Naperville,IL,USA,2025-01-10,Yes,Midwest,US Central,AC100177,503A
+Coastal Kelly Specialty Pharmacy,Newport Beach,CA,USA,2021-05-03,Yes,West,US Central,AC100178,503A
+Canyon Saunders Compounding Pharmacy,Fort Worth,TX,USA,2024-12-12,Yes,South,US Central,AC100179,503A
+Bayou Golden Wellness Pharmacy,Jacksonville,FL,USA,2021-10-23,Yes,South,US Central,AC100180,503A
+Stonebridge Willow Family Pharmacy,Chandler,AZ,USA,2023-10-18,Yes,West,US Central,AC100181,503A
+Summit Acosta Compounding Center,The Woodlands,TX,USA,2024-08-21,Yes,South,US Central,AC100182,503A
+Mesa Vista Pharmacy,Beverly Hills,CA,USA,2022-01-28,Yes,West,US Central,AC100183,503A
+Evergreen Reid Family Pharmacy,Rochester,NY,USA,2023-07-05,Yes,Northeast,US Central,AC100184,503A
+Cedar Bluebonnet Compounding Pharmacy,Lubbock,TX,USA,2022-02-10,Yes,South,US Central,AC100185,503A
+Redwood Weiss Compounding Center,Houston,TX,USA,2023-03-06,Yes,South,US Central,AC100186,503A
+Union Pinnacle Rx,San Diego,CA,USA,2021-11-21,Yes,West,US Central,AC100187,503A
+Crescent Bayou Family Pharmacy,Newark,NJ,USA,2022-03-17,Yes,Northeast,US Central,AC100188,503A
+Evergreen Pacheco Compounding Center,El Paso,TX,USA,2025-06-13,Yes,South,US Central,AC100189,503A
+Silver Creek Watson Family Pharmacy,San Diego,CA,USA,2026-05-12,Yes,West,US Central,AC100190,503A
+Horizon Harmon Apothecary,Fresno,CA,USA,2022-01-30,Yes,West,US Central,AC100191,503A
+Copper Jefferson Sterile Outsourcing,Austin,TX,USA,2023-02-08,Yes,South,US Central,AC100192,503B
+Desert Riverbend Pharmacy,Raleigh,NC,USA,2022-01-07,Yes,South,US Central,AC100193,503A
+Gulf Butler Life Sciences,Dallas,TX,USA,2026-01-21,Yes,South,US Central,AC100194,GMP
+Canyon Johnson Pharmacy,Los Angeles,CA,USA,2024-11-17,Yes,West,US Central,AC100195,503A
+Coastal Aspen Compounding Center,El Paso,TX,USA,2025-09-06,Yes,South,US Central,AC100196,503A
+Crescent Singh Compounding Center,Torrance,CA,USA,2022-08-03,Yes,West,US Central,AC100197,503A
+Pioneer Powell Pharmacy,San Antonio,TX,USA,2024-09-04,Yes,South,US Central,AC100198,503A
+Summit Edwards Wellness Pharmacy,El Paso,TX,USA,2022-08-08,Yes,South,US Central,AC100199,503A
+Bluebonnet Stone Compounding Pharmacy,Irvine,CA,USA,2024-01-18,Yes,West,US Central,AC100200,503A
+Frontier Northstar Rx,New York,NY,USA,2023-05-03,Yes,Northeast,US Central,AC100201,503A
+Magnolia Hamilton Pharma Services,Sacramento,CA,USA,2022-08-30,Yes,West,US Central,AC100202,503B
+Pinnacle Santos Rx,Fort Worth,TX,USA,2022-02-08,Yes,South,US Central,AC100203,503A
+Crescent Silver Creek Specialty Pharmacy,Little Rock,AR,USA,2026-03-26,Yes,South,US Central,AC100204,503A
+Gulf Orchard Compounding Pharmacy,Memphis,TN,USA,2021-11-16,Yes,South,US Central,AC100205,503A
+Southpoint Leonard Compounding Center,Grand Rapids,MI,USA,2022-09-22,Yes,Midwest,US Central,AC100206,503A
+Canyon Edwards Apothecary,San Antonio,TX,USA,2024-03-27,Yes,South,US Central,AC100207,503A
+Westfield Adams Compounding Pharmacy,Austin,TX,USA,2026-08-09,Yes,South,US Central,AC100208,503A
+Sterling Pacheco Rx,Houston,TX,USA,2025-05-07,Yes,South,US Central,AC100209,503A
+Cedar Ryan Specialty Pharmacy,Newport Beach,CA,USA,2024-04-25,Yes,West,US Central,AC100210,503A
+Trinity Mitchell Pharmacy,Pittsburgh,PA,USA,2021-05-21,Yes,Northeast,US Central,AC100211,503A
+Summit Johnson Compounding Pharmacy,The Woodlands,TX,USA,2021-10-25,Yes,South,US Central,AC100212,503A
+Orchard Vista Apothecary,Sugar Land,TX,USA,2022-06-03,Yes,South,US Central,AC100213,503A
+Pioneer Cedar Apothecary,Sacramento,CA,USA,2022-08-29,Yes,West,US Central,AC100214,503A
+Westfield Carroll Family Pharmacy,Anchorage,AK,USA,2022-01-29,Yes,West,US Central,AC100215,503A
+Juniper Maple Family Pharmacy,Columbus,OH,USA,2021-09-05,Yes,Midwest,US Central,AC100216,503A
+Willow Falcon Specialty Pharmacy,Minneapolis,MN,USA,2022-07-26,Yes,Midwest,US Central,AC100217,503A
+Riverbend Southpoint Wellness Pharmacy,Dallas,TX,USA,2025-08-22,Yes,South,US Central,AC100218,503A
+Evergreen Crescent Wellness Pharmacy,El Paso,TX,USA,2024-02-10,Yes,South,US Central,AC100219,503A
+Copper Medina Life Sciences,Fresno,CA,USA,2021-10-06,Yes,West,US Central,AC100220,GMP
+Aspen Desert Rx,Irvine,CA,USA,2023-12-23,Yes,West,US Central,AC100221,503A
+Eastside Webster Apothecary,Newport Beach,CA,USA,2022-04-10,Yes,West,US Central,AC100222,503A
+Horizon Apex Pharma Services,Chandler,AZ,USA,2021-09-30,Yes,West,US Central,AC100223,503B
+Sage Chavez Compounding Center,Lubbock,TX,USA,2025-06-28,Yes,South,US Central,AC100224,503A
+Coastal Brooks Compounding Center,Newport Beach,CA,USA,2022-11-06,Yes,West,US Central,AC100225,503A
+Evergreen Greene Pharmaceuticals,San Diego,CA,USA,2023-09-08,Yes,West,US Central,AC100226,GMP
+Eastside Powers Rx,El Paso,TX,USA,2025-02-02,Yes,South,US Central,AC100227,503A
+Sierra Porter Rx,Omaha,NE,USA,2022-02-20,Yes,Midwest,US Central,AC100228,503A
+Orchard Liberty Biologics,El Paso,TX,USA,2025-10-06,Yes,South,US Central,AC100229,GMP
+Mesa Arnold Specialty Pharmacy,Newport Beach,CA,USA,2021-10-22,Yes,West,US Central,AC100230,503A
+Orchard Hanna Compounding Center,Austin,TX,USA,2021-09-24,Yes,South,US Central,AC100231,503A
+Heritage Thomas Family Pharmacy,Beverly Hills,CA,USA,2021-12-14,Yes,West,US Central,AC100232,503A
+Copper Kramer Apothecary,Columbus,OH,USA,2021-10-19,Yes,Midwest,US Central,AC100233,503A
+Pioneer Clark Apothecary,Oklahoma City,OK,USA,2023-03-26,Yes,South,US Central,AC100234,503A
+Bayou Kirby Pharmacy,Chandler,AZ,USA,2024-04-17,Yes,West,US Central,AC100235,503A
+Riverbend Butler Pharmacy,Torrance,CA,USA,2022-10-02,Yes,West,US Central,AC100236,503A
+Canyon Brady Family Pharmacy,Austin,TX,USA,2021-10-22,Yes,South,US Central,AC100237,503A
+Sage Perez Apothecary,Plano,TX,USA,2021-09-04,Yes,South,US Central,AC100238,503A
+Pioneer Roberson Apothecary,Boston,MA,USA,2025-12-07,Yes,Northeast,US Central,AC100239,503A
+Highland Bowman Pharmacy,Sugar Land,TX,USA,2021-10-24,Yes,South,US Central,AC100240,503A
+Riverbend Lewis Wellness Pharmacy,Boca Raton,FL,USA,2025-12-16,Yes,South,US Central,AC100241,503A
+Northgate Carroll Pharmacy,Sacramento,CA,USA,2025-08-28,Yes,West,US Central,AC100242,503A
+Golden Ferguson Compounding Center,Sacramento,CA,USA,2021-03-05,Yes,West,US Central,AC100243,503A
+Granite Smith Apothecary,San Jose,CA,USA,2021-07-04,Yes,West,US Central,AC100244,503A
+Vista Baker Sterile Outsourcing,Torrance,CA,USA,2021-09-26,Yes,West,US Central,AC100245,503B
+Northstar Becker Apothecary,Dallas,TX,USA,2021-12-24,Yes,South,US Central,AC100246,503A
+Desert Southpoint Family Pharmacy,Plano,TX,USA,2022-05-23,Yes,South,US Central,AC100247,503A
+Sterling Morgan Family Pharmacy,Las Vegas,NV,USA,2021-02-02,Yes,West,US Central,AC100248,503A
+Evergreen Lin Apothecary,Brooklyn,NY,USA,2022-03-22,Yes,Northeast,US Central,AC100249,503A
+Bayou Mesa Specialty Pharmacy,Oakland,CA,USA,2023-01-30,Yes,West,US Central,AC100250,503A
+Falcon Apex Compounding Center,Austin,TX,USA,2022-07-31,Yes,South,US Central,AC100251,503A
+Northstar Eastside Apothecary,Brooklyn,NY,USA,2021-08-17,Yes,Northeast,US Central,AC100252,503A
+Cedar Canyon Pharmacy,Newport Beach,CA,USA,2022-03-14,Yes,West,US Central,AC100253,503A
+Evergreen Buckley Apothecary,Oakland,CA,USA,2022-01-26,Yes,West,US Central,AC100254,503A
+Oakridge Magnolia Wellness Pharmacy,Denver,CO,USA,2021-05-12,Yes,West,US Central,AC100255,503A
+Silver Creek Granite Rx,El Paso,TX,USA,2025-05-22,Yes,South,US Central,AC100256,503A
+Mesa Santiago Apothecary,El Paso,TX,USA,2022-03-23,Yes,South,US Central,AC100257,503A
+Granite Juniper Compounding Center,Dallas,TX,USA,2021-03-19,Yes,South,US Central,AC100258,503A
+Riverbend Flores Family Pharmacy,Boise,ID,USA,2024-07-03,Yes,West,US Central,AC100259,503A
+Falcon Meadow Wellness Pharmacy,Lubbock,TX,USA,2024-05-30,Yes,South,US Central,AC100260,503A
+Stonebridge Vista Specialty Pharmacy,Sugar Land,TX,USA,2022-10-14,Yes,South,US Central,AC100261,503A
+Sterling Sierra Compounding Center,Irvine,CA,USA,2022-10-20,Yes,West,US Central,AC100262,503A
+Summit Lone Star Compounding Center,Austin,TX,USA,2022-06-03,Yes,South,US Central,AC100263,503A
+Eastside Campbell Apothecary,Charleston,SC,USA,2022-04-24,Yes,South,US Central,AC100264,503A
+Aspen Granite Pharmacy,Buffalo,NY,USA,2023-05-06,Yes,Northeast,US Central,AC100265,503A
+Keystone Boyer Rx,Rochester,NY,USA,2022-07-29,Yes,Northeast,US Central,AC100266,503A
+Golden Northgate Laboratories,Buffalo,NY,USA,2023-06-29,Yes,Northeast,US Central,AC100267,GMP
+Meadow Roy Compounding Pharmacy,Dallas,TX,USA,2024-01-20,Yes,South,US Central,AC100268,503A
+Horizon Granite Apothecary,San Jose,CA,USA,2021-11-23,Yes,West,US Central,AC100269,503A
+Stonebridge Bayou Compounding Pharmacy,Indianapolis,IN,USA,2021-04-01,Yes,Midwest,US Central,AC100270,503A
+Unity King Rx,El Paso,TX,USA,2022-09-16,Yes,South,US Central,AC100271,503A
+Trinity Duncan Compounding Pharmacy,Boca Raton,FL,USA,2022-09-01,Yes,South,US Central,AC100272,503A
+Eastside Hodges Pharmacy,Torrance,CA,USA,2022-03-02,Yes,West,US Central,AC100273,503A
+Trinity Matthews Compounding Pharmacy,Newport Beach,CA,USA,2023-03-19,Yes,West,US Central,AC100274,503A
+Bluebonnet Anderson Family Pharmacy,Austin,TX,USA,2023-08-29,Yes,South,US Central,AC100275,503A
+Evergreen Turner Family Pharmacy,Sugar Land,TX,USA,2021-09-26,Yes,South,US Central,AC100276,503A
+Bayou Beacon Specialty Pharmacy,Boca Raton,FL,USA,2026-09-12,Yes,South,US Central,AC100277,503A
+Golden Wright Sterile Outsourcing,Naperville,IL,USA,2022-05-13,Yes,Midwest,US Central,AC100278,503B
+Desert Baker Compounding Pharmacy,Austin,TX,USA,2022-06-05,Yes,South,US Central,AC100279,503A
+Coastal Garrison Specialty Pharmacy,Dallas,TX,USA,2021-09-22,Yes,South,US Central,AC100280,503A
+Orchard Unity Compounding Center,Newport Beach,CA,USA,2024-04-22,Yes,West,US Central,AC100281,503A
+Sterling Brightwater Wellness Pharmacy,Knoxville,TN,USA,2021-04-25,Yes,South,US Central,AC100282,503A
+Harbor Moss Compounding Center,Fresno,CA,USA,2024-02-25,Yes,West,US Central,AC100283,503A
+Northgate Clearwater Pharmacy,San Jose,CA,USA,2021-04-03,Yes,West,US Central,AC100284,503A
+Copper Horizon Wellness Pharmacy,San Diego,CA,USA,2022-11-27,Yes,West,US Central,AC100285,503A
+Vista Liberty Rx,Buffalo,NY,USA,2022-08-05,Yes,Northeast,US Central,AC100286,503A
+Brightwater Brown Apothecary,The Woodlands,TX,USA,2022-11-26,Yes,South,US Central,AC100287,503A
+Brightwater Eastside Compounding Center,Torrance,CA,USA,2021-12-03,Yes,West,US Central,AC100288,503A
+Vista Edwards Compounding Center,Fort Worth,TX,USA,2021-10-21,Yes,South,US Central,AC100289,503A
+Clearwater Canyon Rx,Houston,TX,USA,2021-02-10,Yes,South,US Central,AC100290,503A
+Redwood Hawkins Compounding Pharmacy,Fort Worth,TX,USA,2021-07-06,Yes,South,US Central,AC100291,503A
+Bluebonnet White Rx,El Paso,TX,USA,2021-03-02,Yes,South,US Central,AC100292,503A
+Northgate Robinson Specialty Pharmacy,Seattle,WA,USA,2021-08-23,Yes,West,US Central,AC100293,503A
+Sierra Cedar Family Pharmacy,Boston,MA,USA,2022-11-14,Yes,Northeast,US Central,AC100294,503A
+Keystone Evergreen Family Pharmacy,Des Moines,IA,USA,2022-02-19,Yes,Midwest,US Central,AC100295,503A
+Westfield Union Life Sciences,Columbus,OH,USA,2025-12-12,Yes,Midwest,US Central,AC100296,GMP
+Pioneer Gulf Specialty Pharmacy,Charleston,SC,USA,2026-08-03,Yes,South,US Central,AC100297,503A
+Frontier Unity Specialty Pharmacy,San Diego,CA,USA,2022-12-10,Yes,West,US Central,AC100298,503A
+Orchard Eastside Compounding Pharmacy,Torrance,CA,USA,2026-04-17,Yes,West,US Central,AC100299,503A
+Vista Lakeside Sterile Outsourcing,Tampa,FL,USA,2022-06-07,Yes,South,US Central,AC100300,503B
+Silver Creek Brown Compounding Pharmacy,Philadelphia,PA,USA,2021-08-31,Yes,Northeast,US Central,AC100301,503A
+Frontier Daniel Family Pharmacy,Plano,TX,USA,2021-07-16,Yes,South,US Central,AC100302,503A
+Willow Wolfe Family Pharmacy,Lubbock,TX,USA,2021-02-28,Yes,South,US Central,AC100303,503A
+Falcon Magnolia Family Pharmacy,Lubbock,TX,USA,2021-07-13,Yes,South,US Central,AC100304,503A
+Magnolia Green Wellness Pharmacy,San Jose,CA,USA,2022-07-24,Yes,West,US Central,AC100305,503A
+Northgate Phillips Specialty Pharmacy,Oakland,CA,USA,2021-10-25,Yes,West,US Central,AC100306,503A
+Bayou Hall Outsourcing Facility,Sugar Land,TX,USA,2022-11-08,Yes,South,US Central,AC100307,503B
+Granite Canyon Pharmacy,Plano,TX,USA,2021-10-30,Yes,South,US Central,AC100308,503A
+Sterling Evergreen Pharma Services,Savannah,GA,USA,2024-12-24,Yes,South,US Central,AC100309,503B
+Northgate Potter Family Pharmacy,Scottsdale,AZ,USA,2022-08-20,Yes,West,US Central,AC100310,503A
+Northgate Huynh Wellness Pharmacy,Sacramento,CA,USA,2025-08-09,Yes,West,US Central,AC100311,503A
+Horizon Grimes Family Pharmacy,El Paso,TX,USA,2025-01-02,Yes,South,US Central,AC100312,503A
+Prairie Sierra Specialty Pharmacy,Newport Beach,CA,USA,2022-05-30,Yes,West,US Central,AC100313,503A
+Sage Falcon Family Pharmacy,Lubbock,TX,USA,2022-04-09,Yes,South,US Central,AC100314,503A
+Sage Williams Specialty Pharmacy,Pittsburgh,PA,USA,2021-05-30,Yes,Northeast,US Central,AC100315,503A
+Pinnacle Clayton Pharmaceuticals,Wilmington,DE,USA,2022-05-06,Yes,South,US Central,AC100316,GMP
+Canyon Johnson Compounding Center,Boston,MA,USA,2021-08-19,Yes,Northeast,US Central,AC100317,503A
+Redwood Simmons Pharmacy,Fort Worth,TX,USA,2021-01-15,Yes,South,US Central,AC100318,503A
+Summit Eastside Compounding Center,Albuquerque,NM,USA,2022-06-25,Yes,West,US Central,AC100319,503A
+Cedar Patterson Specialty Pharmacy,Scottsdale,AZ,USA,2022-10-30,Yes,West,US Central,AC100320,503A
+Unity Copper Wellness Pharmacy,Boca Raton,FL,USA,2022-04-28,Yes,South,US Central,AC100321,503A
+Westfield Magnolia Apothecary,Fresno,CA,USA,2021-09-19,Yes,West,US Central,AC100322,503A
+Canyon Eastside Pharmacy,Baton Rouge,LA,USA,2024-10-15,Yes,South,US Central,AC100323,503A
+Northstar Gulf Rx,Los Angeles,CA,USA,2023-06-24,Yes,West,US Central,AC100324,503A
+Oakridge Juniper Apothecary,Torrance,CA,USA,2021-03-18,Yes,West,US Central,AC100325,503A
+Golden Duffy Family Pharmacy,Brooklyn,NY,USA,2021-11-13,Yes,Northeast,US Central,AC100326,503A
+Canyon Wood Family Pharmacy,Fresno,CA,USA,2026-09-06,Yes,West,US Central,AC100327,503A
+Magnolia Bluebonnet Compounding Pharmacy,Albuquerque,NM,USA,2022-08-30,Yes,West,US Central,AC100328,503A
+Clearwater Conner Apothecary,Fort Worth,TX,USA,2022-12-29,Yes,South,US Central,AC100329,503A
+Falcon Granite Wellness Pharmacy,Houston,TX,USA,2024-05-03,Yes,South,US Central,AC100330,503A
+Meadow Palmer Rx,Austin,TX,USA,2022-05-31,Yes,South,US Central,AC100331,503A
+Maple Rollins Compounding Center,Baltimore,MD,USA,2021-08-17,Yes,South,US Central,AC100332,503A
+Northstar Torres Apothecary,Plano,TX,USA,2023-03-11,Yes,South,US Central,AC100333,503A
+Orchard Keystone Wellness Pharmacy,Austin,TX,USA,2021-03-22,Yes,South,US Central,AC100334,503A
+Redwood Boyd Pharmacy,Sugar Land,TX,USA,2026-03-03,Yes,South,US Central,AC100335,503A
+Copper Eastside Pharmacy,Dallas,TX,USA,2024-06-12,Yes,South,US Central,AC100336,503A
+Vista Davis Wellness Pharmacy,Albuquerque,NM,USA,2021-06-12,Yes,West,US Central,AC100337,503A
+Riverbend Pinnacle Family Pharmacy,New Orleans,LA,USA,2021-07-18,Yes,South,US Central,AC100338,503A
+Summit Heritage Specialty Pharmacy,Plano,TX,USA,2023-09-11,Yes,South,US Central,AC100339,503A
+Beacon Harrison Family Pharmacy,Columbia,SC,USA,2021-03-18,Yes,South,US Central,AC100340,503A
+Falcon Pioneer Wellness Pharmacy,Spokane,WA,USA,2022-11-25,Yes,West,US Central,AC100341,503A
+Frontier Summit Compounding Pharmacy,New Orleans,LA,USA,2022-09-04,Yes,South,US Central,AC100342,503A
+Riverbend Bayou Pharmacy,Sugar Land,TX,USA,2022-03-24,Yes,South,US Central,AC100343,503A
+Copper Perez Compounding Center,Naperville,IL,USA,2026-07-04,Yes,Midwest,US Central,AC100344,503A
+Trinity Mesa Biologics,The Woodlands,TX,USA,2022-11-03,Yes,South,US Central,AC100345,GMP
+Maple Mesa University Research Lab,Irvine,CA,USA,2021-08-26,Yes,West,US Central,AC100346,Research
+Magnolia Cox Pharma Services,Oakland,CA,USA,2021-10-12,Yes,West,US Central,AC100347,503B
+Redwood Jones Specialty Pharmacy,Dallas,TX,USA,2024-06-24,Yes,South,US Central,AC100348,503A
+Clearwater Brightwater Specialty Pharmacy,Lubbock,TX,USA,2022-07-20,Yes,South,US Central,AC100349,503A
+Unity Erickson Family Pharmacy,Irvine,CA,USA,2024-11-08,Yes,West,US Central,AC100350,503A
+Mesa Solis Wellness Pharmacy,Mesa,AZ,USA,2021-04-19,Yes,West,US Central,AC100351,503A
+Lakeside Summers Compounding Center,Newport Beach,CA,USA,2025-05-27,Yes,West,US Central,AC100352,503A
+Clearwater Anderson Compounding Center,Beverly Hills,CA,USA,2022-07-21,Yes,West,US Central,AC100353,503A
+Falcon Melendez Wellness Pharmacy,Phoenix,AZ,USA,2021-03-09,Yes,West,US Central,AC100354,503A
+Beacon Rogers Family Pharmacy,Naperville,IL,USA,2021-04-16,Yes,Midwest,US Central,AC100355,503A
+Lakeside Wade Apothecary,Memphis,TN,USA,2024-09-20,Yes,South,US Central,AC100356,503A
+Sterling Sullivan Specialty Pharmacy,Torrance,CA,USA,2025-04-19,Yes,West,US Central,AC100357,503A
+Juniper Heritage Outsourcing Facility,The Woodlands,TX,USA,2021-11-24,Yes,South,US Central,AC100358,503B
+Westfield Harbor Compounding Pharmacy,The Woodlands,TX,USA,2022-09-07,Yes,South,US Central,AC100359,503A
+Sterling Clark Compounding Pharmacy,Naperville,IL,USA,2023-06-13,Yes,Midwest,US Central,AC100360,503A
+Sierra Gomez Apothecary,Sugar Land,TX,USA,2022-01-23,Yes,South,US Central,AC100361,503A
+Westfield Larson Compounding Center,Houston,TX,USA,2022-02-08,Yes,South,US Central,AC100362,503A
+Meadow Magnolia Family Pharmacy,Orlando,FL,USA,2026-04-10,Yes,South,US Central,AC100363,503A
+Clearwater Clearwater Rx,Anchorage,AK,USA,2021-09-26,Yes,West,US Central,AC100364,503A
+Heritage Redwood Apothecary,Houston,TX,USA,2022-11-01,Yes,South,US Central,AC100365,503A
+Maple Everett Pharmacy,San Jose,CA,USA,2021-11-08,Yes,West,US Central,AC100366,503A
+Magnolia Ramos Pharmacy,Irvine,CA,USA,2025-07-01,Yes,West,US Central,AC100367,503A
+Clearwater Barrett Specialty Pharmacy,Mesa,AZ,USA,2025-05-15,Yes,West,US Central,AC100368,503A
+Vista Jones Wellness Pharmacy,The Woodlands,TX,USA,2021-02-23,Yes,South,US Central,AC100369,503A
+Highland Adams Pharmaceuticals,Chicago,IL,USA,2024-10-04,Yes,Midwest,US Central,AC100370,GMP
+Coastal Shea Family Pharmacy,Austin,TX,USA,2022-02-14,Yes,South,US Central,AC100371,503A
+Trinity Rodriguez Compounding Pharmacy,Brooklyn,NY,USA,2025-09-13,Yes,Northeast,US Central,AC100372,503A
+Prairie Barker Wellness Pharmacy,Beverly Hills,CA,USA,2023-06-10,Yes,West,US Central,AC100373,503A
+Harbor Mesa Wellness Pharmacy,San Diego,CA,USA,2025-09-06,Yes,West,US Central,AC100374,503A
+Liberty Union Compounding Pharmacy,El Paso,TX,USA,2022-11-05,Yes,South,US Central,AC100375,503A
+Pioneer Clark Pharmacy,San Jose,CA,USA,2021-07-16,Yes,West,US Central,AC100376,503A
+Redwood Burke Specialty Pharmacy,Houston,TX,USA,2024-10-30,Yes,South,US Central,AC100377,503A
+Frontier Martin Compounding Center,The Woodlands,TX,USA,2021-10-10,Yes,South,US Central,AC100378,503A
+Unity Pinnacle Apothecary,Kansas City,MO,USA,2021-12-13,Yes,Midwest,US Central,AC100379,503A
+Westfield Williams Wellness Pharmacy,Dallas,TX,USA,2022-02-23,Yes,South,US Central,AC100380,503A
+Sierra Vista Biologics,Grand Rapids,MI,USA,2022-07-30,Yes,Midwest,US Central,AC100381,GMP
+Summit Vazquez Compounding Pharmacy,El Paso,TX,USA,2025-01-08,Yes,South,US Central,AC100382,503A
+Prairie Riverbend Apothecary,Indianapolis,IN,USA,2021-12-11,Yes,Midwest,US Central,AC100383,503A
+Sterling Horizon Pharmacy,Irvine,CA,USA,2021-04-15,Yes,West,US Central,AC100384,503A
+Beacon Jones Rx,San Antonio,TX,USA,2026-09-08,Yes,South,US Central,AC100385,503A
+Cedar Hatfield Specialty Pharmacy,Anchorage,AK,USA,2022-09-15,Yes,West,US Central,AC100386,503A
+Clearwater Vista Specialty Pharmacy,The Woodlands,TX,USA,2024-06-04,Yes,South,US Central,AC100387,503A
+Cedar Lone Star Family Pharmacy,Los Angeles,CA,USA,2022-01-29,Yes,West,US Central,AC100388,503A
+Brightwater Riverbend Wellness Pharmacy,San Antonio,TX,USA,2024-12-07,Yes,South,US Central,AC100389,503A
+Horizon Weeks Research Institute,Sugar Land,TX,USA,2022-06-24,Yes,South,US Central,AC100390,Research
+Pioneer Meadow Wellness Pharmacy,Dallas,TX,USA,2022-08-14,Yes,South,US Central,AC100391,503A
+Sterling Meadow Wellness Pharmacy,Sacramento,CA,USA,2021-05-08,Yes,West,US Central,AC100392,503A
+Trinity Sage Apothecary,New York,NY,USA,2021-10-13,Yes,Northeast,US Central,AC100393,503A
+Beacon Ross Specialty Pharmacy,Fort Worth,TX,USA,2021-12-24,Yes,South,US Central,AC100394,503A
+Silver Creek Keystone Compounding Pharmacy,Plano,TX,USA,2021-05-01,Yes,South,US Central,AC100395,503A
+Sterling Granite Specialty Pharmacy,Fort Worth,TX,USA,2022-03-30,Yes,South,US Central,AC100396,503A
+Cedar Harbor Compounding Center,Torrance,CA,USA,2022-10-25,Yes,West,US Central,AC100397,503A
+Highland Barker Outsourcing Facility,Sacramento,CA,USA,2022-11-08,Yes,West,US Central,AC100398,503B
+Riverbend Frontier Biologics,Oakland,CA,USA,2026-01-05,Yes,West,US Central,AC100399,GMP
+Prairie Smith Pharmacy,Fresno,CA,USA,2026-08-28,Yes,West,US Central,AC100400,503A
+Highland Cruz Compounding Center,Sacramento,CA,USA,2023-06-22,Yes,West,US Central,AC100401,503A
+Gulf May Apothecary,Albuquerque,NM,USA,2023-11-09,Yes,West,US Central,AC100402,503A
+Pinnacle Silver Creek Wellness Pharmacy,Sugar Land,TX,USA,2025-07-20,Yes,South,US Central,AC100403,503A
+Copper Wilson Compounding Center,Anchorage,AK,USA,2022-01-04,Yes,West,US Central,AC100404,503A
+Maple Oakridge Specialty Pharmacy,San Jose,CA,USA,2023-03-03,Yes,West,US Central,AC100405,503A
+Magnolia Summit Compounding Pharmacy,Scottsdale,AZ,USA,2021-11-29,Yes,West,US Central,AC100406,503A
+Lone Star Contreras Family Pharmacy,The Woodlands,TX,USA,2022-02-03,Yes,South,US Central,AC100407,503A
+Lone Star Vista Rx,San Jose,CA,USA,2026-03-27,Yes,West,US Central,AC100408,503A
+Canyon Perez Pharmacy,Miami,FL,USA,2021-11-17,Yes,South,US Central,AC100409,503A
+Bayou Beacon Compounding Pharmacy,Boca Raton,FL,USA,2021-09-15,Yes,South,US Central,AC100410,503A
+Bayou Williams Specialty Pharmacy,Chicago,IL,USA,2025-10-02,Yes,Midwest,US Central,AC100411,503A
+Summit Evergreen Sterile Outsourcing,Savannah,GA,USA,2021-03-01,Yes,South,US Central,AC100412,503B
+Redwood Pinnacle Family Pharmacy,Boston,MA,USA,2026-03-03,Yes,Northeast,US Central,AC100413,503A
+Desert Clearwater Specialty Pharmacy,Oakland,CA,USA,2021-09-16,Yes,West,US Central,AC100414,503A
+Prairie Redwood Specialty Pharmacy,San Jose,CA,USA,2021-09-08,Yes,West,US Central,AC100415,503A
+Frontier Willow Compounding Center,Lubbock,TX,USA,2022-05-06,Yes,South,US Central,AC100416,503A
+Vista Colon Wellness Pharmacy,Plano,TX,USA,2021-07-31,Yes,South,US Central,AC100417,503A
+Cedar Stone Wellness Pharmacy,Chandler,AZ,USA,2023-10-17,Yes,West,US Central,AC100418,503A
+Heritage Pinnacle Apothecary,Colorado Springs,CO,USA,2022-09-28,Yes,West,US Central,AC100419,503A
+Aspen Goodman Pharmacy,Honolulu,HI,USA,2025-07-03,Yes,West,US Central,AC100420,503A
+Stonebridge Highland Wellness Pharmacy,El Paso,TX,USA,2022-01-30,Yes,South,US Central,AC100421,503A
+Granite Welch Rx,Fort Worth,TX,USA,2021-07-22,Yes,South,US Central,AC100422,503A
+Lakeside Lopez Wellness Pharmacy,Irvine,CA,USA,2021-05-30,Yes,West,US Central,AC100423,503A
+Copper Bentley Pharmacy,Raleigh,NC,USA,2021-09-24,Yes,South,US Central,AC100424,503A
+Cedar Mccann Family Pharmacy,St. Louis,MO,USA,2023-02-02,Yes,Midwest,US Central,AC100425,503A
+Juniper Hernandez Family Pharmacy,Tucson,AZ,USA,2022-07-09,Yes,West,US Central,AC100426,503A
+Lone Star Odom Family Pharmacy,Fresno,CA,USA,2022-06-24,Yes,West,US Central,AC100427,503A
+Falcon Rowe Apothecary,Fresno,CA,USA,2023-11-13,Yes,West,US Central,AC100428,503A
+Bayou Lambert Apothecary,Buffalo,NY,USA,2025-06-28,Yes,Northeast,US Central,AC100429,503A
+Pinnacle Williams Rx,The Woodlands,TX,USA,2022-09-23,Yes,South,US Central,AC100430,503A
+Orchard Nelson Specialty Pharmacy,San Diego,CA,USA,2022-01-08,Yes,West,US Central,AC100431,503A
+Vista Unity Specialty Pharmacy,Houston,TX,USA,2021-09-18,Yes,South,US Central,AC100432,503A
+Sterling Riddle Pharmacy,Columbus,OH,USA,2022-05-03,Yes,Midwest,US Central,AC100433,503A
+Mesa Ross Rx,San Diego,CA,USA,2022-07-16,Yes,West,US Central,AC100434,503A
+Coastal Holloway Apothecary,Rochester,NY,USA,2022-01-29,Yes,Northeast,US Central,AC100435,503A
+Clearwater Trinity Compounding Pharmacy,Jacksonville,FL,USA,2025-04-28,Yes,South,US Central,AC100436,503A
+Canyon Mendoza Family Pharmacy,Plano,TX,USA,2021-10-09,Yes,South,US Central,AC100437,503A
+Union Adams Apothecary,Boston,MA,USA,2022-08-16,Yes,Northeast,US Central,AC100438,503A
+Silver Creek Tanner Specialty Pharmacy,Beverly Hills,CA,USA,2021-12-22,Yes,West,US Central,AC100439,503A
+Beacon Harris Rx,New York,NY,USA,2025-08-12,Yes,Northeast,US Central,AC100440,503A
+Evergreen Curry Wellness Pharmacy,Jacksonville,FL,USA,2025-04-29,Yes,South,US Central,AC100441,503A
+Trinity Young Compounding Center,Los Angeles,CA,USA,2021-06-08,Yes,West,US Central,AC100442,503A
+Liberty Walker Pharmacy,Fresno,CA,USA,2023-10-21,Yes,West,US Central,AC100443,503A
+Union Maldonado Compounding Pharmacy,Fresno,CA,USA,2025-04-10,Yes,West,US Central,AC100444,503A
+Meadow Brightwater Wellness Pharmacy,Sugar Land,TX,USA,2026-06-13,Yes,South,US Central,AC100445,503A
+Golden Myers Pharmacy,Beverly Hills,CA,USA,2022-07-24,Yes,West,US Central,AC100446,503A
+Coastal Martinez Family Pharmacy,Houston,TX,USA,2023-06-24,Yes,South,US Central,AC100447,503A
+Evergreen Collins Compounding Pharmacy,Dallas,TX,USA,2021-12-04,Yes,South,US Central,AC100448,503A
+Beacon Summit Specialty Pharmacy,Lubbock,TX,USA,2026-04-24,Yes,South,US Central,AC100449,503A
+Meadow Mitchell Compounding Pharmacy,Kansas City,MO,USA,2022-07-12,Yes,Midwest,US Central,AC100450,503A
+Lakeside Jones Pharmacy,Austin,TX,USA,2021-03-08,Yes,South,US Central,AC100451,503A
+Redwood Dunn Family Pharmacy,Scottsdale,AZ,USA,2021-02-12,Yes,West,US Central,AC100452,503A
+Westfield Love Apothecary,San Diego,CA,USA,2022-03-23,Yes,West,US Central,AC100453,503A
+Westfield Heritage Wellness Pharmacy,Orlando,FL,USA,2022-05-13,Yes,South,US Central,AC100454,503A
+Canyon Jackson Pharmacy,Jackson,MS,USA,2025-08-29,Yes,South,US Central,AC100455,503A
+Canyon Heritage Compounding Center,Beverly Hills,CA,USA,2021-12-29,Yes,West,US Central,AC100456,503A
+Cedar Smith Wellness Pharmacy,San Jose,CA,USA,2021-04-09,Yes,West,US Central,AC100457,503A
+Meadow Vista Pharma Services,El Paso,TX,USA,2021-01-25,Yes,South,US Central,AC100458,503B
+Sage Cook Rx,The Woodlands,TX,USA,2024-05-18,Yes,South,US Central,AC100459,503A
+Horizon Granite Specialty Pharmacy,Denver,CO,USA,2021-07-20,Yes,West,US Central,AC100460,503A
+Brightwater Thomas Sterile Outsourcing,Plano,TX,USA,2022-08-12,Yes,South,US Central,AC100461,503B
+Frontier Wright Specialty Pharmacy,San Jose,CA,USA,2022-01-03,Yes,West,US Central,AC100462,503A
+Juniper Orchard Compounding Center,Sacramento,CA,USA,2022-09-16,Yes,West,US Central,AC100463,503A
+Vista Ingram Wellness Pharmacy,Sacramento,CA,USA,2026-02-08,Yes,West,US Central,AC100464,503A
+Sterling Edwards Rx,Naperville,IL,USA,2023-01-19,Yes,Midwest,US Central,AC100465,503A
+Brightwater Sage Rx,Fort Worth,TX,USA,2021-11-22,Yes,South,US Central,AC100466,503A
+Meadow Strickland Pharmacy,Atlanta,GA,USA,2023-11-14,Yes,South,US Central,AC100467,503A
+Northstar Harris Pharmacy,Memphis,TN,USA,2024-09-10,Yes,South,US Central,AC100468,503A
+Clearwater Gilbert Family Pharmacy,Fort Worth,TX,USA,2021-11-13,Yes,South,US Central,AC100469,503A
+Copper Wu Specialty Pharmacy,Plano,TX,USA,2025-01-26,Yes,South,US Central,AC100470,503A
+Willow Orchard Rx,Pittsburgh,PA,USA,2022-07-20,Yes,Northeast,US Central,AC100471,503A
+Orchard Gutierrez Compounding Pharmacy,Plano,TX,USA,2025-11-05,Yes,South,US Central,AC100472,503A
+Pioneer Velez Pharmacy,Fresno,CA,USA,2021-08-06,Yes,West,US Central,AC100473,503A
+Keystone Evergreen Wellness Pharmacy,Boston,MA,USA,2021-04-06,Yes,Northeast,US Central,AC100474,503A
+Northstar Clearwater Family Pharmacy,Newport Beach,CA,USA,2021-04-21,Yes,West,US Central,AC100475,503A
+Copper Williams Compounding Center,Grand Rapids,MI,USA,2025-06-22,Yes,Midwest,US Central,AC100476,503A
+Canyon Avila Biologics,Sugar Land,TX,USA,2022-10-02,Yes,South,US Central,AC100477,GMP
+Clearwater Lone Star Pharma Services,The Woodlands,TX,USA,2021-03-29,Yes,South,US Central,AC100478,503B
+Oakridge Desert Specialty Pharmacy,Brooklyn,NY,USA,2021-09-05,Yes,Northeast,US Central,AC100479,503A
+Stonebridge Davis Outsourcing Facility,Beverly Hills,CA,USA,2022-04-15,Yes,West,US Central,AC100480,503B
+Beacon Parker Pharmacy,Houston,TX,USA,2021-02-16,Yes,South,US Central,AC100481,503A
+Beacon Bailey Specialty Pharmacy,Sacramento,CA,USA,2022-07-27,Yes,West,US Central,AC100482,503A
+Southpoint Schwartz Life Sciences,Dallas,TX,USA,2023-12-22,Yes,South,US Central,AC100483,GMP
+Oakridge Riverbend Family Pharmacy,Boca Raton,FL,USA,2021-06-26,Yes,South,US Central,AC100484,503A
+Pioneer Nguyen Rx,Los Angeles,CA,USA,2025-01-27,Yes,West,US Central,AC100485,503A
+Sterling Lane Wellness Pharmacy,San Antonio,TX,USA,2022-09-11,Yes,South,US Central,AC100486,503A
+Silver Creek Lakeside Pharmacy,Irvine,CA,USA,2023-12-02,Yes,West,US Central,AC100487,503A
+Lakeside Perry Rx,Houston,TX,USA,2021-04-19,Yes,South,US Central,AC100488,503A
+Granite Floyd Pharmacy,Brooklyn,NY,USA,2021-11-22,Yes,Northeast,US Central,AC100489,503A
+Westfield Johnson Pharma Services,Minneapolis,MN,USA,2022-07-27,Yes,Midwest,US Central,AC100490,503B
+Redwood Vista Specialty Pharmacy,Chandler,AZ,USA,2021-11-11,Yes,West,US Central,AC100491,503A
+Pinnacle Schmidt Rx,Oakland,CA,USA,2021-09-20,Yes,West,US Central,AC100492,503A
+Vista Summit Wellness Pharmacy,Irvine,CA,USA,2022-06-13,Yes,West,US Central,AC100493,503A
+Keystone Bennett Pharmacy,Jacksonville,FL,USA,2021-11-17,Yes,South,US Central,AC100494,503A
+Meadow Trinity Wellness Pharmacy,Mesa,AZ,USA,2022-09-01,Yes,West,US Central,AC100495,503A
+Falcon Kaiser Compounding Pharmacy,Newport Beach,CA,USA,2021-08-13,Yes,West,US Central,AC100496,503A
+Desert Falcon Sterile Outsourcing,Baton Rouge,LA,USA,2024-02-23,Yes,South,US Central,AC100497,503B
+Sierra Farrell Apothecary,San Diego,CA,USA,2024-10-31,Yes,West,US Central,AC100498,503A
+Vista Sierra Compounding Center,Scottsdale,AZ,USA,2025-03-15,Yes,West,US Central,AC100499,503A

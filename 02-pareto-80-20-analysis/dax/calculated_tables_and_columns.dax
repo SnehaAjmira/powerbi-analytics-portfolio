@@ -1,0 +1,37 @@
+// Calculated tables and columns (Modeling > New table / New column)
+
+// ---- calculated table
+DimCalendar =
+ADDCOLUMNS(
+    CALENDAR(DATE(2020,1,1), DATE(2026,12,31)),
+    "Year", YEAR([Date]),
+    "Month", FORMAT([Date], "MMMM"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Week", WEEKNUM([Date])
+)
+
+// ---- calculated table
+DimClientFacility =
+DISTINCT(SELECTCOLUMNS(AllData, AllData[Client_Facility]))
+
+// ---- calculated table
+DimTestName =
+DISTINCT('AllData'[Test_Name])
+
+// ---- calculated table
+Client split category =
+CROSSJOIN(
+    {"A+","Others"},
+    SELECTCOLUMNS(DimClientFacility, "Client", DimClientFacility[AllData_Client_Facility]
+))
+
+// ---- calculated table
+Test split category =
+CROSSJOIN(
+    {"A+","Others"},
+    SELECTCOLUMNS(DimTestName, "Tests", DimTestName[Test_Name]
+))
+
+// ---- calculated table
+Parameter =
+GENERATESERIES(0.01, 1, 0.01)

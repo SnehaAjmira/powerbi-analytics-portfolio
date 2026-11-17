@@ -1,0 +1,3 @@
+Fact Table (Services)[Sample_Name] -> Therapeutics_Table[Sample name]  M:1  active  cross-filter: Single
+Consulting Activities[Client_Facility_Name] -> Client_Facility[ClientFacilityName]  M:1  active  cross-filter: Single
+Fact Table (Products)[Client_Facility] -> Client_Facility[ClientFacilityName]  M:1  active  cross-filter: Single

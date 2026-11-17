@@ -1,0 +1,705 @@
+// Measures exported from the report model.
+// Paste into DAX query view and click "Update model with changes" to recreate them.
+
+DEFINE
+    MEASURE 'Fact Table (Services)'[List of City values] =
+        VAR __DISTINCT_VALUES_COUNT = DISTINCTCOUNT('Client_Facility'[BillTo_City])
+        VAR __MAX_VALUES_TO_SHOW = 5
+        RETURN
+            IF(
+                __DISTINCT_VALUES_COUNT > __MAX_VALUES_TO_SHOW,
+                CONCATENATE(
+                    CONCATENATEX(
+                        TOPN(
+                            __MAX_VALUES_TO_SHOW,
+                            VALUES('Client_Facility'[BillTo_City]),
+                            'Client_Facility'[BillTo_City],
+                            ASC
+                        ),
+                        'Client_Facility'[BillTo_City],
+                        ", ",
+                        'Client_Facility'[BillTo_City],
+                        ASC
+                    ),
+                    ", etc."
+                ),
+                CONCATENATEX(
+                    VALUES('Client_Facility'[BillTo_City]),
+                    'Client_Facility'[BillTo_City],
+                    ", ",
+                    'Client_Facility'[BillTo_City],
+                    ASC
+                )
+            )
+
+    MEASURE 'Fact Table (Services)'[Services Revenue] =
+        Sum('Fact Table (Services)'[Price])
+
+    MEASURE 'Fact Table (Services)'[Total Tests] =
+        Count( 'Fact Table (Services)'[Test_Id])
+
+    MEASURE 'Fact Table (Services)'[Total Clients] =
+        DISTINCTCOUNT('Fact Table (Services)'[Client_Facility])
+
+    MEASURE 'Fact Table (Services)'[Rev QoQ] =
+        VAR CurrentQuarterRev = SUM('Fact Table (Services)'[Price])
+        VAR PreviousQuarterRev =
+            CALCULATE(
+                SUM('Fact Table (Services)'[Price]),
+                DATEADD('Date'[Date], -1, QUARTER)
+            )
+        RETURN
+            DIVIDE(CurrentQuarterRev - PreviousQuarterRev, PreviousQuarterRev)
+
+    MEASURE 'Fact Table (Services)'[Vol QoQ] =
+        VAR CurrentQuarterVol = COUNT('Fact Table (Services)'[Test_Id])
+        VAR PreviousQuarterRev = 
+            CALCULATE(
+                COUNT('Fact Table (Services)'[Test_Id]),
+                DATEADD('Date'[Date],-1,QUARTER))
+        RETURN
+            DIVIDE(CurrentQuarterVol - PreviousQuarterRev,PreviousQuarterRev)
+
+    MEASURE 'Volume Change'[Volume Change Value] =
+        SELECTEDVALUE('Volume Change'[Volume Change])
+
+    MEASURE 'Price Change'[Price Change Value] =
+        SELECTEDVALUE('Price Change'[Price Change])
+
+    MEASURE 'ScenarioMultiplier'[ScenarioMultiplier Value] =
+        SELECTEDVALUE('ScenarioMultiplier'[ScenarioMultiplier])
+
+    MEASURE 'Fact Table (Services)'[Last Actual Date] =
+        CALCULATE (
+            MAX ( 'Date'[Date] ),
+            FILTER ( ALL ( 'Date' ), NOT ISBLANK ( [Services Revenue] ) )
+        )
+
+    MEASURE 'Fact Table (Services)'[Top Revenue City] =
+        VAR t =
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Client_Facility',
+                    'Client_Facility'[BillTo_City],
+                    "Rev", [Services Revenue]
+                ),
+                [Rev], DESC,
+                'Client_Facility'[BillTo_City], ASC
+            )
+        RETURN
+            MAXX(t, 'Client_Facility'[BillTo_City])
+
+    MEASURE 'Fact Table (Services)'[Top Revenue City Amount] =
+        VAR TopCity =
+            [Top Revenue City]
+        RETURN
+            CALCULATE(
+                [Services Revenue],
+                KEEPFILTERS('Client_Facility'[BillTo_City] = TopCity)
+            )
+
+    MEASURE 'Fact Table (Services)'[Client Revenue Growth %] =
+        DIVIDE(
+            [Services Revenue] - [Revenue LY],
+            [Revenue LY]
+        )
+
+    MEASURE 'Fact Table (Services)'[Revenue LY] =
+        CALCULATE(
+            [Services Revenue],
+            DATEADD('Date'[Date], -1, YEAR)
+        )
+
+    MEASURE 'Fact Table (Services)'[Avg Price per Test] =
+        DIVIDE([Services Revenue], [Total Tests])
+
+    MEASURE 'Fact Table (Services)'[Days Since Last Order] =
+        DATEDIFF([Last Client Submission Date], TODAY(), DAY)
+
+    MEASURE 'Dim Client'[F Score] =
+        IF(
+            ISBLANK([Frequency 12M]),
+            BLANK(),
+            VAR Pct = DIVIDE([Frequency Rank], [Client Count])
+            RETURN
+                SWITCH(
+                    TRUE(),
+                    Pct <= 0.2, 5,
+                    Pct <= 0.4, 4,
+                    Pct <= 0.6, 3,
+                    Pct <= 0.8, 2,
+                    1
+                )
+        )
+
+    MEASURE 'Dim Client'[Frequency 12M] =
+        CALCULATE(
+            [Total Tests],
+            DATESINPERIOD(
+                'Date'[Date],
+                [Analysis Date],
+                -12,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Frequency Rank] =
+        RANKX(
+            ALLSELECTED('Dim Client'[Client_Facility]),
+            [Frequency 12M],
+            ,
+            DESC,
+            DENSE
+        )
+
+    MEASURE 'Dim Client'[M Score] =
+        IF(
+            ISBLANK([Monetary 12M]),
+            BLANK(),
+            VAR Pct = DIVIDE([Monetary Rank], [Client Count])
+            RETURN
+                SWITCH(
+                    TRUE(),
+                    Pct <= 0.2, 5,
+                    Pct <= 0.4, 4,
+                    Pct <= 0.6, 3,
+                    Pct <= 0.8, 2,
+                    1
+                )
+        )
+
+    MEASURE 'Dim Client'[Monetary 12M] =
+        CALCULATE(
+            [Services Revenue],
+            DATESINPERIOD(
+                'Date'[Date],
+                [Analysis Date],
+                -12,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Monetary Rank] =
+        RANKX(
+            ALLSELECTED('Dim Client'[Client_Facility]),
+            [Monetary 12M],
+            ,
+            DESC,
+            DENSE
+        )
+
+    MEASURE 'Dim Client'[R Score] =
+        IF(
+            ISBLANK([Last Client Submission Date]),
+            BLANK(),
+            SWITCH(
+                TRUE(),
+                [Recency] <= 1, 5,
+                [Recency] <= 3, 4,
+                [Recency] <= 6, 3,
+                [Recency] <= 12, 2,
+                1
+            )
+        )
+
+    MEASURE 'Dim Client'[Recency] =
+        DATEDIFF([Last Client Submission Date], [Analysis Date], MONTH)
+
+    MEASURE 'Dim Client'[Total Submissions] =
+        DISTINCTCOUNT('Fact Table (Services)'[Submission_Number])
+
+    MEASURE 'Dim Client'[Last Client Submission Date] =
+        MAX('Fact Table (Services)'[Submission_Date])
+
+    MEASURE 'Dim Client'[Last Update] =
+        MAX ( 'Fact Table (Services)'[Completion_Date] )
+
+    MEASURE 'Dim Client'[Client Count] =
+        CALCULATE(
+            DISTINCTCOUNT('Dim Client'[Client_Facility]),
+            ALLSELECTED('Dim Client'[Client_Facility])
+        )
+
+    MEASURE 'Dim Client'[Analysis Date] =
+        MAX('Date'[Date])
+
+    MEASURE 'Behavior Cohort Table'[Clients in Behavior Cohort] =
+        VAR SelectedCohort =
+            SELECTEDVALUE('Behavior Cohort Table'[Behavior Cohort])
+        RETURN
+        COUNTROWS(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                [Behavior Cohort Advanced] = SelectedCohort
+            )
+        )
+
+    MEASURE 'Dim Client'[Analysis Date LY] =
+        EOMONTH( EDATE([Analysis Date], -12), 0 )
+
+    MEASURE 'Dim Client'[Last Client Submission Date LY] =
+        VAR LYDate = [Analysis Date LY]
+        RETURN
+        CALCULATE(
+            MAX('Fact Table (Services)'[Submission_Date]),
+            REMOVEFILTERS('Date'),
+            KEEPFILTERS(VALUES('Dim Client'[Client_Facility])),
+            'Fact Table (Services)'[Submission_Date] <= LYDate
+        )
+
+    MEASURE 'Dim Client'[Recency Months LY] =
+        VAR LastDt = [Last Client Submission Date LY]
+        VAR LYDate = [Analysis Date LY]
+        RETURN
+        IF(
+            NOT ISBLANK(LastDt),
+            DATEDIFF(LastDt, LYDate, MONTH),
+            BLANK()
+        )
+
+    MEASURE 'Dim Client'[Average Recency] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Last Client Submission Date])
+            ),
+            [Recency]
+        )
+
+    MEASURE 'Dim Client'[Average Recency LY] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Recency Months LY])
+            ),
+            [Recency Months LY]
+        )
+
+    MEASURE 'Dim Client'[YoY Recency Label] =
+        VAR LY = [Average Recency LY]
+        VAR YoYCalc = DIVIDE(LY - [Average Recency], LY)
+        VAR YoYFormatted = FORMAT(YoYCalc, "0.0%")
+        VAR LYFormatted = FORMAT(LY, "#,##0")
+        RETURN
+        SWITCH(
+            TRUE(),
+            ISBLANK(LY), UNICHAR(8211) & " No Data for Last Year",
+            YoYCalc > 0, UNICHAR(9650) & " " & YoYFormatted & " | LY " & LYFormatted,
+            YoYCalc = 0, UNICHAR(8594) & " " & YoYFormatted & " | LY " & LYFormatted,
+            UNICHAR(9660) & " " & YoYFormatted & " | LY " & LYFormatted
+        )
+
+    MEASURE 'Dim Client'[Frequency 12M LY] =
+        CALCULATE(
+            [Total Tests],
+            DATESINPERIOD(
+                'Date'[Date],
+                [Analysis Date LY],
+                -12,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Average Frequency 12M] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Frequency 12M])
+            ),
+            [Frequency 12M]
+        )
+
+    MEASURE 'Dim Client'[Average Frequency 12M LY] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Frequency 12M LY])
+            ),
+            [Frequency 12M LY]
+        )
+
+    MEASURE 'Dim Client'[YoY Frequency Label] =
+        VAR LY = [Average Frequency 12M LY]
+        VAR YoYCalc = DIVIDE([Average Frequency 12M] - LY, LY)
+        VAR YoYFormatted = FORMAT(YoYCalc, "0.0%")
+        VAR LYFormatted = FORMAT(LY, "#,##0")
+        RETURN
+        SWITCH(
+            TRUE(),
+            ISBLANK(LY), UNICHAR(8211) & " No Data for Last Year",
+            YoYCalc > 0, UNICHAR(9650) & " " & YoYFormatted & " | LY " & LYFormatted,
+            YoYCalc = 0, UNICHAR(8594) & " " & YoYFormatted & " | LY " & LYFormatted,
+            UNICHAR(9660) & " " & YoYFormatted & " | LY " & LYFormatted
+        )
+
+    MEASURE 'Dim Client'[Monetary 12M LY] =
+        CALCULATE(
+            [Services Revenue],
+            DATESINPERIOD(
+                'Date'[Date],
+                [Analysis Date LY],
+                -12,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Average Monetary 12M] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Monetary 12M])
+            ),
+            [Monetary 12M]
+        )
+
+    MEASURE 'Dim Client'[Average Monetary 12M LY] =
+        AVERAGEX(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                NOT ISBLANK([Monetary 12M LY])
+            ),
+            [Monetary 12M LY]
+        )
+
+    MEASURE 'Dim Client'[YoY Monetary Label] =
+        VAR LY = [Average Monetary 12M LY]
+        VAR YoYCalc = DIVIDE([Average Monetary 12M] - LY, LY)
+        VAR YoYFormatted = FORMAT(YoYCalc, "0.0%")
+        VAR LYFormatted = FORMAT(LY, "$#,##0")
+        RETURN
+        SWITCH(
+            TRUE(),
+            ISBLANK(LY), UNICHAR(8211) & " No Data for Last Year",
+            YoYCalc > 0, UNICHAR(9650) & " " & YoYFormatted & " | LY " & LYFormatted,
+            YoYCalc = 0, UNICHAR(8594) & " " & YoYFormatted & " | LY " & LYFormatted,
+            UNICHAR(9660) & " " & YoYFormatted & " | LY " & LYFormatted
+        )
+
+    MEASURE 'Dim Client'[FrequencyYoYColor] =
+        VAR LY = [Average Frequency 12M LY]
+        VAR YoY = DIVIDE([Average Frequency 12M] - LY, LY)
+        
+        RETURN
+        SWITCH(
+            TRUE(),
+            YoY > 0, "#a5ceff",
+            OR(ISBLANK(LY), LY = 0), "#F39C12",
+            "#F39C12"
+        )
+
+    MEASURE 'Dim Client'[MonetaryYoYColor] =
+        VAR LY = [Average Monetary 12M LY]
+        VAR YoY = DIVIDE([Average Monetary 12M] - LY, LY)
+        
+        RETURN
+        SWITCH(
+            TRUE(),
+            YoY > 0, "#a5ceff",
+            OR(ISBLANK(LY), LY = 0), "#F39C12",
+            "#F39C12"
+        )
+
+    MEASURE 'Dim Client'[RecencyYoYColor] =
+        VAR LY = [Average Recency LY]
+        VAR YoY = DIVIDE(LY - [Average Recency], LY)
+        
+        RETURN
+        SWITCH(
+            TRUE(),
+            YoY > 0, "#a5ceff",
+            OR(ISBLANK(LY), LY = 0), "#F39C12",
+            "#F39C12"
+        )
+
+    MEASURE 'Dim Client'[Behavior Cohort Advanced] =
+        SWITCH(
+            TRUE(),
+        
+            -- 🔵 Champions
+            [R Score]>=4 && [F Score]>=4 && [M Score]>=4 && [Revenue Trend %] > 0,
+            "Champions (Growing)",
+        
+            [R Score]>=4 && [F Score]>=4 && [M Score]>=4 && ABS([Revenue Trend %]) <= 0.05,
+            "Champions (Stable)",
+        
+            [M Score]>=4 && [Revenue Trend %] < -0.1,
+            "High Value Declining",
+        
+            [M Score]>=4 && [R Score]<=2,
+            "High Value At Risk",
+        
+            -- 🟢 Core
+            [F Score]>=4 && [M Score]>=3,
+            "Loyal High Frequency",
+        
+            [R Score]>=3 && [F Score]>=3 && [M Score]>=3,
+            "Consistent Clients",
+        
+            [M Score]>=3 && [Revenue Trend %] > 0.1,
+            "Growing Mid-Tier",
+        
+            -- 🟡 Growth
+            [R Score]>=4 && [M Score]>=3,
+            "New High Potential",
+        
+            [Revenue Trend %] > 0.1 && [F Score]<=2,
+            "Emerging Clients",
+        
+            [F Score]>=3 && [M Score]<=2,
+            "Upsell Candidates",
+        
+            -- 🟠 Risk
+            [F Score]>=4 && [R Score]<=2,
+            "At Risk Loyal",
+        
+            [Revenue Trend %] < -0.1,
+            "Declining Clients",
+        
+            [R Score]<=2 && [Revenue Trend %] < 0,
+            "Churn Risk",
+        
+            -- 🔴 Lost
+            [R Score]=1 && [M Score]>=4,
+            "Lost High Value",
+        
+            [R Score]=1,
+            "Dormant",
+        
+            [F Score]=1,
+            "One-Time Clients",
+        
+            "Others"
+        )
+
+    MEASURE 'Dim Client'[Revenue Trend %] =
+        DIVIDE(
+            [Monetary 12M] - [Monetary 12M LY],
+            [Monetary 12M LY]
+        )
+
+    MEASURE 'Dim Client'[Revenue Recent 6M] =
+        CALCULATE(
+            [Services Revenue],
+            DATESINPERIOD(
+                'Date'[Date],
+                [Analysis Date],
+                -6,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Revenue Prior 6M] =
+        CALCULATE(
+            [Services Revenue],
+            DATESINPERIOD(
+                'Date'[Date],
+                EDATE([Analysis Date], -6),
+                -6,
+                MONTH
+            )
+        )
+
+    MEASURE 'Dim Client'[Revenue Trend 6M %] =
+        DIVIDE(
+            [Revenue Recent 6M] - [Revenue Prior 6M],
+            [Revenue Prior 6M]
+        )
+
+    MEASURE 'Dim Client'[Early Warning Band] =
+        SWITCH(
+            TRUE(),
+            ISBLANK([Revenue Prior 6M]), "No Prior 6M",
+            [Revenue Trend 6M %] <= -0.30, "Sharp Decline",
+            [Revenue Trend 6M %] <= -0.10, "Early Decline",
+            [Revenue Trend 6M %] < 0.10, "Stable",
+            [Revenue Trend 6M %] < 0.30, "Improving",
+            "Accelerating"
+        )
+
+    MEASURE 'Fact Table (Services)'[Distinct Tests] =
+        DISTINCTCOUNT('Fact Table (Services)'[Test_Name])
+
+    MEASURE 'Early Warning Table'[Clients in Early Warning Status] =
+        VAR SelectedStatus =
+            SELECTEDVALUE('Early Warning Table'[Early Warning Band])
+        RETURN
+        COUNTROWS(
+            FILTER(
+                VALUES('Dim Client'[Client_Facility]),
+                [Early Warning Band] = SelectedStatus
+            )
+        )
+
+    MEASURE 'Fact Table (Services)'[Highest Revenue Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Fact Table (Services)'[Client_Facility]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Fact Table (Services)',
+                    'Fact Table (Services)'[Client_Facility],
+                    "Revenue", SUM( 'Fact Table (Services)'[Price])
+                ),
+                [Revenue], DESC
+            )
+        )
+
+    MEASURE 'Fact Table (Services)'[Highest Volume Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Fact Table (Services)'[Client_Facility]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Fact Table (Services)',
+                    'Fact Table (Services)'[Client_Facility],
+                    "Tests", COUNTROWS('Fact Table (Services)')
+                ),
+                [Tests], DESC
+            )
+        )
+
+    MEASURE 'Fact Table (Services)'[Active Clients in Services] =
+        DISTINCTCOUNT('Fact Table (Services)'[Client_Facility])
+
+    MEASURE 'Fact Table (Services)'[Total Lot Numbers] =
+        DISTINCTCOUNT('Fact Table (Services)'[Lot_Number])
+
+    MEASURE 'Fact Table (Services)'[Average Price] =
+        Average('Fact Table (Services)'[Price])
+
+    MEASURE 'Fact Table (Products)'[Product Revenue] =
+        SUM('Fact Table (Products)'[Order_Total])
+
+    MEASURE 'Fact Table (Products)'[Total Products] =
+        Sum('Fact Table (Products)'[Ordered])
+
+    MEASURE 'Fact Table (Products)'[Total Product Clients] =
+        DISTINCTCOUNT('Fact Table (Products)'[Client_Facility])
+
+    MEASURE 'Fact Table (Products)'[Highest Prod. Revenue Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Fact Table (Products)'[Client_Facility]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Fact Table (Products)',
+                    'Fact Table (Products)'[Client_Facility],
+                    "Revenue", SUM( 'Fact Table (Products)'[Order_Total])
+                ),
+                [Revenue], DESC
+            )
+        )
+
+    MEASURE 'Fact Table (Products)'[Highest Prod.Volume Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Fact Table (Products)'[Client_Facility]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Fact Table (Products)',
+                    'Fact Table (Products)'[Client_Facility],
+                    "Items", SUM('Fact Table (Products)'[Ordered])
+                ),
+                [Items], DESC
+            )
+        )
+
+    MEASURE 'Consulting Activities'[T. Consultations] =
+        COUNT('Consulting Activities'[Activity_Id])
+
+    MEASURE 'Consulting Activities'[Cons. Rev.] =
+        sum('Consulting Activities'[Price])
+
+    MEASURE 'Consulting Activities'[Highest Cons. Revenue Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Consulting Activities'[Client_Facility_Name]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Consulting Activities',
+                    'Consulting Activities'[Client_Facility_Name],
+                    "Revenue", SUM( 'Consulting Activities'[Price])
+                ),
+                [Revenue], DESC
+            )
+        )
+
+    MEASURE 'Consulting Activities'[Highest Cons. Activity Contributor] =
+        CALCULATE(
+            SELECTEDVALUE('Consulting Activities'[Client_Facility_Name]),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Consulting Activities',
+                    'Consulting Activities'[Client_Facility_Name],
+                    "Consulting", COUNT('Consulting Activities'[Activity_Id])
+                ),
+                [Consulting], DESC
+            )
+        )
+
+    MEASURE 'Client_Facility'[All Revenue] =
+        [Product Revenue] + [Services Revenue] + [Cons. Rev.]
+
+    MEASURE 'Client_Facility'[Total Active Clients] =
+        DISTINCTCOUNT('Fact Table (Products)'[Client_Facility]) +
+        DISTINCTCOUNT('Fact Table (Services)'[Client_Facility]) +
+        DISTINCTCOUNT('Consulting Activities'[Client_Facility_Name])
+
+    MEASURE 'Fact Table (Services)'[Batch] =
+        DISTINCTCOUNT('Fact Table (Services)'[Lot_Number])
+
+    MEASURE 'Fact Table (Services)'[Rev MoM Icon] =
+        VAR CurrentMonthRev = SUM('Fact Table (Services)'[Price])
+        VAR PreviousMonthRev =
+            CALCULATE(
+                SUM('Fact Table (Services)'[Price]),
+                DATEADD('Date'[Date], -1, MONTH)
+            )
+        VAR Pct = DIVIDE(CurrentMonthRev - PreviousMonthRev, PreviousMonthRev)
+        RETURN
+            IF(Pct > 0, "▲ " & FORMAT(Pct, "0.0%"),
+            IF(Pct < 0, "▼ " & FORMAT(Pct, "0.0%"), "—"))
+
+    MEASURE 'Fact Table (Services)'[Tests MoM Icon] =
+        VAR CurrentMonthTests = COUNTROWS('Fact Table (Services)')
+        VAR PreviousMonthTests =
+            CALCULATE(
+                COUNTROWS('Fact Table (Services)'),
+                DATEADD('Date'[Date], -1, MONTH)
+            )
+        VAR Pct = DIVIDE(CurrentMonthTests - PreviousMonthTests, PreviousMonthTests)
+        RETURN
+            IF(Pct > 0, "▲ " & FORMAT(Pct, "0.0%"),
+            IF(Pct < 0, "▼ " & FORMAT(Pct, "0.0%"), "—"))
+
+    MEASURE 'Fact Table (Services)'[Rev MoM Color] =
+        VAR CurrentMonthRev = SUM('Fact Table (Services)'[Price])
+        VAR PreviousMonthRev =
+            CALCULATE(
+                SUM('Fact Table (Services)'[Price]),
+                DATEADD('Date'[Date], -1, MONTH)
+            )
+        VAR Pct = DIVIDE(CurrentMonthRev - PreviousMonthRev, PreviousMonthRev)
+        RETURN
+            IF(Pct > 0, "#2E7D32", IF(Pct < 0, "#CC5500", "#808080"))
+
+    MEASURE 'Fact Table (Services)'[Tests MoM Color] =
+        VAR CurrentMonthTests = COUNTROWS('Fact Table (Services)')
+        VAR PreviousMonthTests =
+            CALCULATE(
+                COUNTROWS('Fact Table (Services)'),
+                DATEADD('Date'[Date], -1, MONTH)
+            )
+        VAR Pct = DIVIDE(CurrentMonthTests - PreviousMonthTests, PreviousMonthTests)
+        RETURN
+            IF(Pct > 0, "#2E7D32", IF(Pct < 0, "#CC5500", "#808080"))
+
+    MEASURE 'Fact Table (Services)'[Count BUD] =
+        CALCULATE(
+            DISTINCTCOUNT('Fact Table (Services)'[Submission_Number]),
+            'Fact Table (Services)'[BUD_Test_Points] = "BUD"
+        )
+
+EVALUATE { 1 }

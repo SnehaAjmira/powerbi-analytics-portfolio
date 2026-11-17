@@ -1,0 +1,46 @@
+Company_ID,Company_Name,Company_Type,Primary_Discipline
+GC01,Contoso Builders (General Contractor),General Contractor,ALL
+OWN01,Contoso Energy (Owner),Owner,ALL
+DOR01,Ridgeline Design Partners,Design Partner,ALL
+SUB01,Sonoran Earthworks,Subcontractor,CIV
+SUB02,Red Rock Concrete,Subcontractor,CIV
+SUB03,Ironwood Steel Erectors,Subcontractor,STR
+SUB04,Mesa Architectural Systems,Subcontractor,ARC
+SUB05,Dry Room Builders West,Subcontractor,ARC
+SUB06,Saguaro Mechanical,Subcontractor,MEC
+SUB07,Desert Air Sheet Metal,Subcontractor,MEC
+SUB08,Pinnacle Process Piping,Subcontractor,PPG
+SUB09,Precision Process Systems,Subcontractor,PPG
+SUB10,Gila Plumbing Contractors,Subcontractor,PLB
+SUB11,Copper State Electric,Subcontractor,ELE
+SUB12,Sunbelt Power Systems,Subcontractor,ELE
+SUB13,Precision Controls Integration,Subcontractor,INC
+SUB14,Valley Fire Protection,Subcontractor,FPR
+SUB15,EquipLink Hookup Services,Subcontractor,PEQ
+SUB16,Arroyo Insulation,Subcontractor,MEC
+SUB17,Phoenix Rigging & Setting,Subcontractor,PEQ
+SUB18,Catalina Scaffold,Subcontractor,CIV
+SUP01,Apex Dry Room Products,Supplier,
+SUP02,Northfield Chillers,Supplier,
+SUP03,Summit Switchgear,Supplier,
+SUP04,Delta Process Components,Supplier,
+SUP05,Granite Transformers,Supplier,
+SUP06,Polaris Air Handling,Supplier,
+SUP07,Westline Valves,Supplier,
+SUP08,Crestview Pumps,Supplier,
+SUP09,Meridian Filtration,Supplier,
+SUP10,Keystone Cable & Wire,Supplier,
+SUP11,Pinnacle Dehumidification,Supplier,
+SUP12,Vantage Solvent Recovery,Supplier,
+SUP13,Orion Instruments,Supplier,
+SUP14,Cobalt Controls,Supplier,
+SUP15,Frontier Fire Equipment,Supplier,
+SUP16,Atlas Generators,Supplier,
+SUP17,Beacon UPS Systems,Supplier,
+SUP18,Harbor Steel Works,Supplier,
+SUP19,Evergreen Tanks,Supplier,
+SUP20,Ridgeway Duct Products,Supplier,
+SUP21,Silverline Pipe Supply,Supplier,
+SUP22,Lumen Lighting Supply,Supplier,
+SUP23,Clearwater Treatment Systems,Supplier,
+SUP24,Titan Cranes & Rigging,Supplier,

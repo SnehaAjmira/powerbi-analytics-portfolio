@@ -1,0 +1,160 @@
+Department,Sub - Department,Test_Name
+Microbiology,Sterile - Clean Room Ops,USP <71> Sterility Test
+Microbiology,Sterile - Non Clean Room Ops,USP <85> Bacterial Endotoxins Test
+Chemistry,Chemistry Production,Potency (Solution)
+Chemistry,Chemistry Production,Potency (Peptides)
+Chemistry,Chemistry Production,Potency (Non-Solution)
+Microbiology,Sterile - Clean Room Ops,Rapid Sterility (BacT/Alert)
+Microbiology,Sterile - Non Clean Room Ops,USP <788> Particulate Matter
+Chemistry,Chemistry Production,pH Determination
+Microbiology,Non - Sterile - Bacteria,Environmental Monitoring Plate Read
+Microbiology,Non - Sterile - Bacteria,Glove Fingertip Plate Read
+Microbiology,Non - Sterile - Bacteria,Bioburden Testing
+Microbiology,Sterile - Non Clean Room Ops,USP <51> Antimicrobial Effectiveness Test
+Microbiology,Sterile - Non Clean Room Ops,Container Closure Integrity Test
+Microbiology,Non - Sterile - Bacteria,USP <61> Microbial Enumeration
+Microbiology,Non - Sterile - Bacteria,USP <62> Specified Organisms
+Microbiology,Non - Sterile - Special projects,Growth Promotion
+Microbiology,Sterile - Clean Room Ops,Media Fill Incubation
+Chemistry,Chemistry Production,Identification by HPLC
+Chemistry,Chemistry Production,Assay & Impurities
+Chemistry,Chemistry Production,USP <467> Residual Solvents
+Chemistry,Chemistry Production,USP <232>/<233> Elemental Impurities
+Chemistry,Chemistry Production,USP <905> Uniformity of Dosage Units
+Chemistry,Chemistry Production,Osmolality
+Chemistry,Chemistry R&D,Water Activity
+Chemistry,Chemistry R&D,Beyond-Use Date Stability Study
+Chemistry,Chemistry R&D,Method Validation
+Chemistry,Chemistry R&D,USP <1225> Method Verification
+Microbiology,Non - Sterile - Special projects,USP <1116> Cleanroom Microbial Evaluation
+Microbiology,Non - Sterile - Special projects,Disinfectant Efficacy Study
+Microbiology,Sterile - Non Clean Room Ops,USP <790> Visible Particulates
+Microbiology,Sterile - Non Clean Room Ops,USP <789> Particulates in Ophthalmics
+Chemistry,Chemistry R&D,USP <831> Refractive Index
+Microbiology,Non - Sterile - Bacteria,Fungal Identification
+Microbiology,Non - Sterile - Bacteria,Bacterial Identification
+Chemistry,Chemistry Production,USP Monograph - Biotin
+Chemistry,Chemistry Production,USP Monograph - Lysine Hydrochloride
+Chemistry,Chemistry Production,USP Monograph - Ascorbic Acid
+Chemistry,Chemistry Production,USP Monograph - Methylcobalamin
+Chemistry,Chemistry Production,USP Monograph - Lidocaine
+Chemistry,Chemistry Production,USP Monograph - Bupivacaine
+Chemistry,Chemistry Production,USP Monograph - Ketorolac
+Chemistry,Chemistry Production,USP Monograph - Ondansetron
+Chemistry,Chemistry Production,USP Monograph - Dexamethasone
+Chemistry,Chemistry Production,USP Monograph - Glycine
+Chemistry,Chemistry Production,USP Monograph - Arginine
+Chemistry,Chemistry Production,USP Monograph - Taurine
+Chemistry,Chemistry Production,USP Monograph - Zinc Sulfate
+Chemistry,Chemistry Production,USP Monograph - Magnesium Chloride
+Chemistry,Chemistry Production,USP Monograph - Sodium Chloride
+Chemistry,Chemistry Production,USP Monograph - Dextrose
+Chemistry,Chemistry Production,USP Monograph - Folic Acid
+Chemistry,Chemistry Production,USP Monograph - Niacinamide
+Chemistry,Chemistry Production,USP Monograph - Riboflavin
+Chemistry,Chemistry Production,USP Monograph - Thiamine
+Chemistry,Chemistry Production,USP Monograph - Pyridoxine
+Chemistry,Chemistry Production,USP Monograph - Leucovorin
+Chemistry,Chemistry Production,USP Monograph - Heparin Sodium
+Chemistry,Chemistry Production,USP Monograph - Oxytocin
+Chemistry,Chemistry Production,USP Monograph - Phenylephrine
+Chemistry,Chemistry Production,USP Monograph - Ephedrine
+Chemistry,Chemistry Production,USP Monograph - Glycopyrrolate
+Chemistry,Chemistry Production,USP Monograph - Neostigmine
+Chemistry,Chemistry Production,USP Monograph - Midazolam
+Chemistry,Chemistry Production,USP Monograph - Atropine
+Chemistry,Chemistry Production,USP Monograph - Succinylcholine
+Chemistry,Chemistry Production,USP Monograph - Rocuronium
+Chemistry,Chemistry Production,USP Monograph - Vasopressin
+Chemistry,Chemistry Production,USP Monograph - Calcium Gluconate
+Chemistry,Chemistry Production,USP Monograph - Potassium Chloride
+Chemistry,Chemistry Production,USP Monograph - Tromethamine
+Chemistry,Chemistry Production,USP Monograph - Edetate Disodium
+Chemistry,Chemistry Production,USP Monograph - Polysorbate 80
+Chemistry,Chemistry Production,USP Monograph - Benzyl Benzoate
+Chemistry,Chemistry Production,USP Monograph - Cottonseed Oil
+Chemistry,Chemistry Production,USP Monograph - Grapeseed Oil
+Chemistry,Chemistry Production,USP Monograph - Sesame Oil
+Chemistry,Chemistry Production,USP Monograph - Mannitol
+Chemistry,Chemistry Production,USP Monograph - Sucrose
+Chemistry,Chemistry Production,USP Monograph - Trehalose
+Chemistry,Chemistry Production,USP Monograph - Histidine
+Chemistry,Chemistry Production,USP Monograph - Methionine
+Chemistry,Chemistry Production,USP Monograph - Cysteine
+Chemistry,Chemistry Production,USP Monograph - Carnitine
+Chemistry,Chemistry Production,USP Monograph - Inositol
+Chemistry,Chemistry Production,USP Monograph - Choline Chloride
+Chemistry,Chemistry Production,USP Monograph - Dexpanthenol
+Chemistry,Chemistry Production,USP Monograph - Selenious Acid
+Chemistry,Chemistry Production,USP Monograph - Cupric Chloride
+Chemistry,Chemistry Production,USP Monograph - Manganese Sulfate
+Chemistry,Chemistry Production,USP Monograph - Chromium Chloride
+Chemistry,Chemistry Production,USP Monograph - Ethanol
+Chemistry,Chemistry Production,USP Monograph - Glycerin
+Chemistry,Chemistry Production,USP Monograph - Propylene Glycol
+Chemistry,Chemistry Production,USP Monograph - Hyaluronic Acid
+Chemistry,Chemistry R&D,Content of Sodium
+Chemistry,Chemistry R&D,Content of Potassium
+Chemistry,Chemistry R&D,Content of Calcium
+Chemistry,Chemistry R&D,Content of Magnesium
+Chemistry,Chemistry R&D,Content of Zinc
+Chemistry,Chemistry R&D,Content of Copper
+Chemistry,Chemistry R&D,Content of Selenium
+Chemistry,Chemistry R&D,Content of Chromium
+Chemistry,Chemistry R&D,Content of Manganese
+Chemistry,Chemistry R&D,Content of Iron
+Chemistry,Chemistry R&D,Legacy Method CH-001
+Chemistry,Chemistry R&D,Legacy Method CH-002
+Chemistry,Chemistry R&D,Legacy Method CH-003
+Chemistry,Chemistry R&D,Legacy Method CH-004
+Chemistry,Chemistry R&D,Legacy Method CH-005
+Chemistry,Chemistry R&D,Legacy Method CH-006
+Chemistry,Chemistry R&D,Legacy Method CH-007
+Chemistry,Chemistry R&D,Legacy Method CH-008
+Chemistry,Chemistry R&D,Legacy Method CH-009
+Chemistry,Chemistry R&D,Legacy Method CH-010
+Chemistry,Chemistry R&D,Legacy Method CH-011
+Chemistry,Chemistry R&D,Legacy Method CH-012
+Chemistry,Chemistry R&D,Legacy Method CH-013
+Chemistry,Chemistry R&D,Legacy Method CH-014
+Chemistry,Chemistry R&D,Legacy Method CH-015
+Chemistry,Chemistry R&D,Legacy Method CH-016
+Chemistry,Chemistry R&D,Legacy Method CH-017
+Chemistry,Chemistry R&D,Legacy Method CH-018
+Chemistry,Chemistry R&D,Legacy Method CH-019
+Chemistry,Chemistry R&D,Legacy Method CH-020
+Chemistry,Chemistry R&D,Legacy Method CH-021
+Chemistry,Chemistry R&D,Legacy Method CH-022
+Chemistry,Chemistry R&D,Legacy Method CH-023
+Chemistry,Chemistry R&D,Legacy Method CH-024
+Chemistry,Chemistry R&D,Legacy Method CH-025
+Chemistry,Chemistry R&D,Legacy Method CH-026
+Chemistry,Chemistry R&D,Legacy Method CH-027
+Chemistry,Chemistry R&D,Legacy Method CH-028
+Chemistry,Chemistry R&D,Legacy Method CH-029
+Chemistry,Chemistry R&D,Legacy Method CH-030
+Chemistry,Chemistry R&D,Legacy Method CH-031
+Chemistry,Chemistry R&D,Legacy Method CH-032
+Chemistry,Chemistry R&D,Legacy Method CH-033
+Chemistry,Chemistry R&D,Legacy Method CH-034
+Chemistry,Chemistry R&D,Legacy Method CH-035
+Chemistry,Chemistry R&D,Legacy Method CH-036
+Chemistry,Chemistry R&D,Legacy Method CH-037
+Chemistry,Chemistry R&D,Legacy Method CH-038
+Chemistry,Chemistry R&D,Legacy Method CH-039
+Chemistry,Chemistry R&D,Legacy Method CH-040
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-001
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-002
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-003
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-004
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-005
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-006
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-007
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-008
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-009
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-010
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-011
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-012
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-013
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-014
+Microbiology,Non - Sterile - Special projects,Legacy Method MB-015

@@ -1,0 +1,501 @@
+Department,TestType,TestDate,SubmissionId,ClientName,OOSNumber,DosageForm
+Chemistry,Potency (Non-Solution) (Lidocaine Hydrochloride),2026-02-02,SUB-260129-0004,Mesa Harbor Pharma Services,260002,Cream (gm)
+Chemistry,Potency (Peptides) (Gonadorelin),2026-01-28,SUB-260119-0013,Mesa Harbor Pharma Services,260004,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-15,SUB-260112-0007,Apex Highland Rx,260006,Injectable
+Chemistry,Potency (Peptides) (Gonadorelin),2026-01-22,SUB-260116-0008,Apex Coleman Compounding Center,260009,Lyophilized
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-03,SUB-260130-0016,Aspen Thompson Pharmaceuticals,260012,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-01-21,SUB-260116-0010,Liberty Mckenzie Apothecary,260015,Oil Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-15,SUB-260108-0019,Liberty Mckenzie Apothecary,260017,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-05,SUB-260102-0026,Liberty Mckenzie Apothecary,260020,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-21,SUB-260115-0020,Liberty Mckenzie Apothecary,260022,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-11,SUB-260101-0011,Liberty Mckenzie Apothecary,260023,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-24,SUB-260120-0011,Liberty Mckenzie Apothecary,260024,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-02,SUB-260129-0021,Liberty Mckenzie Apothecary,260026,Aqueous Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-08,SUB-260102-0032,Liberty Mckenzie Apothecary,260028,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-10,SUB-260120-0015,Liberty Mckenzie Apothecary,260029,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-22,SUB-260102-0033,Liberty Mckenzie Apothecary,260031,Injectable
+Chemistry,Potency (Solution),2026-01-26,SUB-260121-0021,Liberty Mckenzie Apothecary,260034,Liquid
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-16,SUB-260112-0027,Liberty Mckenzie Apothecary,260035,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-28,SUB-260121-0024,Liberty Mckenzie Apothecary,260036,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-05,SUB-260101-0019,Liberty Mckenzie Apothecary,260037,Aqueous Solution
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-10,SUB-260105-0022,Liberty Mckenzie Apothecary,260039,Injectable
+Chemistry,Potency (Peptides) (Testosterone Cypionate),2026-01-05,SUB-260102-0039,Liberty Mckenzie Apothecary,260041,Oil Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-01-31,SUB-260128-0031,Cedar Gray Wellness Pharmacy,260044,Capsule
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-01-27,SUB-260122-0029,Cedar Gray Wellness Pharmacy,260045,Solution
+Chemistry,Potency (Peptides) (Sodium Bicarbonate),2026-01-07,SUB-260102-0043,Granite Pinnacle Compounding Pharmacy,260046,Aqueous Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-12,SUB-260108-0048,Frontier Apex Apothecary,260047,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-21,SUB-260119-0045,Westfield Martinez Family Pharmacy,260048,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-23,SUB-260121-0040,Golden Pinnacle Outsourcing Facility,260050,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-02,SUB-260126-0050,Desert Coastal Compounding Pharmacy,260052,Injectable
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-01-31,SUB-260128-0050,Mesa Phillips Rx,260054,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-01-26,SUB-260119-0065,Bayou Golden Wellness Pharmacy,260057,Plate
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-20,SUB-260116-0064,Magnolia Hamilton Pharma Services,260058,Injectable
+Chemistry,Potency (Solution) (Sodium Bicarbonate),2026-01-20,SUB-260116-0065,Magnolia Hamilton Pharma Services,260059,Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-01-07,SUB-260102-0075,Magnolia Hamilton Pharma Services,260060,Lyophilized
+Microbiology,USP <71> Sterility Test,2026-02-06,SUB-260128-0069,Canyon Brady Family Pharmacy,260063,Oil Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-02-03,SUB-260129-0075,Northstar Becker Apothecary,260066,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-16,SUB-260126-0075,Golden Northgate Laboratories,260068,Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-07,SUB-260102-0083,Golden Northgate Laboratories,260069,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-01-14,SUB-260106-0071,Trinity Duncan Compounding Pharmacy,260072,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-14,SUB-260127-0082,Trinity Duncan Compounding Pharmacy,260075,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-02-13,SUB-260123-0091,Trinity Duncan Compounding Pharmacy,260076,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-13,SUB-260108-0092,Copper Horizon Wellness Pharmacy,260078,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-04,SUB-260123-0094,Brightwater Brown Apothecary,260079,Solution
+Chemistry,Potency (Solution) (Magnesium Sulfate),2026-01-11,SUB-260106-0075,Vista Edwards Compounding Center,260081,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-01-28,SUB-260121-0088,Vista Lakeside Sterile Outsourcing,260082,Plate
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-01-16,SUB-260113-0093,Willow Wolfe Family Pharmacy,260083,Injectable
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-01-23,SUB-260119-0100,Willow Wolfe Family Pharmacy,260085,Injectable
+Chemistry,Potency (Solution) (Sermorelin Acetate),2026-01-12,SUB-260107-0119,Cedar Lone Star Family Pharmacy,260087,Lyophilized
+Microbiology,USP <71> Sterility Test,2026-01-23,SUB-260105-0103,Cedar Lone Star Family Pharmacy,260088,Injectable
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-01-10,SUB-260105-0104,Cedar Lone Star Family Pharmacy,260089,Injectable
+Chemistry,Potency (Solution),2026-01-18,SUB-260114-0105,Cedar Lone Star Family Pharmacy,260091,Liquid
+Microbiology,USP <71> Sterility Test,2026-02-12,SUB-260127-0114,Cedar Lone Star Family Pharmacy,260094,Swab
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-01-15,SUB-260112-0129,Vista Unity Specialty Pharmacy,260096,Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-01-27,SUB-260123-0144,Vista Unity Specialty Pharmacy,260098,Injectable
+Chemistry,Potency (Solution) (Ephedrine Sulfate),2026-01-31,SUB-260127-0126,Mesa Ross Rx,260101,Injectable
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-01-24,SUB-260123-0150,Silver Creek Tanner Specialty Pharmacy,260102,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-03,SUB-260129-0131,Silver Creek Tanner Specialty Pharmacy,260104,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-20,SUB-260108-0136,Silver Creek Tanner Specialty Pharmacy,260105,Powder Aliquot
+Chemistry,Potency (Peptides) (Tirzepatide),2026-01-24,SUB-260119-0140,Trinity Young Compounding Center,260108,Solution
+Chemistry,Potency (Peptides) (Tirzepatide),2026-01-10,SUB-260101-0121,Trinity Young Compounding Center,260109,Solution
+Chemistry,Potency (Solution) (Lidocaine Hydrochloride),2026-01-06,SUB-260101-0124,Juniper Orchard Compounding Center,260111,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-27,SUB-260116-0151,Copper Wu Specialty Pharmacy,260113,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-23,SUB-260116-0159,Lakeside Perry Rx,260114,Injectable
+Chemistry,Potency (Solution) (Tirzepatide),2026-01-24,SUB-260120-0156,Beacon Lone Star Family Pharmacy,260117,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-02,SUB-260127-0160,Pinnacle Sage Pharmacy,260119,Solution
+Chemistry,Potency (Peptides) (Morphine Sulfate),2026-01-10,SUB-260106-0135,Lakeside Lopez Family Pharmacy,260120,Injectable
+Chemistry,Identification by HPLC (Gabapentin),2026-01-16,SUB-260109-0171,Willow Nash Rx,260121,Cream (gm)
+Microbiology,USP <71> Sterility Test,2026-02-03,SUB-260112-0177,Canyon Mccoy Specialty Pharmacy,260123,Solution
+Chemistry,Potency (Solution),2026-01-06,SUB-260102-0182,Golden Woods Wellness Pharmacy,260124,Liquid
+Chemistry,Potency (Peptides) (Papaverine / Phentolamine / Alprostadil),2026-01-19,SUB-260115-0175,Golden Woods Wellness Pharmacy,260125,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-15,SUB-260107-0197,Coastal Williams Wellness Pharmacy,260126,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-01-24,SUB-260115-0185,Frontier Martinez Wellness Pharmacy,260129,Plate
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-31,SUB-260127-0197,Sterling Jones Apothecary,260130,Solution
+Microbiology,Bioburden Testing,2026-02-04,SUB-260127-0206,Sterling Jones Apothecary,260131,Solution
+Microbiology,USP <71> Sterility Test,2026-02-06,SUB-260127-0219,Sterling Jones Apothecary,260133,Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-01-22,SUB-260119-0233,Willow Lakeside Pharma Services,260134,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-30,SUB-260127-0230,Northgate Scott Wellness Pharmacy,260137,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-04,SUB-260126-0230,Highland Stokes Rx,260139,Injectable
+Chemistry,Beyond-Use Date Stability Study (Methotrexate),2026-05-03,SUB-260123-0258,Highland Howell Life Sciences,260141,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-12,SUB-260108-0230,Golden Phillips Specialty Pharmacy,260142,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-08,SUB-260126-0249,Oakridge Meadow Compounding Pharmacy,260143,Solution
+Chemistry,Potency (Solution) (Thiamine Hydrochloride),2026-01-30,SUB-260116-0265,Oakridge Meadow Compounding Pharmacy,260145,Injectable
+Chemistry,Potency (Peptides) (Benzyl Alcohol),2026-01-22,SUB-260116-0270,Summit Skinner Wellness Pharmacy,260146,Liquid
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-01,SUB-260130-0280,Prairie Silva Wellness Pharmacy,260147,Oil Injectable
+Chemistry,Potency (Solution) (Thiamine Hydrochloride),2026-01-25,SUB-260119-0254,Prairie Silva Wellness Pharmacy,260149,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-24,SUB-260122-0274,Prairie Silva Wellness Pharmacy,260151,Oil Injectable
+Chemistry,Potency (Solution) (Thiamine Hydrochloride),2026-01-21,SUB-260119-0255,Prairie Silva Wellness Pharmacy,260153,Injectable
+Chemistry,Potency (Peptides) (Estradiol Valerate),2026-01-27,SUB-260123-0282,Eastside Adams Specialty Pharmacy,260155,Oil Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-01-09,SUB-260106-0248,Northstar Evergreen Compounding Center,260156,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-16,SUB-260112-0278,Northgate Copeland Outsourcing Facility,260157,Injectable
+Chemistry,Potency (Non-Solution) (Alprostadil),2026-01-20,SUB-260113-0262,Northgate Copeland Outsourcing Facility,260159,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-01-25,SUB-260120-0281,Willow Mesa Laboratories,260160,Oil Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-01-15,SUB-260109-0286,Meadow Lakeside Pharma Services,260163,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-24,SUB-260119-0282,Sage Berry Rx,260165,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-02-01,SUB-260115-0281,Bayou Cole Family Pharmacy,260168,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-01,SUB-260115-0285,Copper Sterling Outsourcing Facility,260170,Injectable
+Chemistry,Potency (Solution) (Alprostadil),2026-02-01,SUB-260130-0331,Keystone Washington Compounding Center,260172,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-02-02,SUB-260129-0309,Highland Coastal Family Pharmacy,260174,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-02-01,SUB-260113-0300,Golden Obrien Apothecary,260176,Injectable
+Chemistry,Potency (Non-Solution) (Biotin),2026-01-12,SUB-260108-0322,Northstar Summit Apothecary,260178,Capsule
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-21,SUB-260112-0334,Juniper Hawkins Compounding Center,260179,Solution
+Microbiology,USP <71> Sterility Test,2026-01-26,SUB-260105-0315,Beacon Vista Compounding Pharmacy,260182,Injectable
+Chemistry,Potency (Solution) (NAD+),2026-01-17,SUB-260114-0336,Silver Creek Ryan Specialty Pharmacy,260184,Injectable
+Chemistry,Potency (Non-Solution) (NAD+),2026-01-10,SUB-260108-0343,Silver Creek Ryan Specialty Pharmacy,260186,Lyophilized
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-20,SUB-260113-0321,Bluebonnet Unity Apothecary,260189,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-07,SUB-260106-0321,Mesa Golden Rx,260192,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-06,SUB-260102-0370,Lakeside Redwood Compounding Pharmacy,260193,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-03,SUB-260114-0351,Apex Campbell Family Pharmacy,260196,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-18,SUB-260114-0353,Northgate Howard Apothecary,260198,Lyophilized
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-25,SUB-260122-0351,Trinity Campbell Compounding Center,260200,Solution
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-02-02,SUB-260128-0391,Southpoint Eastside Pharmaceuticals,260202,Oil Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-17,SUB-260112-0381,Southpoint Eastside Pharmaceuticals,260204,Aqueous Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-20,SUB-260115-0349,Southpoint Eastside Pharmaceuticals,260205,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-18,SUB-260116-0395,Southpoint Eastside Pharmaceuticals,260208,Injectable
+Chemistry,Potency (Non-Solution) (Biotin),2026-01-22,SUB-260115-0383,Southpoint Eastside Pharmaceuticals,260210,Capsule
+Chemistry,Potency (Peptides) (Tirzepatide),2026-01-23,SUB-260114-0423,Southpoint Eastside Pharmaceuticals,260212,Solution
+Microbiology,USP <71> Sterility Test,2026-01-30,SUB-260113-0396,Southpoint Eastside Pharmaceuticals,260213,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-02-05,SUB-260121-0441,Southpoint Eastside Pharmaceuticals,260215,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-01-28,SUB-260105-0415,Southpoint Eastside Pharmaceuticals,260218,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-07,SUB-260116-0449,Southpoint Eastside Pharmaceuticals,260219,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-31,SUB-260126-0420,Southpoint Eastside Pharmaceuticals,260221,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-11,SUB-260107-0451,Southpoint Eastside Pharmaceuticals,260223,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-06,SUB-260130-0461,Cedar Meadow Pharma Services,260224,Solution
+Chemistry,Potency (Non-Solution) (Bevacizumab),2026-02-01,SUB-260126-0427,Cedar Meadow Pharma Services,260225,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-01-11,SUB-260109-0457,Union Sanchez Rx,260226,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-26,SUB-260122-0440,Maple Sage Rx,260229,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-24,SUB-260106-0439,Mesa Cole Apothecary,260231,Injectable
+Chemistry,Potency (Solution) (L-Carnitine),2026-01-18,SUB-260113-0455,Mesa Cole Apothecary,260234,Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-01-15,SUB-260109-0478,Lone Star Dyer Family Pharmacy,260235,Oil Injectable
+Chemistry,Potency (Solution) (Benzyl Alcohol),2026-01-15,SUB-260113-0458,Lone Star Dyer Family Pharmacy,260236,Liquid
+Chemistry,Potency (Peptides) (Hydromorphone Hydrochloride),2026-01-28,SUB-260123-0437,Redwood Moore Apothecary,260238,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-28,SUB-260121-0511,Desert Heritage Family Pharmacy,260241,Solution
+Chemistry,Potency (Peptides) (Glutathione),2026-01-16,SUB-260108-0476,Golden Summit Apothecary,260242,Injectable
+Chemistry,Potency (Solution) (Ondansetron),2026-01-20,SUB-260113-0479,Orchard York Apothecary,260243,Solution
+Microbiology,USP <71> Sterility Test,2026-01-31,SUB-260113-0479,Orchard York Apothecary,260243,Solution
+Microbiology,Glove Fingertip Plate Read,2026-01-30,SUB-260128-0487,Bayou Meadow Apothecary,260244,Component
+Chemistry,Potency (Peptides) (Semaglutide),2026-01-19,SUB-260114-0496,Falcon Garcia Apothecary,260247,Injectable
+Microbiology,USP <71> Sterility Test,2026-01-25,SUB-260115-0472,Falcon Garcia Apothecary,260249,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-01-31,SUB-260127-0495,Bayou Barker Specialty Pharmacy,260251,Plate
+Chemistry,Potency (Solution) (Ketorolac Tromethamine),2026-01-10,SUB-260109-0494,Aspen James Specialty Pharmacy,260253,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-11,SUB-260121-0518,Coastal Simpson Life Sciences,260254,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-31,SUB-260129-0488,Frontier Keystone Family Pharmacy,260256,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-01-05,SUB-260102-0501,Frontier Keystone Family Pharmacy,260258,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-02,SUB-260128-0493,Frontier Keystone Family Pharmacy,260259,Aqueous Solution
+Chemistry,Potency (Non-Solution) (Tri-Moxi (Triamcinolone / Moxifloxacin)),2026-02-03,SUB-260130-0521,Bayou Briggs Compounding Pharmacy,260261,Suspension
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-10,SUB-260105-0475,Bayou Briggs Compounding Pharmacy,260262,Oil Injectable
+Chemistry,Potency (Non-Solution) (Minoxidil),2026-01-31,SUB-260122-0509,Orchard Horizon Compounding Pharmacy,260263,Capsule
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-18,SUB-260116-0525,Orchard Horizon Compounding Pharmacy,260266,Aqueous Solution
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-01-18,SUB-260113-0499,Coastal Sage Compounding Center,260269,Oil Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-01-15,SUB-260106-0473,Sterling Harbor Pharmacy,260270,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-27,SUB-260123-0501,Granite Murray Family Pharmacy,260272,Solution
+Microbiology,USP <71> Sterility Test,2026-01-21,SUB-260102-0547,Willow Prairie Pharmacy,260274,Lyophilized
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-19,SUB-260115-0515,Heritage Northstar Sterile Outsourcing,260276,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-12,SUB-260130-0554,Heritage Northstar Sterile Outsourcing,260277,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-31,SUB-260126-0521,Union Meadow Apothecary,260278,Injectable
+Chemistry,Potency (Solution) (Ketorolac Tromethamine),2026-01-20,SUB-260116-0578,Aspen Liberty Pharma Services,260281,Injectable
+Chemistry,Potency (Non-Solution) (Hyaluronidase),2026-01-16,SUB-260109-0561,Northgate Keystone Family Pharmacy,260283,Lyophilized
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-01-23,SUB-260120-0554,Falcon Highland Compounding Center,260285,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-02-22,SUB-260216-0012,Copper Brown Compounding Center,260287,Cream (gm)
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-11,SUB-260206-0011,Liberty Mckenzie Apothecary,260288,Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-02-09,SUB-260206-0012,Liberty Mckenzie Apothecary,260291,Aqueous Solution
+Chemistry,Potency (Solution) (Glutathione),2026-02-13,SUB-260209-0011,Liberty Mckenzie Apothecary,260292,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-18,SUB-260206-0014,Liberty Mckenzie Apothecary,260293,Injectable
+Microbiology,Media Fill Incubation,2026-03-03,SUB-260210-0014,Liberty Mckenzie Apothecary,260294,Liquid
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-13,SUB-260210-0015,Liberty Mckenzie Apothecary,260295,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-03,SUB-260224-0023,Liberty Mckenzie Apothecary,260297,Solution
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-01,SUB-260227-0030,Liberty Mckenzie Apothecary,260300,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-06,SUB-260203-0027,Liberty Mckenzie Apothecary,260302,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-07,SUB-260217-0016,Liberty Mckenzie Apothecary,260303,Aqueous Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-05,SUB-260202-0023,Liberty Mckenzie Apothecary,260305,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-23,SUB-260203-0030,Liberty Mckenzie Apothecary,260308,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-22,SUB-260217-0019,Liberty Mckenzie Apothecary,260310,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-02,SUB-260223-0020,Liberty Mckenzie Apothecary,260313,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-26,SUB-260220-0033,Liberty Mckenzie Apothecary,260314,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-11,SUB-260204-0025,Liberty Mckenzie Apothecary,260315,Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-02-12,SUB-260205-0028,Liberty Mckenzie Apothecary,260318,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-19,SUB-260205-0028,Liberty Mckenzie Apothecary,260318,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-20,SUB-260202-0035,Liberty Mckenzie Apothecary,260321,Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-10,SUB-260206-0022,Liberty Mckenzie Apothecary,260322,Solution
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-13,SUB-260211-0023,Liberty Mckenzie Apothecary,260323,Injectable
+Microbiology,Rapid Sterility (BacT/Alert),2026-03-07,SUB-260223-0034,Liberty Mckenzie Apothecary,260326,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-02-16,SUB-260206-0028,Liberty Mckenzie Apothecary,260329,Aqueous Solution
+Chemistry,Potency (Solution) (Nandrolone Decanoate),2026-02-28,SUB-260225-0033,Sierra Lakeside Compounding Center,260331,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-03-03,SUB-260213-0051,Northstar Torres Rx,260333,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-24,SUB-260211-0038,Northstar Torres Rx,260335,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-07,SUB-260203-0058,Golden Pinnacle Outsourcing Facility,260337,Cream (gm)
+Chemistry,Potency (Solution) (Bupivacaine Hydrochloride),2026-02-25,SUB-260219-0092,Magnolia Hamilton Pharma Services,260339,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-11,SUB-260203-0089,Golden Northgate Laboratories,260341,Injectable
+Chemistry,Potency (Solution) (Methotrexate),2026-02-27,SUB-260223-0096,Brightwater Brown Apothecary,260343,Injectable
+Chemistry,Potency (Solution) (NAD+),2026-02-13,SUB-260210-0102,Brightwater Brown Apothecary,260345,Injectable
+Chemistry,Potency (Solution) (Pyridoxine Hydrochloride),2026-03-02,SUB-260223-0099,Vista Lakeside Sterile Outsourcing,260348,Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-02-20,SUB-260217-0102,Vista Lakeside Sterile Outsourcing,260349,Oil Injectable
+Chemistry,Potency (Non-Solution) (Gabapentin),2026-02-23,SUB-260219-0145,Falcon Magnolia Family Pharmacy,260352,Cream (gm)
+Microbiology,USP <71> Sterility Test,2026-02-22,SUB-260211-0097,Northgate Huynh Wellness Pharmacy,260355,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-02-21,SUB-260217-0117,Northgate Huynh Wellness Pharmacy,260356,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-17,SUB-260216-0101,Frontier Summit Compounding Pharmacy,260359,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-03-05,SUB-260226-0123,Trinity Mesa Biologics,260360,Plate
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-16,SUB-260213-0132,Cedar Lone Star Family Pharmacy,260363,Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-03-01,SUB-260224-0151,Cedar Lone Star Family Pharmacy,260364,Injectable
+Microbiology,Growth Promotion,2026-02-16,SUB-260213-0134,Cedar Lone Star Family Pharmacy,260365,Swab
+Microbiology,USP <71> Sterility Test,2026-02-07,SUB-260202-0158,Cedar Lone Star Family Pharmacy,260366,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-03,SUB-260218-0154,Beacon Ross Specialty Pharmacy,260369,Lyophilized
+Chemistry,Potency (Solution) (Glutathione),2026-02-26,SUB-260219-0184,Vista Unity Specialty Pharmacy,260371,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-22,SUB-260213-0146,Mesa Ross Rx,260373,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-27,SUB-260216-0136,Union Adams Apothecary,260376,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-23,SUB-260219-0209,Copper Wu Specialty Pharmacy,260377,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-17,SUB-260225-0142,Silver Creek Lakeside Pharmacy,260379,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-07,SUB-260202-0195,Lakeside Perry Rx,260381,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-16,SUB-260209-0176,Vista Sierra Compounding Center,260384,Solution
+Chemistry,Potency (Solution) (Progesterone),2026-02-24,SUB-260219-0223,Coastal Jimenez Family Pharmacy,260386,Oil Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-02-25,SUB-260220-0203,Pinnacle Sage Pharmacy,260387,Injectable
+Chemistry,Potency (Peptides) (Methylcobalamin),2026-02-18,SUB-260212-0176,Silver Creek Brightwater Family Pharmacy,260390,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-02-21,SUB-260218-0197,Riverbend Highland Compounding Pharmacy,260392,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-25,SUB-260205-0193,Golden Crescent Outsourcing Facility,260394,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-01,SUB-260224-0201,Stonebridge Copper Specialty Pharmacy,260396,Injectable
+Chemistry,Potency (Solution) (Morphine Sulfate),2026-02-12,SUB-260209-0185,Lakeside Lopez Family Pharmacy,260399,Injectable
+Chemistry,Potency (Non-Solution) (Gabapentin),2026-02-25,SUB-260217-0199,Willow Nash Rx,260402,Cream (gm)
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-09,SUB-260205-0204,Willow Nash Rx,260405,Injectable
+Chemistry,Potency (Solution) (Morphine Sulfate),2026-02-13,SUB-260206-0198,Liberty Mitchell Apothecary,260406,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-04,SUB-260202-0248,Frontier Martinez Wellness Pharmacy,260407,Lyophilized
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-20,SUB-260217-0249,Sterling Jones Apothecary,260410,Injectable
+Chemistry,Potency (Solution) (Methylcobalamin),2026-03-05,SUB-260226-0238,Sterling Jones Apothecary,260413,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-02-21,SUB-260218-0263,Sterling Jones Apothecary,260416,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-02-11,SUB-260209-0244,Sterling Jones Apothecary,260417,Solution
+Chemistry,Potency (Solution) (Biotin),2026-02-28,SUB-260224-0266,Sterling Jones Apothecary,260420,Injectable
+Chemistry,Potency (Solution) (Biotin),2026-02-08,SUB-260203-0274,Sterling Jones Apothecary,260423,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-05,SUB-260225-0220,Sterling Jones Apothecary,260426,Solution
+Microbiology,Environmental Monitoring Plate Read,2026-03-07,SUB-260224-0279,Sterling Jones Apothecary,260429,Plate
+Chemistry,Potency (Peptides) (Methylcobalamin),2026-02-14,SUB-260212-0262,Sterling Jones Apothecary,260431,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-03,SUB-260224-0289,Sterling Jones Apothecary,260432,Oil Injectable
+Chemistry,Potency (Solution) (Biotin),2026-03-01,SUB-260226-0261,Sterling Jones Apothecary,260433,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-02-15,SUB-260213-0273,Gulf Cedar Wellness Pharmacy,260434,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-03-01,SUB-260224-0297,Bayou Westfield Sterile Outsourcing,260436,Capsule
+Microbiology,USP <71> Sterility Test,2026-03-04,SUB-260212-0279,Sterling Prince Compounding Center,260439,Lyophilized
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-02-19,SUB-260216-0282,Highland Stokes Rx,260442,Injectable
+Microbiology,USP <61> Microbial Enumeration,2026-02-22,SUB-260216-0289,Golden Phillips Specialty Pharmacy,260445,Injectable
+Chemistry,Potency (Non-Solution) (Vancomycin),2026-03-05,SUB-260226-0276,Maple Carr Compounding Pharmacy,260448,Lyophilized
+Microbiology,Rapid Sterility (BacT/Alert),2026-02-21,SUB-260203-0305,Maple Hill Compounding Pharmacy,260451,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-26,SUB-260219-0348,Prairie Silva Wellness Pharmacy,260452,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-05,SUB-260227-0280,Prairie Silva Wellness Pharmacy,260454,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-16,SUB-260224-0324,Prairie Silva Wellness Pharmacy,260456,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-08,SUB-260202-0336,Prairie Silva Wellness Pharmacy,260458,Injectable
+Chemistry,Potency (Solution) (Estradiol Cypionate),2026-03-03,SUB-260226-0311,Northgate Copeland Outsourcing Facility,260459,Oil Injectable
+Chemistry,USP <1225> Method Verification,2026-04-07,SUB-260223-0297,Willow Mesa Laboratories,260460,Swab
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-10,SUB-260204-0302,Orchard Highland Rx,260463,Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-28,SUB-260219-0361,Orchard Highland Rx,260466,Solution
+Chemistry,Potency (Solution) (Pyridoxine Hydrochloride),2026-03-02,SUB-260226-0319,Bayou Trinity Pharmacy,260468,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-04,SUB-260226-0324,Clearwater Graves Pharma Services,260469,Oil Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-02-19,SUB-260213-0318,Clearwater Graves Pharma Services,260471,Plate
+Chemistry,Potency (Solution) (Thiamine Hydrochloride),2026-02-15,SUB-260212-0333,Bayou Keystone Family Pharmacy,260472,Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-02-12,SUB-260204-0326,Bayou Cole Family Pharmacy,260475,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-02,SUB-260226-0346,Keystone Hayes Rx,260476,Solution
+Chemistry,Potency (Non-Solution) (Progesterone),2026-03-06,SUB-260226-0348,Keystone Hayes Rx,260479,Cream (gm)
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-02-12,SUB-260209-0354,Keystone Washington Compounding Center,260482,Injectable
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-02-07,SUB-260204-0333,Keystone Washington Compounding Center,260485,Injectable
+Chemistry,Potency (Solution) (Phenylephrine Hydrochloride),2026-02-13,SUB-260206-0375,Harbor Parker Family Pharmacy,260487,Injectable
+Chemistry,Potency (Peptides) (Testosterone Cypionate),2026-02-08,SUB-260202-0395,Highland Coastal Family Pharmacy,260488,Oil Injectable
+Chemistry,Potency (Non-Solution) (NAD+),2026-02-11,SUB-260205-0373,Harbor Howe Specialty Pharmacy,260491,Lyophilized
+Chemistry,Potency (Solution) (Cefuroxime),2026-02-22,SUB-260218-0407,Highland Vista Outsourcing Facility,260492,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-02,SUB-260224-0401,Highland Vista Outsourcing Facility,260493,Powder Aliquot
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-02-04,SUB-260202-0408,Orchard Henderson Wellness Pharmacy,260495,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-07,SUB-260204-0371,Bluebonnet Unity Apothecary,260496,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-02-12,SUB-260209-0382,Frontier Oconnor Specialty Pharmacy,260498,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-22,SUB-260217-0406,Mesa Golden Rx,260499,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-03-05,SUB-260224-0412,Lakeside Redwood Compounding Pharmacy,260502,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-20,SUB-260217-0411,Juniper Wilcox Wellness Pharmacy,260503,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-20,SUB-260210-0402,Apex Campbell Family Pharmacy,260504,Injectable
+Microbiology,Rapid Sterility (BacT/Alert),2026-02-15,SUB-260203-0416,Apex Campbell Family Pharmacy,260507,Solution
+Microbiology,USP <71> Sterility Test,2026-03-04,SUB-260209-0394,Northgate Howard Apothecary,260509,Solution
+Chemistry,Potency (Solution) (Glutathione),2026-02-20,SUB-260218-0428,Crescent Bayou Compounding Pharmacy,260510,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-06,SUB-260226-0408,Harbor Wilson Apothecary,260512,Injectable
+Chemistry,Potency (Peptides) (Tirzepatide),2026-02-20,SUB-260210-0438,Southpoint Eastside Pharmaceuticals,260513,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-10,SUB-260205-0458,Southpoint Eastside Pharmaceuticals,260514,Aqueous Solution
+Chemistry,Potency (Solution) (Cyanocobalamin),2026-02-07,SUB-260202-0483,Southpoint Eastside Pharmaceuticals,260515,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-03,SUB-260211-0468,Southpoint Eastside Pharmaceuticals,260518,Oil Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-02-24,SUB-260223-0477,Southpoint Eastside Pharmaceuticals,260521,Aqueous Solution
+Chemistry,Potency (Peptides) (Tirzepatide),2026-02-16,SUB-260210-0502,Southpoint Eastside Pharmaceuticals,260522,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-11,SUB-260206-0511,Cedar Meadow Pharma Services,260523,Liquid
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-02-10,SUB-260205-0512,Cedar Meadow Pharma Services,260526,Oil Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-02-11,SUB-260203-0530,Cedar Meadow Pharma Services,260529,Plate
+Microbiology,USP <71> Sterility Test,2026-03-10,SUB-260225-0475,Cedar Meadow Pharma Services,260531,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-20,SUB-260206-0518,Maple Sage Rx,260534,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-20,SUB-260225-0478,Clearwater Vega Compounding Pharmacy,260536,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-27,SUB-260223-0495,Clearwater Vega Compounding Pharmacy,260537,Aqueous Solution
+Microbiology,Environmental Monitoring Plate Read,2026-02-14,SUB-260209-0499,Clearwater Vega Compounding Pharmacy,260539,Plate
+Microbiology,USP <71> Sterility Test,2026-03-06,SUB-260223-0496,Maple Young Wellness Pharmacy,260540,Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-22,SUB-260216-0482,Maple Young Wellness Pharmacy,260543,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-25,SUB-260223-0498,Maple Young Wellness Pharmacy,260545,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-01,SUB-260225-0485,Keystone Simpson Research Institute,260548,Solution
+Microbiology,USP <71> Sterility Test,2026-03-07,SUB-260213-0487,Pioneer Frontier Compounding Center,260551,Solution
+Microbiology,USP <71> Sterility Test,2026-02-28,SUB-260210-0532,Bayou Sterling Wellness Pharmacy,260553,Powder Aliquot
+Microbiology,USP <71> Sterility Test,2026-03-04,SUB-260211-0515,Pioneer Ramsey Pharmacy,260554,Injectable
+Chemistry,Potency (Solution) (Progesterone),2026-02-28,SUB-260223-0521,Oakridge Henry Wellness Pharmacy,260555,Oil Injectable
+Microbiology,USP <61> Microbial Enumeration,2026-02-27,SUB-260223-0522,Mesa Cole Apothecary,260556,Cream (gm)
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-02-25,SUB-260219-0583,Mesa Cole Apothecary,260559,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-03,SUB-260218-0558,Northstar Avila Biologics,260560,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-03-06,SUB-260216-0533,Coastal Simpson Life Sciences,260563,Injectable
+Chemistry,Potency (Peptides) (Sermorelin Acetate),2026-02-17,SUB-260211-0552,Coastal Simpson Life Sciences,260564,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-07,SUB-260216-0534,Coastal Simpson Life Sciences,260567,Injectable
+Chemistry,Potency (Peptides) (Tirzepatide),2026-03-01,SUB-260220-0587,Coastal Simpson Life Sciences,260568,Injectable
+Chemistry,Potency (Solution),2026-02-22,SUB-260218-0574,Coastal Clearwater Life Sciences,260569,Swab
+Microbiology,USP <71> Sterility Test,2026-02-25,SUB-260210-0571,Magnolia Johnston Specialty Pharmacy,260571,Injectable
+Chemistry,Potency (Solution) (Tri-Moxi (Triamcinolone / Moxifloxacin)),2026-03-05,SUB-260227-0512,Bayou Briggs Compounding Pharmacy,260573,Suspension
+Microbiology,USP <71> Sterility Test,2026-02-23,SUB-260203-0597,Bayou Briggs Compounding Pharmacy,260575,Aqueous Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-02-09,SUB-260203-0604,Orchard Horizon Compounding Pharmacy,260576,Injectable
+Chemistry,Potency (Solution) (NAD+),2026-02-24,SUB-260220-0603,Evergreen Aguilar Family Pharmacy,260577,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-22,SUB-260223-0582,Granite Hubbard Pharmacy,260579,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-03-04,SUB-260224-0594,Westfield Smith Compounding Center,260580,Cream (gm)
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-20,SUB-260216-0573,Heritage Northstar Sterile Outsourcing,260581,Solution
+Microbiology,USP <71> Sterility Test,2026-02-12,SUB-260204-0598,Falcon Peterson Wellness Pharmacy,260584,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-26,SUB-260220-0637,Desert Liberty Family Pharmacy,260587,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-14,SUB-260220-0639,Coastal Williams Family Pharmacy,260590,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-02-25,SUB-260220-0639,Coastal Williams Family Pharmacy,260590,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-27,SUB-260217-0653,Coastal Williams Family Pharmacy,260593,Injectable
+Microbiology,USP <71> Sterility Test,2026-02-19,SUB-260203-0650,Magnolia Lone Star Family Pharmacy,260596,Aqueous Solution
+Chemistry,Potency (Solution) (L-Carnitine),2026-03-04,SUB-260227-0561,Lone Star Gregory Wellness Pharmacy,260598,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-26,SUB-260313-0008,Copper Brown Compounding Center,260601,Liquid
+Chemistry,Potency (Non-Solution) (Testosterone Cypionate),2026-03-31,SUB-260323-0005,Liberty Mckenzie Apothecary,260603,Oil Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-10,SUB-260305-0014,Liberty Mckenzie Apothecary,260605,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-15,SUB-260310-0021,Liberty Mckenzie Apothecary,260607,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-14,SUB-260310-0024,Liberty Mckenzie Apothecary,260610,Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-03-29,SUB-260316-0026,Liberty Mckenzie Apothecary,260611,Aqueous Solution
+Chemistry,Potency (Solution) (Baclofen),2026-03-07,SUB-260302-0021,Liberty Mckenzie Apothecary,260613,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-04-03,SUB-260330-0031,Liberty Mckenzie Apothecary,260616,Injectable
+Chemistry,Potency (Solution) (Bupivacaine Hydrochloride),2026-03-28,SUB-260324-0033,Apex Trinity Rx,260617,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-20,SUB-260313-0029,Trinity Copper Specialty Pharmacy,260618,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-31,SUB-260327-0032,Desert Valentine Wellness Pharmacy,260620,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-13,SUB-260305-0030,Desert Valentine Wellness Pharmacy,260622,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-15,SUB-260325-0037,Coastal Pacheco Pharma Services,260624,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-28,SUB-260325-0050,Northstar Torres Rx,260626,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-18,SUB-260303-0043,Golden Pinnacle Outsourcing Facility,260627,Aqueous Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-10,SUB-260305-0053,Golden Pinnacle Outsourcing Facility,260628,Solution
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-03-07,SUB-260303-0053,Highland Mcgee Wellness Pharmacy,260631,Oil Injectable
+Chemistry,Potency (Solution) (NAD+),2026-03-20,SUB-260317-0054,Aspen Stonebridge Rx,260633,Injectable
+Chemistry,Assay & Impurities (Morphine Sulfate),2026-03-22,SUB-260311-0060,Meadow Lakeside Sterile Outsourcing,260634,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-03-10,SUB-260309-0048,Juniper Patterson Apothecary,260637,Solution
+Microbiology,Rapid Sterility (BacT/Alert),2026-03-28,SUB-260320-0063,Bayou Golden Wellness Pharmacy,260639,Component
+Chemistry,Potency (Non-Solution) (Mitomycin),2026-03-07,SUB-260305-0081,Aspen Granite Pharmacy,260641,Lyophilized
+Microbiology,USP <71> Sterility Test,2026-04-03,SUB-260316-0093,Trinity Duncan Compounding Pharmacy,260643,Injectable
+Microbiology,Glove Fingertip Plate Read,2026-03-16,SUB-260306-0091,Copper Horizon Wellness Pharmacy,260645,Plate
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-19,SUB-260313-0087,Copper Horizon Wellness Pharmacy,260648,Solution
+Chemistry,Potency (Solution) (Dexamethasone Sodium Phosphate),2026-03-31,SUB-260326-0081,Keystone Evergreen Family Pharmacy,260650,Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-03-07,SUB-260302-0077,Vista Lakeside Sterile Outsourcing,260651,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-11,SUB-260310-0103,Willow Wolfe Family Pharmacy,260652,Injectable
+Chemistry,Potency (Solution) (Lipo-C Blend),2026-03-13,SUB-260311-0099,Willow Wolfe Family Pharmacy,260654,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-01,SUB-260331-0110,Granite Canyon Pharmacy,260656,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-29,SUB-260325-0118,Northgate Huynh Wellness Pharmacy,260657,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-18,SUB-260306-0129,Northgate Huynh Wellness Pharmacy,260659,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-15,SUB-260313-0113,Sage Williams Specialty Pharmacy,260662,Suspension
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-31,SUB-260326-0102,Westfield Magnolia Apothecary,260665,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-03-30,SUB-260310-0115,Sierra Gomez Apothecary,260667,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-27,SUB-260323-0119,Sierra Vista Biologics,260670,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-13,SUB-260306-0149,Cedar Lone Star Family Pharmacy,260673,Swab
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-03-15,SUB-260310-0131,Gulf May Apothecary,260674,Injectable
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-03-13,SUB-260309-0120,Vista Unity Specialty Pharmacy,260676,Injectable
+Chemistry,Potency (Solution) (Ephedrine Sulfate),2026-04-07,SUB-260330-0145,Vista Unity Specialty Pharmacy,260677,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-17,SUB-260311-0135,Vista Unity Specialty Pharmacy,260678,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-15,SUB-260325-0142,Vista Unity Specialty Pharmacy,260681,Solution
+Chemistry,Potency (Peptides) (Tirzepatide),2026-03-05,SUB-260304-0150,Trinity Young Compounding Center,260682,Solution
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-15,SUB-260311-0145,Trinity Young Compounding Center,260683,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-04,SUB-260330-0155,Liberty Walker Pharmacy,260684,Injectable
+Chemistry,Potency (Peptides) (Tirzepatide),2026-03-18,SUB-260312-0137,Westfield Heritage Wellness Pharmacy,260685,Solution
+Microbiology,USP <71> Sterility Test,2026-04-18,SUB-260331-0163,Copper Wu Specialty Pharmacy,260688,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-30,SUB-260320-0151,Copper Wu Specialty Pharmacy,260690,Solution
+Microbiology,Environmental Monitoring Plate Read,2026-03-18,SUB-260310-0152,Southpoint Schwartz Life Sciences,260692,Capsule
+Microbiology,Glove Fingertip Plate Read,2026-03-25,SUB-260319-0156,Southpoint Schwartz Life Sciences,260693,Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-03-29,SUB-260324-0164,Oakridge Riverbend Family Pharmacy,260696,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-03-31,SUB-260310-0155,Beacon Lone Star Family Pharmacy,260697,Solution
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-03-21,SUB-260318-0182,Lakeside Lopez Family Pharmacy,260700,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-04,SUB-260331-0186,Lakeside Lopez Family Pharmacy,260701,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-08,SUB-260304-0186,Lakeside Lopez Family Pharmacy,260704,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-24,SUB-260331-0187,Falcon Evergreen Pharmacy,260707,Injectable
+Chemistry,Potency (Solution) (Moxifloxacin),2026-03-15,SUB-260310-0161,Falcon Evergreen Pharmacy,260708,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-08,SUB-260305-0177,Willow Nash Rx,260711,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-03,SUB-260302-0151,Golden Woods Wellness Pharmacy,260714,Aqueous Solution
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-03-18,SUB-260316-0190,Golden Woods Wellness Pharmacy,260715,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-22,SUB-260316-0193,Golden Woods Wellness Pharmacy,260716,Aqueous Solution
+Chemistry,Potency (Solution) (Nandrolone Decanoate),2026-03-28,SUB-260323-0180,Riverbend Gulf Outsourcing Facility,260719,Oil Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-15,SUB-260311-0204,Willow Northgate Rx,260721,Injectable
+Chemistry,Potency (Peptides) (Oxytocin),2026-04-01,SUB-260327-0232,Lone Star Sullivan Apothecary,260723,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-21,SUB-260317-0216,Sterling Jones Apothecary,260725,Oil Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-04-04,SUB-260324-0237,Sterling Jones Apothecary,260727,Oil Injectable
+Chemistry,Potency (Solution) (Biotin),2026-03-06,SUB-260302-0193,Sterling Jones Apothecary,260730,Injectable
+Chemistry,Potency (Solution) (Biotin),2026-03-16,SUB-260311-0216,Sterling Jones Apothecary,260731,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-17,SUB-260324-0240,Sterling Jones Apothecary,260734,Injectable
+Chemistry,Potency (Non-Solution) (Biotin),2026-03-23,SUB-260319-0231,Sterling Jones Apothecary,260735,Capsule
+Chemistry,Potency (Non-Solution) (Biotin),2026-03-20,SUB-260313-0256,Sterling Jones Apothecary,260738,Capsule
+Microbiology,USP <71> Sterility Test,2026-04-08,SUB-260326-0207,Sterling Jones Apothecary,260739,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-09,SUB-260319-0247,Sterling Jones Apothecary,260740,Solution
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-03-10,SUB-260305-0255,Sterling Jones Apothecary,260741,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-29,SUB-260325-0270,Maple Carr Compounding Pharmacy,260743,Lyophilized
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-22,SUB-260317-0273,Maple Hill Compounding Pharmacy,260745,Solution
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-08,SUB-260305-0274,Maple Hill Compounding Pharmacy,260747,Aqueous Solution
+Chemistry,Potency (Peptides) (Lipo-C Blend),2026-04-02,SUB-260327-0287,Heritage White Rx,260750,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-17,SUB-260313-0302,Prairie Silva Wellness Pharmacy,260753,Injectable
+Chemistry,Potency (Solution) (Glutathione),2026-04-04,SUB-260331-0296,Prairie Silva Wellness Pharmacy,260755,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-27,SUB-260323-0262,Prairie Silva Wellness Pharmacy,260757,Oil Injectable
+Chemistry,Potency (Solution) (Papaverine / Phentolamine / Alprostadil),2026-03-17,SUB-260310-0266,Magnolia Boone Rx,260758,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-08,SUB-260302-0283,Northstar Evergreen Compounding Center,260759,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-28,SUB-260324-0303,Northgate Copeland Outsourcing Facility,260762,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-04-10,SUB-260319-0287,Northgate Copeland Outsourcing Facility,260763,Oil Injectable
+Chemistry,Potency (Solution) (Estradiol Cypionate),2026-03-13,SUB-260309-0288,Northgate Copeland Outsourcing Facility,260765,Oil Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-08,SUB-260304-0311,Frontier Burns Compounding Center,260768,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-15,SUB-260310-0276,Frontier Burns Compounding Center,260771,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-29,SUB-260327-0306,Falcon Holmes Pharmacy,260774,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-03-22,SUB-260311-0277,Orchard Highland Rx,260777,Aqueous Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-08,SUB-260305-0304,Orchard Highland Rx,260779,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-20,SUB-260306-0320,Orchard Highland Rx,260781,Aqueous Solution
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-13,SUB-260309-0298,Meadow Lakeside Pharma Services,260782,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-03-30,SUB-260327-0314,Aspen Howard Rx,260783,Capsule
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-09,SUB-260305-0314,Bluebonnet Cooke Apothecary,260785,Injectable
+Chemistry,Potency (Solution) (Thiamine Hydrochloride),2026-03-21,SUB-260316-0335,Bayou Keystone Family Pharmacy,260787,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-11,SUB-260304-0339,Bayou Cole Family Pharmacy,260788,Lyophilized
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-30,SUB-260318-0323,Bayou Cole Family Pharmacy,260790,Injectable
+Microbiology,Rapid Sterility (BacT/Alert),2026-04-04,SUB-260331-0337,Bayou Cole Family Pharmacy,260793,Lyophilized
+Microbiology,USP <71> Sterility Test,2026-03-23,SUB-260304-0356,Evergreen Vaughan Pharmacy,260795,Injectable
+Chemistry,Potency (Solution) (Morphine Sulfate),2026-04-01,SUB-260326-0322,Trinity Hamilton Pharmaceuticals,260798,Injectable
+Chemistry,Potency (Solution) (Estradiol Valerate),2026-03-20,SUB-260318-0348,Vista Granite Family Pharmacy,260800,Oil Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-13,SUB-260304-0369,Southpoint Unity Outsourcing Facility,260803,Injectable
+Chemistry,Potency (Peptides) (Tirzepatide),2026-04-01,SUB-260324-0374,Lakeside Wood Pharmaceuticals,260805,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-16,SUB-260310-0346,Riverbend Sage Outsourcing Facility,260808,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-08,SUB-260318-0362,Bluebonnet Unity Apothecary,260809,Solution
+Chemistry,Potency (Peptides) (Tirzepatide),2026-04-05,SUB-260327-0385,Lakeside Redwood Compounding Pharmacy,260811,Injectable
+Chemistry,Potency (Non-Solution) (Progesterone),2026-03-19,SUB-260313-0393,Juniper Wilcox Wellness Pharmacy,260812,Cream (gm)
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-17,SUB-260313-0398,Apex Campbell Family Pharmacy,260815,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-07,SUB-260331-0381,Keystone Weeks Specialty Pharmacy,260817,Solution
+Microbiology,USP <788> Particulate Matter,2026-03-28,SUB-260320-0389,Gulf Flores Wellness Pharmacy,260820,Lyophilized
+Chemistry,Potency (Solution) (Hyaluronidase),2026-03-31,SUB-260320-0389,Gulf Flores Wellness Pharmacy,260820,Lyophilized
+Chemistry,Potency (Peptides) (Tirzepatide),2026-03-18,SUB-260312-0386,Southpoint Eastside Pharmaceuticals,260821,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-03-27,SUB-260323-0363,Southpoint Eastside Pharmaceuticals,260824,Injectable
+Chemistry,Potency (Solution) (Ketamine Hydrochloride),2026-03-08,SUB-260303-0376,Southpoint Eastside Pharmaceuticals,260826,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-29,SUB-260311-0398,Southpoint Eastside Pharmaceuticals,260827,Solution
+Chemistry,Potency (Solution) (Biotin),2026-04-04,SUB-260330-0417,Southpoint Eastside Pharmaceuticals,260830,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-13,SUB-260309-0450,Southpoint Eastside Pharmaceuticals,260831,Oil Injectable
+Microbiology,Rapid Sterility (BacT/Alert),2026-03-25,SUB-260316-0475,Southpoint Eastside Pharmaceuticals,260834,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-03-26,SUB-260306-0486,Southpoint Eastside Pharmaceuticals,260837,Oil Injectable
+Chemistry,Potency (Solution) (Biotin),2026-03-05,SUB-260302-0440,Southpoint Eastside Pharmaceuticals,260838,Injectable
+Microbiology,USP <788> Particulate Matter,2026-03-13,SUB-260309-0484,Southpoint Eastside Pharmaceuticals,260839,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-03-16,SUB-260304-0475,Southpoint Eastside Pharmaceuticals,260841,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-31,SUB-260330-0510,Maple Young Wellness Pharmacy,260842,Capsule
+Chemistry,Potency (Solution) (Hyaluronidase),2026-03-25,SUB-260320-0500,Keystone Simpson Research Institute,260845,Injectable
+Chemistry,Potency (Peptides) (Testosterone Cypionate),2026-03-28,SUB-260326-0477,Westfield Gulf Family Pharmacy,260846,Oil Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-03-18,SUB-260316-0534,Beacon Moreno Outsourcing Facility,260849,Oil Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-03-29,SUB-260323-0493,Golden Summit Apothecary,260852,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-19,SUB-260311-0513,Falcon Aspen Rx,260854,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-05,SUB-260313-0543,Coastal Simpson Life Sciences,260856,Lyophilized
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-16,SUB-260310-0493,Frontier Keystone Family Pharmacy,260858,Solution
+Chemistry,Potency (Peptides) (Semaglutide),2026-04-03,SUB-260324-0558,Magnolia Johnston Specialty Pharmacy,260860,Solution
+Chemistry,USP Monograph - Cottonseed Oil,2026-03-16,SUB-260311-0522,Bayou Briggs Compounding Pharmacy,260863,Suspension
+Chemistry,Potency (Non-Solution) (Tri-Moxi (Triamcinolone / Moxifloxacin)),2026-03-12,SUB-260304-0550,Bayou Briggs Compounding Pharmacy,260864,Suspension
+Microbiology,USP <71> Sterility Test,2026-04-22,SUB-260331-0525,Bayou Briggs Compounding Pharmacy,260866,Aqueous Solution
+Chemistry,Potency (Non-Solution) (Tri-Moxi (Triamcinolone / Moxifloxacin)),2026-03-15,SUB-260311-0529,Bayou Briggs Compounding Pharmacy,260868,Suspension
+Chemistry,Potency (Non-Solution) (Ketamine Hydrochloride),2026-03-10,SUB-260306-0579,Sterling Harbor Pharmacy,260870,Solution
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-11,SUB-260304-0578,Granite Hubbard Pharmacy,260873,Injectable
+Chemistry,Potency (Peptides) (Lipo-C Blend),2026-03-16,SUB-260311-0542,Granite Hubbard Pharmacy,260876,Injectable
+Microbiology,USP <71> Sterility Test,2026-03-24,SUB-260304-0587,Union Lowe Pharma Services,260878,Liquid
+Microbiology,USP <71> Sterility Test,2026-03-24,SUB-260313-0586,Heritage Northstar Sterile Outsourcing,260879,Capsule
+Chemistry,Potency (Solution) (Biotin),2026-03-22,SUB-260319-0556,Heritage Northstar Sterile Outsourcing,260880,Injectable
+Microbiology,Glove Fingertip Plate Read,2026-03-24,SUB-260317-0547,Heritage Northstar Sterile Outsourcing,260883,Plate
+Chemistry,Potency (Solution) (Pyridoxine Hydrochloride),2026-03-29,SUB-260323-0548,Heritage Northstar Sterile Outsourcing,260885,Injectable
+Chemistry,Potency (Solution) (Biotin),2026-03-17,SUB-260313-0591,Heritage Northstar Sterile Outsourcing,260888,Injectable
+Chemistry,Potency (Solution) (Pyridoxine Hydrochloride),2026-03-21,SUB-260319-0557,Heritage Northstar Sterile Outsourcing,260889,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-17,SUB-260326-0544,Heritage Northstar Sterile Outsourcing,260891,Injectable
+Chemistry,Potency (Solution) (Bevacizumab),2026-04-01,SUB-260331-0564,Brightwater Bluebonnet Specialty Pharmacy,260893,Injectable
+Microbiology,Glove Fingertip Plate Read,2026-03-18,SUB-260313-0599,Keystone Gordon Rx,260894,Plate
+Microbiology,Glove Fingertip Plate Read,2026-04-03,SUB-260323-0554,Desert Liberty Family Pharmacy,260895,Plate
+Chemistry,Potency (Peptides) (Semaglutide),2026-03-13,SUB-260311-0563,Coastal Williams Family Pharmacy,260897,Injectable
+Chemistry,Potency (Non-Solution) (Bevacizumab),2026-03-27,SUB-260319-0574,Coastal Williams Family Pharmacy,260900,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-13,SUB-260312-0585,Coastal Williams Family Pharmacy,260901,Injectable
+Chemistry,Beyond-Use Date Stability Study (Benzyl Alcohol),2026-08-28,SUB-260311-0579,Northgate Keystone Family Pharmacy,260903,Aqueous Solution
+Chemistry,Potency (Non-Solution) (Lisinopril),2026-03-18,SUB-260311-0582,Evergreen Clearwater Compounding Center,260906,Suspension
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-03-27,SUB-260323-0561,Crescent Harris Pharmacy,260909,Injectable
+Microbiology,USP <71> Sterility Test,2026-04-25,SUB-260413-0014,Southpoint Smith Pharmacy,260911,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-04-21,SUB-260417-0014,Liberty Mckenzie Apothecary,260912,Solution
+Microbiology,USP <71> Sterility Test,2026-05-05,SUB-260416-0015,Liberty Mckenzie Apothecary,260915,Aqueous Solution
+Chemistry,Assay & Impurities (Testosterone Cypionate),2026-04-03,SUB-260401-0015,Liberty Mckenzie Apothecary,260918,Injectable
+Chemistry,Potency (Peptides),2026-04-13,SUB-260410-0019,Liberty Mckenzie Apothecary,260919,Powder Aliquot
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-04-18,SUB-260414-0020,Liberty Mckenzie Apothecary,260920,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-04-21,SUB-260417-0019,Liberty Mckenzie Apothecary,260922,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-04-14,SUB-260409-0023,Liberty Mckenzie Apothecary,260923,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-12,SUB-260409-0023,Liberty Mckenzie Apothecary,260923,Injectable
+Chemistry,Potency (Solution) (Ascorbic Acid),2026-04-22,SUB-260417-0022,Liberty Mckenzie Apothecary,260924,Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-04-23,SUB-260420-0034,Liberty Mckenzie Apothecary,260927,Oil Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-04-22,SUB-260420-0035,Liberty Mckenzie Apothecary,260930,Oil Injectable
+Chemistry,Potency (Solution) (Testosterone Cypionate),2026-04-24,SUB-260417-0024,Liberty Mckenzie Apothecary,260933,Injectable
+Microbiology,USP <71> Sterility Test,2026-05-12,SUB-260429-0026,Frontier Apex Apothecary,260935,Injectable
+Microbiology,Environmental Monitoring Plate Read,2026-04-18,SUB-260410-0038,Redwood Simon Rx,260936,Raw Powder
+Chemistry,Potency (Peptides) (Oxytocin),2026-04-21,SUB-260417-0038,Westfield Martinez Family Pharmacy,260938,Injectable
+Chemistry,Potency (Solution) (Semaglutide),2026-04-18,SUB-260414-0036,Heritage Buck Apothecary,260939,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-24,SUB-260421-0052,Northstar Torres Rx,260941,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-05-02,SUB-260429-0040,Northstar Torres Rx,260944,Oil Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-22,SUB-260416-0049,Golden Pinnacle Outsourcing Facility,260946,Injectable
+Chemistry,Potency (Solution) (Biotin),2026-05-03,SUB-260430-0045,Golden Pinnacle Outsourcing Facility,260948,Injectable
+Chemistry,Potency (Peptides) (Estradiol Valerate),2026-04-06,SUB-260402-0052,Highland Mcgee Wellness Pharmacy,260951,Oil Injectable
+Microbiology,USP <71> Sterility Test,2026-04-22,SUB-260410-0062,Northstar Banks Biologics,260952,Injectable
+Chemistry,Potency (Peptides) (Semaglutide),2026-04-08,SUB-260407-0059,Mesa Phillips Rx,260953,Injectable
+Chemistry,Potency (Solution) (Sermorelin Acetate),2026-04-27,SUB-260420-0086,Magnolia Hamilton Pharma Services,260955,Lyophilized
+Chemistry,USP <467> Residual Solvents,2026-04-27,SUB-260421-0094,Trinity Duncan Compounding Pharmacy,260956,Liquid
+Chemistry,Potency (Solution) (Benzyl Alcohol),2026-05-01,SUB-260424-0086,Trinity Duncan Compounding Pharmacy,260957,Aqueous Solution
+Microbiology,USP <71> Sterility Test,2026-05-07,SUB-260420-0110,Vista Edwards Compounding Center,260958,Injectable
+Microbiology,USP <85> Bacterial Endotoxins Test,2026-04-10,SUB-260406-0102,Sierra Cedar Family Pharmacy,260960,Injectable

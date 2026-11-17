@@ -1,0 +1,1261 @@
+Submittal_No,Spec_Section,Discipline_Code,Company_ID,Submittal_Type,Revision,Date_Submitted,Date_Due,Date_Returned,Action_Code,Status,Critical_Path
+SUBM-00853,26 24 13 Switchboards,ELE,SUB12,Product Data,0,2024-08-01,2024-08-15,2024-08-09,A - Approved,Returned,N
+SUBM-00469,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,0,2024-08-01,2024-08-15,2024-08-09,A - Approved,Returned,N
+SUBM-00551,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,0,2024-08-01,2024-08-15,2024-08-20,B - Approved as Noted,Returned,N
+SUBM-01232,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,1,2024-08-01,2024-08-15,2024-08-13,C - Revise & Resubmit,Returned,N
+SUBM-00632,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,0,2024-08-04,2024-08-18,2024-08-16,D - Rejected,Returned,N
+SUBM-00494,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2024-08-05,2024-08-19,2024-09-02,B - Approved as Noted,Returned,Y
+SUBM-00141,31 23 00 Excavation and Fill,CIV,SUB02,Product Data,0,2024-08-06,2024-08-20,2024-08-13,C - Revise & Resubmit,Returned,N
+SUBM-00597,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,0,2024-08-07,2024-08-21,2024-08-19,A - Approved,Returned,N
+SUBM-00820,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2024-08-07,2024-08-21,2024-08-14,A - Approved,Returned,N
+SUBM-00055,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Shop Drawing,1,2024-08-08,2024-08-22,2024-08-21,D - Rejected,Returned,N
+SUBM-00068,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,1,2024-08-09,2024-08-23,2024-08-29,C - Revise & Resubmit,Returned,N
+SUBM-00313,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,1,2024-08-09,2024-08-23,2024-08-29,C - Revise & Resubmit,Returned,N
+SUBM-00369,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,0,2024-08-09,2024-08-23,2024-08-21,A - Approved,Returned,N
+SUBM-00520,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,1,2024-08-09,2024-08-23,2024-08-15,A - Approved,Returned,N
+SUBM-00008,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Product Data,1,2024-08-10,2024-08-24,2024-08-18,B - Approved as Noted,Returned,N
+SUBM-00555,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2024-08-11,2024-08-25,2024-08-15,D - Rejected,Returned,N
+SUBM-00612,28 31 00 Fire Detection and Alarm,FPR,SUB14,Certificate,0,2024-08-12,2024-08-26,2024-08-22,A - Approved,Returned,N
+SUBM-00896,09 67 23 Resinous Flooring,ARC,SUB05,Product Data,1,2024-08-13,2024-08-27,2024-08-24,C - Revise & Resubmit,Returned,N
+SUBM-00243,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2024-08-15,2024-08-29,2024-08-23,B - Approved as Noted,Returned,Y
+SUBM-00010,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,0,2024-08-17,2024-08-31,2024-08-23,C - Revise & Resubmit,Returned,N
+SUBM-00341,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,2,2024-08-18,2024-09-01,2024-08-22,A - Approved,Returned,N
+SUBM-00151,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2024-08-19,2024-09-02,2024-09-02,B - Approved as Noted,Returned,Y
+SUBM-00822,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2024-08-19,2024-09-02,2024-09-07,A - Approved,Returned,N
+SUBM-00159,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2024-08-19,2024-09-02,2024-08-25,B - Approved as Noted,Returned,N
+SUBM-00692,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,0,2024-08-20,2024-09-03,2024-09-06,A - Approved,Returned,N
+SUBM-00791,40 05 63 Process Valves,PPG,SUB09,Product Data,0,2024-08-21,2024-09-04,2024-08-25,C - Revise & Resubmit,Returned,N
+SUBM-00624,41 22 00 Cranes and Hoists,PEQ,SUB17,Certificate,1,2024-08-21,2024-09-04,2024-09-05,A - Approved,Returned,Y
+SUBM-00340,41 22 00 Cranes and Hoists,PEQ,SUB15,Product Data,0,2024-08-23,2024-09-06,2024-09-03,B - Approved as Noted,Returned,N
+SUBM-00283,22 66 00 Chemical-Waste Systems,PLB,SUB10,O&M Manual,1,2024-08-23,2024-09-06,2024-10-07,C - Revise & Resubmit,Returned,N
+SUBM-00507,26 24 13 Switchboards,ELE,SUB12,Shop Drawing,1,2024-08-24,2024-09-07,2024-09-26,B - Approved as Noted,Returned,N
+SUBM-00811,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Test Report,1,2024-08-24,2024-09-07,2024-09-05,A - Approved,Returned,N
+SUBM-00576,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Shop Drawing,1,2024-08-25,2024-09-08,2024-08-28,A - Approved,Returned,Y
+SUBM-00669,40 05 13 Common Work for Process Piping,PPG,SUB09,Test Report,1,2024-08-26,2024-09-09,2024-09-03,C - Revise & Resubmit,Returned,N
+SUBM-00070,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,1,2024-08-27,2024-09-10,2024-09-07,A - Approved,Returned,N
+SUBM-01080,09 67 23 Resinous Flooring,ARC,SUB04,Test Report,1,2024-08-27,2024-09-10,2024-08-31,C - Revise & Resubmit,Returned,N
+SUBM-00643,23 31 13 Metal Ducts,MEC,SUB06,Product Data,1,2024-08-28,2024-09-11,2024-09-15,A - Approved,Returned,N
+SUBM-00653,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,O&M Manual,0,2024-08-29,2024-09-12,2024-09-18,B - Approved as Noted,Returned,N
+SUBM-01212,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,1,2024-08-30,2024-09-13,2024-09-15,D - Rejected,Returned,N
+SUBM-00087,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,1,2024-08-30,2024-09-13,2024-09-16,B - Approved as Noted,Returned,N
+SUBM-00926,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,0,2024-08-31,2024-09-14,2024-09-08,A - Approved,Returned,N
+SUBM-00409,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Shop Drawing,0,2024-09-02,2024-09-16,2024-09-15,B - Approved as Noted,Returned,N
+SUBM-00719,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,2,2024-09-02,2024-09-16,2024-09-11,A - Approved,Returned,N
+SUBM-00727,26 24 13 Switchboards,ELE,SUB11,Method Statement,2,2024-09-02,2024-09-16,2024-09-17,B - Approved as Noted,Returned,Y
+SUBM-00236,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,0,2024-09-03,2024-09-17,2024-09-07,A - Approved,Returned,N
+SUBM-00173,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,0,2024-09-04,2024-09-18,2024-09-20,C - Revise & Resubmit,Returned,N
+SUBM-00521,23 31 13 Metal Ducts,MEC,SUB06,Test Report,0,2024-09-04,2024-09-18,2024-09-18,B - Approved as Noted,Returned,Y
+SUBM-00430,09 67 23 Resinous Flooring,ARC,SUB04,Method Statement,0,2024-09-05,2024-09-19,2024-09-30,C - Revise & Resubmit,Returned,N
+SUBM-01059,40 91 00 Instrumentation,INC,SUB13,Certificate,1,2024-09-05,2024-09-19,2024-09-19,A - Approved,Returned,N
+SUBM-00114,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2024-09-06,2024-09-20,2024-09-18,C - Revise & Resubmit,Returned,Y
+SUBM-00050,23 73 00 Air Handling Units,MEC,SUB06,Shop Drawing,1,2024-09-06,2024-09-20,2024-09-25,B - Approved as Noted,Returned,N
+SUBM-01175,23 73 00 Air Handling Units,MEC,SUB07,Product Data,1,2024-09-07,2024-09-21,2024-09-21,B - Approved as Noted,Returned,N
+SUBM-00925,40 05 63 Process Valves,PPG,SUB08,Product Data,1,2024-09-10,2024-09-24,2024-09-18,A - Approved,Returned,N
+SUBM-00928,28 31 00 Fire Detection and Alarm,FPR,SUB14,Test Report,1,2024-09-10,2024-09-24,2024-09-24,A - Approved,Returned,Y
+SUBM-00514,23 31 13 Metal Ducts,MEC,SUB16,Certificate,2,2024-09-10,2024-09-24,2024-09-16,A - Approved,Returned,N
+SUBM-01013,28 46 00 Fire Detection and Alarm,INC,SUB13,Method Statement,2,2024-09-11,2024-09-25,2024-09-15,D - Rejected,Returned,N
+SUBM-01085,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,1,2024-09-12,2024-09-26,2024-09-15,C - Revise & Resubmit,Returned,N
+SUBM-00401,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Method Statement,0,2024-09-12,2024-09-26,2024-09-19,D - Rejected,Returned,N
+SUBM-00559,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,1,2024-09-13,2024-09-27,2024-09-15,A - Approved,Returned,N
+SUBM-00679,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Method Statement,0,2024-09-13,2024-09-27,2024-09-21,A - Approved,Returned,N
+SUBM-00094,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2024-09-14,2024-09-28,2024-09-19,B - Approved as Noted,Returned,N
+SUBM-01093,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,0,2024-09-16,2024-09-30,2024-09-29,B - Approved as Noted,Returned,N
+SUBM-00954,26 05 19 Low-Voltage Conductors,ELE,SUB11,O&M Manual,0,2024-09-16,2024-09-30,2024-09-29,A - Approved,Returned,N
+SUBM-00891,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,0,2024-09-17,2024-10-01,2024-09-29,C - Revise & Resubmit,Returned,N
+SUBM-00454,23 73 00 Air Handling Units,MEC,SUB16,Product Data,0,2024-09-18,2024-10-02,2024-09-28,A - Approved,Returned,N
+SUBM-00497,33 05 00 Common Work for Utilities,CIV,SUB01,O&M Manual,0,2024-09-18,2024-10-02,2024-10-14,B - Approved as Noted,Returned,N
+SUBM-00681,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2024-09-18,2024-10-02,2024-10-02,B - Approved as Noted,Returned,N
+SUBM-01192,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2024-09-19,2024-10-03,2024-09-21,C - Revise & Resubmit,Returned,N
+SUBM-01047,22 66 00 Chemical-Waste Systems,PLB,SUB10,O&M Manual,0,2024-09-20,2024-10-04,2024-09-30,A - Approved,Returned,N
+SUBM-00993,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Method Statement,0,2024-09-20,2024-10-04,2024-09-26,A - Approved,Returned,N
+SUBM-00558,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,0,2024-09-21,2024-10-05,2024-10-19,B - Approved as Noted,Returned,N
+SUBM-00102,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,1,2024-09-21,2024-10-05,2024-09-30,A - Approved,Returned,N
+SUBM-00063,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,2,2024-09-22,2024-10-06,2024-10-05,B - Approved as Noted,Returned,N
+SUBM-01067,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,1,2024-09-22,2024-10-06,2024-10-14,B - Approved as Noted,Returned,N
+SUBM-01132,08 71 00 Door Hardware,ARC,SUB04,Product Data,1,2024-09-23,2024-10-07,2024-10-20,A - Approved,Returned,N
+SUBM-00374,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,2,2024-09-23,2024-10-07,2024-10-03,A - Approved,Returned,N
+SUBM-00040,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Test Report,0,2024-09-23,2024-10-07,2024-10-14,C - Revise & Resubmit,Returned,N
+SUBM-00946,23 31 13 Metal Ducts,MEC,SUB16,Test Report,1,2024-09-24,2024-10-08,2024-09-29,B - Approved as Noted,Returned,N
+SUBM-00831,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,1,2024-09-25,2024-10-09,2024-09-28,B - Approved as Noted,Returned,N
+SUBM-00295,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Shop Drawing,0,2024-09-25,2024-10-09,2024-10-05,C - Revise & Resubmit,Returned,N
+SUBM-01172,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,0,2024-09-25,2024-10-09,2024-10-19,C - Revise & Resubmit,Returned,N
+SUBM-00110,40 05 13 Common Work for Process Piping,PPG,SUB08,O&M Manual,1,2024-09-26,2024-10-10,2024-10-06,A - Approved,Returned,N
+SUBM-00046,08 71 00 Door Hardware,ARC,SUB04,Product Data,1,2024-09-26,2024-10-10,2024-10-03,A - Approved,Returned,N
+SUBM-00621,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,2,2024-09-28,2024-10-12,2024-10-02,C - Revise & Resubmit,Returned,N
+SUBM-00729,33 05 00 Common Work for Utilities,CIV,SUB01,Shop Drawing,0,2024-09-29,2024-10-13,2024-10-15,A - Approved,Returned,N
+SUBM-00976,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2024-09-30,2024-10-14,2024-10-11,C - Revise & Resubmit,Returned,N
+SUBM-00101,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,2,2024-09-30,2024-10-14,2024-10-09,A - Approved,Returned,N
+SUBM-00996,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2024-10-03,2024-10-17,2024-10-23,B - Approved as Noted,Returned,N
+SUBM-00420,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,1,2024-10-04,2024-10-18,2024-10-13,A - Approved,Returned,N
+SUBM-00544,23 84 16 Dehumidification Units,MEC,SUB16,Test Report,0,2024-10-04,2024-10-18,2024-10-18,A - Approved,Returned,N
+SUBM-01062,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,1,2024-10-05,2024-10-19,2024-10-21,C - Revise & Resubmit,Returned,N
+SUBM-00748,22 66 00 Chemical-Waste Systems,PLB,SUB10,Sample,2,2024-10-06,2024-10-20,2024-10-12,C - Revise & Resubmit,Returned,N
+SUBM-00972,40 05 63 Process Valves,PPG,SUB09,Test Report,0,2024-10-06,2024-10-20,2024-10-19,C - Revise & Resubmit,Returned,N
+SUBM-00668,40 05 63 Process Valves,PPG,SUB09,Product Data,1,2024-10-06,2024-10-20,2024-10-17,B - Approved as Noted,Returned,N
+SUBM-01259,26 05 19 Low-Voltage Conductors,ELE,SUB12,Test Report,1,2024-10-07,2024-10-21,2024-10-15,A - Approved,Returned,N
+SUBM-00273,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,1,2024-10-07,2024-10-21,2024-10-18,B - Approved as Noted,Returned,N
+SUBM-00124,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2024-10-07,2024-10-21,2024-10-12,A - Approved,Returned,N
+SUBM-00041,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Certificate,0,2024-10-08,2024-10-22,2024-11-03,B - Approved as Noted,Returned,N
+SUBM-00027,41 22 00 Cranes and Hoists,PEQ,SUB17,Shop Drawing,0,2024-10-08,2024-10-22,2024-10-28,C - Revise & Resubmit,Returned,N
+SUBM-00563,09 67 23 Resinous Flooring,ARC,SUB04,Test Report,0,2024-10-10,2024-10-24,2024-10-12,A - Approved,Returned,N
+SUBM-00990,40 05 13 Common Work for Process Piping,PPG,SUB08,Test Report,2,2024-10-11,2024-10-25,2024-10-18,B - Approved as Noted,Returned,N
+SUBM-01103,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,1,2024-10-13,2024-10-27,2024-10-17,A - Approved,Returned,N
+SUBM-00854,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,1,2024-10-15,2024-10-29,2024-10-24,B - Approved as Noted,Returned,N
+SUBM-00697,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,1,2024-10-16,2024-10-30,2024-10-25,A - Approved,Returned,N
+SUBM-00581,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,1,2024-10-16,2024-10-30,2024-10-27,C - Revise & Resubmit,Returned,N
+SUBM-00260,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2024-10-18,2024-11-01,2024-11-01,B - Approved as Noted,Returned,N
+SUBM-00839,40 05 63 Process Valves,PPG,SUB08,Test Report,1,2024-10-19,2024-11-02,2024-10-26,B - Approved as Noted,Returned,N
+SUBM-00530,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,2,2024-10-19,2024-11-02,2024-10-27,B - Approved as Noted,Returned,N
+SUBM-01179,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,1,2024-10-20,2024-11-03,2024-11-14,B - Approved as Noted,Returned,N
+SUBM-00571,26 24 13 Switchboards,ELE,SUB11,Product Data,0,2024-10-20,2024-11-03,2024-11-08,A - Approved,Returned,N
+SUBM-00250,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2024-10-23,2024-11-06,2024-10-28,B - Approved as Noted,Returned,N
+SUBM-00733,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Test Report,1,2024-10-24,2024-11-07,2024-10-29,A - Approved,Returned,Y
+SUBM-00501,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Certificate,0,2024-10-24,2024-11-07,2024-11-10,A - Approved,Returned,N
+SUBM-00178,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,1,2024-10-24,2024-11-07,2024-11-01,B - Approved as Noted,Returned,N
+SUBM-00318,26 24 13 Switchboards,ELE,SUB12,Test Report,0,2024-10-24,2024-11-07,2024-11-09,B - Approved as Noted,Returned,N
+SUBM-01248,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,1,2024-10-26,2024-11-09,2024-11-03,B - Approved as Noted,Returned,N
+SUBM-00160,40 05 63 Process Valves,PPG,SUB09,Sample,1,2024-10-26,2024-11-09,2024-10-28,B - Approved as Noted,Returned,N
+SUBM-01052,23 73 00 Air Handling Units,MEC,SUB06,Method Statement,2,2024-10-27,2024-11-10,2024-10-29,B - Approved as Noted,Returned,N
+SUBM-00635,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Shop Drawing,0,2024-10-27,2024-11-10,2024-11-01,B - Approved as Noted,Returned,N
+SUBM-00704,40 05 13 Common Work for Process Piping,PPG,SUB08,O&M Manual,0,2024-10-28,2024-11-11,2024-11-03,B - Approved as Noted,Returned,N
+SUBM-00450,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,0,2024-10-28,2024-11-11,2024-11-08,A - Approved,Returned,N
+SUBM-00495,40 05 63 Process Valves,PPG,SUB08,O&M Manual,0,2024-10-29,2024-11-12,2024-11-09,C - Revise & Resubmit,Returned,N
+SUBM-00091,05 12 00 Structural Steel Framing,STR,SUB03,O&M Manual,0,2024-10-31,2024-11-14,2024-12-09,A - Approved,Returned,N
+SUBM-00812,23 73 00 Air Handling Units,MEC,SUB06,Product Data,1,2024-10-31,2024-11-14,2024-11-20,A - Approved,Returned,N
+SUBM-00778,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,2,2024-11-02,2024-11-16,2024-11-08,A - Approved,Returned,N
+SUBM-00648,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2024-11-03,2024-11-17,2024-11-15,B - Approved as Noted,Returned,N
+SUBM-00463,23 84 16 Dehumidification Units,MEC,SUB06,Method Statement,0,2024-11-04,2024-11-18,2024-11-08,B - Approved as Noted,Returned,N
+SUBM-00190,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,2,2024-11-07,2024-11-21,2024-11-10,C - Revise & Resubmit,Returned,N
+SUBM-00442,40 05 13 Common Work for Process Piping,PPG,SUB09,Test Report,2,2024-11-07,2024-11-21,2024-11-17,A - Approved,Returned,N
+SUBM-00594,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,1,2024-11-07,2024-11-21,2024-11-11,B - Approved as Noted,Returned,N
+SUBM-00309,40 05 63 Process Valves,PPG,SUB08,Method Statement,0,2024-11-09,2024-11-23,2024-11-30,B - Approved as Noted,Returned,N
+SUBM-00651,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Shop Drawing,0,2024-11-10,2024-11-24,2024-11-20,B - Approved as Noted,Returned,N
+SUBM-00786,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Test Report,0,2024-11-11,2024-11-25,2024-11-15,A - Approved,Returned,N
+SUBM-00339,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2024-11-11,2024-11-25,2024-11-23,A - Approved,Returned,N
+SUBM-01213,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2024-11-12,2024-11-26,2024-12-01,C - Revise & Resubmit,Returned,N
+SUBM-00968,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2024-11-12,2024-11-26,2024-11-25,A - Approved,Returned,N
+SUBM-00255,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,1,2024-11-13,2024-11-27,2024-11-23,A - Approved,Returned,N
+SUBM-01199,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,1,2024-11-13,2024-11-27,2024-11-20,C - Revise & Resubmit,Returned,N
+SUBM-00801,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2024-11-14,2024-11-28,2024-11-26,C - Revise & Resubmit,Returned,N
+SUBM-01068,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2024-11-15,2024-11-29,2024-11-25,A - Approved,Returned,N
+SUBM-00543,33 05 00 Common Work for Utilities,CIV,SUB02,Method Statement,1,2024-11-16,2024-11-30,2024-11-23,C - Revise & Resubmit,Returned,N
+SUBM-00404,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,0,2024-11-16,2024-11-30,2024-11-21,B - Approved as Noted,Returned,Y
+SUBM-00863,23 84 16 Dehumidification Units,MEC,SUB16,Sample,1,2024-11-17,2024-12-01,2024-12-02,A - Approved,Returned,N
+SUBM-00267,23 73 00 Air Handling Units,MEC,SUB07,Product Data,0,2024-11-17,2024-12-01,2024-11-24,A - Approved,Returned,N
+SUBM-01151,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,2,2024-11-19,2024-12-03,2024-11-29,C - Revise & Resubmit,Returned,N
+SUBM-00167,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Shop Drawing,1,2024-11-19,2024-12-03,2024-11-22,C - Revise & Resubmit,Returned,N
+SUBM-00992,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2024-11-19,2024-12-03,2024-11-29,A - Approved,Returned,N
+SUBM-00293,41 22 00 Cranes and Hoists,PEQ,SUB17,Method Statement,0,2024-11-20,2024-12-04,2024-12-05,A - Approved,Returned,N
+SUBM-01056,40 05 13 Common Work for Process Piping,PPG,SUB09,Product Data,0,2024-11-20,2024-12-04,2024-12-12,B - Approved as Noted,Returned,N
+SUBM-01196,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2024-11-21,2024-12-05,2024-12-08,B - Approved as Noted,Returned,N
+SUBM-00265,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,2,2024-11-22,2024-12-06,2024-11-26,B - Approved as Noted,Returned,N
+SUBM-01186,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,1,2024-11-23,2024-12-07,2024-11-30,C - Revise & Resubmit,Returned,N
+SUBM-00592,31 23 00 Excavation and Fill,CIV,SUB02,Shop Drawing,1,2024-11-23,2024-12-07,2024-12-10,C - Revise & Resubmit,Returned,N
+SUBM-01082,23 84 16 Dehumidification Units,MEC,SUB16,O&M Manual,0,2024-11-23,2024-12-07,2024-12-26,D - Rejected,Returned,N
+SUBM-00805,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,2,2024-11-24,2024-12-08,2024-12-10,A - Approved,Returned,Y
+SUBM-00552,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,2,2024-11-24,2024-12-08,2024-12-06,B - Approved as Noted,Returned,N
+SUBM-00174,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,1,2024-11-24,2024-12-08,2024-12-13,C - Revise & Resubmit,Returned,N
+SUBM-00223,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Product Data,0,2024-11-25,2024-12-09,2024-12-20,A - Approved,Returned,N
+SUBM-00686,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,2,2024-11-25,2024-12-09,2024-11-28,A - Approved,Returned,N
+SUBM-00779,25 50 00 Integrated Automation Facility Controls,INC,SUB13,O&M Manual,2,2024-11-25,2024-12-09,2024-12-02,A - Approved,Returned,N
+SUBM-01200,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,2,2024-11-25,2024-12-09,2024-12-12,A - Approved,Returned,N
+SUBM-00538,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Certificate,0,2024-11-26,2024-12-10,2024-12-27,B - Approved as Noted,Returned,N
+SUBM-00956,09 67 23 Resinous Flooring,ARC,SUB04,Test Report,1,2024-11-27,2024-12-11,2024-12-06,A - Approved,Returned,N
+SUBM-01018,41 22 00 Cranes and Hoists,PEQ,SUB15,Sample,1,2024-11-28,2024-12-12,2024-12-14,B - Approved as Noted,Returned,N
+SUBM-01010,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Shop Drawing,0,2024-11-30,2024-12-14,2024-12-15,D - Rejected,Returned,N
+SUBM-01101,40 05 63 Process Valves,PPG,SUB09,Method Statement,1,2024-11-30,2024-12-14,2024-12-15,B - Approved as Noted,Returned,N
+SUBM-00658,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Shop Drawing,2,2024-11-30,2024-12-14,2024-12-25,C - Revise & Resubmit,Returned,N
+SUBM-00898,08 71 00 Door Hardware,ARC,SUB04,Product Data,1,2024-11-30,2024-12-14,2024-12-09,A - Approved,Returned,Y
+SUBM-00104,40 05 63 Process Valves,PPG,SUB08,Product Data,1,2024-11-30,2024-12-14,2024-12-18,A - Approved,Returned,N
+SUBM-00192,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Shop Drawing,0,2024-12-01,2024-12-15,2024-12-31,B - Approved as Noted,Returned,N
+SUBM-00757,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2024-12-03,2024-12-17,2024-12-20,B - Approved as Noted,Returned,N
+SUBM-00762,40 91 00 Instrumentation,INC,SUB13,Test Report,2,2024-12-03,2024-12-17,2024-12-19,B - Approved as Noted,Returned,N
+SUBM-00784,23 73 00 Air Handling Units,MEC,SUB16,Product Data,1,2024-12-04,2024-12-18,2024-12-11,B - Approved as Noted,Returned,N
+SUBM-00134,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,2,2024-12-05,2024-12-19,2024-12-21,A - Approved,Returned,N
+SUBM-01237,23 31 13 Metal Ducts,MEC,SUB16,Method Statement,0,2024-12-06,2024-12-20,2024-12-16,B - Approved as Noted,Returned,N
+SUBM-01163,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Certificate,0,2024-12-08,2024-12-22,2024-12-22,A - Approved,Returned,N
+SUBM-00749,23 84 16 Dehumidification Units,MEC,SUB07,Test Report,0,2024-12-09,2024-12-23,2024-12-11,A - Approved,Returned,Y
+SUBM-00904,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Test Report,0,2024-12-09,2024-12-23,2024-12-15,A - Approved,Returned,N
+SUBM-00481,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,1,2024-12-10,2024-12-24,2025-01-03,B - Approved as Noted,Returned,N
+SUBM-00132,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2024-12-11,2024-12-25,2025-01-02,A - Approved,Returned,N
+SUBM-00048,23 73 00 Air Handling Units,MEC,SUB07,Certificate,1,2024-12-11,2024-12-25,2024-12-19,B - Approved as Noted,Returned,N
+SUBM-00056,33 05 00 Common Work for Utilities,CIV,SUB02,Product Data,0,2024-12-11,2024-12-25,2025-01-01,B - Approved as Noted,Returned,N
+SUBM-00884,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,0,2024-12-11,2024-12-25,2024-12-31,A - Approved,Returned,N
+SUBM-00870,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,2,2024-12-12,2024-12-26,2024-12-13,A - Approved,Returned,N
+SUBM-00652,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,0,2024-12-12,2024-12-26,2024-12-19,A - Approved,Returned,N
+SUBM-00231,40 05 63 Process Valves,PPG,SUB09,Product Data,0,2024-12-13,2024-12-27,2025-01-03,B - Approved as Noted,Returned,N
+SUBM-00239,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,0,2024-12-13,2024-12-27,2024-12-24,C - Revise & Resubmit,Returned,N
+SUBM-01178,23 84 16 Dehumidification Units,MEC,SUB16,O&M Manual,0,2024-12-16,2024-12-30,2025-01-03,A - Approved,Returned,N
+SUBM-00614,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,2,2024-12-17,2024-12-31,2024-12-21,B - Approved as Noted,Returned,N
+SUBM-00586,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,0,2024-12-17,2024-12-31,2024-12-28,A - Approved,Returned,N
+SUBM-00626,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,2,2024-12-18,2025-01-01,2024-12-28,A - Approved,Returned,N
+SUBM-00335,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,0,2024-12-18,2025-01-01,2024-12-30,A - Approved,Returned,N
+SUBM-01137,40 91 00 Instrumentation,INC,SUB13,Product Data,0,2024-12-18,2025-01-01,2024-12-25,B - Approved as Noted,Returned,N
+SUBM-00619,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,1,2024-12-18,2025-01-01,2025-01-01,A - Approved,Returned,N
+SUBM-00866,41 22 00 Cranes and Hoists,PEQ,SUB15,Test Report,2,2024-12-20,2025-01-03,2024-12-28,A - Approved,Returned,N
+SUBM-00606,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Method Statement,0,2024-12-20,2025-01-03,2024-12-31,B - Approved as Noted,Returned,N
+SUBM-00892,26 24 13 Switchboards,ELE,SUB11,Certificate,2,2024-12-21,2025-01-04,2025-01-01,A - Approved,Returned,N
+SUBM-00804,31 23 00 Excavation and Fill,CIV,SUB02,Test Report,1,2024-12-21,2025-01-04,2025-01-11,C - Revise & Resubmit,Returned,N
+SUBM-00279,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2024-12-22,2025-01-05,2025-01-09,B - Approved as Noted,Returned,N
+SUBM-00235,23 84 16 Dehumidification Units,MEC,SUB06,Certificate,0,2024-12-23,2025-01-06,2025-01-04,C - Revise & Resubmit,Returned,Y
+SUBM-00353,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,0,2024-12-25,2025-01-08,2025-01-05,B - Approved as Noted,Returned,N
+SUBM-00465,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,1,2024-12-26,2025-01-09,2025-01-01,B - Approved as Noted,Returned,N
+SUBM-01048,22 66 00 Chemical-Waste Systems,PLB,SUB10,Sample,1,2024-12-26,2025-01-09,2025-01-04,A - Approved,Returned,N
+SUBM-00991,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Test Report,0,2024-12-26,2025-01-09,2025-01-06,C - Revise & Resubmit,Returned,N
+SUBM-00282,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,1,2024-12-30,2025-01-13,2025-01-07,A - Approved,Returned,N
+SUBM-00382,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Certificate,1,2024-12-30,2025-01-13,2025-01-09,A - Approved,Returned,Y
+SUBM-00456,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Test Report,0,2024-12-31,2025-01-14,2025-01-07,A - Approved,Returned,N
+SUBM-00302,08 71 00 Door Hardware,ARC,SUB05,O&M Manual,0,2024-12-31,2025-01-14,2025-01-06,B - Approved as Noted,Returned,N
+SUBM-00715,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,1,2024-12-31,2025-01-14,2025-01-10,C - Revise & Resubmit,Returned,N
+SUBM-00172,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2025-01-01,2025-01-15,2025-01-17,A - Approved,Returned,N
+SUBM-00479,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,1,2025-01-01,2025-01-15,2025-01-07,A - Approved,Returned,N
+SUBM-00373,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2025-01-01,2025-01-15,2025-01-04,B - Approved as Noted,Returned,N
+SUBM-00960,23 31 13 Metal Ducts,MEC,SUB07,Method Statement,1,2025-01-02,2025-01-16,2025-01-16,A - Approved,Returned,N
+SUBM-00735,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,1,2025-01-03,2025-01-17,2025-01-16,A - Approved,Returned,N
+SUBM-00620,40 05 13 Common Work for Process Piping,PPG,SUB08,Method Statement,0,2025-01-03,2025-01-17,2025-01-13,B - Approved as Noted,Returned,N
+SUBM-01022,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Shop Drawing,0,2025-01-03,2025-01-17,2025-01-09,A - Approved,Returned,N
+SUBM-01134,33 05 00 Common Work for Utilities,CIV,SUB02,Product Data,0,2025-01-05,2025-01-19,2025-01-21,B - Approved as Noted,Returned,N
+SUBM-01195,23 73 00 Air Handling Units,MEC,SUB06,Product Data,1,2025-01-06,2025-01-20,2025-01-21,A - Approved,Returned,Y
+SUBM-00142,26 24 13 Switchboards,ELE,SUB12,Product Data,2,2025-01-07,2025-01-21,2025-01-28,B - Approved as Noted,Returned,N
+SUBM-00615,26 05 19 Low-Voltage Conductors,ELE,SUB12,Test Report,0,2025-01-08,2025-01-22,2025-01-17,A - Approved,Returned,N
+SUBM-00591,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,2,2025-01-08,2025-01-22,2025-01-30,A - Approved,Returned,Y
+SUBM-00792,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Product Data,1,2025-01-08,2025-01-22,2025-02-04,B - Approved as Noted,Returned,N
+SUBM-00519,26 24 13 Switchboards,ELE,SUB11,Product Data,0,2025-01-10,2025-01-24,2025-01-14,B - Approved as Noted,Returned,N
+SUBM-01028,13 21 26 Dry Room Assemblies,ARC,SUB04,O&M Manual,0,2025-01-10,2025-01-24,2025-01-27,B - Approved as Noted,Returned,Y
+SUBM-00169,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,0,2025-01-10,2025-01-24,2025-01-25,D - Rejected,Returned,N
+SUBM-00967,23 31 13 Metal Ducts,MEC,SUB06,Method Statement,0,2025-01-11,2025-01-25,2025-01-18,B - Approved as Noted,Returned,N
+SUBM-00527,08 71 00 Door Hardware,ARC,SUB05,Test Report,1,2025-01-12,2025-01-26,2025-01-16,A - Approved,Returned,N
+SUBM-00773,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Certificate,1,2025-01-12,2025-01-26,2025-01-25,B - Approved as Noted,Returned,N
+SUBM-00877,08 71 00 Door Hardware,ARC,SUB05,Certificate,1,2025-01-13,2025-01-27,2025-01-30,A - Approved,Returned,N
+SUBM-00625,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,1,2025-01-13,2025-01-27,2025-02-11,B - Approved as Noted,Returned,N
+SUBM-00288,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,2,2025-01-14,2025-01-28,2025-02-06,A - Approved,Returned,N
+SUBM-00688,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,0,2025-01-16,2025-01-30,2025-01-21,A - Approved,Returned,Y
+SUBM-00843,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2025-01-18,2025-02-01,2025-02-02,A - Approved,Returned,N
+SUBM-00983,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Certificate,2,2025-01-18,2025-02-01,2025-01-23,D - Rejected,Returned,N
+SUBM-00962,40 05 13 Common Work for Process Piping,PPG,SUB08,O&M Manual,1,2025-01-18,2025-02-01,2025-01-19,A - Approved,Returned,N
+SUBM-00622,23 73 00 Air Handling Units,MEC,SUB16,Shop Drawing,1,2025-01-19,2025-02-02,2025-02-03,A - Approved,Returned,N
+SUBM-00895,40 05 63 Process Valves,PPG,SUB08,Test Report,1,2025-01-19,2025-02-02,2025-02-19,C - Revise & Resubmit,Returned,N
+SUBM-01218,26 24 13 Switchboards,ELE,SUB11,O&M Manual,0,2025-01-19,2025-02-02,2025-02-02,B - Approved as Noted,Returned,N
+SUBM-00776,33 05 00 Common Work for Utilities,CIV,SUB02,Product Data,0,2025-01-20,2025-02-03,2025-02-08,B - Approved as Noted,Returned,N
+SUBM-01228,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,1,2025-01-20,2025-02-03,2025-01-29,A - Approved,Returned,N
+SUBM-00868,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,0,2025-01-20,2025-02-03,2025-01-28,B - Approved as Noted,Returned,N
+SUBM-00088,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,0,2025-01-21,2025-02-04,2025-02-09,B - Approved as Noted,Returned,N
+SUBM-01006,40 05 63 Process Valves,PPG,SUB09,Test Report,0,2025-01-23,2025-02-06,2025-02-10,A - Approved,Returned,N
+SUBM-00338,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2025-01-23,2025-02-06,2025-02-14,A - Approved,Returned,Y
+SUBM-01231,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,0,2025-01-23,2025-02-06,2025-02-15,C - Revise & Resubmit,Returned,N
+SUBM-00232,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Product Data,0,2025-01-23,2025-02-06,2025-02-05,A - Approved,Returned,N
+SUBM-01246,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2025-01-24,2025-02-07,2025-02-07,A - Approved,Returned,N
+SUBM-00603,41 22 00 Cranes and Hoists,PEQ,SUB15,O&M Manual,1,2025-01-25,2025-02-08,2025-02-03,B - Approved as Noted,Returned,N
+SUBM-00787,40 05 63 Process Valves,PPG,SUB09,Product Data,1,2025-01-25,2025-02-08,2025-02-06,B - Approved as Noted,Returned,N
+SUBM-00984,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,1,2025-01-25,2025-02-08,2025-02-18,C - Revise & Resubmit,Returned,N
+SUBM-00432,40 05 13 Common Work for Process Piping,PPG,SUB09,Certificate,1,2025-01-27,2025-02-10,2025-01-31,A - Approved,Returned,N
+SUBM-00015,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Method Statement,1,2025-01-27,2025-02-10,2025-02-08,B - Approved as Noted,Returned,N
+SUBM-00912,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,0,2025-01-29,2025-02-12,2025-02-19,C - Revise & Resubmit,Returned,N
+SUBM-01203,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,2,2025-01-30,2025-02-13,2025-02-27,A - Approved,Returned,N
+SUBM-00381,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,0,2025-01-31,2025-02-14,2025-02-16,B - Approved as Noted,Returned,N
+SUBM-01221,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,1,2025-01-31,2025-02-14,2025-02-16,B - Approved as Noted,Returned,Y
+SUBM-01036,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,0,2025-01-31,2025-02-14,2025-02-04,B - Approved as Noted,Returned,N
+SUBM-00630,31 23 00 Excavation and Fill,CIV,SUB18,O&M Manual,2,2025-01-31,2025-02-14,2025-02-07,A - Approved,Returned,N
+SUBM-00986,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Method Statement,1,2025-01-31,2025-02-14,2025-02-24,D - Rejected,Returned,N
+SUBM-00368,40 05 13 Common Work for Process Piping,PPG,SUB09,Certificate,0,2025-02-01,2025-02-15,2025-02-07,A - Approved,Returned,N
+SUBM-00424,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,0,2025-02-03,2025-02-17,2025-02-09,C - Revise & Resubmit,Returned,N
+SUBM-00208,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,1,2025-02-03,2025-02-17,2025-03-05,A - Approved,Returned,N
+SUBM-00033,23 31 13 Metal Ducts,MEC,SUB06,Method Statement,0,2025-02-04,2025-02-18,2025-02-19,A - Approved,Returned,N
+SUBM-01050,03 41 00 Precast Structural Concrete,STR,SUB03,O&M Manual,2,2025-02-05,2025-02-19,2025-03-04,A - Approved,Returned,N
+SUBM-01100,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,1,2025-02-05,2025-02-19,2025-02-13,C - Revise & Resubmit,Returned,N
+SUBM-00637,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Test Report,1,2025-02-05,2025-02-19,2025-02-13,A - Approved,Returned,Y
+SUBM-00143,08 71 00 Door Hardware,ARC,SUB04,Product Data,2,2025-02-05,2025-02-19,2025-02-17,A - Approved,Returned,N
+SUBM-00766,23 31 13 Metal Ducts,MEC,SUB06,Certificate,0,2025-02-06,2025-02-20,2025-02-28,C - Revise & Resubmit,Returned,N
+SUBM-00408,40 05 63 Process Valves,PPG,SUB08,Test Report,0,2025-02-07,2025-02-21,2025-02-19,A - Approved,Returned,N
+SUBM-00238,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2025-02-08,2025-02-22,2025-02-22,B - Approved as Noted,Returned,N
+SUBM-00813,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Certificate,2,2025-02-08,2025-02-22,2025-02-21,A - Approved,Returned,N
+SUBM-00580,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Sample,0,2025-02-09,2025-02-23,2025-03-04,A - Approved,Returned,N
+SUBM-01176,26 24 13 Switchboards,ELE,SUB11,Certificate,0,2025-02-09,2025-02-23,2025-02-25,C - Revise & Resubmit,Returned,N
+SUBM-00003,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2025-02-10,2025-02-24,2025-02-13,B - Approved as Noted,Returned,N
+SUBM-00508,09 67 23 Resinous Flooring,ARC,SUB04,Certificate,1,2025-02-10,2025-02-24,2025-02-23,A - Approved,Returned,N
+SUBM-00722,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,1,2025-02-11,2025-02-25,2025-02-13,A - Approved,Returned,N
+SUBM-00793,13 21 26 Dry Room Assemblies,ARC,SUB04,Certificate,0,2025-02-12,2025-02-26,2025-02-20,C - Revise & Resubmit,Returned,N
+SUBM-00323,26 05 19 Low-Voltage Conductors,ELE,SUB12,Sample,0,2025-02-14,2025-02-28,2025-03-09,A - Approved,Returned,N
+SUBM-00899,23 73 00 Air Handling Units,MEC,SUB16,Shop Drawing,0,2025-02-14,2025-02-28,2025-02-20,A - Approved,Returned,Y
+SUBM-00234,33 05 00 Common Work for Utilities,CIV,SUB01,Product Data,2,2025-02-14,2025-02-28,2025-03-07,A - Approved,Returned,N
+SUBM-00182,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,0,2025-02-16,2025-03-02,2025-03-02,A - Approved,Returned,N
+SUBM-00763,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,0,2025-02-16,2025-03-02,2025-03-08,B - Approved as Noted,Returned,N
+SUBM-00867,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2025-02-18,2025-03-04,2025-03-22,A - Approved,Returned,N
+SUBM-00886,23 31 13 Metal Ducts,MEC,SUB07,Certificate,0,2025-02-18,2025-03-04,2025-03-02,B - Approved as Noted,Returned,N
+SUBM-00447,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2025-02-20,2025-03-06,2025-02-25,C - Revise & Resubmit,Returned,N
+SUBM-01131,23 73 00 Air Handling Units,MEC,SUB16,Test Report,0,2025-02-20,2025-03-06,2025-03-19,C - Revise & Resubmit,Returned,N
+SUBM-01026,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Method Statement,0,2025-02-20,2025-03-06,2025-03-05,B - Approved as Noted,Returned,Y
+SUBM-00472,26 24 13 Switchboards,ELE,SUB11,O&M Manual,0,2025-02-20,2025-03-06,2025-03-03,C - Revise & Resubmit,Returned,N
+SUBM-00714,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,1,2025-02-21,2025-03-07,2025-03-10,C - Revise & Resubmit,Returned,N
+SUBM-00861,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,1,2025-02-21,2025-03-07,2025-03-04,A - Approved,Returned,N
+SUBM-00649,40 05 63 Process Valves,PPG,SUB08,Certificate,2,2025-02-22,2025-03-08,2025-03-02,A - Approved,Returned,N
+SUBM-00126,23 73 00 Air Handling Units,MEC,SUB07,Product Data,1,2025-02-22,2025-03-08,2025-02-26,A - Approved,Returned,N
+SUBM-00574,23 73 00 Air Handling Units,MEC,SUB07,Product Data,0,2025-02-23,2025-03-09,2025-03-08,C - Revise & Resubmit,Returned,Y
+SUBM-00195,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Method Statement,1,2025-02-23,2025-03-09,2025-03-09,B - Approved as Noted,Returned,N
+SUBM-00730,03 30 00 Cast-in-Place Concrete,CIV,SUB18,O&M Manual,0,2025-02-24,2025-03-10,2025-03-31,A - Approved,Returned,N
+SUBM-00116,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2025-02-24,2025-03-10,2025-03-20,B - Approved as Noted,Returned,N
+SUBM-01106,40 05 13 Common Work for Process Piping,PPG,SUB09,Product Data,0,2025-02-25,2025-03-11,2025-03-09,B - Approved as Noted,Returned,N
+SUBM-00059,26 24 13 Switchboards,ELE,SUB12,Sample,2,2025-02-26,2025-03-12,2025-03-07,A - Approved,Returned,N
+SUBM-00794,26 24 13 Switchboards,ELE,SUB11,Product Data,2,2025-02-26,2025-03-12,2025-03-07,A - Approved,Returned,N
+SUBM-00414,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,1,2025-02-28,2025-03-14,2025-03-07,A - Approved,Returned,N
+SUBM-00410,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Certificate,1,2025-02-28,2025-03-14,2025-03-12,B - Approved as Noted,Returned,N
+SUBM-00268,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Product Data,1,2025-03-01,2025-03-15,2025-03-28,A - Approved,Returned,N
+SUBM-00047,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Test Report,0,2025-03-01,2025-03-15,2025-03-07,C - Revise & Resubmit,Returned,Y
+SUBM-01129,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,0,2025-03-02,2025-03-16,2025-03-12,B - Approved as Noted,Returned,Y
+SUBM-00598,41 22 00 Cranes and Hoists,PEQ,SUB15,Product Data,1,2025-03-02,2025-03-16,2025-03-24,A - Approved,Returned,N
+SUBM-00634,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,2,2025-03-02,2025-03-16,2025-03-10,A - Approved,Returned,N
+SUBM-00545,23 84 16 Dehumidification Units,MEC,SUB06,Certificate,2,2025-03-03,2025-03-17,2025-03-07,B - Approved as Noted,Returned,N
+SUBM-00690,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2025-03-03,2025-03-17,2025-03-12,A - Approved,Returned,N
+SUBM-01217,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,0,2025-03-04,2025-03-18,2025-03-21,C - Revise & Resubmit,Returned,N
+SUBM-00412,23 84 16 Dehumidification Units,MEC,SUB16,Sample,1,2025-03-04,2025-03-18,2025-03-12,A - Approved,Returned,N
+SUBM-00806,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2025-03-07,2025-03-21,2025-03-24,B - Approved as Noted,Returned,N
+SUBM-00281,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2025-03-10,2025-03-24,2025-03-17,A - Approved,Returned,N
+SUBM-01040,05 31 00 Steel Decking,STR,SUB03,O&M Manual,0,2025-03-10,2025-03-24,2025-03-25,A - Approved,Returned,N
+SUBM-01167,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Certificate,0,2025-03-13,2025-03-27,2025-03-19,A - Approved,Returned,Y
+SUBM-00150,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,0,2025-03-13,2025-03-27,2025-03-20,A - Approved,Returned,N
+SUBM-00457,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2025-03-13,2025-03-27,2025-04-15,B - Approved as Noted,Returned,Y
+SUBM-00053,09 67 23 Resinous Flooring,ARC,SUB05,Certificate,0,2025-03-14,2025-03-28,2025-04-14,C - Revise & Resubmit,Returned,N
+SUBM-00788,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,0,2025-03-16,2025-03-30,2025-03-28,B - Approved as Noted,Returned,N
+SUBM-00602,40 05 13 Common Work for Process Piping,PPG,SUB09,Test Report,1,2025-03-16,2025-03-30,2025-04-06,A - Approved,Returned,N
+SUBM-00327,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,2,2025-03-16,2025-03-30,2025-03-25,A - Approved,Returned,N
+SUBM-00832,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,1,2025-03-17,2025-03-31,2025-04-02,B - Approved as Noted,Returned,Y
+SUBM-00772,08 71 00 Door Hardware,ARC,SUB04,Method Statement,1,2025-03-17,2025-03-31,2025-03-29,A - Approved,Returned,N
+SUBM-01128,26 24 13 Switchboards,ELE,SUB11,O&M Manual,0,2025-03-17,2025-03-31,2025-03-31,B - Approved as Noted,Returned,N
+SUBM-00744,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Method Statement,0,2025-03-18,2025-04-01,2025-04-13,B - Approved as Noted,Returned,N
+SUBM-00061,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2025-03-18,2025-04-01,2025-03-30,A - Approved,Returned,N
+SUBM-00165,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2025-03-20,2025-04-03,2025-03-31,A - Approved,Returned,N
+SUBM-01150,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,O&M Manual,0,2025-03-21,2025-04-04,2025-03-29,A - Approved,Returned,N
+SUBM-00937,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,2,2025-03-22,2025-04-05,2025-04-13,C - Revise & Resubmit,Returned,N
+SUBM-00156,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,1,2025-03-22,2025-04-05,2025-04-09,C - Revise & Resubmit,Returned,N
+SUBM-01021,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2025-03-23,2025-04-06,2025-04-11,B - Approved as Noted,Returned,N
+SUBM-00709,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,0,2025-03-23,2025-04-06,2025-04-03,A - Approved,Returned,N
+SUBM-00296,26 05 19 Low-Voltage Conductors,ELE,SUB11,Method Statement,0,2025-03-24,2025-04-07,2025-04-03,C - Revise & Resubmit,Returned,N
+SUBM-00072,26 24 13 Switchboards,ELE,SUB12,Product Data,1,2025-03-25,2025-04-08,2025-04-06,B - Approved as Noted,Returned,N
+SUBM-00149,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2025-03-26,2025-04-09,2025-04-10,C - Revise & Resubmit,Returned,N
+SUBM-00875,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,1,2025-03-26,2025-04-09,2025-04-11,A - Approved,Returned,N
+SUBM-00197,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Method Statement,0,2025-03-28,2025-04-11,2025-04-11,B - Approved as Noted,Returned,N
+SUBM-00985,23 31 13 Metal Ducts,MEC,SUB06,Shop Drawing,0,2025-03-31,2025-04-14,2025-04-11,A - Approved,Returned,Y
+SUBM-00654,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,2,2025-04-01,2025-04-15,2025-04-12,B - Approved as Noted,Returned,N
+SUBM-00633,05 31 00 Steel Decking,STR,SUB03,Test Report,0,2025-04-02,2025-04-16,2025-04-18,A - Approved,Returned,N
+SUBM-00781,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,1,2025-04-02,2025-04-16,2025-04-07,C - Revise & Resubmit,Returned,Y
+SUBM-00343,26 24 13 Switchboards,ELE,SUB11,Product Data,0,2025-04-02,2025-04-16,2025-04-27,C - Revise & Resubmit,Returned,N
+SUBM-00170,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,0,2025-04-05,2025-04-19,2025-04-09,D - Rejected,Returned,N
+SUBM-01208,23 31 13 Metal Ducts,MEC,SUB07,Test Report,0,2025-04-05,2025-04-19,2025-04-20,B - Approved as Noted,Returned,N
+SUBM-00099,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2025-04-06,2025-04-20,2025-04-24,B - Approved as Noted,Returned,N
+SUBM-01133,03 41 00 Precast Structural Concrete,STR,SUB03,Certificate,2,2025-04-06,2025-04-20,2025-04-17,C - Revise & Resubmit,Returned,N
+SUBM-00128,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2025-04-08,2025-04-22,2025-05-04,B - Approved as Noted,Returned,N
+SUBM-00097,31 23 00 Excavation and Fill,CIV,SUB02,Product Data,1,2025-04-08,2025-04-22,2025-04-15,A - Approved,Returned,N
+SUBM-00570,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2025-04-09,2025-04-23,2025-04-13,A - Approved,Returned,N
+SUBM-00505,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,1,2025-04-09,2025-04-23,2025-04-18,C - Revise & Resubmit,Returned,N
+SUBM-00746,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,1,2025-04-09,2025-04-23,2025-04-22,C - Revise & Resubmit,Returned,N
+SUBM-00287,33 05 00 Common Work for Utilities,CIV,SUB02,Product Data,1,2025-04-12,2025-04-26,2025-04-30,C - Revise & Resubmit,Returned,Y
+SUBM-01016,05 31 00 Steel Decking,STR,SUB03,Sample,0,2025-04-13,2025-04-27,2025-04-23,C - Revise & Resubmit,Returned,Y
+SUBM-00887,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Certificate,1,2025-04-13,2025-04-27,2025-04-26,C - Revise & Resubmit,Returned,N
+SUBM-00162,23 73 00 Air Handling Units,MEC,SUB16,Method Statement,1,2025-04-14,2025-04-28,2025-04-28,D - Rejected,Returned,N
+SUBM-00266,40 05 13 Common Work for Process Piping,PPG,SUB09,Product Data,0,2025-04-14,2025-04-28,2025-05-06,B - Approved as Noted,Returned,N
+SUBM-01250,31 23 00 Excavation and Fill,CIV,SUB18,Product Data,0,2025-04-15,2025-04-29,2025-05-08,A - Approved,Returned,N
+SUBM-00802,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,2,2025-04-15,2025-04-29,2025-04-25,B - Approved as Noted,Returned,N
+SUBM-00007,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Method Statement,1,2025-04-16,2025-04-30,2025-04-27,C - Revise & Resubmit,Returned,N
+SUBM-00929,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,0,2025-04-16,2025-04-30,2025-05-07,B - Approved as Noted,Returned,N
+SUBM-00076,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,0,2025-04-17,2025-05-01,2025-04-21,B - Approved as Noted,Returned,N
+SUBM-00503,28 31 00 Fire Detection and Alarm,FPR,SUB14,Test Report,1,2025-04-17,2025-05-01,2025-04-22,A - Approved,Returned,N
+SUBM-01159,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,2,2025-04-18,2025-05-02,2025-05-20,A - Approved,Returned,N
+SUBM-00462,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2025-04-19,2025-05-03,2025-04-27,C - Revise & Resubmit,Returned,N
+SUBM-01077,28 31 00 Fire Detection and Alarm,FPR,SUB14,Test Report,2,2025-04-19,2025-05-03,2025-04-24,A - Approved,Returned,N
+SUBM-00638,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,1,2025-04-19,2025-05-03,2025-04-28,C - Revise & Resubmit,Returned,N
+SUBM-00180,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,0,2025-04-20,2025-05-04,2025-05-12,A - Approved,Returned,N
+SUBM-01127,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,1,2025-04-20,2025-05-04,2025-04-26,B - Approved as Noted,Returned,N
+SUBM-00905,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Sample,0,2025-04-21,2025-05-05,2025-04-23,A - Approved,Returned,N
+SUBM-01111,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,0,2025-04-22,2025-05-06,2025-05-10,A - Approved,Returned,N
+SUBM-01007,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Product Data,0,2025-04-22,2025-05-06,2025-05-17,A - Approved,Returned,N
+SUBM-00920,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,1,2025-04-22,2025-05-06,2025-05-05,B - Approved as Noted,Returned,N
+SUBM-01149,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,1,2025-04-25,2025-05-09,2025-05-11,D - Rejected,Returned,N
+SUBM-00874,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,1,2025-04-27,2025-05-11,2025-05-11,A - Approved,Returned,N
+SUBM-00177,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2025-04-27,2025-05-11,2025-05-14,C - Revise & Resubmit,Returned,N
+SUBM-00112,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,1,2025-04-29,2025-05-13,2025-05-13,B - Approved as Noted,Returned,N
+SUBM-00970,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,2,2025-04-29,2025-05-13,2025-05-10,A - Approved,Returned,N
+SUBM-00349,05 31 00 Steel Decking,STR,SUB03,Test Report,0,2025-04-29,2025-05-13,2025-05-15,A - Approved,Returned,Y
+SUBM-00943,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2025-04-30,2025-05-14,2025-05-09,A - Approved,Returned,N
+SUBM-00698,05 31 00 Steel Decking,STR,SUB03,Test Report,1,2025-05-01,2025-05-15,2025-05-10,B - Approved as Noted,Returned,N
+SUBM-00406,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Certificate,0,2025-05-01,2025-05-15,2025-06-14,A - Approved,Returned,N
+SUBM-00284,05 31 00 Steel Decking,STR,SUB03,Method Statement,0,2025-05-02,2025-05-16,2025-05-12,B - Approved as Noted,Returned,N
+SUBM-00562,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2025-05-02,2025-05-16,2025-05-25,B - Approved as Noted,Returned,N
+SUBM-01241,23 73 00 Air Handling Units,MEC,SUB07,Product Data,0,2025-05-02,2025-05-16,2025-05-15,A - Approved,Returned,N
+SUBM-00229,28 31 00 Fire Detection and Alarm,FPR,SUB14,Method Statement,2,2025-05-03,2025-05-17,2025-05-10,D - Rejected,Returned,N
+SUBM-00137,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Certificate,0,2025-05-04,2025-05-18,2025-05-18,B - Approved as Noted,Returned,N
+SUBM-00610,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,0,2025-05-04,2025-05-18,2025-05-16,C - Revise & Resubmit,Returned,N
+SUBM-00526,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Certificate,0,2025-05-05,2025-05-19,2025-05-16,C - Revise & Resubmit,Returned,N
+SUBM-00978,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,0,2025-05-05,2025-05-19,2025-05-18,A - Approved,Returned,N
+SUBM-00115,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,1,2025-05-06,2025-05-20,2025-05-11,B - Approved as Noted,Returned,N
+SUBM-00252,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Certificate,1,2025-05-08,2025-05-22,2025-06-03,C - Revise & Resubmit,Returned,N
+SUBM-00939,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,1,2025-05-10,2025-05-24,2025-06-02,A - Approved,Returned,N
+SUBM-00646,41 22 00 Cranes and Hoists,PEQ,SUB17,Product Data,1,2025-05-10,2025-05-24,2025-05-29,C - Revise & Resubmit,Returned,N
+SUBM-00980,23 73 00 Air Handling Units,MEC,SUB06,Test Report,0,2025-05-10,2025-05-24,2025-05-16,A - Approved,Returned,N
+SUBM-00086,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Test Report,0,2025-05-10,2025-05-24,2025-05-15,A - Approved,Returned,N
+SUBM-00176,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,1,2025-05-12,2025-05-26,2025-05-27,A - Approved,Returned,N
+SUBM-00907,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,1,2025-05-12,2025-05-26,2025-06-16,A - Approved,Returned,N
+SUBM-00422,23 31 13 Metal Ducts,MEC,SUB07,Certificate,2,2025-05-12,2025-05-26,2025-05-31,B - Approved as Noted,Returned,N
+SUBM-00466,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,0,2025-05-12,2025-05-26,2025-06-08,D - Rejected,Returned,N
+SUBM-00452,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2025-05-12,2025-05-26,2025-05-25,A - Approved,Returned,N
+SUBM-00878,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,2,2025-05-13,2025-05-27,2025-05-25,B - Approved as Noted,Returned,N
+SUBM-00549,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,0,2025-05-13,2025-05-27,2025-05-25,A - Approved,Returned,N
+SUBM-01216,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,1,2025-05-14,2025-05-28,2025-05-19,C - Revise & Resubmit,Returned,N
+SUBM-00478,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,O&M Manual,1,2025-05-14,2025-05-28,2025-05-24,B - Approved as Noted,Returned,N
+SUBM-00734,40 05 63 Process Valves,PPG,SUB09,Certificate,2,2025-05-14,2025-05-28,2025-05-16,B - Approved as Noted,Returned,Y
+SUBM-00789,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2025-05-14,2025-05-28,2025-05-18,B - Approved as Noted,Returned,N
+SUBM-00183,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,1,2025-05-14,2025-05-28,2025-05-22,D - Rejected,Returned,N
+SUBM-00299,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,0,2025-05-16,2025-05-30,2025-05-23,B - Approved as Noted,Returned,N
+SUBM-01160,26 24 13 Switchboards,ELE,SUB12,Certificate,1,2025-05-17,2025-05-31,2025-05-25,C - Revise & Resubmit,Returned,N
+SUBM-00765,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,1,2025-05-17,2025-05-31,2025-05-29,A - Approved,Returned,N
+SUBM-01086,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2025-05-17,2025-05-31,2025-06-05,A - Approved,Returned,N
+SUBM-01143,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2025-05-18,2025-06-01,2025-06-19,A - Approved,Returned,N
+SUBM-00264,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,0,2025-05-18,2025-06-01,2025-05-24,A - Approved,Returned,N
+SUBM-00910,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,1,2025-05-18,2025-06-01,2025-05-29,A - Approved,Returned,N
+SUBM-00489,40 05 13 Common Work for Process Piping,PPG,SUB08,Test Report,0,2025-05-19,2025-06-02,2025-06-12,C - Revise & Resubmit,Returned,Y
+SUBM-00767,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,0,2025-05-20,2025-06-03,2025-05-29,B - Approved as Noted,Returned,N
+SUBM-00901,26 05 19 Low-Voltage Conductors,ELE,SUB12,Test Report,1,2025-05-20,2025-06-03,2025-06-12,B - Approved as Noted,Returned,N
+SUBM-00847,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,0,2025-05-21,2025-06-04,2025-06-01,B - Approved as Noted,Returned,N
+SUBM-00256,40 05 63 Process Valves,PPG,SUB09,Method Statement,2,2025-05-23,2025-06-06,2025-05-28,B - Approved as Noted,Returned,N
+SUBM-00233,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2025-05-23,2025-06-06,2025-05-28,B - Approved as Noted,Returned,N
+SUBM-01099,40 05 13 Common Work for Process Piping,PPG,SUB09,Method Statement,0,2025-05-23,2025-06-06,2025-06-18,B - Approved as Noted,Returned,N
+SUBM-00862,33 05 00 Common Work for Utilities,CIV,SUB18,Shop Drawing,1,2025-05-24,2025-06-07,2025-06-13,B - Approved as Noted,Returned,N
+SUBM-01104,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,0,2025-05-26,2025-06-09,2025-06-05,A - Approved,Returned,N
+SUBM-00206,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Test Report,2,2025-05-27,2025-06-10,2025-06-08,D - Rejected,Returned,N
+SUBM-00796,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2025-05-27,2025-06-10,2025-05-30,B - Approved as Noted,Returned,N
+SUBM-00166,23 73 00 Air Handling Units,MEC,SUB07,Method Statement,0,2025-05-27,2025-06-10,2025-06-22,A - Approved,Returned,N
+SUBM-00607,23 31 13 Metal Ducts,MEC,SUB16,Sample,1,2025-05-28,2025-06-11,2025-06-08,A - Approved,Returned,N
+SUBM-00845,26 24 13 Switchboards,ELE,SUB11,Certificate,1,2025-05-28,2025-06-11,2025-05-29,C - Revise & Resubmit,Returned,Y
+SUBM-00710,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,2,2025-05-29,2025-06-12,2025-06-07,B - Approved as Noted,Returned,Y
+SUBM-00523,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2025-05-29,2025-06-12,2025-06-06,C - Revise & Resubmit,Returned,N
+SUBM-00006,26 05 19 Low-Voltage Conductors,ELE,SUB12,O&M Manual,0,2025-05-30,2025-06-13,2025-06-22,B - Approved as Noted,Returned,N
+SUBM-00254,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,1,2025-05-30,2025-06-13,2025-06-06,B - Approved as Noted,Returned,N
+SUBM-01041,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2025-05-30,2025-06-13,2025-06-12,B - Approved as Noted,Returned,N
+SUBM-00826,26 05 19 Low-Voltage Conductors,ELE,SUB12,O&M Manual,1,2025-05-30,2025-06-13,2025-06-12,C - Revise & Resubmit,Returned,N
+SUBM-00155,26 24 13 Switchboards,ELE,SUB12,Method Statement,0,2025-05-30,2025-06-13,2025-06-29,A - Approved,Returned,N
+SUBM-00540,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,1,2025-05-31,2025-06-14,2025-06-13,C - Revise & Resubmit,Returned,N
+SUBM-00018,40 05 63 Process Valves,PPG,SUB09,O&M Manual,1,2025-05-31,2025-06-14,2025-06-03,A - Approved,Returned,N
+SUBM-00703,33 05 00 Common Work for Utilities,CIV,SUB01,Product Data,0,2025-05-31,2025-06-14,2025-06-18,B - Approved as Noted,Returned,N
+SUBM-01049,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,1,2025-06-01,2025-06-15,2025-06-28,B - Approved as Noted,Returned,N
+SUBM-00310,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2025-06-01,2025-06-15,2025-07-19,C - Revise & Resubmit,Returned,N
+SUBM-00145,09 67 23 Resinous Flooring,ARC,SUB05,Method Statement,1,2025-06-02,2025-06-16,2025-06-07,C - Revise & Resubmit,Returned,Y
+SUBM-00553,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2025-06-03,2025-06-17,2025-06-09,A - Approved,Returned,N
+SUBM-00354,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,O&M Manual,0,2025-06-03,2025-06-17,2025-06-18,B - Approved as Noted,Returned,N
+SUBM-00257,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,1,2025-06-05,2025-06-19,2025-06-10,C - Revise & Resubmit,Returned,N
+SUBM-00326,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,1,2025-06-05,2025-06-19,2025-06-17,A - Approved,Returned,N
+SUBM-00464,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Method Statement,2,2025-06-07,2025-06-21,2025-06-16,A - Approved,Returned,N
+SUBM-00482,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Method Statement,0,2025-06-07,2025-06-21,2025-06-22,A - Approved,Returned,N
+SUBM-01243,03 41 00 Precast Structural Concrete,STR,SUB03,Test Report,0,2025-06-08,2025-06-22,2025-06-15,A - Approved,Returned,N
+SUBM-01071,05 12 00 Structural Steel Framing,STR,SUB03,O&M Manual,0,2025-06-08,2025-06-22,2025-06-11,A - Approved,Returned,N
+SUBM-01209,26 24 13 Switchboards,ELE,SUB12,Shop Drawing,1,2025-06-08,2025-06-22,2025-06-17,A - Approved,Returned,N
+SUBM-00754,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,2,2025-06-10,2025-06-24,2025-06-18,A - Approved,Returned,N
+SUBM-00836,13 21 26 Dry Room Assemblies,ARC,SUB05,Test Report,1,2025-06-10,2025-06-24,2025-06-30,B - Approved as Noted,Returned,N
+SUBM-01102,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,0,2025-06-10,2025-06-24,2025-06-24,A - Approved,Returned,N
+SUBM-00312,26 05 19 Low-Voltage Conductors,ELE,SUB11,O&M Manual,1,2025-06-11,2025-06-25,2025-06-26,B - Approved as Noted,Returned,N
+SUBM-00708,09 67 23 Resinous Flooring,ARC,SUB05,O&M Manual,0,2025-06-12,2025-06-26,2025-06-15,A - Approved,Returned,N
+SUBM-00390,40 05 63 Process Valves,PPG,SUB08,Product Data,2,2025-06-12,2025-06-26,2025-06-27,C - Revise & Resubmit,Returned,N
+SUBM-00961,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,0,2025-06-12,2025-06-26,2025-07-03,A - Approved,Returned,N
+SUBM-00474,08 71 00 Door Hardware,ARC,SUB05,O&M Manual,0,2025-06-13,2025-06-27,2025-06-19,C - Revise & Resubmit,Returned,N
+SUBM-01142,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Shop Drawing,0,2025-06-17,2025-07-01,2025-06-29,A - Approved,Returned,N
+SUBM-00246,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,1,2025-06-17,2025-07-01,2025-06-30,A - Approved,Returned,N
+SUBM-00241,09 67 23 Resinous Flooring,ARC,SUB05,O&M Manual,2,2025-06-18,2025-07-02,2025-07-02,A - Approved,Returned,N
+SUBM-00397,05 31 00 Steel Decking,STR,SUB03,Certificate,0,2025-06-18,2025-07-02,2025-07-03,A - Approved,Returned,N
+SUBM-00483,03 41 00 Precast Structural Concrete,STR,SUB03,Test Report,0,2025-06-19,2025-07-03,2025-06-28,A - Approved,Returned,N
+SUBM-00629,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Shop Drawing,0,2025-06-19,2025-07-03,2025-07-06,C - Revise & Resubmit,Returned,Y
+SUBM-00493,31 23 00 Excavation and Fill,CIV,SUB02,Certificate,0,2025-06-19,2025-07-03,2025-07-05,A - Approved,Returned,N
+SUBM-00824,23 31 13 Metal Ducts,MEC,SUB06,Product Data,0,2025-06-19,2025-07-03,2025-07-07,C - Revise & Resubmit,Returned,N
+SUBM-00705,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2025-06-19,2025-07-03,2025-06-25,A - Approved,Returned,N
+SUBM-00002,40 05 13 Common Work for Process Piping,PPG,SUB08,Certificate,1,2025-06-19,2025-07-03,2025-07-01,A - Approved,Returned,N
+SUBM-00666,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2025-06-22,2025-07-06,2025-07-04,A - Approved,Returned,N
+SUBM-00152,25 50 00 Integrated Automation Facility Controls,INC,SUB13,O&M Manual,0,2025-06-22,2025-07-06,2025-06-26,B - Approved as Noted,Returned,N
+SUBM-00869,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,2,2025-06-23,2025-07-07,2025-06-26,B - Approved as Noted,Returned,N
+SUBM-00158,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Method Statement,1,2025-06-23,2025-07-07,2025-07-27,C - Revise & Resubmit,Returned,N
+SUBM-00888,05 12 00 Structural Steel Framing,STR,SUB03,Certificate,0,2025-06-24,2025-07-08,2025-06-30,B - Approved as Noted,Returned,N
+SUBM-01075,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,1,2025-06-24,2025-07-08,2025-07-14,B - Approved as Noted,Returned,N
+SUBM-00922,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2025-06-25,2025-07-09,2025-07-11,C - Revise & Resubmit,Returned,N
+SUBM-00307,03 41 00 Precast Structural Concrete,STR,SUB03,O&M Manual,1,2025-06-25,2025-07-09,2025-07-13,B - Approved as Noted,Returned,Y
+SUBM-01031,40 05 13 Common Work for Process Piping,PPG,SUB08,Sample,1,2025-06-26,2025-07-10,2025-07-19,C - Revise & Resubmit,Returned,Y
+SUBM-00468,40 05 63 Process Valves,PPG,SUB08,Test Report,0,2025-06-26,2025-07-10,2025-07-06,B - Approved as Noted,Returned,N
+SUBM-00058,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,1,2025-06-26,2025-07-10,2025-07-09,A - Approved,Returned,N
+SUBM-00949,26 05 19 Low-Voltage Conductors,ELE,SUB12,Product Data,2,2025-06-28,2025-07-12,2025-07-08,A - Approved,Returned,N
+SUBM-00737,28 46 00 Fire Detection and Alarm,INC,SUB13,O&M Manual,0,2025-06-29,2025-07-13,2025-07-08,A - Approved,Returned,N
+SUBM-00550,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Shop Drawing,0,2025-06-29,2025-07-13,2025-07-08,A - Approved,Returned,N
+SUBM-00535,13 21 26 Dry Room Assemblies,ARC,SUB04,Method Statement,1,2025-07-01,2025-07-15,2025-07-17,B - Approved as Noted,Returned,N
+SUBM-00203,03 41 00 Precast Structural Concrete,STR,SUB03,Certificate,2,2025-07-02,2025-07-16,2025-08-01,B - Approved as Noted,Returned,Y
+SUBM-01058,09 67 23 Resinous Flooring,ARC,SUB04,Sample,0,2025-07-03,2025-07-17,2025-07-23,A - Approved,Returned,N
+SUBM-00228,23 84 16 Dehumidification Units,MEC,SUB06,Sample,1,2025-07-05,2025-07-19,2025-07-27,C - Revise & Resubmit,Returned,N
+SUBM-00741,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,0,2025-07-06,2025-07-20,2025-07-12,B - Approved as Noted,Returned,N
+SUBM-01223,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,0,2025-07-06,2025-07-20,2025-07-14,B - Approved as Noted,Returned,N
+SUBM-00333,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2025-07-07,2025-07-21,2025-07-10,A - Approved,Returned,N
+SUBM-00458,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Shop Drawing,0,2025-07-07,2025-07-21,2025-07-20,A - Approved,Returned,N
+SUBM-00108,31 23 00 Excavation and Fill,CIV,SUB18,Shop Drawing,0,2025-07-08,2025-07-22,2025-08-10,B - Approved as Noted,Returned,N
+SUBM-00189,26 24 13 Switchboards,ELE,SUB11,Product Data,1,2025-07-08,2025-07-22,2025-08-02,D - Rejected,Returned,N
+SUBM-00356,09 67 23 Resinous Flooring,ARC,SUB05,Product Data,1,2025-07-10,2025-07-24,2025-07-21,A - Approved,Returned,N
+SUBM-00661,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,1,2025-07-10,2025-07-24,2025-08-07,D - Rejected,Returned,N
+SUBM-00451,31 23 00 Excavation and Fill,CIV,SUB01,Shop Drawing,0,2025-07-12,2025-07-26,2025-08-03,A - Approved,Returned,N
+SUBM-00418,23 31 13 Metal Ducts,MEC,SUB07,Test Report,0,2025-07-12,2025-07-26,2025-07-24,A - Approved,Returned,N
+SUBM-00194,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Shop Drawing,1,2025-07-12,2025-07-26,2025-07-27,C - Revise & Resubmit,Returned,N
+SUBM-00222,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,0,2025-07-13,2025-07-27,2025-08-08,D - Rejected,Returned,N
+SUBM-00057,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2025-07-13,2025-07-27,2025-08-06,C - Revise & Resubmit,Returned,N
+SUBM-00131,26 24 13 Switchboards,ELE,SUB11,Certificate,1,2025-07-13,2025-07-27,2025-07-16,A - Approved,Returned,N
+SUBM-01211,23 73 00 Air Handling Units,MEC,SUB07,Shop Drawing,1,2025-07-14,2025-07-28,2025-07-16,B - Approved as Noted,Returned,N
+SUBM-00721,03 41 00 Precast Structural Concrete,STR,SUB03,Test Report,1,2025-07-15,2025-07-29,2025-07-20,A - Approved,Returned,N
+SUBM-00364,31 23 00 Excavation and Fill,CIV,SUB02,Shop Drawing,2,2025-07-16,2025-07-30,2025-08-06,C - Revise & Resubmit,Returned,Y
+SUBM-01118,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,0,2025-07-17,2025-07-31,2025-07-28,B - Approved as Noted,Returned,N
+SUBM-00218,26 24 13 Switchboards,ELE,SUB12,Product Data,1,2025-07-18,2025-08-01,2025-07-26,A - Approved,Returned,N
+SUBM-00916,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Certificate,0,2025-07-20,2025-08-03,2025-08-01,B - Approved as Noted,Returned,N
+SUBM-01124,13 21 26 Dry Room Assemblies,ARC,SUB05,Method Statement,2,2025-07-20,2025-08-03,2025-07-27,A - Approved,Returned,N
+SUBM-01260,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2025-07-20,2025-08-03,2025-08-01,A - Approved,Returned,N
+SUBM-00582,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,1,2025-07-21,2025-08-04,2025-07-30,C - Revise & Resubmit,Returned,N
+SUBM-00352,26 24 13 Switchboards,ELE,SUB12,Product Data,2,2025-07-23,2025-08-06,2025-08-01,A - Approved,Returned,N
+SUBM-00844,23 73 00 Air Handling Units,MEC,SUB06,Shop Drawing,0,2025-07-25,2025-08-08,2025-08-01,A - Approved,Returned,N
+SUBM-00446,26 05 19 Low-Voltage Conductors,ELE,SUB12,Product Data,1,2025-07-28,2025-08-11,2025-08-05,A - Approved,Returned,N
+SUBM-00849,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Test Report,0,2025-07-28,2025-08-11,2025-08-01,A - Approved,Returned,Y
+SUBM-01140,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,2,2025-07-28,2025-08-11,2025-08-02,B - Approved as Noted,Returned,N
+SUBM-00362,23 73 00 Air Handling Units,MEC,SUB16,O&M Manual,1,2025-07-29,2025-08-12,2025-08-10,C - Revise & Resubmit,Returned,N
+SUBM-00348,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,0,2025-07-29,2025-08-12,2025-08-07,A - Approved,Returned,N
+SUBM-01110,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,1,2025-07-29,2025-08-12,2025-08-25,A - Approved,Returned,N
+SUBM-01038,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,1,2025-07-30,2025-08-13,2025-08-17,B - Approved as Noted,Returned,N
+SUBM-00790,40 91 00 Instrumentation,INC,SUB13,O&M Manual,0,2025-07-31,2025-08-14,2025-08-16,A - Approved,Returned,Y
+SUBM-00566,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2025-07-31,2025-08-14,2025-08-07,B - Approved as Noted,Returned,N
+SUBM-00664,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,0,2025-08-02,2025-08-16,2025-08-20,A - Approved,Returned,N
+SUBM-00448,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,0,2025-08-03,2025-08-17,2025-08-09,D - Rejected,Returned,N
+SUBM-01070,05 12 00 Structural Steel Framing,STR,SUB03,O&M Manual,0,2025-08-03,2025-08-17,2025-08-18,A - Approved,Returned,N
+SUBM-00631,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,0,2025-08-05,2025-08-19,2025-08-18,B - Approved as Noted,Returned,N
+SUBM-01214,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,1,2025-08-05,2025-08-19,2025-08-14,A - Approved,Returned,N
+SUBM-00315,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2025-08-05,2025-08-19,2025-09-01,B - Approved as Noted,Returned,N
+SUBM-00924,23 31 13 Metal Ducts,MEC,SUB07,Product Data,0,2025-08-06,2025-08-20,2025-08-24,B - Approved as Noted,Returned,N
+SUBM-00975,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,1,2025-08-07,2025-08-21,2025-08-17,D - Rejected,Returned,N
+SUBM-00987,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,0,2025-08-07,2025-08-21,2025-08-14,A - Approved,Returned,N
+SUBM-00585,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,0,2025-08-07,2025-08-21,2025-08-28,A - Approved,Returned,N
+SUBM-00049,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,0,2025-08-07,2025-08-21,2025-08-18,C - Revise & Resubmit,Returned,N
+SUBM-00516,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,2,2025-08-09,2025-08-23,2025-08-21,A - Approved,Returned,N
+SUBM-00556,23 73 00 Air Handling Units,MEC,SUB07,Shop Drawing,2,2025-08-09,2025-08-23,2025-09-01,A - Approved,Returned,N
+SUBM-01105,40 05 63 Process Valves,PPG,SUB09,Certificate,0,2025-08-10,2025-08-24,2025-08-20,A - Approved,Returned,N
+SUBM-00687,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,1,2025-08-12,2025-08-26,2025-08-29,A - Approved,Returned,N
+SUBM-00023,31 23 00 Excavation and Fill,CIV,SUB01,O&M Manual,2,2025-08-12,2025-08-26,2025-08-24,A - Approved,Returned,N
+SUBM-00751,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,0,2025-08-13,2025-08-27,2025-09-05,A - Approved,Returned,N
+SUBM-00345,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Test Report,1,2025-08-13,2025-08-27,2025-09-01,B - Approved as Noted,Returned,N
+SUBM-01238,40 05 63 Process Valves,PPG,SUB08,Certificate,2,2025-08-14,2025-08-28,2025-08-24,C - Revise & Resubmit,Returned,N
+SUBM-00761,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Sample,1,2025-08-14,2025-08-28,2025-08-27,B - Approved as Noted,Returned,N
+SUBM-00421,31 23 00 Excavation and Fill,CIV,SUB02,Product Data,0,2025-08-14,2025-08-28,2025-09-02,A - Approved,Returned,N
+SUBM-00028,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Sample,0,2025-08-15,2025-08-29,2025-09-04,A - Approved,Returned,N
+SUBM-01046,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Test Report,2,2025-08-15,2025-08-29,2025-08-25,A - Approved,Returned,N
+SUBM-00600,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,2,2025-08-15,2025-08-29,2025-09-09,B - Approved as Noted,Returned,N
+SUBM-00509,08 71 00 Door Hardware,ARC,SUB04,O&M Manual,2,2025-08-16,2025-08-30,2025-09-06,A - Approved,Returned,N
+SUBM-00944,41 22 00 Cranes and Hoists,PEQ,SUB15,Method Statement,0,2025-08-18,2025-09-01,2025-09-10,B - Approved as Noted,Returned,N
+SUBM-01198,23 73 00 Air Handling Units,MEC,SUB07,Product Data,1,2025-08-18,2025-09-01,2025-08-31,B - Approved as Noted,Returned,N
+SUBM-00440,23 73 00 Air Handling Units,MEC,SUB06,Shop Drawing,1,2025-08-19,2025-09-02,2025-09-09,B - Approved as Noted,Returned,N
+SUBM-00492,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,0,2025-08-19,2025-09-02,2025-09-05,A - Approved,Returned,N
+SUBM-00525,23 73 00 Air Handling Units,MEC,SUB16,Shop Drawing,2,2025-08-19,2025-09-02,2025-08-23,D - Rejected,Returned,N
+SUBM-00052,33 05 00 Common Work for Utilities,CIV,SUB02,Shop Drawing,0,2025-08-20,2025-09-03,2025-08-23,A - Approved,Returned,N
+SUBM-00098,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2025-08-20,2025-09-03,2025-09-09,A - Approved,Returned,N
+SUBM-00413,28 31 00 Fire Detection and Alarm,FPR,SUB14,Sample,1,2025-08-20,2025-09-03,2025-08-28,A - Approved,Returned,N
+SUBM-00286,40 05 63 Process Valves,PPG,SUB09,Product Data,2,2025-08-23,2025-09-06,2025-08-27,A - Approved,Returned,N
+SUBM-00676,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,2,2025-08-23,2025-09-06,2025-08-30,A - Approved,Returned,N
+SUBM-00077,40 05 63 Process Valves,PPG,SUB08,O&M Manual,0,2025-08-23,2025-09-06,2025-08-29,A - Approved,Returned,N
+SUBM-00902,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,0,2025-08-24,2025-09-07,2025-09-07,A - Approved,Returned,N
+SUBM-00953,09 67 23 Resinous Flooring,ARC,SUB05,Certificate,1,2025-08-24,2025-09-07,2025-09-06,B - Approved as Noted,Returned,N
+SUBM-01014,23 31 13 Metal Ducts,MEC,SUB07,Method Statement,0,2025-08-24,2025-09-07,2025-09-19,B - Approved as Noted,Returned,N
+SUBM-00291,26 24 13 Switchboards,ELE,SUB11,Sample,1,2025-08-27,2025-09-10,2025-09-10,A - Approved,Returned,N
+SUBM-01109,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,1,2025-08-27,2025-09-10,2025-09-07,A - Approved,Returned,N
+SUBM-00044,09 67 23 Resinous Flooring,ARC,SUB04,Product Data,0,2025-08-27,2025-09-10,2025-09-07,B - Approved as Noted,Returned,N
+SUBM-01135,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Method Statement,2,2025-08-28,2025-09-11,2025-09-09,A - Approved,Returned,N
+SUBM-00383,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Method Statement,2,2025-08-28,2025-09-11,2025-09-05,B - Approved as Noted,Returned,N
+SUBM-01177,23 31 13 Metal Ducts,MEC,SUB16,Certificate,1,2025-08-30,2025-09-13,2025-09-06,A - Approved,Returned,N
+SUBM-01027,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2025-08-31,2025-09-14,2025-09-10,A - Approved,Returned,N
+SUBM-00723,40 05 13 Common Work for Process Piping,PPG,SUB08,Method Statement,0,2025-09-01,2025-09-15,2025-09-07,A - Approved,Returned,N
+SUBM-01242,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,0,2025-09-01,2025-09-15,2025-09-09,A - Approved,Returned,N
+SUBM-00988,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,2,2025-09-01,2025-09-15,2025-09-20,A - Approved,Returned,N
+SUBM-00833,33 05 00 Common Work for Utilities,CIV,SUB02,Test Report,2,2025-09-02,2025-09-16,2025-09-04,A - Approved,Returned,N
+SUBM-00848,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Certificate,0,2025-09-02,2025-09-16,2025-09-15,B - Approved as Noted,Returned,N
+SUBM-00759,40 91 00 Instrumentation,INC,SUB13,O&M Manual,2,2025-09-04,2025-09-18,2025-09-11,B - Approved as Noted,Returned,N
+SUBM-00941,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,2,2025-09-04,2025-09-18,2025-09-27,D - Rejected,Returned,N
+SUBM-01114,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,1,2025-09-05,2025-09-19,2025-09-21,A - Approved,Returned,N
+SUBM-00815,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Shop Drawing,0,2025-09-05,2025-09-19,2025-09-08,B - Approved as Noted,Returned,N
+SUBM-00434,23 73 00 Air Handling Units,MEC,SUB06,Product Data,0,2025-09-07,2025-09-21,2025-09-16,B - Approved as Noted,Returned,N
+SUBM-00388,40 05 13 Common Work for Process Piping,PPG,SUB08,Certificate,0,2025-09-08,2025-09-22,2025-10-01,A - Approved,Returned,N
+SUBM-00453,05 12 00 Structural Steel Framing,STR,SUB03,Certificate,0,2025-09-08,2025-09-22,2025-09-12,C - Revise & Resubmit,Returned,N
+SUBM-00095,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,2,2025-09-08,2025-09-22,2025-09-16,B - Approved as Noted,Returned,Y
+SUBM-00045,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Method Statement,2,2025-09-08,2025-09-22,2025-09-21,B - Approved as Noted,Returned,N
+SUBM-01148,33 05 00 Common Work for Utilities,CIV,SUB18,Shop Drawing,0,2025-09-10,2025-09-24,2025-09-22,D - Rejected,Returned,N
+SUBM-00054,23 73 00 Air Handling Units,MEC,SUB16,Certificate,0,2025-09-11,2025-09-25,2025-10-08,B - Approved as Noted,Returned,N
+SUBM-00510,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,1,2025-09-11,2025-09-25,2025-09-25,C - Revise & Resubmit,Returned,N
+SUBM-00684,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,1,2025-09-12,2025-09-26,2025-09-21,A - Approved,Returned,N
+SUBM-00161,08 71 00 Door Hardware,ARC,SUB05,Shop Drawing,1,2025-09-12,2025-09-26,2025-09-23,A - Approved,Returned,N
+SUBM-01207,28 31 00 Fire Detection and Alarm,FPR,SUB14,Certificate,1,2025-09-13,2025-09-27,2025-10-08,A - Approved,Returned,N
+SUBM-00435,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2025-09-13,2025-09-27,2025-09-23,C - Revise & Resubmit,Returned,N
+SUBM-01035,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,1,2025-09-13,2025-09-27,2025-09-27,B - Approved as Noted,Returned,N
+SUBM-00130,13 21 26 Dry Room Assemblies,ARC,SUB05,Test Report,1,2025-09-14,2025-09-28,2025-09-18,B - Approved as Noted,Returned,N
+SUBM-00304,28 46 00 Fire Detection and Alarm,INC,SUB13,Certificate,2,2025-09-14,2025-09-28,2025-09-18,B - Approved as Noted,Returned,N
+SUBM-00336,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,0,2025-09-16,2025-09-30,2025-09-21,B - Approved as Noted,Returned,N
+SUBM-00546,31 23 00 Excavation and Fill,CIV,SUB01,Test Report,2,2025-09-16,2025-09-30,2025-09-23,A - Approved,Returned,N
+SUBM-01098,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Method Statement,1,2025-09-16,2025-09-30,2025-09-27,A - Approved,Returned,N
+SUBM-00207,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Test Report,0,2025-09-19,2025-10-03,2025-10-06,A - Approved,Returned,N
+SUBM-00613,22 66 00 Chemical-Waste Systems,PLB,SUB10,Method Statement,0,2025-09-19,2025-10-03,2025-09-25,D - Rejected,Returned,N
+SUBM-00378,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,0,2025-09-19,2025-10-03,2025-09-24,A - Approved,Returned,N
+SUBM-00531,40 91 00 Instrumentation,INC,SUB13,O&M Manual,0,2025-09-20,2025-10-04,2025-10-11,A - Approved,Returned,N
+SUBM-00385,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,2,2025-09-20,2025-10-04,2025-09-29,A - Approved,Returned,N
+SUBM-01205,33 05 00 Common Work for Utilities,CIV,SUB18,O&M Manual,2,2025-09-20,2025-10-04,2025-09-28,C - Revise & Resubmit,Returned,N
+SUBM-00499,05 31 00 Steel Decking,STR,SUB03,Sample,0,2025-09-21,2025-10-05,2025-10-09,B - Approved as Noted,Returned,Y
+SUBM-00969,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,1,2025-09-22,2025-10-06,2025-10-01,A - Approved,Returned,N
+SUBM-01234,23 31 13 Metal Ducts,MEC,SUB16,Product Data,1,2025-09-22,2025-10-06,2025-10-04,A - Approved,Returned,N
+SUBM-00706,33 05 00 Common Work for Utilities,CIV,SUB01,Shop Drawing,2,2025-09-22,2025-10-06,2025-10-15,C - Revise & Resubmit,Returned,N
+SUBM-00502,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2025-09-23,2025-10-07,2025-10-08,C - Revise & Resubmit,Returned,Y
+SUBM-00807,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,2,2025-09-23,2025-10-07,2025-10-18,A - Approved,Returned,N
+SUBM-01191,40 05 63 Process Valves,PPG,SUB09,Test Report,2,2025-09-24,2025-10-08,2025-09-30,A - Approved,Returned,N
+SUBM-00998,41 22 00 Cranes and Hoists,PEQ,SUB17,Sample,1,2025-09-25,2025-10-09,2025-09-30,C - Revise & Resubmit,Returned,N
+SUBM-00269,08 71 00 Door Hardware,ARC,SUB05,Sample,2,2025-09-25,2025-10-09,2025-10-02,B - Approved as Noted,Returned,Y
+SUBM-01233,05 31 00 Steel Decking,STR,SUB03,Method Statement,0,2025-09-26,2025-10-10,2025-10-15,A - Approved,Returned,N
+SUBM-00191,23 31 13 Metal Ducts,MEC,SUB07,Product Data,0,2025-09-28,2025-10-12,2025-10-05,C - Revise & Resubmit,Returned,N
+SUBM-00758,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,0,2025-09-28,2025-10-12,2025-10-20,C - Revise & Resubmit,Returned,N
+SUBM-00314,23 73 00 Air Handling Units,MEC,SUB16,O&M Manual,2,2025-09-28,2025-10-12,2025-10-19,A - Approved,Returned,N
+SUBM-00702,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,O&M Manual,0,2025-09-29,2025-10-13,2025-10-06,C - Revise & Resubmit,Returned,N
+SUBM-00680,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,0,2025-10-01,2025-10-15,2025-10-23,A - Approved,Returned,Y
+SUBM-00560,26 24 13 Switchboards,ELE,SUB11,Test Report,0,2025-10-01,2025-10-15,2025-10-18,D - Rejected,Returned,N
+SUBM-00217,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,2,2025-10-03,2025-10-17,2025-10-18,B - Approved as Noted,Returned,N
+SUBM-01054,23 73 00 Air Handling Units,MEC,SUB07,Product Data,0,2025-10-03,2025-10-17,2025-10-25,C - Revise & Resubmit,Returned,N
+SUBM-00557,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,2,2025-10-03,2025-10-17,2025-10-22,A - Approved,Returned,N
+SUBM-00819,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,O&M Manual,0,2025-10-04,2025-10-18,2025-10-13,B - Approved as Noted,Returned,N
+SUBM-00211,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Product Data,1,2025-10-05,2025-10-19,2025-10-24,A - Approved,Returned,N
+SUBM-01220,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2025-10-06,2025-10-20,2025-10-15,A - Approved,Returned,N
+SUBM-00129,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,0,2025-10-07,2025-10-21,2025-11-06,C - Revise & Resubmit,Returned,N
+SUBM-00718,26 24 13 Switchboards,ELE,SUB11,O&M Manual,1,2025-10-07,2025-10-21,2025-10-22,A - Approved,Returned,N
+SUBM-01042,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2025-10-10,2025-10-24,2025-10-27,B - Approved as Noted,Returned,N
+SUBM-00184,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,1,2025-10-10,2025-10-24,2025-10-28,D - Rejected,Returned,N
+SUBM-00107,08 71 00 Door Hardware,ARC,SUB04,Product Data,0,2025-10-12,2025-10-26,2025-10-26,A - Approved,Returned,N
+SUBM-00037,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,0,2025-10-12,2025-10-26,2025-10-30,C - Revise & Resubmit,Returned,N
+SUBM-00830,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,2,2025-10-12,2025-10-26,2025-10-17,C - Revise & Resubmit,Returned,Y
+SUBM-00277,23 73 00 Air Handling Units,MEC,SUB16,Test Report,0,2025-10-13,2025-10-27,2025-10-23,A - Approved,Returned,N
+SUBM-00133,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2025-10-14,2025-10-28,2025-10-18,A - Approved,Returned,N
+SUBM-00248,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,0,2025-10-14,2025-10-28,2025-10-29,A - Approved,Returned,N
+SUBM-01215,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Test Report,1,2025-10-14,2025-10-28,2025-10-28,A - Approved,Returned,N
+SUBM-00821,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,2,2025-10-15,2025-10-29,2025-10-27,A - Approved,Returned,Y
+SUBM-00034,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Product Data,2,2025-10-16,2025-10-30,2025-10-29,A - Approved,Returned,N
+SUBM-00517,26 05 19 Low-Voltage Conductors,ELE,SUB12,Method Statement,1,2025-10-16,2025-10-30,2025-10-25,A - Approved,Returned,N
+SUBM-01074,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Test Report,1,2025-10-16,2025-10-30,2025-10-24,B - Approved as Noted,Returned,N
+SUBM-00013,40 05 13 Common Work for Process Piping,PPG,SUB09,Product Data,0,2025-10-17,2025-10-31,2025-11-27,A - Approved,Returned,N
+SUBM-00480,09 67 23 Resinous Flooring,ARC,SUB05,Method Statement,2,2025-10-17,2025-10-31,2025-10-24,B - Approved as Noted,Returned,N
+SUBM-00752,26 05 19 Low-Voltage Conductors,ELE,SUB11,Certificate,0,2025-10-18,2025-11-01,2025-10-25,D - Rejected,Returned,N
+SUBM-00164,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,0,2025-10-18,2025-11-01,2025-11-07,A - Approved,Returned,N
+SUBM-00671,23 84 16 Dehumidification Units,MEC,SUB06,Certificate,0,2025-10-18,2025-11-01,2025-10-22,A - Approved,Returned,N
+SUBM-01112,33 05 00 Common Work for Utilities,CIV,SUB18,Test Report,1,2025-10-19,2025-11-02,2025-11-10,A - Approved,Returned,N
+SUBM-00850,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,2,2025-10-19,2025-11-02,2025-10-24,B - Approved as Noted,Returned,N
+SUBM-00127,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,0,2025-10-20,2025-11-03,2025-11-27,B - Approved as Noted,Returned,N
+SUBM-00074,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,1,2025-10-24,2025-11-07,2025-11-02,A - Approved,Returned,N
+SUBM-00808,26 24 13 Switchboards,ELE,SUB12,Test Report,0,2025-10-24,2025-11-07,2025-10-26,C - Revise & Resubmit,Returned,N
+SUBM-00747,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Certificate,2,2025-10-24,2025-11-07,2025-10-28,A - Approved,Returned,N
+SUBM-00100,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,1,2025-10-25,2025-11-08,2025-10-28,A - Approved,Returned,Y
+SUBM-01189,23 73 00 Air Handling Units,MEC,SUB07,Test Report,0,2025-10-25,2025-11-08,2025-11-03,C - Revise & Resubmit,Returned,N
+SUBM-01166,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Shop Drawing,1,2025-10-25,2025-11-08,2025-11-05,B - Approved as Noted,Returned,N
+SUBM-01249,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,0,2025-10-26,2025-11-09,2025-11-06,B - Approved as Noted,Returned,N
+SUBM-00361,41 22 00 Cranes and Hoists,PEQ,SUB15,Test Report,1,2025-10-26,2025-11-09,2025-10-30,B - Approved as Noted,Returned,N
+SUBM-00078,40 91 00 Instrumentation,INC,SUB13,Test Report,0,2025-10-26,2025-11-09,2025-11-04,B - Approved as Noted,Returned,N
+SUBM-01169,05 12 00 Structural Steel Framing,STR,SUB03,Method Statement,0,2025-10-27,2025-11-10,2025-11-07,B - Approved as Noted,Returned,N
+SUBM-01201,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Sample,0,2025-10-27,2025-11-10,2025-10-31,C - Revise & Resubmit,Returned,N
+SUBM-00188,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Certificate,0,2025-10-28,2025-11-11,2025-11-05,B - Approved as Noted,Returned,N
+SUBM-00693,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,0,2025-10-29,2025-11-12,2025-11-07,B - Approved as Noted,Returned,Y
+SUBM-00739,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,1,2025-10-29,2025-11-12,2025-11-04,B - Approved as Noted,Returned,N
+SUBM-00022,23 31 13 Metal Ducts,MEC,SUB06,O&M Manual,0,2025-10-29,2025-11-12,2025-11-08,C - Revise & Resubmit,Returned,N
+SUBM-00415,22 66 00 Chemical-Waste Systems,PLB,SUB10,Method Statement,2,2025-10-29,2025-11-12,2025-11-07,A - Approved,Returned,N
+SUBM-01051,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,1,2025-10-29,2025-11-12,2025-11-06,B - Approved as Noted,Returned,N
+SUBM-00144,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,0,2025-10-30,2025-11-13,2025-11-15,C - Revise & Resubmit,Returned,N
+SUBM-01025,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Certificate,1,2025-10-31,2025-11-14,2025-11-14,B - Approved as Noted,Returned,N
+SUBM-00696,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2025-10-31,2025-11-14,2025-11-08,B - Approved as Noted,Returned,N
+SUBM-00958,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,0,2025-10-31,2025-11-14,2025-11-09,B - Approved as Noted,Returned,N
+SUBM-01190,05 31 00 Steel Decking,STR,SUB03,O&M Manual,1,2025-11-01,2025-11-15,2025-11-05,A - Approved,Returned,N
+SUBM-00810,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2025-11-02,2025-11-16,2025-11-18,A - Approved,Returned,N
+SUBM-00036,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,0,2025-11-02,2025-11-16,2025-11-13,A - Approved,Returned,N
+SUBM-00725,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2025-11-03,2025-11-17,2025-11-13,A - Approved,Returned,Y
+SUBM-00317,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Sample,2,2025-11-03,2025-11-17,2025-11-07,B - Approved as Noted,Returned,N
+SUBM-00445,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2025-11-03,2025-11-17,2025-11-08,B - Approved as Noted,Returned,N
+SUBM-01024,41 22 00 Cranes and Hoists,PEQ,SUB17,Shop Drawing,2,2025-11-04,2025-11-18,2025-11-16,B - Approved as Noted,Returned,N
+SUBM-01057,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Product Data,0,2025-11-04,2025-11-18,2025-12-07,B - Approved as Noted,Returned,N
+SUBM-00407,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,1,2025-11-05,2025-11-19,2025-11-25,D - Rejected,Returned,N
+SUBM-01115,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,0,2025-11-07,2025-11-21,2025-11-26,B - Approved as Noted,Returned,N
+SUBM-00660,40 05 63 Process Valves,PPG,SUB09,O&M Manual,0,2025-11-08,2025-11-22,2025-11-19,A - Approved,Returned,N
+SUBM-00663,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,0,2025-11-09,2025-11-23,2025-11-18,C - Revise & Resubmit,Returned,N
+SUBM-01011,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,2,2025-11-09,2025-11-23,2025-11-11,A - Approved,Returned,N
+SUBM-00841,13 21 26 Dry Room Assemblies,ARC,SUB05,Certificate,1,2025-11-10,2025-11-24,2025-11-22,B - Approved as Noted,Returned,N
+SUBM-01162,23 31 13 Metal Ducts,MEC,SUB06,Product Data,2,2025-11-11,2025-11-25,2025-11-21,A - Approved,Returned,N
+SUBM-01065,26 24 13 Switchboards,ELE,SUB11,Test Report,1,2025-11-12,2025-11-26,2025-11-19,C - Revise & Resubmit,Returned,N
+SUBM-00694,09 67 23 Resinous Flooring,ARC,SUB05,Test Report,0,2025-11-12,2025-11-26,2025-11-23,B - Approved as Noted,Returned,N
+SUBM-01180,03 30 00 Cast-in-Place Concrete,CIV,SUB18,O&M Manual,0,2025-11-13,2025-11-27,2025-11-16,B - Approved as Noted,Returned,Y
+SUBM-00347,23 84 16 Dehumidification Units,MEC,SUB16,Product Data,1,2025-11-13,2025-11-27,2025-11-19,B - Approved as Noted,Returned,N
+SUBM-01171,23 31 13 Metal Ducts,MEC,SUB16,Method Statement,0,2025-11-14,2025-11-28,2025-11-21,A - Approved,Returned,N
+SUBM-00398,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,0,2025-11-17,2025-12-01,2025-11-30,D - Rejected,Returned,Y
+SUBM-00955,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,1,2025-11-18,2025-12-02,2025-11-29,A - Approved,Returned,N
+SUBM-00329,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,0,2025-11-18,2025-12-02,2025-12-15,A - Approved,Returned,N
+SUBM-00599,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,0,2025-11-20,2025-12-04,2025-11-29,A - Approved,Returned,Y
+SUBM-00449,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,1,2025-11-20,2025-12-04,2025-11-22,A - Approved,Returned,N
+SUBM-00713,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,1,2025-11-21,2025-12-05,2025-11-29,C - Revise & Resubmit,Returned,N
+SUBM-00700,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,1,2025-11-21,2025-12-05,2025-12-18,C - Revise & Resubmit,Returned,N
+SUBM-01033,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,0,2025-11-28,2025-12-12,2025-12-04,C - Revise & Resubmit,Returned,N
+SUBM-01185,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,0,2025-11-28,2025-12-12,2025-12-05,B - Approved as Noted,Returned,N
+SUBM-00923,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,1,2025-11-28,2025-12-12,2025-12-08,A - Approved,Returned,N
+SUBM-00082,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Test Report,1,2025-12-02,2025-12-16,2025-12-14,B - Approved as Noted,Returned,N
+SUBM-00285,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2025-12-02,2025-12-16,2025-12-08,A - Approved,Returned,N
+SUBM-01197,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2025-12-02,2025-12-16,2025-12-09,A - Approved,Returned,Y
+SUBM-00122,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,0,2025-12-03,2025-12-17,2025-12-19,D - Rejected,Returned,N
+SUBM-00220,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,1,2025-12-03,2025-12-17,2025-12-05,A - Approved,Returned,N
+SUBM-01247,31 23 00 Excavation and Fill,CIV,SUB02,Shop Drawing,0,2025-12-05,2025-12-19,2025-12-17,A - Approved,Returned,N
+SUBM-01119,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,2,2025-12-05,2025-12-19,2025-12-08,A - Approved,Returned,N
+SUBM-00148,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2025-12-06,2025-12-20,2025-12-19,A - Approved,Returned,N
+SUBM-01219,41 22 00 Cranes and Hoists,PEQ,SUB17,Product Data,1,2025-12-07,2025-12-21,2025-12-13,A - Approved,Returned,N
+SUBM-01034,23 73 00 Air Handling Units,MEC,SUB16,Test Report,0,2025-12-08,2025-12-22,2025-12-16,A - Approved,Returned,N
+SUBM-00930,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,1,2025-12-08,2025-12-22,2026-01-06,B - Approved as Noted,Returned,N
+SUBM-00377,40 05 63 Process Valves,PPG,SUB09,O&M Manual,2,2025-12-08,2025-12-22,2025-12-24,C - Revise & Resubmit,Returned,N
+SUBM-00593,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,1,2025-12-09,2025-12-23,2025-12-16,A - Approved,Returned,N
+SUBM-00259,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,1,2025-12-09,2025-12-23,2025-12-19,C - Revise & Resubmit,Returned,N
+SUBM-01088,23 31 13 Metal Ducts,MEC,SUB07,Product Data,2,2025-12-09,2025-12-23,2025-12-14,A - Approved,Returned,N
+SUBM-00460,40 05 13 Common Work for Process Piping,PPG,SUB08,Certificate,1,2025-12-10,2025-12-24,2025-12-19,A - Approved,Returned,N
+SUBM-00358,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2025-12-10,2025-12-24,2025-12-28,B - Approved as Noted,Returned,N
+SUBM-00906,33 05 00 Common Work for Utilities,CIV,SUB18,Sample,0,2025-12-13,2025-12-27,2025-12-19,B - Approved as Noted,Returned,N
+SUBM-00894,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,0,2025-12-14,2025-12-28,2025-12-22,B - Approved as Noted,Returned,N
+SUBM-01126,05 12 00 Structural Steel Framing,STR,SUB03,Certificate,1,2025-12-14,2025-12-28,2026-01-02,A - Approved,Returned,N
+SUBM-00750,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,1,2025-12-14,2025-12-28,2025-12-22,A - Approved,Returned,N
+SUBM-00945,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,2,2025-12-15,2025-12-29,2025-12-26,B - Approved as Noted,Returned,N
+SUBM-01251,26 05 19 Low-Voltage Conductors,ELE,SUB12,Product Data,0,2025-12-15,2025-12-29,2026-01-11,A - Approved,Returned,N
+SUBM-00835,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,1,2025-12-16,2025-12-30,2025-12-25,A - Approved,Returned,N
+SUBM-00859,08 71 00 Door Hardware,ARC,SUB05,Product Data,1,2025-12-17,2025-12-31,2025-12-30,B - Approved as Noted,Returned,N
+SUBM-00604,08 71 00 Door Hardware,ARC,SUB04,Test Report,1,2025-12-17,2025-12-31,2025-12-24,B - Approved as Noted,Returned,N
+SUBM-01012,40 05 13 Common Work for Process Piping,PPG,SUB08,Test Report,1,2025-12-18,2026-01-01,2025-12-30,A - Approved,Returned,N
+SUBM-00316,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Shop Drawing,0,2025-12-19,2026-01-02,2025-12-25,B - Approved as Noted,Returned,N
+SUBM-00199,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2025-12-19,2026-01-02,2026-01-08,A - Approved,Returned,N
+SUBM-00253,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Product Data,0,2025-12-20,2026-01-03,2026-01-03,A - Approved,Returned,N
+SUBM-00365,08 71 00 Door Hardware,ARC,SUB04,Product Data,1,2025-12-21,2026-01-04,2025-12-27,A - Approved,Returned,N
+SUBM-00732,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,1,2025-12-21,2026-01-04,2025-12-30,B - Approved as Noted,Returned,N
+SUBM-00387,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,2,2025-12-21,2026-01-04,2026-01-05,B - Approved as Noted,Returned,N
+SUBM-00659,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2025-12-21,2026-01-04,2026-01-11,A - Approved,Returned,N
+SUBM-00113,41 22 00 Cranes and Hoists,PEQ,SUB15,Product Data,2,2025-12-21,2026-01-04,2026-01-02,A - Approved,Returned,N
+SUBM-00004,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,2,2025-12-22,2026-01-05,2026-01-07,B - Approved as Noted,Returned,N
+SUBM-00803,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2025-12-23,2026-01-06,2026-01-03,B - Approved as Noted,Returned,N
+SUBM-00270,23 31 13 Metal Ducts,MEC,SUB06,Shop Drawing,0,2025-12-23,2026-01-06,2025-12-31,B - Approved as Noted,Returned,N
+SUBM-00393,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,1,2025-12-23,2026-01-06,2026-01-02,C - Revise & Resubmit,Returned,N
+SUBM-00242,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,1,2025-12-24,2026-01-07,2026-01-05,A - Approved,Returned,N
+SUBM-00320,40 05 63 Process Valves,PPG,SUB08,Product Data,1,2025-12-24,2026-01-07,2025-12-28,A - Approved,Returned,N
+SUBM-00276,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,0,2025-12-25,2026-01-08,2026-01-04,A - Approved,Returned,Y
+SUBM-00121,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Certificate,1,2025-12-25,2026-01-08,2026-01-02,A - Approved,Returned,N
+SUBM-00871,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,0,2025-12-26,2026-01-09,2026-01-08,C - Revise & Resubmit,Returned,N
+SUBM-00278,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2025-12-26,2026-01-09,2025-12-29,B - Approved as Noted,Returned,N
+SUBM-00272,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,1,2025-12-27,2026-01-10,2026-01-15,A - Approved,Returned,N
+SUBM-00328,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,1,2025-12-27,2026-01-10,2026-01-10,A - Approved,Returned,Y
+SUBM-00221,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2025-12-28,2026-01-11,2026-01-09,B - Approved as Noted,Returned,N
+SUBM-01181,40 05 63 Process Valves,PPG,SUB08,Test Report,0,2025-12-28,2026-01-11,2025-12-31,C - Revise & Resubmit,Returned,N
+SUBM-00883,23 84 16 Dehumidification Units,MEC,SUB16,Product Data,0,2025-12-28,2026-01-11,2026-01-12,B - Approved as Noted,Returned,N
+SUBM-00039,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,0,2025-12-28,2026-01-11,2026-01-21,B - Approved as Noted,Returned,N
+SUBM-00579,40 05 13 Common Work for Process Piping,PPG,SUB09,Method Statement,0,2025-12-29,2026-01-12,2026-01-04,A - Approved,Returned,N
+SUBM-00009,26 24 13 Switchboards,ELE,SUB12,Certificate,2,2025-12-29,2026-01-12,2026-01-27,D - Rejected,Returned,N
+SUBM-00303,26 24 13 Switchboards,ELE,SUB12,Certificate,1,2025-12-29,2026-01-12,2026-01-10,A - Approved,Returned,N
+SUBM-00402,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,0,2025-12-31,2026-01-14,2026-01-07,A - Approved,Returned,N
+SUBM-00914,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,1,2025-12-31,2026-01-14,2026-01-22,B - Approved as Noted,Returned,Y
+SUBM-01227,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,2,2025-12-31,2026-01-14,2026-01-18,C - Revise & Resubmit,Returned,N
+SUBM-00042,26 24 13 Switchboards,ELE,SUB12,Method Statement,1,2026-01-01,2026-01-15,2026-01-11,A - Approved,Returned,N
+SUBM-00851,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,1,2026-01-01,2026-01-15,2026-01-14,A - Approved,Returned,N
+SUBM-00529,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,1,2026-01-01,2026-01-15,2026-01-03,B - Approved as Noted,Returned,N
+SUBM-00147,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,0,2026-01-03,2026-01-17,2026-01-12,A - Approved,Returned,N
+SUBM-01001,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2026-01-04,2026-01-18,2026-01-19,A - Approved,Returned,N
+SUBM-00966,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,0,2026-01-04,2026-01-18,2026-01-18,A - Approved,Returned,N
+SUBM-01193,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Certificate,0,2026-01-05,2026-01-19,2026-01-20,B - Approved as Noted,Returned,N
+SUBM-00017,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,0,2026-01-05,2026-01-19,2026-01-28,A - Approved,Returned,N
+SUBM-00942,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Test Report,1,2026-01-05,2026-01-19,2026-01-30,B - Approved as Noted,Returned,Y
+SUBM-00583,33 05 00 Common Work for Utilities,CIV,SUB18,Shop Drawing,0,2026-01-06,2026-01-20,2026-01-15,A - Approved,Returned,N
+SUBM-00724,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,1,2026-01-06,2026-01-20,2026-02-02,A - Approved,Returned,N
+SUBM-01081,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Test Report,1,2026-01-06,2026-01-20,2026-01-23,B - Approved as Noted,Returned,N
+SUBM-00795,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Test Report,0,2026-01-07,2026-01-21,2026-01-17,A - Approved,Returned,N
+SUBM-00399,31 23 00 Excavation and Fill,CIV,SUB02,Shop Drawing,1,2026-01-08,2026-01-22,2026-01-11,A - Approved,Returned,Y
+SUBM-00475,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-01-08,2026-01-22,2026-01-17,C - Revise & Resubmit,Returned,N
+SUBM-00083,26 24 13 Switchboards,ELE,SUB12,Method Statement,0,2026-01-09,2026-01-23,2026-01-13,B - Approved as Noted,Returned,N
+SUBM-00777,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Product Data,0,2026-01-10,2026-01-24,2026-01-28,C - Revise & Resubmit,Returned,N
+SUBM-01158,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Shop Drawing,0,2026-01-10,2026-01-24,2026-01-13,B - Approved as Noted,Returned,Y
+SUBM-00959,40 91 00 Instrumentation,INC,SUB13,Test Report,0,2026-01-11,2026-01-25,2026-01-15,A - Approved,Returned,N
+SUBM-00400,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2026-01-12,2026-01-26,2026-01-16,A - Approved,Returned,N
+SUBM-00491,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,O&M Manual,1,2026-01-13,2026-01-27,2026-01-27,A - Approved,Returned,N
+SUBM-00237,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,1,2026-01-13,2026-01-27,2026-01-24,B - Approved as Noted,Returned,Y
+SUBM-00396,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2026-01-13,2026-01-27,2026-02-21,B - Approved as Noted,Returned,N
+SUBM-01165,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Certificate,0,2026-01-15,2026-01-29,2026-01-25,B - Approved as Noted,Returned,N
+SUBM-00745,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,0,2026-01-15,2026-01-29,2026-01-27,A - Approved,Returned,N
+SUBM-00245,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,0,2026-01-15,2026-01-29,2026-02-04,C - Revise & Resubmit,Returned,N
+SUBM-01154,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2026-01-16,2026-01-30,2026-01-26,A - Approved,Returned,N
+SUBM-00380,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2026-01-16,2026-01-30,2026-01-29,A - Approved,Returned,N
+SUBM-00375,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2026-01-18,2026-02-01,2026-01-22,D - Rejected,Returned,N
+SUBM-00062,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2026-01-18,2026-02-01,2026-02-01,C - Revise & Resubmit,Returned,Y
+SUBM-01089,23 84 16 Dehumidification Units,MEC,SUB16,Test Report,0,2026-01-19,2026-02-02,2026-01-28,C - Revise & Resubmit,Returned,N
+SUBM-00111,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2026-01-19,2026-02-02,2026-02-05,A - Approved,Returned,N
+SUBM-00769,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,0,2026-01-20,2026-02-03,2026-01-29,A - Approved,Returned,N
+SUBM-00852,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,0,2026-01-20,2026-02-03,2026-02-16,A - Approved,Returned,N
+SUBM-01073,26 05 19 Low-Voltage Conductors,ELE,SUB12,Product Data,0,2026-01-23,2026-02-06,2026-02-16,B - Approved as Noted,Returned,N
+SUBM-00351,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,0,2026-01-23,2026-02-06,2026-02-05,B - Approved as Noted,Returned,N
+SUBM-00639,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2026-01-24,2026-02-07,2026-02-17,A - Approved,Returned,N
+SUBM-01079,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,1,2026-01-24,2026-02-07,2026-02-03,A - Approved,Returned,N
+SUBM-01084,23 73 00 Air Handling Units,MEC,SUB06,Product Data,0,2026-01-24,2026-02-07,2026-01-29,B - Approved as Noted,Returned,N
+SUBM-00605,09 67 23 Resinous Flooring,ARC,SUB04,Test Report,0,2026-01-25,2026-02-08,2026-02-14,B - Approved as Noted,Returned,N
+SUBM-00623,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Method Statement,1,2026-01-26,2026-02-09,2026-02-03,A - Approved,Returned,N
+SUBM-00645,08 71 00 Door Hardware,ARC,SUB04,Product Data,0,2026-01-26,2026-02-09,2026-01-30,B - Approved as Noted,Returned,N
+SUBM-00322,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-01-26,2026-02-09,2026-02-13,A - Approved,Returned,N
+SUBM-00917,26 05 19 Low-Voltage Conductors,ELE,SUB12,Product Data,0,2026-01-26,2026-02-09,2026-02-07,A - Approved,Returned,N
+SUBM-00760,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,0,2026-01-26,2026-02-09,2026-02-13,C - Revise & Resubmit,Returned,Y
+SUBM-00818,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,1,2026-01-28,2026-02-11,2026-02-06,A - Approved,Returned,N
+SUBM-01138,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,1,2026-01-29,2026-02-12,2026-02-08,A - Approved,Returned,N
+SUBM-00224,23 84 16 Dehumidification Units,MEC,SUB16,Shop Drawing,0,2026-01-29,2026-02-12,2026-02-05,A - Approved,Returned,N
+SUBM-00271,33 05 00 Common Work for Utilities,CIV,SUB01,Product Data,1,2026-01-30,2026-02-13,2026-02-11,A - Approved,Returned,N
+SUBM-00140,31 23 00 Excavation and Fill,CIV,SUB01,Method Statement,1,2026-01-31,2026-02-14,2026-02-10,B - Approved as Noted,Returned,N
+SUBM-00443,23 73 00 Air Handling Units,MEC,SUB16,Method Statement,1,2026-02-01,2026-02-15,2026-03-04,C - Revise & Resubmit,Returned,Y
+SUBM-00825,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,1,2026-02-03,2026-02-17,2026-02-25,A - Approved,Returned,N
+SUBM-00900,03 41 00 Precast Structural Concrete,STR,SUB03,Certificate,1,2026-02-03,2026-02-17,2026-02-10,A - Approved,Returned,N
+SUBM-00655,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2026-02-04,2026-02-18,2026-02-12,C - Revise & Resubmit,Returned,N
+SUBM-00321,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2026-02-04,2026-02-18,2026-02-13,B - Approved as Noted,Returned,N
+SUBM-01020,26 24 13 Switchboards,ELE,SUB11,Product Data,0,2026-02-04,2026-02-18,2026-03-01,A - Approved,Returned,N
+SUBM-00455,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,2,2026-02-06,2026-02-20,2026-02-28,A - Approved,Returned,N
+SUBM-01090,23 84 16 Dehumidification Units,MEC,SUB16,Test Report,0,2026-02-07,2026-02-21,2026-02-12,B - Approved as Noted,Returned,N
+SUBM-00780,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,2,2026-02-08,2026-02-22,2026-02-18,C - Revise & Resubmit,Returned,N
+SUBM-00994,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2026-02-10,2026-02-24,2026-03-12,B - Approved as Noted,Returned,N
+SUBM-00665,23 31 13 Metal Ducts,MEC,SUB07,Method Statement,0,2026-02-10,2026-02-24,2026-02-20,B - Approved as Noted,Returned,N
+SUBM-01257,23 73 00 Air Handling Units,MEC,SUB06,Method Statement,0,2026-02-12,2026-02-26,2026-02-22,B - Approved as Noted,Returned,N
+SUBM-00081,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Certificate,0,2026-02-12,2026-02-26,2026-03-06,C - Revise & Resubmit,Returned,N
+SUBM-00476,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,2,2026-02-13,2026-02-27,2026-02-20,B - Approved as Noted,Returned,Y
+SUBM-00026,40 05 63 Process Valves,PPG,SUB09,O&M Manual,0,2026-02-14,2026-02-28,2026-03-02,B - Approved as Noted,Returned,N
+SUBM-00948,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2026-02-15,2026-03-01,2026-03-04,C - Revise & Resubmit,Returned,N
+SUBM-00405,22 66 00 Chemical-Waste Systems,PLB,SUB10,O&M Manual,0,2026-02-15,2026-03-01,2026-02-26,A - Approved,Returned,N
+SUBM-00016,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2026-02-18,2026-03-04,2026-03-05,B - Approved as Noted,Returned,N
+SUBM-00433,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Sample,1,2026-02-18,2026-03-04,2026-02-22,C - Revise & Resubmit,Returned,N
+SUBM-00384,41 22 00 Cranes and Hoists,PEQ,SUB15,Certificate,2,2026-02-19,2026-03-05,2026-02-20,D - Rejected,Returned,N
+SUBM-00319,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,0,2026-02-19,2026-03-05,2026-02-28,B - Approved as Noted,Returned,N
+SUBM-00363,23 31 13 Metal Ducts,MEC,SUB06,Product Data,1,2026-02-21,2026-03-07,2026-03-09,B - Approved as Noted,Returned,N
+SUBM-00020,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,1,2026-02-21,2026-03-07,2026-03-05,A - Approved,Returned,N
+SUBM-00096,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Shop Drawing,0,2026-02-23,2026-03-09,2026-03-03,B - Approved as Noted,Returned,N
+SUBM-00641,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-02-23,2026-03-09,2026-02-26,C - Revise & Resubmit,Returned,N
+SUBM-00864,31 23 00 Excavation and Fill,CIV,SUB02,Product Data,1,2026-02-24,2026-03-10,2026-02-27,A - Approved,Returned,N
+SUBM-01255,26 24 13 Switchboards,ELE,SUB11,Certificate,0,2026-02-24,2026-03-10,2026-03-08,B - Approved as Noted,Returned,N
+SUBM-01009,23 31 13 Metal Ducts,MEC,SUB16,Certificate,1,2026-02-24,2026-03-10,2026-03-04,D - Rejected,Returned,N
+SUBM-00123,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Product Data,1,2026-02-26,2026-03-12,2026-03-25,C - Revise & Resubmit,Returned,N
+SUBM-00290,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,0,2026-02-26,2026-03-12,2026-03-07,C - Revise & Resubmit,Returned,N
+SUBM-00193,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2026-02-27,2026-03-13,2026-03-12,A - Approved,Returned,N
+SUBM-00828,40 05 63 Process Valves,PPG,SUB08,Test Report,1,2026-02-27,2026-03-13,2026-03-11,B - Approved as Noted,Returned,N
+SUBM-00927,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Shop Drawing,0,2026-02-28,2026-03-14,2026-03-04,A - Approved,Returned,N
+SUBM-00376,28 46 00 Fire Detection and Alarm,INC,SUB13,O&M Manual,0,2026-02-28,2026-03-14,2026-03-18,B - Approved as Noted,Returned,N
+SUBM-00738,40 05 63 Process Valves,PPG,SUB09,Product Data,0,2026-03-02,2026-03-16,2026-03-20,C - Revise & Resubmit,Returned,N
+SUBM-00932,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,0,2026-03-02,2026-03-16,2026-03-07,A - Approved,Returned,N
+SUBM-01256,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Method Statement,1,2026-03-03,2026-03-17,2026-03-06,B - Approved as Noted,Returned,N
+SUBM-01113,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Shop Drawing,2,2026-03-05,2026-03-19,2026-03-18,A - Approved,Returned,N
+SUBM-00675,23 73 00 Air Handling Units,MEC,SUB16,Test Report,1,2026-03-06,2026-03-20,2026-03-14,A - Approved,Returned,N
+SUBM-00444,26 05 19 Low-Voltage Conductors,ELE,SUB11,Test Report,0,2026-03-06,2026-03-20,2026-03-15,A - Approved,Returned,N
+SUBM-01069,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2026-03-07,2026-03-21,2026-03-27,A - Approved,Returned,Y
+SUBM-00261,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Certificate,0,2026-03-07,2026-03-21,2026-03-13,A - Approved,Returned,N
+SUBM-01240,23 31 13 Metal Ducts,MEC,SUB06,Product Data,1,2026-03-08,2026-03-22,2026-03-20,A - Approved,Returned,N
+SUBM-00386,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,0,2026-03-08,2026-03-22,2026-03-15,A - Approved,Returned,N
+SUBM-00720,23 73 00 Air Handling Units,MEC,SUB16,Test Report,1,2026-03-08,2026-03-22,2026-03-22,A - Approved,Returned,N
+SUBM-00311,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,1,2026-03-09,2026-03-23,2026-03-12,B - Approved as Noted,Returned,N
+SUBM-00513,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,0,2026-03-10,2026-03-24,2026-03-21,B - Approved as Noted,Returned,N
+SUBM-00879,41 22 00 Cranes and Hoists,PEQ,SUB15,Sample,0,2026-03-10,2026-03-24,2026-03-21,C - Revise & Resubmit,Returned,Y
+SUBM-00673,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2026-03-11,2026-03-25,2026-03-26,B - Approved as Noted,Returned,N
+SUBM-00578,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Sample,1,2026-03-13,2026-03-27,2026-03-28,C - Revise & Resubmit,Returned,N
+SUBM-00119,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2026-03-13,2026-03-27,2026-03-27,A - Approved,Returned,N
+SUBM-00882,23 31 13 Metal Ducts,MEC,SUB07,Product Data,1,2026-03-14,2026-03-28,2026-03-31,B - Approved as Noted,Returned,N
+SUBM-00212,40 91 00 Instrumentation,INC,SUB13,Test Report,2,2026-03-14,2026-03-28,2026-03-28,D - Rejected,Returned,N
+SUBM-00712,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2026-03-14,2026-03-28,2026-03-21,A - Approved,Returned,N
+SUBM-00213,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,1,2026-03-14,2026-03-28,2026-04-04,B - Approved as Noted,Returned,N
+SUBM-00627,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Method Statement,1,2026-03-14,2026-03-28,2026-03-21,B - Approved as Noted,Returned,N
+SUBM-00187,26 05 19 Low-Voltage Conductors,ELE,SUB11,Sample,1,2026-03-14,2026-03-28,2026-03-30,C - Revise & Resubmit,Returned,Y
+SUBM-00035,40 05 13 Common Work for Process Piping,PPG,SUB09,Test Report,1,2026-03-14,2026-03-28,2026-03-18,B - Approved as Noted,Returned,N
+SUBM-00588,28 31 00 Fire Detection and Alarm,FPR,SUB14,Shop Drawing,0,2026-03-15,2026-03-29,2026-03-22,A - Approved,Returned,N
+SUBM-01146,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,1,2026-03-15,2026-03-29,2026-03-25,B - Approved as Noted,Returned,N
+SUBM-00846,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Shop Drawing,1,2026-03-17,2026-03-31,2026-03-27,A - Approved,Returned,N
+SUBM-01210,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,2,2026-03-18,2026-04-01,2026-03-23,D - Rejected,Returned,N
+SUBM-00717,33 05 00 Common Work for Utilities,CIV,SUB18,Shop Drawing,1,2026-03-18,2026-04-01,2026-03-22,A - Approved,Returned,N
+SUBM-00893,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-03-19,2026-04-02,2026-04-01,B - Approved as Noted,Returned,N
+SUBM-00153,26 05 19 Low-Voltage Conductors,ELE,SUB12,Sample,0,2026-03-19,2026-04-02,2026-04-04,A - Approved,Returned,N
+SUBM-00903,31 23 00 Excavation and Fill,CIV,SUB02,Test Report,2,2026-03-20,2026-04-03,2026-03-30,C - Revise & Resubmit,Returned,N
+SUBM-00855,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Test Report,0,2026-03-22,2026-04-05,2026-04-10,A - Approved,Returned,N
+SUBM-00240,41 22 00 Cranes and Hoists,PEQ,SUB15,O&M Manual,1,2026-03-22,2026-04-05,2026-03-27,C - Revise & Resubmit,Returned,N
+SUBM-00981,40 05 63 Process Valves,PPG,SUB09,Test Report,0,2026-03-22,2026-04-05,2026-04-11,B - Approved as Noted,Returned,N
+SUBM-00298,23 31 13 Metal Ducts,MEC,SUB06,Test Report,2,2026-03-23,2026-04-06,2026-04-10,A - Approved,Returned,Y
+SUBM-00640,41 22 00 Cranes and Hoists,PEQ,SUB17,Product Data,2,2026-03-23,2026-04-06,2026-04-12,B - Approved as Noted,Returned,N
+SUBM-00093,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-03-23,2026-04-06,2026-04-02,B - Approved as Noted,Returned,N
+SUBM-00567,13 21 26 Dry Room Assemblies,ARC,SUB04,O&M Manual,1,2026-03-23,2026-04-06,2026-04-11,B - Approved as Noted,Returned,N
+SUBM-00209,26 24 13 Switchboards,ELE,SUB11,Test Report,0,2026-03-25,2026-04-08,2026-04-11,B - Approved as Noted,Returned,Y
+SUBM-00860,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2026-03-27,2026-04-10,2026-04-10,A - Approved,Returned,N
+SUBM-00524,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,1,2026-03-28,2026-04-11,2026-04-19,A - Approved,Returned,N
+SUBM-00590,23 84 16 Dehumidification Units,MEC,SUB16,Product Data,0,2026-03-29,2026-04-12,2026-04-03,A - Approved,Returned,Y
+SUBM-00301,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Shop Drawing,0,2026-03-29,2026-04-12,2026-04-07,A - Approved,Returned,Y
+SUBM-00330,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2026-03-31,2026-04-14,2026-04-19,A - Approved,Returned,Y
+SUBM-01002,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,0,2026-04-02,2026-04-16,2026-04-21,C - Revise & Resubmit,Returned,N
+SUBM-00186,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2026-04-03,2026-04-17,2026-04-17,C - Revise & Resubmit,Returned,N
+SUBM-00496,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,1,2026-04-04,2026-04-18,2026-04-11,A - Approved,Returned,Y
+SUBM-00325,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Shop Drawing,0,2026-04-05,2026-04-19,2026-04-18,A - Approved,Returned,N
+SUBM-00662,41 22 00 Cranes and Hoists,PEQ,SUB15,Product Data,2,2026-04-06,2026-04-20,2026-04-07,A - Approved,Returned,N
+SUBM-01125,05 31 00 Steel Decking,STR,SUB03,O&M Manual,1,2026-04-07,2026-04-21,2026-04-14,A - Approved,Returned,N
+SUBM-00542,03 41 00 Precast Structural Concrete,STR,SUB03,Certificate,1,2026-04-08,2026-04-22,2026-04-21,A - Approved,Returned,N
+SUBM-01122,23 73 00 Air Handling Units,MEC,SUB06,Method Statement,1,2026-04-08,2026-04-22,2026-05-03,A - Approved,Returned,N
+SUBM-01229,26 24 13 Switchboards,ELE,SUB12,Sample,0,2026-04-08,2026-04-22,2026-04-15,A - Approved,Returned,N
+SUBM-00019,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Test Report,2,2026-04-09,2026-04-23,2026-04-19,B - Approved as Noted,Returned,N
+SUBM-00071,31 23 00 Excavation and Fill,CIV,SUB01,Product Data,2,2026-04-10,2026-04-24,2026-04-19,A - Approved,Returned,N
+SUBM-00683,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,1,2026-04-10,2026-04-24,2026-04-15,A - Approved,Returned,N
+SUBM-01188,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2026-04-11,2026-04-25,2026-05-04,A - Approved,Returned,N
+SUBM-00728,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,0,2026-04-11,2026-04-25,2026-04-26,C - Revise & Resubmit,Returned,N
+SUBM-00736,13 21 26 Dry Room Assemblies,ARC,SUB05,Certificate,0,2026-04-11,2026-04-25,2026-04-23,A - Approved,Returned,N
+SUBM-00118,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2026-04-12,2026-04-26,2026-04-17,C - Revise & Resubmit,Returned,N
+SUBM-00536,23 31 13 Metal Ducts,MEC,SUB06,Sample,0,2026-04-12,2026-04-26,2026-05-07,A - Approved,Returned,Y
+SUBM-00997,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2026-04-13,2026-04-27,2026-04-22,A - Approved,Returned,N
+SUBM-01202,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,2,2026-04-13,2026-04-27,2026-05-12,B - Approved as Noted,Returned,N
+SUBM-00500,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2026-04-15,2026-04-29,2026-04-18,A - Approved,Returned,N
+SUBM-00247,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,0,2026-04-16,2026-04-30,2026-04-27,C - Revise & Resubmit,Returned,N
+SUBM-01254,26 24 13 Switchboards,ELE,SUB12,O&M Manual,2,2026-04-16,2026-04-30,2026-04-28,A - Approved,Returned,Y
+SUBM-00756,26 24 13 Switchboards,ELE,SUB11,Method Statement,0,2026-04-17,2026-05-01,2026-04-30,C - Revise & Resubmit,Returned,N
+SUBM-00439,25 50 00 Integrated Automation Facility Controls,INC,SUB13,O&M Manual,1,2026-04-17,2026-05-01,2026-04-22,A - Approved,Returned,N
+SUBM-00952,41 22 00 Cranes and Hoists,PEQ,SUB15,Product Data,1,2026-04-18,2026-05-02,2026-05-10,B - Approved as Noted,Returned,N
+SUBM-00800,28 46 00 Fire Detection and Alarm,INC,SUB13,Test Report,2,2026-04-19,2026-05-03,2026-05-01,A - Approved,Returned,N
+SUBM-00964,40 91 00 Instrumentation,INC,SUB13,O&M Manual,0,2026-04-19,2026-05-03,2026-04-29,A - Approved,Returned,N
+SUBM-00628,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,2,2026-04-19,2026-05-03,2026-04-23,B - Approved as Noted,Returned,N
+SUBM-01055,41 22 00 Cranes and Hoists,PEQ,SUB17,Sample,1,2026-04-19,2026-05-03,2026-05-03,B - Approved as Noted,Returned,N
+SUBM-00392,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,0,2026-04-20,2026-05-04,2026-05-08,A - Approved,Returned,N
+SUBM-00498,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,1,2026-04-20,2026-05-04,2026-04-30,A - Approved,Returned,N
+SUBM-00547,28 31 00 Fire Detection and Alarm,FPR,SUB14,Method Statement,0,2026-04-20,2026-05-04,2026-05-06,A - Approved,Returned,N
+SUBM-00263,22 66 00 Chemical-Waste Systems,PLB,SUB10,Certificate,2,2026-04-22,2026-05-06,2026-06-01,A - Approved,Returned,N
+SUBM-00060,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,2,2026-04-23,2026-05-07,2026-05-05,A - Approved,Returned,N
+SUBM-00075,22 66 00 Chemical-Waste Systems,PLB,SUB10,O&M Manual,0,2026-04-24,2026-05-08,2026-05-20,A - Approved,Returned,N
+SUBM-00300,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,2,2026-04-24,2026-05-08,2026-05-04,A - Approved,Returned,N
+SUBM-00204,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,0,2026-04-24,2026-05-08,2026-05-13,A - Approved,Returned,N
+SUBM-00936,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,1,2026-04-24,2026-05-08,2026-04-28,B - Approved as Noted,Returned,N
+SUBM-00940,40 05 63 Process Valves,PPG,SUB09,Certificate,0,2026-04-25,2026-05-09,2026-05-18,A - Approved,Returned,N
+SUBM-01252,40 05 63 Process Valves,PPG,SUB09,Product Data,2,2026-04-25,2026-05-09,2026-05-27,C - Revise & Resubmit,Returned,N
+SUBM-00389,26 24 13 Switchboards,ELE,SUB12,Test Report,0,2026-04-25,2026-05-09,2026-05-10,B - Approved as Noted,Returned,Y
+SUBM-00554,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,2,2026-04-25,2026-05-09,2026-05-10,B - Approved as Noted,Returned,N
+SUBM-01095,26 24 13 Switchboards,ELE,SUB12,Shop Drawing,0,2026-04-26,2026-05-10,2026-05-03,A - Approved,Returned,N
+SUBM-00816,23 84 16 Dehumidification Units,MEC,SUB07,Method Statement,0,2026-04-26,2026-05-10,2026-04-29,A - Approved,Returned,N
+SUBM-00262,33 05 00 Common Work for Utilities,CIV,SUB01,Shop Drawing,0,2026-04-27,2026-05-11,2026-05-13,A - Approved,Returned,N
+SUBM-00677,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Test Report,0,2026-04-29,2026-05-13,2026-05-07,A - Approved,Returned,N
+SUBM-00337,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Certificate,2,2026-04-29,2026-05-13,2026-05-30,A - Approved,Returned,N
+SUBM-01039,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,0,2026-04-30,2026-05-14,2026-05-12,A - Approved,Returned,Y
+SUBM-00774,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,O&M Manual,0,2026-04-30,2026-05-14,2026-05-21,D - Rejected,Returned,N
+SUBM-00577,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,1,2026-05-01,2026-05-15,2026-05-18,B - Approved as Noted,Returned,N
+SUBM-00771,28 31 00 Fire Detection and Alarm,FPR,SUB14,Certificate,0,2026-05-01,2026-05-15,2026-05-22,B - Approved as Noted,Returned,Y
+SUBM-00755,09 67 23 Resinous Flooring,ARC,SUB05,Product Data,1,2026-05-01,2026-05-15,2026-05-21,B - Approved as Noted,Returned,Y
+SUBM-01015,23 73 00 Air Handling Units,MEC,SUB16,Product Data,1,2026-05-02,2026-05-16,2026-05-14,B - Approved as Noted,Returned,N
+SUBM-01173,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Certificate,1,2026-05-02,2026-05-16,2026-05-12,C - Revise & Resubmit,Returned,N
+SUBM-00488,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,1,2026-05-02,2026-05-16,2026-05-07,A - Approved,Returned,N
+SUBM-00647,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,0,2026-05-02,2026-05-16,2026-05-21,A - Approved,Returned,N
+SUBM-00080,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2026-05-02,2026-05-16,2026-05-11,A - Approved,Returned,N
+SUBM-00921,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Product Data,2,2026-05-03,2026-05-17,2026-05-18,B - Approved as Noted,Returned,N
+SUBM-01061,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,1,2026-05-03,2026-05-17,2026-05-06,C - Revise & Resubmit,Returned,N
+SUBM-00244,33 05 00 Common Work for Utilities,CIV,SUB01,Method Statement,1,2026-05-03,2026-05-17,2026-06-03,B - Approved as Noted,Returned,N
+SUBM-00885,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,0,2026-05-04,2026-05-18,2026-05-25,B - Approved as Noted,Returned,N
+SUBM-00609,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-05-05,2026-05-19,2026-05-17,B - Approved as Noted,Returned,N
+SUBM-00768,03 30 00 Cast-in-Place Concrete,CIV,SUB01,Shop Drawing,2,2026-05-05,2026-05-19,2026-05-14,A - Approved,Returned,N
+SUBM-01008,26 24 13 Switchboards,ELE,SUB12,Product Data,0,2026-05-05,2026-05-19,2026-05-12,C - Revise & Resubmit,Returned,Y
+SUBM-00775,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,0,2026-05-05,2026-05-19,2026-05-25,C - Revise & Resubmit,Returned,N
+SUBM-01235,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,2,2026-05-07,2026-05-21,2026-05-08,A - Approved,Returned,N
+SUBM-00419,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,1,2026-05-08,2026-05-22,2026-05-31,A - Approved,Returned,N
+SUBM-00865,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Shop Drawing,0,2026-05-08,2026-05-22,2026-05-16,A - Approved,Returned,N
+SUBM-01045,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,0,2026-05-09,2026-05-23,2026-05-20,A - Approved,Returned,N
+SUBM-00753,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Sample,0,2026-05-09,2026-05-23,2026-05-22,B - Approved as Noted,Returned,N
+SUBM-00785,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,2,2026-05-09,2026-05-23,2026-05-13,A - Approved,Returned,N
+SUBM-00089,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,1,2026-05-10,2026-05-24,2026-06-01,B - Approved as Noted,Returned,Y
+SUBM-00459,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,1,2026-05-10,2026-05-24,2026-05-22,D - Rejected,Returned,N
+SUBM-00417,41 22 00 Cranes and Hoists,PEQ,SUB17,Certificate,2,2026-05-11,2026-05-25,2026-06-07,B - Approved as Noted,Returned,N
+SUBM-00656,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,O&M Manual,1,2026-05-12,2026-05-26,2026-05-22,A - Approved,Returned,Y
+SUBM-01183,40 05 63 Process Valves,PPG,SUB08,Product Data,0,2026-05-13,2026-05-27,2026-05-30,A - Approved,Returned,N
+SUBM-00146,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,2,2026-05-13,2026-05-27,2026-05-24,C - Revise & Resubmit,Returned,Y
+SUBM-00251,40 91 00 Instrumentation,INC,SUB13,Certificate,0,2026-05-13,2026-05-27,2026-05-30,A - Approved,Returned,N
+SUBM-00711,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,O&M Manual,0,2026-05-14,2026-05-28,2026-05-28,A - Approved,Returned,N
+SUBM-00334,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,O&M Manual,0,2026-05-14,2026-05-28,2026-06-12,C - Revise & Resubmit,Returned,N
+SUBM-00618,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,0,2026-05-14,2026-05-28,2026-06-08,A - Approved,Returned,N
+SUBM-00429,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,1,2026-05-15,2026-05-29,2026-06-23,A - Approved,Returned,N
+SUBM-00838,31 23 00 Excavation and Fill,CIV,SUB18,Shop Drawing,0,2026-05-15,2026-05-29,2026-06-15,A - Approved,Returned,N
+SUBM-00876,40 91 00 Instrumentation,INC,SUB13,Certificate,0,2026-05-16,2026-05-30,2026-05-31,C - Revise & Resubmit,Returned,N
+SUBM-00897,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2026-05-16,2026-05-30,2026-05-26,A - Approved,Returned,N
+SUBM-00742,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,1,2026-05-16,2026-05-30,2026-06-01,D - Rejected,Returned,Y
+SUBM-01244,23 31 13 Metal Ducts,MEC,SUB06,Product Data,0,2026-05-17,2026-05-31,2026-06-02,B - Approved as Noted,Returned,N
+SUBM-01253,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,0,2026-05-20,2026-06-03,2026-06-01,A - Approved,Returned,N
+SUBM-00856,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2026-05-21,2026-06-04,2026-06-02,A - Approved,Returned,N
+SUBM-00308,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-05-22,2026-06-05,2026-06-06,C - Revise & Resubmit,Returned,N
+SUBM-00092,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,0,2026-05-23,2026-06-06,2026-06-06,C - Revise & Resubmit,Returned,N
+SUBM-00974,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Shop Drawing,0,2026-05-24,2026-06-07,2026-06-21,A - Approved,Returned,Y
+SUBM-00181,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,O&M Manual,1,2026-05-25,2026-06-08,2026-06-04,A - Approved,Returned,N
+SUBM-01091,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,0,2026-05-25,2026-06-08,2026-06-03,A - Approved,Returned,N
+SUBM-01153,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,1,2026-05-26,2026-06-09,2026-06-09,A - Approved,Returned,N
+SUBM-01003,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,0,2026-05-26,2026-06-09,2026-06-10,C - Revise & Resubmit,Returned,N
+SUBM-01236,23 73 00 Air Handling Units,MEC,SUB06,Product Data,1,2026-05-26,2026-06-09,2026-05-29,A - Approved,Returned,N
+SUBM-00370,09 67 23 Resinous Flooring,ARC,SUB04,Sample,0,2026-05-28,2026-06-11,2026-06-03,B - Approved as Noted,Returned,N
+SUBM-00642,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-05-29,2026-06-12,2026-06-10,B - Approved as Noted,Returned,N
+SUBM-00589,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,1,2026-05-30,2026-06-13,2026-06-11,A - Approved,Returned,N
+SUBM-00506,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,1,2026-05-31,2026-06-14,2026-06-05,B - Approved as Noted,Returned,Y
+SUBM-00428,31 23 00 Excavation and Fill,CIV,SUB02,Method Statement,0,2026-05-31,2026-06-14,2026-06-11,B - Approved as Noted,Returned,N
+SUBM-00837,41 22 00 Cranes and Hoists,PEQ,SUB15,Sample,1,2026-05-31,2026-06-14,2026-06-27,B - Approved as Noted,Returned,N
+SUBM-00196,33 05 00 Common Work for Utilities,CIV,SUB02,Shop Drawing,0,2026-05-31,2026-06-14,2026-06-20,C - Revise & Resubmit,Returned,N
+SUBM-00043,28 31 00 Fire Detection and Alarm,FPR,SUB14,Certificate,0,2026-06-01,2026-06-15,2026-06-15,A - Approved,Returned,N
+SUBM-00909,13 21 26 Dry Room Assemblies,ARC,SUB04,Test Report,2,2026-06-01,2026-06-15,2026-07-03,B - Approved as Noted,Returned,N
+SUBM-00880,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,2,2026-06-02,2026-06-16,2026-06-24,C - Revise & Resubmit,Returned,N
+SUBM-01000,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Sample,0,2026-06-02,2026-06-16,2026-06-10,C - Revise & Resubmit,Returned,N
+SUBM-00467,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Shop Drawing,1,2026-06-03,2026-06-17,2026-06-05,B - Approved as Noted,Returned,N
+SUBM-00596,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2026-06-03,2026-06-17,2026-06-13,A - Approved,Returned,Y
+SUBM-00528,33 05 00 Common Work for Utilities,CIV,SUB02,Sample,1,2026-06-04,2026-06-18,2026-06-15,C - Revise & Resubmit,Returned,N
+SUBM-01123,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Shop Drawing,0,2026-06-04,2026-06-18,2026-06-15,A - Approved,Returned,N
+SUBM-00438,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Shop Drawing,2,2026-06-04,2026-06-18,2026-06-10,A - Approved,Returned,Y
+SUBM-01155,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,0,2026-06-05,2026-06-19,2026-06-20,A - Approved,Returned,N
+SUBM-01017,23 84 16 Dehumidification Units,MEC,SUB07,Shop Drawing,1,2026-06-05,2026-06-19,2026-06-26,C - Revise & Resubmit,Returned,N
+SUBM-00518,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2026-06-05,2026-06-19,2026-06-15,A - Approved,Returned,N
+SUBM-00644,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2026-06-07,2026-06-21,2026-06-27,B - Approved as Noted,Returned,N
+SUBM-00840,05 31 00 Steel Decking,STR,SUB03,Certificate,0,2026-06-07,2026-06-21,2026-06-17,A - Approved,Returned,N
+SUBM-00258,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,O&M Manual,1,2026-06-08,2026-06-22,2026-06-28,C - Revise & Resubmit,Returned,N
+SUBM-00595,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2026-06-08,2026-06-22,2026-06-20,C - Revise & Resubmit,Returned,Y
+SUBM-00324,40 91 00 Instrumentation,INC,SUB13,Method Statement,1,2026-06-08,2026-06-22,2026-06-20,C - Revise & Resubmit,Returned,N
+SUBM-00289,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,1,2026-06-09,2026-06-23,2026-06-23,A - Approved,Returned,N
+SUBM-00511,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Shop Drawing,1,2026-06-09,2026-06-23,2026-07-01,B - Approved as Noted,Returned,N
+SUBM-00611,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2026-06-10,2026-06-24,2026-07-01,A - Approved,Returned,N
+SUBM-01164,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,2,2026-06-10,2026-06-24,2026-06-27,D - Rejected,Returned,N
+SUBM-00331,22 66 00 Chemical-Waste Systems,PLB,SUB10,Certificate,2,2026-06-11,2026-06-25,2026-06-19,B - Approved as Noted,Returned,N
+SUBM-00873,09 67 23 Resinous Flooring,ARC,SUB05,Product Data,0,2026-06-11,2026-06-25,2026-06-14,A - Approved,Returned,N
+SUBM-00073,26 05 19 Low-Voltage Conductors,ELE,SUB12,O&M Manual,1,2026-06-11,2026-06-25,2026-07-01,B - Approved as Noted,Returned,N
+SUBM-00695,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Method Statement,1,2026-06-12,2026-06-26,2026-06-16,A - Approved,Returned,N
+SUBM-00977,40 91 00 Instrumentation,INC,SUB13,Sample,1,2026-06-14,2026-06-28,2026-06-27,C - Revise & Resubmit,Returned,Y
+SUBM-00371,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,0,2026-06-15,2026-06-29,2026-06-21,A - Approved,Returned,N
+SUBM-01157,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,0,2026-06-15,2026-06-29,2026-06-22,A - Approved,Returned,N
+SUBM-00911,26 05 19 Low-Voltage Conductors,ELE,SUB11,Method Statement,1,2026-06-16,2026-06-30,2026-06-25,A - Approved,Returned,N
+SUBM-00532,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,0,2026-06-16,2026-06-30,2026-06-29,B - Approved as Noted,Returned,N
+SUBM-00827,23 31 13 Metal Ducts,MEC,SUB07,Product Data,0,2026-06-16,2026-06-30,2026-07-10,A - Approved,Returned,N
+SUBM-00490,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,0,2026-06-17,2026-07-01,2026-06-25,B - Approved as Noted,Returned,N
+SUBM-00931,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,0,2026-06-17,2026-07-01,2026-06-21,C - Revise & Resubmit,Returned,N
+SUBM-00678,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,2,2026-06-17,2026-07-01,2026-06-23,A - Approved,Returned,N
+SUBM-01161,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,0,2026-06-17,2026-07-01,2026-07-09,B - Approved as Noted,Returned,Y
+SUBM-01092,23 84 16 Dehumidification Units,MEC,SUB16,Method Statement,1,2026-06-18,2026-07-02,2026-06-28,A - Approved,Returned,N
+SUBM-00726,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,1,2026-06-20,2026-07-04,2026-07-04,C - Revise & Resubmit,Returned,N
+SUBM-00716,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2026-06-20,2026-07-04,2026-07-08,B - Approved as Noted,Returned,N
+SUBM-00226,31 23 00 Excavation and Fill,CIV,SUB18,Certificate,0,2026-06-23,2026-07-07,2026-07-01,A - Approved,Returned,N
+SUBM-01087,23 31 13 Metal Ducts,MEC,SUB07,Shop Drawing,1,2026-06-23,2026-07-07,2026-07-12,B - Approved as Noted,Returned,N
+SUBM-00699,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,0,2026-06-24,2026-07-08,2026-07-11,A - Approved,Returned,N
+SUBM-01032,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,0,2026-06-24,2026-07-08,2026-07-23,B - Approved as Noted,Returned,N
+SUBM-00569,40 05 63 Process Valves,PPG,SUB09,Certificate,2,2026-06-25,2026-07-09,2026-07-15,B - Approved as Noted,Returned,N
+SUBM-00918,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,0,2026-06-25,2026-07-09,2026-07-02,B - Approved as Noted,Returned,N
+SUBM-00084,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Certificate,0,2026-06-26,2026-07-10,2026-07-14,D - Rejected,Returned,N
+SUBM-00783,05 12 00 Structural Steel Framing,STR,SUB03,Certificate,1,2026-06-26,2026-07-10,2026-07-15,D - Rejected,Returned,Y
+SUBM-00829,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Shop Drawing,0,2026-06-27,2026-07-11,2026-07-18,A - Approved,Returned,N
+SUBM-00957,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,0,2026-06-28,2026-07-12,2026-07-14,A - Approved,Returned,N
+SUBM-00297,40 05 13 Common Work for Process Piping,PPG,SUB09,Product Data,0,2026-06-29,2026-07-13,2026-07-23,C - Revise & Resubmit,Returned,N
+SUBM-01141,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Certificate,2,2026-06-29,2026-07-13,2026-08-01,B - Approved as Noted,Returned,N
+SUBM-00139,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,2,2026-06-30,2026-07-14,2026-07-12,B - Approved as Noted,Returned,N
+SUBM-01019,40 91 00 Instrumentation,INC,SUB13,O&M Manual,1,2026-06-30,2026-07-14,2026-07-22,B - Approved as Noted,Returned,N
+SUBM-00157,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,1,2026-07-02,2026-07-16,2026-07-07,C - Revise & Resubmit,Returned,N
+SUBM-01156,23 31 13 Metal Ducts,MEC,SUB16,Product Data,1,2026-07-03,2026-07-17,2026-07-12,C - Revise & Resubmit,Returned,N
+SUBM-01060,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2026-07-03,2026-07-17,2026-08-04,A - Approved,Returned,N
+SUBM-00012,26 05 19 Low-Voltage Conductors,ELE,SUB12,Method Statement,0,2026-07-04,2026-07-18,2026-07-10,B - Approved as Noted,Returned,N
+SUBM-00305,23 84 16 Dehumidification Units,MEC,SUB07,Product Data,0,2026-07-04,2026-07-18,2026-08-01,B - Approved as Noted,Returned,N
+SUBM-00154,40 91 00 Instrumentation,INC,SUB13,Test Report,0,2026-07-04,2026-07-18,2026-07-12,A - Approved,Returned,N
+SUBM-00486,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-07-04,2026-07-18,2026-07-17,C - Revise & Resubmit,Returned,N
+SUBM-00743,40 05 13 Common Work for Process Piping,PPG,SUB09,Certificate,1,2026-07-05,2026-07-19,2026-08-01,A - Approved,Returned,N
+SUBM-00564,05 12 00 Structural Steel Framing,STR,SUB03,Test Report,1,2026-07-05,2026-07-19,2026-07-19,A - Approved,Returned,N
+SUBM-01245,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,0,2026-07-05,2026-07-19,2026-07-14,A - Approved,Returned,N
+SUBM-00106,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2026-07-05,2026-07-19,2026-07-21,D - Rejected,Returned,N
+SUBM-00537,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2026-07-06,2026-07-20,2026-07-19,B - Approved as Noted,Returned,N
+SUBM-01066,40 05 13 Common Work for Process Piping,PPG,SUB09,O&M Manual,0,2026-07-06,2026-07-20,2026-07-11,A - Approved,Returned,N
+SUBM-00441,41 22 00 Cranes and Hoists,PEQ,SUB17,Product Data,1,2026-07-06,2026-07-20,2026-07-15,A - Approved,Returned,N
+SUBM-00179,09 67 23 Resinous Flooring,ARC,SUB04,Test Report,2,2026-07-09,2026-07-23,2026-07-31,A - Approved,Returned,Y
+SUBM-00657,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Certificate,1,2026-07-10,2026-07-24,2026-07-15,B - Approved as Noted,Returned,N
+SUBM-00473,13 21 26 Dry Room Assemblies,ARC,SUB04,Shop Drawing,2,2026-07-11,2026-07-25,2026-07-20,A - Approved,Returned,N
+SUBM-00565,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Certificate,1,2026-07-11,2026-07-25,2026-07-21,C - Revise & Resubmit,Returned,N
+SUBM-01029,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,0,2026-07-15,2026-07-29,2026-07-26,A - Approved,Returned,N
+SUBM-00534,33 05 00 Common Work for Utilities,CIV,SUB01,Sample,1,2026-07-16,2026-07-30,2026-07-30,D - Rejected,Returned,Y
+SUBM-00066,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Product Data,1,2026-07-18,2026-08-01,2026-07-30,B - Approved as Noted,Returned,N
+SUBM-00001,40 91 00 Instrumentation,INC,SUB13,Test Report,0,2026-07-19,2026-08-02,2026-07-29,B - Approved as Noted,Returned,N
+SUBM-00292,13 21 26 Dry Room Assemblies,ARC,SUB05,Certificate,0,2026-07-19,2026-08-02,2026-08-06,B - Approved as Noted,Returned,N
+SUBM-01005,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Method Statement,0,2026-07-19,2026-08-02,2026-07-25,B - Approved as Noted,Returned,N
+SUBM-00225,23 31 13 Metal Ducts,MEC,SUB16,Shop Drawing,0,2026-07-21,2026-08-04,2026-07-26,A - Approved,Returned,N
+SUBM-00029,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2026-07-22,2026-08-05,2026-07-26,A - Approved,Returned,N
+SUBM-00568,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,2,2026-07-23,2026-08-06,2026-08-05,B - Approved as Noted,Returned,N
+SUBM-00770,40 05 63 Process Valves,PPG,SUB09,O&M Manual,2,2026-07-24,2026-08-07,2026-08-19,D - Rejected,Returned,N
+SUBM-01096,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,0,2026-07-24,2026-08-07,2026-08-05,C - Revise & Resubmit,Returned,N
+SUBM-01030,03 41 00 Precast Structural Concrete,STR,SUB03,Product Data,0,2026-07-25,2026-08-08,2026-08-28,A - Approved,Returned,N
+SUBM-01130,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,1,2026-07-25,2026-08-08,2026-08-15,A - Approved,Returned,N
+SUBM-00951,40 91 00 Instrumentation,INC,SUB13,Product Data,1,2026-07-25,2026-08-08,2026-08-01,A - Approved,Returned,N
+SUBM-01072,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Certificate,1,2026-07-25,2026-08-08,2026-08-04,A - Approved,Returned,N
+SUBM-00797,31 23 00 Excavation and Fill,CIV,SUB18,Method Statement,0,2026-07-27,2026-08-10,2026-08-13,B - Approved as Noted,Returned,N
+SUBM-00950,08 71 00 Door Hardware,ARC,SUB05,Shop Drawing,0,2026-07-27,2026-08-10,2026-08-08,C - Revise & Resubmit,Returned,N
+SUBM-00814,23 31 13 Metal Ducts,MEC,SUB07,Product Data,2,2026-07-27,2026-08-10,2026-08-03,C - Revise & Resubmit,Returned,Y
+SUBM-00394,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Test Report,0,2026-07-27,2026-08-10,2026-08-01,A - Approved,Returned,Y
+SUBM-00379,40 91 00 Instrumentation,INC,SUB13,Product Data,2,2026-07-27,2026-08-10,2026-08-31,A - Approved,Returned,N
+SUBM-01108,05 31 00 Steel Decking,STR,SUB03,Product Data,2,2026-07-27,2026-08-10,2026-08-06,A - Approved,Returned,N
+SUBM-00437,09 67 23 Resinous Flooring,ARC,SUB04,O&M Manual,1,2026-07-29,2026-08-12,2026-08-01,A - Approved,Returned,N
+SUBM-00090,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2026-07-30,2026-08-13,2026-08-11,C - Revise & Resubmit,Returned,N
+SUBM-00103,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Product Data,1,2026-07-30,2026-08-13,2026-08-01,D - Rejected,Returned,N
+SUBM-00031,40 05 63 Process Valves,PPG,SUB08,Sample,0,2026-07-31,2026-08-14,2026-08-14,A - Approved,Returned,N
+SUBM-00205,33 05 00 Common Work for Utilities,CIV,SUB18,Method Statement,0,2026-08-01,2026-08-15,2026-08-10,A - Approved,Returned,N
+SUBM-00782,31 23 00 Excavation and Fill,CIV,SUB18,Test Report,1,2026-08-02,2026-08-16,2026-08-13,A - Approved,Returned,N
+SUBM-00294,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,1,2026-08-02,2026-08-16,2026-08-16,A - Approved,Returned,N
+SUBM-01194,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,0,2026-08-04,2026-08-18,2026-08-12,D - Rejected,Returned,N
+SUBM-00575,26 24 13 Switchboards,ELE,SUB11,Certificate,1,2026-08-04,2026-08-18,2026-08-09,A - Approved,Returned,N
+SUBM-00202,03 41 00 Precast Structural Concrete,STR,SUB03,O&M Manual,2,2026-08-05,2026-08-19,2026-08-18,A - Approved,Returned,N
+SUBM-00372,23 73 00 Air Handling Units,MEC,SUB16,Product Data,1,2026-08-06,2026-08-20,2026-08-19,C - Revise & Resubmit,Returned,Y
+SUBM-00999,41 22 00 Cranes and Hoists,PEQ,SUB17,Sample,2,2026-08-06,2026-08-20,2026-08-30,B - Approved as Noted,Returned,N
+SUBM-00636,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-08-06,2026-08-20,2026-08-17,B - Approved as Noted,Returned,N
+SUBM-00030,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Shop Drawing,1,2026-08-07,2026-08-21,2026-08-19,A - Approved,Returned,N
+SUBM-00982,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,1,2026-08-07,2026-08-21,2026-08-30,A - Approved,Returned,N
+SUBM-00572,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,O&M Manual,0,2026-08-07,2026-08-21,2026-08-16,C - Revise & Resubmit,Returned,N
+SUBM-00163,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Certificate,0,2026-08-07,2026-08-21,2026-08-20,A - Approved,Returned,N
+SUBM-00487,23 31 13 Metal Ducts,MEC,SUB16,Product Data,0,2026-08-07,2026-08-21,2026-08-12,B - Approved as Noted,Returned,N
+SUBM-00740,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Product Data,0,2026-08-07,2026-08-21,2026-08-18,B - Approved as Noted,Returned,N
+SUBM-00280,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,2,2026-08-09,2026-08-23,2026-08-17,A - Approved,Returned,N
+SUBM-00685,40 91 00 Instrumentation,INC,SUB13,Product Data,1,2026-08-10,2026-08-24,2026-09-09,B - Approved as Noted,Returned,N
+SUBM-00938,40 05 13 Common Work for Process Piping,PPG,SUB08,Shop Drawing,1,2026-08-11,2026-08-25,2026-08-28,A - Approved,Returned,N
+SUBM-01116,28 31 00 Fire Detection and Alarm,FPR,SUB14,Method Statement,0,2026-08-11,2026-08-25,2026-08-17,A - Approved,Returned,N
+SUBM-00674,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,1,2026-08-13,2026-08-27,2026-08-31,B - Approved as Noted,Returned,N
+SUBM-00533,08 71 00 Door Hardware,ARC,SUB04,O&M Manual,1,2026-08-14,2026-08-28,2026-08-26,A - Approved,Returned,N
+SUBM-00707,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Method Statement,1,2026-08-14,2026-08-28,2026-08-21,A - Approved,Returned,N
+SUBM-00881,26 05 19 Low-Voltage Conductors,ELE,SUB12,O&M Manual,0,2026-08-14,2026-08-28,2026-09-01,B - Approved as Noted,Returned,N
+SUBM-00858,23 84 16 Dehumidification Units,MEC,SUB06,Method Statement,0,2026-08-14,2026-08-28,2026-08-22,A - Approved,Returned,N
+SUBM-01004,28 31 00 Fire Detection and Alarm,FPR,SUB14,O&M Manual,2,2026-08-16,2026-08-30,2026-09-03,C - Revise & Resubmit,Returned,N
+SUBM-00085,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Test Report,1,2026-08-17,2026-08-31,2026-08-24,A - Approved,Returned,N
+SUBM-00515,23 84 16 Dehumidification Units,MEC,SUB06,Product Data,0,2026-08-17,2026-08-31,2026-08-19,C - Revise & Resubmit,Returned,N
+SUBM-01224,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,0,2026-08-17,2026-08-31,2026-09-05,B - Approved as Noted,Returned,N
+SUBM-00933,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,0,2026-08-17,2026-08-31,2026-09-09,D - Rejected,Returned,N
+SUBM-00355,03 30 00 Cast-in-Place Concrete,CIV,SUB18,Shop Drawing,0,2026-08-18,2026-09-01,2026-08-23,A - Approved,Returned,N
+SUBM-00889,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,1,2026-08-19,2026-09-02,2026-08-30,A - Approved,Returned,N
+SUBM-01053,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,O&M Manual,1,2026-08-19,2026-09-02,2026-09-05,C - Revise & Resubmit,Returned,N
+SUBM-00561,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2026-08-19,2026-09-02,2026-09-01,A - Approved,Returned,N
+SUBM-01064,13 21 26 Dry Room Assemblies,ARC,SUB04,Sample,0,2026-08-20,2026-09-03,2026-08-24,A - Approved,Returned,N
+SUBM-00587,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Shop Drawing,1,2026-08-21,2026-09-04,2026-09-08,C - Revise & Resubmit,Returned,N
+SUBM-00011,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,1,2026-08-22,2026-09-05,2026-09-01,A - Approved,Returned,N
+SUBM-01144,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,2,2026-08-22,2026-09-05,2026-09-20,C - Revise & Resubmit,Returned,N
+SUBM-00210,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,0,2026-08-23,2026-09-06,2026-09-06,B - Approved as Noted,Returned,N
+SUBM-00857,33 05 00 Common Work for Utilities,CIV,SUB02,Certificate,1,2026-08-23,2026-09-06,2026-09-21,B - Approved as Noted,Returned,N
+SUBM-00395,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Shop Drawing,0,2026-08-23,2026-09-06,2026-09-26,B - Approved as Noted,Returned,N
+SUBM-01230,28 31 00 Fire Detection and Alarm,FPR,SUB14,Product Data,1,2026-08-25,2026-09-08,2026-09-01,C - Revise & Resubmit,Returned,N
+SUBM-00965,09 67 23 Resinous Flooring,ARC,SUB04,Method Statement,0,2026-08-25,2026-09-08,2026-09-10,B - Approved as Noted,Returned,N
+SUBM-00522,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,0,2026-08-26,2026-09-09,2026-09-23,C - Revise & Resubmit,Returned,Y
+SUBM-00947,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,1,2026-08-26,2026-09-09,2026-09-03,A - Approved,Returned,N
+SUBM-00573,40 91 00 Instrumentation,INC,SUB13,Shop Drawing,0,2026-08-27,2026-09-10,2026-09-15,C - Revise & Resubmit,Returned,N
+SUBM-00689,31 23 00 Excavation and Fill,CIV,SUB18,Shop Drawing,2,2026-08-29,2026-09-12,2026-09-03,A - Approved,Returned,N
+SUBM-00539,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Method Statement,0,2026-08-29,2026-09-12,2026-09-07,D - Rejected,Returned,N
+SUBM-00548,40 05 63 Process Valves,PPG,SUB09,Method Statement,1,2026-08-30,2026-09-13,2026-09-02,C - Revise & Resubmit,Returned,N
+SUBM-01023,31 23 00 Excavation and Fill,CIV,SUB02,O&M Manual,0,2026-08-30,2026-09-13,2026-09-10,B - Approved as Noted,Returned,N
+SUBM-00461,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,0,2026-08-30,2026-09-13,2026-09-04,A - Approved,Returned,Y
+SUBM-00306,23 73 00 Air Handling Units,MEC,SUB16,Shop Drawing,2,2026-08-31,2026-09-14,2026-09-18,B - Approved as Noted,Returned,Y
+SUBM-00200,40 05 63 Process Valves,PPG,SUB09,Product Data,1,2026-08-31,2026-09-14,2026-09-20,A - Approved,Returned,N
+SUBM-00069,03 41 00 Precast Structural Concrete,STR,SUB03,Test Report,0,2026-09-01,2026-09-15,2026-09-06,A - Approved,Returned,N
+SUBM-00823,23 73 00 Air Handling Units,MEC,SUB07,Shop Drawing,1,2026-09-01,2026-09-15,2026-09-07,A - Approved,Returned,Y
+SUBM-00617,40 05 13 Common Work for Process Piping,PPG,SUB09,Certificate,0,2026-09-02,2026-09-16,2026-09-14,A - Approved,Returned,N
+SUBM-00809,26 05 19 Low-Voltage Conductors,ELE,SUB11,Method Statement,0,2026-09-02,2026-09-16,2026-09-24,A - Approved,Returned,N
+SUBM-00117,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2026-09-05,2026-09-19,2026-09-28,A - Approved,Returned,N
+SUBM-00935,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,0,2026-09-05,2026-09-19,2026-10-08,C - Revise & Resubmit,Returned,N
+SUBM-01107,33 05 00 Common Work for Utilities,CIV,SUB02,Shop Drawing,0,2026-09-06,2026-09-20,2026-09-27,B - Approved as Noted,Returned,Y
+SUBM-00584,41 22 00 Cranes and Hoists,PEQ,SUB15,Test Report,2,2026-09-06,2026-09-20,2026-09-13,D - Rejected,Returned,N
+SUBM-00672,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,O&M Manual,2,2026-09-08,2026-09-22,2026-09-16,B - Approved as Noted,Returned,N
+SUBM-01168,40 05 63 Process Valves,PPG,SUB09,Sample,0,2026-09-09,2026-09-23,2026-09-29,C - Revise & Resubmit,Returned,N
+SUBM-00436,08 71 00 Door Hardware,ARC,SUB05,Product Data,2,2026-09-10,2026-09-24,2026-09-16,A - Approved,Returned,N
+SUBM-00616,13 21 26 Dry Room Assemblies,ARC,SUB05,Product Data,0,2026-09-10,2026-09-24,2026-09-17,C - Revise & Resubmit,Returned,N
+SUBM-01078,13 21 26 Dry Room Assemblies,ARC,SUB05,Shop Drawing,0,2026-09-10,2026-09-24,2026-09-14,B - Approved as Noted,Returned,N
+SUBM-01139,23 73 00 Air Handling Units,MEC,SUB07,Product Data,0,2026-09-11,2026-09-25,2026-09-24,B - Approved as Noted,Returned,N
+SUBM-00367,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Test Report,2,2026-09-11,2026-09-25,2026-09-25,A - Approved,Returned,N
+SUBM-00670,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Certificate,0,2026-09-12,2026-09-26,2026-10-04,B - Approved as Noted,Returned,N
+SUBM-00366,41 22 00 Cranes and Hoists,PEQ,SUB15,Shop Drawing,0,2026-09-13,2026-09-27,2026-10-03,B - Approved as Noted,Returned,N
+SUBM-01184,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Sample,1,2026-09-13,2026-09-27,2026-09-28,B - Approved as Noted,Returned,N
+SUBM-01043,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-09-13,2026-09-27,2026-10-08,D - Rejected,Returned,N
+SUBM-00471,23 73 00 Air Handling Units,MEC,SUB06,Test Report,0,2026-09-15,2026-09-29,2026-09-19,A - Approved,Returned,N
+SUBM-00731,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,2,2026-09-15,2026-09-29,2026-09-28,C - Revise & Resubmit,Returned,N
+SUBM-00360,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Product Data,0,2026-09-15,2026-09-29,2026-09-29,A - Approved,Returned,N
+SUBM-00799,08 71 00 Door Hardware,ARC,SUB04,Certificate,1,2026-09-15,2026-09-29,2026-10-09,A - Approved,Returned,N
+SUBM-00963,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2026-09-15,2026-09-29,2026-09-20,B - Approved as Noted,Returned,N
+SUBM-00032,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,0,2026-09-16,2026-09-30,2026-09-25,A - Approved,Returned,N
+SUBM-01083,05 31 00 Steel Decking,STR,SUB03,Test Report,1,2026-09-18,2026-10-02,2026-10-08,C - Revise & Resubmit,Returned,N
+SUBM-00701,23 31 13 Metal Ducts,MEC,SUB16,Test Report,1,2026-09-19,2026-10-03,2026-10-16,A - Approved,Returned,N
+SUBM-00014,26 24 13 Switchboards,ELE,SUB12,Test Report,0,2026-09-19,2026-10-03,2026-09-29,A - Approved,Returned,N
+SUBM-00198,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,0,2026-09-20,2026-10-04,2026-10-01,B - Approved as Noted,Returned,N
+SUBM-00601,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2026-09-20,2026-10-04,2026-09-25,C - Revise & Resubmit,Returned,N
+SUBM-00667,03 41 00 Precast Structural Concrete,STR,SUB03,O&M Manual,0,2026-09-21,2026-10-05,2026-10-12,D - Rejected,Returned,N
+SUBM-00024,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,1,2026-09-21,2026-10-05,2026-09-30,A - Approved,Returned,N
+SUBM-01226,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Sample,0,2026-09-21,2026-10-05,2026-09-26,C - Revise & Resubmit,Returned,N
+SUBM-01121,03 30 00 Cast-in-Place Concrete,CIV,SUB02,Test Report,0,2026-09-22,2026-10-06,2026-10-06,B - Approved as Noted,Returned,N
+SUBM-01136,23 84 16 Dehumidification Units,MEC,SUB06,Shop Drawing,0,2026-09-22,2026-10-06,2026-10-18,C - Revise & Resubmit,Returned,Y
+SUBM-00138,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,0,2026-09-25,2026-10-09,2026-10-03,A - Approved,Returned,N
+SUBM-00973,26 13 00 Medium-Voltage Switchgear,ELE,SUB11,Test Report,1,2026-09-25,2026-10-09,2026-10-08,A - Approved,Returned,N
+SUBM-01182,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,0,2026-09-25,2026-10-09,2026-09-29,B - Approved as Noted,Returned,N
+SUBM-01037,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2026-09-25,2026-10-09,2026-10-08,A - Approved,Returned,N
+SUBM-00915,26 24 13 Switchboards,ELE,SUB12,Shop Drawing,1,2026-09-26,2026-10-10,2026-10-01,A - Approved,Returned,N
+SUBM-00038,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB07,Product Data,0,2026-09-26,2026-10-10,2026-09-29,A - Approved,Returned,N
+SUBM-00171,23 73 00 Air Handling Units,MEC,SUB06,Test Report,1,2026-09-27,2026-10-11,2026-10-01,A - Approved,Returned,N
+SUBM-00120,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2026-09-27,2026-10-11,2026-10-13,A - Approved,Returned,N
+SUBM-00064,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,0,2026-09-27,2026-10-11,2026-10-25,A - Approved,Returned,N
+SUBM-00416,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Test Report,1,2026-09-28,2026-10-12,2026-10-05,A - Approved,Returned,N
+SUBM-00995,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,1,2026-09-28,2026-10-12,2026-10-07,A - Approved,Returned,N
+SUBM-00391,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Test Report,2,2026-09-28,2026-10-12,2026-10-08,B - Approved as Noted,Returned,N
+SUBM-00065,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,1,2026-09-29,2026-10-13,2026-10-17,A - Approved,Returned,N
+SUBM-01174,40 05 63 Process Valves,PPG,SUB09,Certificate,1,2026-09-29,2026-10-13,2026-10-06,D - Rejected,Returned,N
+SUBM-01145,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Product Data,2,2026-09-29,2026-10-13,2026-10-10,A - Approved,Returned,N
+SUBM-00109,40 05 63 Process Valves,PPG,SUB08,Product Data,1,2026-09-30,2026-10-14,2026-10-07,B - Approved as Noted,Returned,N
+SUBM-00274,33 05 00 Common Work for Utilities,CIV,SUB18,Shop Drawing,1,2026-09-30,2026-10-14,2026-10-17,B - Approved as Noted,Returned,N
+SUBM-01117,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,Shop Drawing,1,2026-09-30,2026-10-14,2026-10-11,B - Approved as Noted,Returned,N
+SUBM-00135,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2026-09-30,2026-10-14,2026-10-16,A - Approved,Returned,N
+SUBM-00682,31 23 00 Excavation and Fill,CIV,SUB18,Certificate,0,2026-10-01,2026-10-15,2026-10-08,C - Revise & Resubmit,Returned,N
+SUBM-00817,23 31 13 Metal Ducts,MEC,SUB07,Product Data,1,2026-10-01,2026-10-15,2026-10-14,B - Approved as Noted,Returned,N
+SUBM-00971,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Shop Drawing,1,2026-10-02,2026-10-16,2026-10-10,A - Approved,Returned,N
+SUBM-00504,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2026-10-03,2026-10-17,2026-10-16,B - Approved as Noted,Returned,N
+SUBM-00332,22 13 00 Facility Sanitary Sewerage,PLB,SUB10,O&M Manual,1,2026-10-04,2026-10-18,2026-10-27,B - Approved as Noted,Returned,Y
+SUBM-00185,23 73 00 Air Handling Units,MEC,SUB07,Product Data,2,2026-10-05,2026-10-19,2026-10-14,B - Approved as Noted,Returned,N
+SUBM-00650,05 31 00 Steel Decking,STR,SUB03,Product Data,0,2026-10-06,2026-10-20,2026-11-13,B - Approved as Noted,Returned,N
+SUBM-00764,26 05 19 Low-Voltage Conductors,ELE,SUB12,Test Report,0,2026-10-06,2026-10-20,2026-10-18,A - Approved,Returned,N
+SUBM-01094,03 41 00 Precast Structural Concrete,STR,SUB03,Shop Drawing,1,2026-10-06,2026-10-20,2026-10-19,A - Approved,Returned,N
+SUBM-00919,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,2,2026-10-06,2026-10-20,2026-11-01,D - Rejected,Returned,N
+SUBM-00512,13 21 26 Dry Room Assemblies,ARC,SUB04,Product Data,1,2026-10-07,2026-10-21,2026-11-10,B - Approved as Noted,Returned,N
+SUBM-00168,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Test Report,0,2026-10-07,2026-10-21,2026-10-15,B - Approved as Noted,Returned,N
+SUBM-00342,26 05 19 Low-Voltage Conductors,ELE,SUB11,Product Data,0,2026-10-07,2026-10-21,2026-11-06,C - Revise & Resubmit,Returned,N
+SUBM-00275,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Certificate,2,2026-10-08,2026-10-22,2026-10-27,B - Approved as Noted,Returned,N
+SUBM-00227,08 71 00 Door Hardware,ARC,SUB04,Shop Drawing,0,2026-10-08,2026-10-22,2026-10-31,A - Approved,Returned,N
+SUBM-00484,40 05 13 Common Work for Process Piping,PPG,SUB09,Shop Drawing,0,2026-10-09,2026-10-23,2026-10-18,A - Approved,Returned,N
+SUBM-01187,26 24 13 Switchboards,ELE,SUB11,O&M Manual,0,2026-10-11,2026-10-25,2026-10-17,B - Approved as Noted,Returned,N
+SUBM-00216,31 23 00 Excavation and Fill,CIV,SUB02,Test Report,0,2026-10-11,2026-10-25,2026-10-23,D - Rejected,Returned,N
+SUBM-00359,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2026-10-12,2026-10-26,2026-10-18,B - Approved as Noted,Returned,N
+SUBM-00913,40 05 63 Process Valves,PPG,SUB08,Shop Drawing,1,2026-10-12,2026-10-26,2026-10-22,C - Revise & Resubmit,Returned,N
+SUBM-00834,26 05 19 Low-Voltage Conductors,ELE,SUB11,Shop Drawing,0,2026-10-13,2026-10-27,2026-10-29,C - Revise & Resubmit,Returned,N
+SUBM-00346,03 41 00 Precast Structural Concrete,STR,SUB03,Sample,0,2026-10-13,2026-10-27,2026-10-30,A - Approved,Returned,N
+SUBM-00425,22 66 00 Chemical-Waste Systems,PLB,SUB10,Product Data,0,2026-10-13,2026-10-27,2026-10-17,B - Approved as Noted,Returned,N
+SUBM-00357,26 05 19 Low-Voltage Conductors,ELE,SUB12,Sample,1,2026-10-16,2026-10-30,2026-10-24,A - Approved,Returned,N
+SUBM-01120,08 71 00 Door Hardware,ARC,SUB04,Certificate,2,2026-10-16,2026-10-30,2026-10-21,A - Approved,Returned,N
+SUBM-01239,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Product Data,1,2026-10-16,2026-10-30,2026-11-08,B - Approved as Noted,Returned,N
+SUBM-00175,05 12 00 Structural Steel Framing,STR,SUB03,Product Data,1,2026-10-19,2026-11-02,2026-11-10,B - Approved as Noted,Returned,N
+SUBM-00872,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Sample,0,2026-10-19,2026-11-02,2026-11-11,B - Approved as Noted,Returned,N
+SUBM-01044,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB16,Product Data,0,2026-10-19,2026-11-02,2026-11-13,B - Approved as Noted,Returned,N
+SUBM-00423,23 73 00 Air Handling Units,MEC,SUB16,Product Data,0,2026-10-19,2026-11-02,2026-10-21,A - Approved,Returned,N
+SUBM-00485,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB15,Sample,0,2026-10-19,2026-11-02,2026-11-06,D - Rejected,Returned,N
+SUBM-00427,09 67 23 Resinous Flooring,ARC,SUB04,Shop Drawing,2,2026-10-20,2026-11-03,2026-11-05,A - Approved,Returned,N
+SUBM-00989,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,2,2026-10-20,2026-11-03,2026-10-21,B - Approved as Noted,Returned,N
+SUBM-00201,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Test Report,1,2026-10-20,2026-11-03,2026-10-31,A - Approved,Returned,N
+SUBM-00079,08 71 00 Door Hardware,ARC,SUB05,Product Data,0,2026-10-21,2026-11-04,2026-10-27,A - Approved,Returned,N
+SUBM-01097,05 12 00 Structural Steel Framing,STR,SUB03,Sample,1,2026-10-22,2026-11-05,2026-11-04,D - Rejected,Returned,N
+SUBM-00136,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Product Data,1,2026-10-22,2026-11-05,2026-11-08,D - Rejected,Returned,N
+SUBM-00908,23 84 16 Dehumidification Units,MEC,SUB06,Certificate,1,2026-10-23,2026-11-06,2026-11-08,A - Approved,Returned,N
+SUBM-00005,22 61 13 Process Water Piping (RO/DI),PPG,SUB08,Product Data,1,2026-10-23,2026-11-06,,,Under Review,N
+SUBM-01152,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,0,2026-10-23,2026-11-06,,,Under Review,N
+SUBM-01258,40 05 13 Common Work for Process Piping,PPG,SUB08,Product Data,0,2026-10-23,2026-11-06,2026-10-27,A - Approved,Returned,N
+SUBM-00798,09 67 23 Resinous Flooring,ARC,SUB05,Shop Drawing,0,2026-10-23,2026-11-06,2026-11-03,A - Approved,Returned,N
+SUBM-00541,25 50 00 Integrated Automation Facility Controls,INC,SUB13,Product Data,1,2026-10-24,2026-11-07,,,Under Review,Y
+SUBM-00470,08 71 00 Door Hardware,ARC,SUB05,Test Report,0,2026-10-25,2026-11-08,,,Under Review,N
+SUBM-00214,26 24 13 Switchboards,ELE,SUB11,Certificate,0,2026-10-25,2026-11-08,2026-11-13,A - Approved,Returned,N
+SUBM-00249,26 05 19 Low-Voltage Conductors,ELE,SUB12,Shop Drawing,1,2026-10-25,2026-11-08,2026-11-02,B - Approved as Noted,Returned,N
+SUBM-00608,"23 05 93 Testing, Adjusting and Balancing",MEC,SUB06,Test Report,1,2026-10-25,2026-11-08,2026-10-28,A - Approved,Returned,N
+SUBM-00230,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Product Data,0,2026-10-25,2026-11-08,2026-10-30,C - Revise & Resubmit,Returned,N
+SUBM-00025,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Product Data,0,2026-10-25,2026-11-08,,,Under Review,N
+SUBM-01204,22 66 00 Chemical-Waste Systems,PLB,SUB10,Shop Drawing,1,2026-10-26,2026-11-09,2026-11-08,B - Approved as Noted,Returned,Y
+SUBM-00890,22 61 13 Process Water Piping (RO/DI),PPG,SUB09,Sample,0,2026-10-27,2026-11-10,2026-11-08,B - Approved as Noted,Returned,Y
+SUBM-00067,40 91 00 Instrumentation,INC,SUB13,Sample,1,2026-10-27,2026-11-10,2026-11-05,A - Approved,Returned,N
+SUBM-00842,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Product Data,0,2026-10-28,2026-11-11,2026-11-12,C - Revise & Resubmit,Returned,N
+SUBM-00125,26 24 13 Switchboards,ELE,SUB11,O&M Manual,0,2026-10-28,2026-11-11,2026-11-01,A - Approved,Returned,N
+SUBM-00051,05 31 00 Steel Decking,STR,SUB03,Product Data,1,2026-10-28,2026-11-11,2026-11-07,A - Approved,Returned,N
+SUBM-00691,22 66 00 Chemical-Waste Systems,PLB,SUB10,Test Report,0,2026-10-29,2026-11-12,,,Under Review,N
+SUBM-00403,31 23 00 Excavation and Fill,CIV,SUB01,Method Statement,0,2026-10-29,2026-11-12,2026-11-03,C - Revise & Resubmit,Returned,N
+SUBM-01147,26 24 13 Switchboards,ELE,SUB11,Shop Drawing,1,2026-10-30,2026-11-13,2026-11-06,D - Rejected,Returned,N
+SUBM-00344,05 31 00 Steel Decking,STR,SUB03,Shop Drawing,0,2026-10-31,2026-11-14,2026-11-11,A - Approved,Returned,Y
+SUBM-00215,05 12 00 Structural Steel Framing,STR,SUB03,Shop Drawing,0,2026-10-31,2026-11-14,2026-11-10,A - Approved,Returned,N
+SUBM-00477,23 73 00 Air Handling Units,MEC,SUB06,Shop Drawing,0,2026-10-31,2026-11-14,2026-11-03,C - Revise & Resubmit,Returned,N
+SUBM-00219,28 46 00 Fire Detection and Alarm,INC,SUB13,Shop Drawing,2,2026-11-03,2026-11-17,2026-11-09,A - Approved,Returned,N
+SUBM-00350,33 05 00 Common Work for Utilities,CIV,SUB02,Test Report,0,2026-11-04,2026-11-18,,,Under Review,N
+SUBM-00021,40 05 13 Common Work for Process Piping,PPG,SUB09,Test Report,0,2026-11-06,2026-11-20,,,Under Review,N
+SUBM-01206,41 22 00 Cranes and Hoists,PEQ,SUB15,Sample,2,2026-11-07,2026-11-21,2026-11-13,B - Approved as Noted,Returned,N
+SUBM-01076,23 31 13 Metal Ducts,MEC,SUB07,Product Data,1,2026-11-07,2026-11-21,,,Under Review,N
+SUBM-00411,21 13 13 Wet-Pipe Sprinkler Systems,FPR,SUB14,Shop Drawing,2,2026-11-08,2026-11-22,,,Under Review,N
+SUBM-01063,40 05 13 Common Work for Process Piping,PPG,SUB08,Test Report,1,2026-11-08,2026-11-22,,,Under Review,N
+SUBM-00934,26 05 19 Low-Voltage Conductors,ELE,SUB11,Method Statement,1,2026-11-08,2026-11-22,,,Under Review,N
+SUBM-00979,40 05 13 Common Work for Process Piping,PPG,SUB08,Sample,0,2026-11-09,2026-11-23,,,Under Review,N
+SUBM-01225,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,1,2026-11-09,2026-11-23,,,Under Review,N
+SUBM-00431,28 46 00 Fire Detection and Alarm,INC,SUB13,Certificate,1,2026-11-09,2026-11-23,2026-11-12,B - Approved as Noted,Returned,N
+SUBM-00426,26 13 00 Medium-Voltage Switchgear,ELE,SUB12,Product Data,0,2026-11-10,2026-11-24,,,Under Review,N
+SUBM-01170,40 06 00 Process Equipment Hookup Schedules,PEQ,SUB17,Product Data,0,2026-11-11,2026-11-25,,,Under Review,N
+SUBM-00105,40 05 63 Process Valves,PPG,SUB09,Shop Drawing,0,2026-11-12,2026-11-26,,,Under Review,N
+SUBM-01222,28 46 00 Fire Detection and Alarm,INC,SUB13,Product Data,1,2026-11-12,2026-11-26,,,Under Review,N

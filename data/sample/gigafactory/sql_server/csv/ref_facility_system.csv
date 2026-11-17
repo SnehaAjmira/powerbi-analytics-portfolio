@@ -1,0 +1,31 @@
+System_Code,System_Name,Discipline_Code,Building_Code,Priority_Group
+RODI,RO/DI Process Water,PPG,CUB,2
+PCW,Process Cooling Water,PPG,CUB,1
+CDA,Clean Dry Air,PPG,CUB,1
+GN2,Nitrogen Distribution,PPG,CUB,1
+VAC,Process Vacuum,PPG,CELL,3
+DRY,Dry Room Dehumidification,MEC,CELL,2
+NMP,NMP Solvent Recovery,MEC,NRU,3
+PEX,Process Exhaust,MEC,CELL,2
+GEX,General Exhaust,MEC,CELL,3
+MAU,Make-up Air Units,MEC,CELL,2
+CHW,Chilled Water,MEC,CUB,1
+HHW,Heating Hot Water,MEC,CUB,3
+ELY,Electrolyte Distribution,PPG,ELB,3
+SLR,Electrode Slurry Transfer,PPG,CELL,3
+CHS,Chemical Storage & Transfer,PPG,ELB,3
+IWW,Industrial Wastewater Treatment,PLB,WWT,3
+PDR,Process Drains,PLB,CELL,3
+MVD,Medium Voltage Distribution,ELE,SUB,1
+LVD,Low Voltage Distribution,ELE,CELL,2
+FCP,Formation Charger Power,ELE,CELL,3
+UPS,UPS & Critical Power,ELE,CUB,1
+EMG,Emergency Generators,ELE,CUB,1
+LTG,Lighting & Small Power,ELE,OSB,3
+FPS,Fire Sprinkler,FPR,CELL,3
+FAD,Fire Alarm & Detection,FPR,CELL,1
+TRP,Thermal Runaway Detection & Suppression,FPR,CELL,3
+FMC,Facility Monitoring & Control (FMCS),INC,CELL,2
+BMS,Building Management System,INC,OSB,3
+GDS,Gas & Vapor Detection,INC,CELL,3
+EQH,Process Equipment Hookup,PEQ,CELL,3

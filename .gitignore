@@ -1,0 +1,16 @@
+# Full generated data is published as a Release asset, not committed
+data/lab/
+data/gigafactory/
+
+# Power BI Project local files
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Never commit binary reports that may contain old data
+*.pbix
+!**/*-synthetic.pbix
+
+# Python
+__pycache__/
+*.pyc
+.venv/

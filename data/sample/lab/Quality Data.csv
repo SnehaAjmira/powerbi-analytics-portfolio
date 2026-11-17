@@ -1,0 +1,501 @@
+Submission,Test_Name,Department,Dosage_Form,Analyst,Client_Name,Facility_Type,Time_In_Sample_Prep,Time_In_Sample_Analysis,Time_In_Data_Processing,Time_In_Data_Review,Time_In_On_Hold,Time_In_Approved,Time_In_Qa_Review,Time_In_Qa_Hold,Time_In_Qa_Approved,Time_To_Complete,Completed,Approved_By
+SUB-260109-0001,Potency (Solution),Chemistry,Injectable,Veronica Simpson,Northstar Northgate Apothecary,503A,7.27,1.57,0,37.1,0,0,0,0,0,45.94,2026-01-13 11:44:06,Julie Rodriguez
+SUB-260109-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kyle Young,Northstar Northgate Apothecary,503A,0,11.7,0,11.15,0,0,0,0,0,22.86,2026-01-13 20:33:07,Julie Rodriguez
+SUB-260130-0001,Potency (Non-Solution),Chemistry,Lyophilized,Jennifer Tran,Oakridge Brightwater Pharmacy,503A,0,4.96,0,8.45,0,0,0,0,0,13.41,2026-02-04 16:46:07,Tammy Mccullough
+SUB-260130-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Ethan Underwood,Oakridge Brightwater Pharmacy,503A,0,5.73,0,0.61,0,0,0,0,0,6.34,2026-02-03 18:56:32,Jonathan Cabrera
+SUB-260120-0001,Potency (Solution),Chemistry,Injectable,Megan Johnson,Oakridge Brightwater Pharmacy,503A,19.95,5.17,0,36.87,0,0,4.75,0,0,66.74,2026-01-25 15:59:54,Julie Rodriguez
+SUB-260120-0001,USP <71> Sterility Test,Microbiology,Injectable,Kristen Garcia,Oakridge Brightwater Pharmacy,503A,0,1.65,0,13.26,0,0,13.29,0,0,28.2,2026-02-10 09:32:10,Debbie Le
+SUB-260120-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jonathan Moon,Oakridge Brightwater Pharmacy,503A,0,1.36,0,1.39,0,0,0,0,0,2.76,2026-01-23 16:53:32,Kimberly Baker
+SUB-260120-0001,Potency (Non-Solution),Chemistry,Injectable,Teresa Bartlett,Oakridge Brightwater Pharmacy,503A,16.85,3.72,0,2.69,0,0,0,0,0,23.26,2026-01-25 12:52:11,Julie Rodriguez
+SUB-260105-0001,USP <71> Sterility Test,Microbiology,Injectable,Elizabeth Brewer,Oakridge Brightwater Pharmacy,503A,3.8,143.98,0,1.44,0,0,0,0,0,149.23,2026-01-21 21:56:00,Tammy Mccullough
+SUB-260105-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kimberly Weber,Oakridge Brightwater Pharmacy,503A,0,2.97,0,0.38,0,0,13.13,0,0,16.48,2026-01-09 18:29:36,Debbie Le
+SUB-260113-0001,USP <71> Sterility Test,Microbiology,Lyophilized,John Hill,Oakridge Brightwater Pharmacy,503A,18.51,3.37,0,2.81,0,0,0,0,0,24.69,2026-02-08 18:04:29,Debbie Le
+SUB-260113-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Kerry Baker,Oakridge Brightwater Pharmacy,503A,0,1.07,0,11.27,0,0,3.88,0,0,16.22,2026-01-18 15:33:13,Tammy Mccullough
+SUB-260113-0001,USP <61> Microbial Enumeration,Microbiology,Lyophilized,Kimberly Weber,Oakridge Brightwater Pharmacy,503A,23.32,31.41,0,6.77,0,0,0,0,0,61.5,2026-01-27 07:30:42,Marilyn Young
+SUB-260113-0001,USP <790> Visible Particulates,Microbiology,Lyophilized,Kyle Young,Oakridge Brightwater Pharmacy,503A,24.24,2.88,0,3.53,0,0,0,0,0,30.65,2026-01-18 18:30:45,Marilyn Young
+SUB-260113-0001,USP <51> Antimicrobial Effectiveness Test,Microbiology,Lyophilized,Adrian Frey,Oakridge Brightwater Pharmacy,503A,36.07,1.62,0,1.88,0,0,0,0,0,39.57,2026-02-26 12:25:17,Jonathan Cabrera
+SUB-260109-0002,Potency (Solution),Chemistry,Injectable,Amanda Martinez,Oakridge Brightwater Pharmacy,503A,59.64,1.32,1.28,7.4,0,0,0,0,0,69.65,2026-01-15 18:36:46,Julie Rodriguez
+SUB-260128-0001,Environmental Monitoring Plate Read,Microbiology,Plate,Laura Lewis,Oakridge Brightwater Pharmacy,503A,0,36.96,0,1.9,0,0,0,0,0,38.86,2026-02-05 21:58:26,Julie Rodriguez
+SUB-260128-0001,Environmental Monitoring Plate Read,Microbiology,Plate,Renee Simmons,Oakridge Brightwater Pharmacy,503A,0,1.68,0,1.36,0,0,11.27,0,0,14.32,2026-02-03 15:14:37,Debbie Le
+SUB-260102-0001,Potency (Solution),Chemistry,Capsule,Jacqueline White,Beacon Fry Compounding Pharmacy,503A,0,3.22,0,8.97,0,0,1.39,0,0,13.58,2026-01-05 15:05:34,Debbie Le
+SUB-260106-0001,Potency (Peptides),Chemistry,Solution,Rachael Torres,Beacon Fry Compounding Pharmacy,503A,14.97,26.34,0,5.04,0,0,0,0,0,46.36,2026-01-12 10:33:56,Tammy Mccullough
+SUB-260126-0001,Environmental Monitoring Plate Read,Microbiology,Plate,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,0,0.16,0,3.66,0,0,0,0,0,3.82,2026-02-01 08:29:11,Debbie Le
+SUB-260126-0001,Environmental Monitoring Plate Read,Microbiology,Plate,Elizabeth Brewer,Beacon Fry Compounding Pharmacy,503A,13.8,1.35,0,1.43,0,0,0,0,0,16.58,2026-02-05 11:17:18,Julie Rodriguez
+SUB-260127-0001,Potency (Solution),Chemistry,Solution,George Richards,Beacon Fry Compounding Pharmacy,503A,0,1,0,17.24,266.09,0,0,0,0,284.33,2026-01-31 17:34:11,Marilyn Young
+SUB-260127-0001,USP <71> Sterility Test,Microbiology,Solution,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,36.61,0.22,0,2.57,0,0,0,0,0,39.39,2026-02-16 10:57:13,Jonathan Cabrera
+SUB-260116-0001,USP <71> Sterility Test,Microbiology,Solution,Elizabeth Brewer,Beacon Fry Compounding Pharmacy,503A,0,3.26,0,17.82,0,0,0,0,0,21.08,2026-01-27 08:05:07,Debbie Le
+SUB-260116-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Christopher Terry,Beacon Fry Compounding Pharmacy,503A,50.32,1.4,0,0.97,0,0,0,0,0,52.69,2026-01-20 11:21:31,Julie Rodriguez
+SUB-260105-0002,Potency (Non-Solution),Chemistry,Capsule,Angela Aguilar,Beacon Fry Compounding Pharmacy,503A,7.32,5.33,0,1.26,0,0,0,0,0,13.92,2026-01-08 08:24:05,Julie Rodriguez
+SUB-260115-0001,Potency (Peptides),Chemistry,Injectable,Chelsea Sloan,Beacon Fry Compounding Pharmacy,503A,19.18,0.42,0,1.99,0,0,0,0,0,21.59,2026-01-19 21:11:47,Debbie Le
+SUB-260121-0001,Potency (Peptides),Chemistry,Injectable,Veronica Simpson,Beacon Fry Compounding Pharmacy,503A,28.6,2.14,0,0.82,23.62,0,1.58,0,0,56.77,2026-01-30 19:54:19,Tammy Mccullough
+SUB-260121-0001,USP <71> Sterility Test,Microbiology,Injectable,Jonathan Moon,Beacon Fry Compounding Pharmacy,503A,18.89,122.71,0,1.1,0,0,0,0,0,142.7,2026-02-13 13:39:00,William Simmons
+SUB-260121-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Shannon Edwards,Beacon Fry Compounding Pharmacy,503A,0,15.24,0,7.42,0,0,0,0,0,22.65,2026-01-28 13:54:26,William Simmons
+SUB-260102-0002,Potency (Solution),Chemistry,Solution,Mia Vazquez,Beacon Fry Compounding Pharmacy,503A,0,2.87,0,22.31,0,0,0,0,0,25.18,2026-01-09 08:07:15,Julie Rodriguez
+SUB-260102-0002,USP <71> Sterility Test,Microbiology,Solution,Jonathan Moon,Beacon Fry Compounding Pharmacy,503A,2.99,3.53,0,3.95,0,0,0,0,0,10.47,2026-01-12 15:39:21,Kimberly Baker
+SUB-260102-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Karen Adams,Beacon Fry Compounding Pharmacy,503A,16.32,2.82,0,32.32,0,0,0,0,9,51.46,2026-01-04 16:47:24,Julie Rodriguez
+SUB-260128-0002,Potency (Solution),Chemistry,Solution,Kimberly Le,Beacon Fry Compounding Pharmacy,503A,0,0.93,0,2.04,0,0,0,0,0,2.97,2026-01-30 15:04:56,Julie Rodriguez
+SUB-260121-0002,Potency (Solution),Chemistry,Solution,Johnny Sandoval,Beacon Fry Compounding Pharmacy,503A,4.88,1.97,0,9.91,0,0,0,0,0,16.76,2026-01-28 20:53:29,Jonathan Cabrera
+SUB-260121-0002,USP <71> Sterility Test,Microbiology,Solution,Kristen Garcia,Beacon Fry Compounding Pharmacy,503A,0,0.34,0,0.31,0,0,0,0,0,0.65,2026-02-13 11:39:00,Debbie Le
+SUB-260121-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Logan Freeman,Beacon Fry Compounding Pharmacy,503A,0,0.22,0,1,0,0,0,0,0,1.21,2026-01-28 09:31:24,Julie Rodriguez
+SUB-260128-0003,Potency (Peptides),Chemistry,Injectable,Evan Steele,Beacon Fry Compounding Pharmacy,503A,26.95,5.92,0,1.05,0,0,0,0,0,33.92,2026-02-03 18:37:54,Kimberly Baker
+SUB-260128-0003,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Beacon Fry Compounding Pharmacy,503A,0,2.59,0,3.02,0,0,3.18,0,0,8.79,2026-02-13 10:45:30,Julie Rodriguez
+SUB-260115-0002,Potency (Peptides),Chemistry,Solution,Rachel Lloyd,Beacon Fry Compounding Pharmacy,503A,0,0.22,0,0.41,0,0,0,0,0,0.63,2026-01-18 20:00:12,James Dean
+SUB-260115-0002,USP <71> Sterility Test,Microbiology,Solution,Scott Smith,Beacon Fry Compounding Pharmacy,503A,0,34.69,0,29.07,0,0,0,0,0,63.76,2026-01-23 21:29:02,Julie Rodriguez
+SUB-260115-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Travis Mora,Beacon Fry Compounding Pharmacy,503A,13.06,0.77,0,0.4,0,0,0,0,0,14.23,2026-01-21 12:56:09,Kimberly Baker
+SUB-260126-0002,Potency (Solution),Chemistry,Injectable,Kimberly Fisher,Beacon Fry Compounding Pharmacy,503A,0,9.08,0,1.11,0,0,0,0,0,10.19,2026-01-28 09:09:38,Debbie Le
+SUB-260126-0002,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Beacon Fry Compounding Pharmacy,503A,83.71,0.41,0,0.28,0,0,0,0,0,84.4,2026-02-13 15:07:37,Debbie Le
+SUB-260126-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,0,3.26,0,9.31,32.41,0,0,0,0,44.98,2026-01-28 20:37:15,Tammy Mccullough
+SUB-260107-0001,USP <71> Sterility Test,Microbiology,Solution,Carolyn Patel,Beacon Fry Compounding Pharmacy,503A,0,0.69,0,3.37,0,0,0,0,0,4.06,2026-01-15 19:27:04,Tammy Mccullough
+SUB-260107-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Ethan Underwood,Beacon Fry Compounding Pharmacy,503A,0,0.3,0,4.8,0,0,0,8.56,0,13.66,2026-01-09 14:51:18,Marilyn Young
+SUB-260102-0003,Potency (Solution),Chemistry,Injectable,Jesse Jones,Beacon Fry Compounding Pharmacy,503A,28.59,13.56,0,2.84,0,0,0,0,0,44.99,2026-01-04 20:03:25,Julie Rodriguez
+SUB-260102-0003,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,0,0.53,0,0.05,11.52,0,3.32,0,0,15.43,2026-01-13 07:56:14,Debbie Le
+SUB-260102-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,8.03,4.09,0,13.54,0,0,0,0,0,25.66,2026-01-05 14:40:50,Julie Rodriguez
+SUB-260102-0003,USP <71> Sterility Test,Microbiology,Injectable,Scott Smith,Beacon Fry Compounding Pharmacy,503A,6.12,0.29,0,2.68,0,0,40.39,0,0,49.49,2026-01-13 14:00:10,Julie Rodriguez
+SUB-260129-0001,Potency (Peptides),Chemistry,Solution,Matthew Arnold,Beacon Fry Compounding Pharmacy,503A,19.58,0.38,0,3.98,5.8,0,8.71,0,0,38.45,2026-02-01 07:00:28,Tammy Mccullough
+SUB-260129-0001,USP <71> Sterility Test,Microbiology,Solution,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,8.4,2.63,0,1.01,26.62,0,0,0,0,38.65,2026-02-18 20:54:29,William Simmons
+SUB-260129-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Shannon Edwards,Beacon Fry Compounding Pharmacy,503A,19.66,0.74,0,5.11,0,0,0,0,0,25.52,2026-02-02 09:18:52,Julie Rodriguez
+SUB-260130-0002,Potency (Peptides),Chemistry,Solution,Amanda Stafford,Beacon Fry Compounding Pharmacy,503A,0,22.6,0,1.7,0,0,0,0,0,24.3,2026-02-06 12:11:08,William Simmons
+SUB-260130-0002,USP <71> Sterility Test,Microbiology,Solution,Roger Colon,Beacon Fry Compounding Pharmacy,503A,15.71,0.52,0,11.74,0,0,0,0,0,27.97,2026-02-20 13:32:27,Tammy Mccullough
+SUB-260130-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Carolyn Patel,Beacon Fry Compounding Pharmacy,503A,0,0.44,0,3.22,0,0,12.17,0,0,15.82,2026-02-02 20:07:02,Kimberly Baker
+SUB-260130-0002,Potency (Peptides),Chemistry,Solution,Amanda Stafford,Beacon Fry Compounding Pharmacy,503A,6.13,1.07,0,15.66,0,0,0,0,0,22.86,2026-02-06 17:55:35,Debbie Le
+SUB-260102-0004,Potency (Peptides),Chemistry,Injectable,Johnny Sandoval,Beacon Fry Compounding Pharmacy,503A,24.09,9.77,0,6.22,0,0,13.88,0,0,53.96,2026-01-05 20:46:35,Julie Rodriguez
+SUB-260102-0004,USP <71> Sterility Test,Microbiology,Injectable,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,0,6.19,0,4.5,0,0,0,0,0,10.69,2026-01-07 09:02:40,William Simmons
+SUB-260102-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Scott Smith,Beacon Fry Compounding Pharmacy,503A,9.24,0.05,0,2.77,0,0,0,0,0,12.06,2026-01-05 16:17:29,Kimberly Baker
+SUB-260112-0001,Potency (Non-Solution),Chemistry,Capsule,Angela Aguilar,Beacon Fry Compounding Pharmacy,503A,16.57,3.68,0,2.81,0,0,0,0,0,23.06,2026-01-17 18:37:54,Julie Rodriguez
+SUB-260112-0001,Rapid Sterility (BacT/Alert),Microbiology,Capsule,Amanda Rivera,Beacon Fry Compounding Pharmacy,503A,0,10.64,0,12.23,0,0,0,0,0,22.87,2026-01-19 17:49:13,Julie Rodriguez
+SUB-260109-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,0,0.13,0,3.49,0,0,0,0,0,3.62,2026-01-12 16:10:34,Debbie Le
+SUB-260109-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Kristina Williams,Beacon Fry Compounding Pharmacy,503A,0,1.37,0,0.79,87.75,0,0,0,0,89.9,2026-01-13 13:11:29,Jonathan Cabrera
+SUB-260109-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Shannon Edwards,Beacon Fry Compounding Pharmacy,503A,0,4.07,0,1.34,0,0,5.56,0,0,10.97,2026-01-14 21:42:46,Julie Rodriguez
+SUB-260108-0001,Potency (Solution),Chemistry,Solution,Veronica Simpson,Beacon Fry Compounding Pharmacy,503A,5.92,0.36,0,19.75,0,0,0,0,0,26.03,2026-01-16 19:29:21,Julie Rodriguez
+SUB-260108-0001,USP <71> Sterility Test,Microbiology,Solution,Jeffrey Dodson,Beacon Fry Compounding Pharmacy,503A,0,10.62,0,1.6,0,0,0,0,0,12.22,2026-01-31 11:54:48,Marilyn Young
+SUB-260108-0001,Environmental Monitoring Plate Read,Microbiology,Solution,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,9.75,3.35,0,1.79,0,0,0,0,0,14.89,2026-01-17 18:42:43,Marilyn Young
+SUB-260121-0003,Potency (Peptides),Chemistry,Solution,Jesse Jones,Beacon Fry Compounding Pharmacy,503A,7.72,10.78,0,1.87,0,0,20.93,0,0,41.3,2026-01-29 20:56:50,Julie Rodriguez
+SUB-260121-0003,USP <71> Sterility Test,Microbiology,Solution,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,11.56,15.22,0,7.49,0,0,0,0,0,34.27,2026-02-12 13:37:27,Julie Rodriguez
+SUB-260121-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Kathleen Calhoun,Beacon Fry Compounding Pharmacy,503A,0,4.76,0,8.8,0,0,0,0,0,13.56,2026-01-27 16:50:05,Julie Rodriguez
+SUB-260130-0003,Potency (Solution),Chemistry,Oil Injectable,Bruce Snow,Beacon Fry Compounding Pharmacy,503A,0,19.84,2.87,1.89,0,0,0,16.47,0,41.07,2026-02-04 08:46:08,Julie Rodriguez
+SUB-260105-0003,Potency (Peptides),Chemistry,Injectable,Mia Vazquez,Beacon Fry Compounding Pharmacy,503A,28.69,0.13,0,4.06,0,0,0,0,0,32.88,2026-01-10 10:07:24,James Dean
+SUB-260105-0003,USP <71> Sterility Test,Microbiology,Injectable,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,0,1.78,0,0.65,0,0,0,0,0,2.43,2026-01-26 15:06:47,Tammy Mccullough
+SUB-260105-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,0,0.12,0,7.41,0,0,0,0,0,7.53,2026-01-11 07:32:46,Debbie Le
+SUB-260127-0002,Potency (Peptides),Chemistry,Injectable,Kevin Cooper,Beacon Fry Compounding Pharmacy,503A,0,2.89,0,8.51,0,0,0,0,0,11.4,2026-01-31 13:57:03,Julie Rodriguez
+SUB-260102-0005,Potency (Solution),Chemistry,Oil Injectable,Jacqueline White,Beacon Fry Compounding Pharmacy,503A,32.41,1.19,0,7.16,0,0,0,0,0,40.77,2026-01-06 14:15:36,Debbie Le
+SUB-260102-0005,USP <788> Particulate Matter,Microbiology,Oil Injectable,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,0,9.49,0,5.97,0,0,3.25,0,0,18.71,2026-01-06 09:11:01,Debbie Le
+SUB-260126-0003,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,6.89,4.86,0,0.22,0,0,0,0,0,11.97,2026-02-05 20:39:53,Kimberly Baker
+SUB-260126-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Michael Miller,Beacon Fry Compounding Pharmacy,503A,13.13,2.32,0,37.09,0,0,0,0,0,52.55,2026-01-28 12:25:44,Julie Rodriguez
+SUB-260130-0004,Potency (Solution),Chemistry,Injectable,Kathleen Schultz,Beacon Fry Compounding Pharmacy,503A,0,2.49,0,19.49,0,0,0,0,0,21.98,2026-02-02 17:54:15,Julie Rodriguez
+SUB-260130-0004,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,4.29,17.98,0,1.04,0,0,0,0,0,23.31,2026-02-10 08:43:00,Debbie Le
+SUB-260130-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Travis Mora,Beacon Fry Compounding Pharmacy,503A,0,2.01,0,2.48,0,0,6.87,0,0,11.36,2026-02-01 16:32:30,Kimberly Baker
+SUB-260108-0002,Potency (Solution),Chemistry,Oil Injectable,Bruce Snow,Beacon Fry Compounding Pharmacy,503A,2.3,0.75,0,6.6,0,0,0,0,0,9.64,2026-01-13 13:28:25,Jonathan Cabrera
+SUB-260129-0002,USP <71> Sterility Test,Microbiology,Solution,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,0,0.67,0,1.87,108.41,0,3.37,0,0,114.32,2026-02-09 18:16:45,Tammy Mccullough
+SUB-260129-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Logan Freeman,Beacon Fry Compounding Pharmacy,503A,0,4.65,0,1.16,0,0,0,0,0,5.8,2026-01-31 08:38:58,Marilyn Young
+SUB-260114-0001,Potency (Solution),Chemistry,Injectable,Ashley Lewis,Beacon Fry Compounding Pharmacy,503A,0,7.11,0,43.03,0,0,0,0,0,50.14,2026-01-18 07:47:44,Debbie Le
+SUB-260114-0001,Potency (Solution),Chemistry,Injectable,Carolyn Johnson,Beacon Fry Compounding Pharmacy,503A,0,37.52,0,6.25,0,0,0,0,0,43.76,2026-01-19 15:25:07,Debbie Le
+SUB-260114-0001,USP <71> Sterility Test,Microbiology,Injectable,Rebecca Daniel,Beacon Fry Compounding Pharmacy,503A,18.88,22.51,0,40.02,0,0,0,0,0,81.41,2026-02-03 10:08:12,Julie Rodriguez
+SUB-260106-0002,USP <71> Sterility Test,Microbiology,Solution,Roger Colon,Beacon Fry Compounding Pharmacy,503A,0,8.54,0,2.14,0,0,14.59,0,0,25.26,2026-01-17 09:51:00,Julie Rodriguez
+SUB-260106-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Kyle Young,Beacon Fry Compounding Pharmacy,503A,16.35,0.72,0,5.71,0,0,0,0,0,22.79,2026-01-09 07:56:30,Debbie Le
+SUB-260106-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Kyle Young,Beacon Fry Compounding Pharmacy,503A,50.33,7.7,0,6.67,0,0,0,0,0,64.7,2026-01-09 07:25:09,Julie Rodriguez
+SUB-260102-0006,Potency (Peptides),Chemistry,Solution,Veronica Simpson,Beacon Fry Compounding Pharmacy,503A,14.92,1.32,0,28.65,0,0,0,0,0,44.89,2026-01-08 17:40:39,Julie Rodriguez
+SUB-260115-0003,Potency (Solution),Chemistry,Solution,Chelsea Sloan,Beacon Fry Compounding Pharmacy,503A,0,4.4,0,1.39,0,0,0,0,0,5.78,2026-01-19 11:13:47,Julie Rodriguez
+SUB-260115-0003,USP <71> Sterility Test,Microbiology,Solution,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,6.5,0.07,0,3.06,0,0,0,0,0,9.63,2026-02-04 14:17:15,Kimberly Baker
+SUB-260115-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Christopher Terry,Beacon Fry Compounding Pharmacy,503A,0,0.4,0,3.02,0,0,0,0,0,3.41,2026-01-18 20:27:47,James Dean
+SUB-260113-0002,Potency (Solution),Chemistry,Injectable,Savannah Pham,Beacon Fry Compounding Pharmacy,503A,22.08,5.9,0,0.39,0,0,0,0,0,28.38,2026-01-16 18:42:23,Julie Rodriguez
+SUB-260113-0002,USP <71> Sterility Test,Microbiology,Injectable,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,14.92,1.15,0,0.98,0,0,0,0,0,17.05,2026-02-03 11:56:37,Tammy Mccullough
+SUB-260113-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,36.79,0.84,0,0.17,0,0,0,0,0,37.79,2026-01-18 20:49:13,James Dean
+SUB-260107-0002,Potency (Peptides),Chemistry,Solution,Chelsea Sloan,Beacon Fry Compounding Pharmacy,503A,0,1.91,0,2.09,0,0,0,0,0,4,2026-01-15 14:36:34,Debbie Le
+SUB-260107-0002,USP <71> Sterility Test,Microbiology,Solution,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,10.84,2.95,0,3.3,0,0,9.44,0,0,26.52,2026-01-29 09:36:12,Jonathan Cabrera
+SUB-260107-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Kathleen Calhoun,Beacon Fry Compounding Pharmacy,503A,17.37,19.04,0,24.54,0,0,0,0,0,60.95,2026-01-13 07:05:57,Julie Rodriguez
+SUB-260119-0001,Rapid Sterility (BacT/Alert),Microbiology,Solution,Michael Miller,Beacon Fry Compounding Pharmacy,503A,0,7.23,0,1.22,0,0,0,0,0,8.45,2026-01-24 15:24:08,Julie Rodriguez
+SUB-260102-0007,Potency (Peptides),Chemistry,Injectable,Tammy Smith,Beacon Fry Compounding Pharmacy,503A,0,1.82,0,2.78,0,0,0,0,0,4.6,2026-01-06 20:10:40,Julie Rodriguez
+SUB-260102-0007,USP <71> Sterility Test,Microbiology,Injectable,Ethan Underwood,Beacon Fry Compounding Pharmacy,503A,0,3.91,0,3.35,0,0,0,0,0,7.26,2026-01-22 19:00:17,Debbie Le
+SUB-260102-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Ethan Underwood,Beacon Fry Compounding Pharmacy,503A,33.37,0.3,0,1.28,0,0,0,0,0,34.95,2026-01-06 12:11:01,Tammy Mccullough
+SUB-260102-0007,Potency (Peptides),Chemistry,Injectable,Carolyn Johnson,Beacon Fry Compounding Pharmacy,503A,0,7.43,0,0.64,9.96,0,0,0,0,18.03,2026-01-08 12:25:34,Debbie Le
+SUB-260108-0003,Potency (Peptides),Chemistry,Injectable,Patrick Lopez,Beacon Fry Compounding Pharmacy,503A,0,1.34,0,6.51,0,0,0,0,0,7.85,2026-01-17 08:05:31,William Simmons
+SUB-260108-0003,USP <71> Sterility Test,Microbiology,Injectable,Kimberly Weber,Beacon Fry Compounding Pharmacy,503A,0,5.79,0,4.42,0,0,0,0,0,10.21,2026-01-24 16:41:20,Debbie Le
+SUB-260108-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Renee Simmons,Beacon Fry Compounding Pharmacy,503A,0,1.6,0,3.32,0,0,0,0,0,4.92,2026-01-17 17:29:34,Tammy Mccullough
+SUB-260108-0004,USP <71> Sterility Test,Microbiology,Solution,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,0,6.86,0,0.98,0,0,0,0,0,7.84,2026-01-29 09:03:26,Debbie Le
+SUB-260108-0004,Potency (Solution),Chemistry,Solution,Thomas Jefferson,Beacon Fry Compounding Pharmacy,503A,0,0.61,0,3.68,0,0,0,0,0,4.29,2026-01-15 16:13:53,Kimberly Baker
+SUB-260108-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,0,2.54,0,12.88,60.73,0,0,9.42,0,85.58,2026-01-13 21:14:22,Debbie Le
+SUB-260112-0002,Potency (Solution),Chemistry,Injectable,Carolyn Johnson,Beacon Fry Compounding Pharmacy,503A,7.29,2.21,0,8.85,0,0,0,0,0,18.35,2026-01-17 09:01:20,Julie Rodriguez
+SUB-260112-0002,USP <71> Sterility Test,Microbiology,Injectable,Ralph Shepherd,Beacon Fry Compounding Pharmacy,503A,0,23.41,0,4.73,0,0,8.67,0,0,36.82,2026-02-02 07:05:47,Tammy Mccullough
+SUB-260112-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rebecca Daniel,Beacon Fry Compounding Pharmacy,503A,0,2.57,0,2.3,0,0,0,0,0,4.87,2026-01-17 17:11:20,Debbie Le
+SUB-260112-0002,USP <905> Uniformity of Dosage Units,Chemistry,Injectable,Leslie Hudson,Beacon Fry Compounding Pharmacy,503A,0,0.82,0,10.86,0,0,17.21,0,0,28.9,2026-01-20 10:23:28,Jonathan Cabrera
+SUB-260127-0003,Potency (Peptides),Chemistry,Injectable,Megan Johnson,Beacon Fry Compounding Pharmacy,503A,14.76,5.96,0,0.89,0,0,9.32,0,0,30.94,2026-02-08 16:20:53,Debbie Le
+SUB-260127-0003,USP <71> Sterility Test,Microbiology,Injectable,Jeffrey Dodson,Beacon Fry Compounding Pharmacy,503A,0,1.54,0,0.58,0,0,0,0,0,2.11,2026-02-11 15:48:56,Julie Rodriguez
+SUB-260127-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Travis Mora,Beacon Fry Compounding Pharmacy,503A,9.07,52.26,0,17.09,9.63,0,0,0,0,88.05,2026-02-03 07:27:51,Tammy Mccullough
+SUB-260127-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rebecca Daniel,Beacon Fry Compounding Pharmacy,503A,0,2.05,0,1.99,0,0,0,0,0,4.04,2026-01-31 14:58:20,Julie Rodriguez
+SUB-260127-0003,Environmental Monitoring Plate Read,Microbiology,Injectable,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,0,0.84,0,15.13,0,0,0,0,0,15.98,2026-02-05 16:02:35,William Simmons
+SUB-260122-0001,Potency (Solution),Chemistry,Injectable,Rachael Torres,Beacon Fry Compounding Pharmacy,503A,0,1.92,0,14.33,0,0,0,0,0,16.25,2026-01-25 17:03:54,Julie Rodriguez
+SUB-260122-0001,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,7.42,17,0,1.29,0,0,0,0,0,25.71,2026-02-03 19:00:43,Julie Rodriguez
+SUB-260122-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kristina Williams,Beacon Fry Compounding Pharmacy,503A,8.71,2.44,0,38.18,0,0,0,0,0,49.33,2026-01-26 10:04:48,Debbie Le
+SUB-260122-0001,Potency (Peptides),Chemistry,Injectable,Matthew Arnold,Beacon Fry Compounding Pharmacy,503A,0,3.24,0,30.79,0,0,0,0,0,34.04,2026-01-25 09:17:30,Tammy Mccullough
+SUB-260127-0004,USP <71> Sterility Test,Microbiology,Solution,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,0,1.18,0,6.37,0,0,8.25,0,0,15.8,2026-02-13 21:46:21,Marilyn Young
+SUB-260127-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Michael Miller,Beacon Fry Compounding Pharmacy,503A,0,0.17,0,1.09,0,0,0,0,0,1.27,2026-02-03 14:05:20,Kimberly Baker
+SUB-260101-0002,Potency (Solution),Chemistry,Injectable,John Melton,Beacon Fry Compounding Pharmacy,503A,39.56,8.88,0,2.73,0,0,32.21,0,0,83.38,2026-01-05 10:47:51,Tammy Mccullough
+SUB-260101-0002,USP <71> Sterility Test,Microbiology,Injectable,Cheryl Berry,Beacon Fry Compounding Pharmacy,503A,0,1.94,0,1.69,0,0,0,0,0,3.63,2026-01-13 18:03:59,Marilyn Young
+SUB-260101-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Scott Smith,Beacon Fry Compounding Pharmacy,503A,13.63,0.48,0,1.77,0,0,0,0,0,15.88,2026-01-04 19:17:30,Julie Rodriguez
+SUB-260101-0002,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Beacon Fry Compounding Pharmacy,503A,0,1.77,0,3.83,0,0,0,0,0,5.6,2026-01-13 15:28:29,Debbie Le
+SUB-260130-0005,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Beacon Fry Compounding Pharmacy,503A,13.6,2.99,0,14.29,0,0,0,0,0,30.88,2026-02-20 14:15:30,Debbie Le
+SUB-260102-0008,Potency (Solution),Chemistry,Injectable,George Richards,Beacon Fry Compounding Pharmacy,503A,29.06,6.02,0,14.96,14.27,0,0,0,0,64.32,2026-01-09 16:01:30,Kimberly Baker
+SUB-260102-0008,Potency (Solution),Chemistry,Injectable,David Thompson,Beacon Fry Compounding Pharmacy,503A,0,0.47,0,3.95,0,0,0,0,0,4.42,2026-01-07 16:20:05,Tammy Mccullough
+SUB-260113-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Shannon Edwards,Beacon Fry Compounding Pharmacy,503A,8.34,1.8,0,6.29,0,0,0,4.74,0,21.17,2026-01-18 08:53:31,Debbie Le
+SUB-260113-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,0,1.19,0,1.66,0,0,0,0,0,2.85,2026-01-18 14:23:05,Kimberly Baker
+SUB-260113-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Travis Mora,Beacon Fry Compounding Pharmacy,503A,16.9,0.51,0,4.6,0,0,0,0,0,22,2026-01-19 18:58:21,James Dean
+SUB-260113-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Laura Lewis,Beacon Fry Compounding Pharmacy,503A,17.68,2.44,0,2.93,0,0,9.36,0,0,32.41,2026-01-18 11:16:42,Marilyn Young
+SUB-260113-0003,Environmental Monitoring Plate Read,Microbiology,Plate,Jonathan Moon,Beacon Fry Compounding Pharmacy,503A,0,3.06,3.57,0.48,0,0,0,0,0,7.11,2026-01-18 20:25:06,Julie Rodriguez
+SUB-260107-0003,Potency (Peptides),Chemistry,Injectable,Jacqueline White,Beacon Fry Compounding Pharmacy,503A,0,1.88,0,1.99,0,0,0,0,0,3.87,2026-01-11 16:55:31,Tammy Mccullough
+SUB-260101-0003,Potency (Non-Solution),Chemistry,Capsule,Jim Lewis,Beacon Fry Compounding Pharmacy,503A,0,4.71,0,4.05,0,0,0,0,0,8.76,2026-01-04 19:47:10,James Dean
+SUB-260106-0003,Potency (Non-Solution),Chemistry,Capsule,Anna Thomas,Beacon Fry Compounding Pharmacy,503A,14.76,1.08,0,0.81,0,0,0,0,0,16.65,2026-01-11 15:58:06,Julie Rodriguez
+SUB-260106-0003,USP <71> Sterility Test,Microbiology,Capsule,Kathleen Calhoun,Beacon Fry Compounding Pharmacy,503A,0,1.79,0,0.97,0,0,0,0,0,2.76,2026-01-18 08:38:26,Debbie Le
+SUB-260115-0004,Potency (Solution),Chemistry,Liquid,David Elliott,Liberty Northstar Outsourcing Facility,503B,0,1.13,0,30.47,0,0,13,0,0,44.6,2026-01-22 07:36:48,Julie Rodriguez
+SUB-260119-0003,Potency (Solution),Chemistry,Injectable,Jim Campbell,Liberty Northstar Outsourcing Facility,503B,6.42,1.69,0,63.08,78.68,0,5.79,0,0,155.66,2026-01-29 20:22:12,Tammy Mccullough
+SUB-260127-0005,Potency (Solution),Chemistry,Injectable,Laurie Collins,Liberty Northstar Outsourcing Facility,503B,0,0.43,0,0.83,0,0,2.27,0,0,3.53,2026-02-02 09:51:16,William Simmons
+SUB-260127-0005,Potency (Solution),Chemistry,Injectable,Kimberly Fisher,Liberty Northstar Outsourcing Facility,503B,0,11.34,0,5.14,0,0,0,0,0,16.48,2026-02-02 10:40:55,James Dean
+SUB-260130-0006,Potency (Solution),Chemistry,Injectable,Hannah Freeman,Liberty Northstar Outsourcing Facility,503B,0,2.86,0,1.98,0,0,6.41,0,0,11.25,2026-02-01 12:37:42,Debbie Le
+SUB-260115-0005,Potency (Solution),Chemistry,Injectable,Kathleen Schultz,Liberty Northstar Outsourcing Facility,503B,0,5.53,0,5.3,0,0,0,0,0,10.83,2026-01-18 20:37:15,Debbie Le
+SUB-260115-0005,Rapid Sterility (BacT/Alert),Microbiology,Injectable,Karen Adams,Liberty Northstar Outsourcing Facility,503B,11.23,1.93,0,4.51,285.79,0,0,0,0,303.46,2026-01-30 18:17:06,Debbie Le
+SUB-260119-0004,Container Closure Integrity Test,Microbiology,Component,Ralph Shepherd,Liberty Northstar Outsourcing Facility,503B,0,1.71,0,2.25,0,0,0,0,0,3.96,2026-01-28 14:49:44,Debbie Le
+SUB-260119-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Component,Elizabeth Brewer,Liberty Northstar Outsourcing Facility,503B,70.64,2.19,0,3.95,0,0,0,0,0,76.78,2026-01-23 11:41:09,Debbie Le
+SUB-260113-0004,USP <71> Sterility Test,Microbiology,Injectable,Jonathan Moon,Liberty Northstar Outsourcing Facility,503B,0,3.6,0,11.83,0,0,0,0,0,15.43,2026-02-03 11:40:40,Julie Rodriguez
+SUB-260119-0005,Potency (Non-Solution),Chemistry,Capsule,David Elliott,Liberty Northstar Outsourcing Facility,503B,5.04,20.96,0,0.69,0,0,0,0,0,26.69,2026-01-28 13:09:12,Julie Rodriguez
+SUB-260119-0005,USP <71> Sterility Test,Microbiology,Capsule,Kristina Williams,Liberty Northstar Outsourcing Facility,503B,0,0.82,0,1.08,0,0,8.95,0,0,10.85,2026-02-12 21:16:46,Tammy Mccullough
+SUB-260128-0004,Potency (Non-Solution),Chemistry,Capsule,Patrick Daniel,Liberty Northstar Outsourcing Facility,503B,16.17,0.53,0,6.34,0,0,0,0,0,23.04,2026-02-06 10:22:42,Jonathan Cabrera
+SUB-260123-0001,Potency (Solution),Chemistry,Injectable,Anna Thomas,Liberty Northstar Outsourcing Facility,503B,19.76,2.3,0,11.68,0,0,0,0,0,33.73,2026-01-28 12:04:56,Debbie Le
+SUB-260123-0001,USP <71> Sterility Test,Microbiology,Injectable,Christopher Terry,Liberty Northstar Outsourcing Facility,503B,58.9,0.2,0,3.34,0,0,0,0,0,62.44,2026-02-12 09:32:41,Debbie Le
+SUB-260123-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Carolyn Patel,Liberty Northstar Outsourcing Facility,503B,2.84,3.18,0,1.6,0,0,0,0,0,7.62,2026-01-27 07:55:23,Tammy Mccullough
+SUB-260123-0001,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kimberly Weber,Liberty Northstar Outsourcing Facility,503B,100.55,0.32,0,1.55,0,0,0,0,0,102.41,2026-01-27 17:05:00,Debbie Le
+SUB-260129-0003,Potency (Solution),Chemistry,Injectable,Rachel Lloyd,Liberty Northstar Outsourcing Facility,503B,0,17.71,0,5.37,54.48,0,0,0,0,77.55,2026-02-03 10:03:46,Debbie Le
+SUB-260129-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jonathan Moon,Liberty Northstar Outsourcing Facility,503B,0,4.68,0,62.6,0,0,4.85,0,0,72.12,2026-02-03 13:37:51,Julie Rodriguez
+SUB-260102-0009,Potency (Non-Solution),Chemistry,Capsule,Traci Bell,Liberty Northstar Outsourcing Facility,503B,14.39,5.24,0,7.52,0,0,0,0,0,27.15,2026-01-06 08:34:03,Tammy Mccullough
+SUB-260119-0006,Potency (Non-Solution),Chemistry,Capsule,Carolyn Johnson,Liberty Northstar Outsourcing Facility,503B,54.09,0.53,0,4.2,9.1,0,0,0,0,67.92,2026-01-27 17:51:41,Julie Rodriguez
+SUB-260105-0004,Potency (Solution),Chemistry,Injectable,George Richards,Liberty Northstar Outsourcing Facility,503B,0,6.37,0,15.37,0,0,0,0,0,21.75,2026-01-07 11:50:31,Debbie Le
+SUB-260105-0004,USP <71> Sterility Test,Microbiology,Injectable,Roger Colon,Liberty Northstar Outsourcing Facility,503B,0,0.85,0,41.49,0,0,0,0,0,42.34,2026-01-21 09:59:37,Kimberly Baker
+SUB-260105-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kimberly Weber,Liberty Northstar Outsourcing Facility,503B,21.96,3.56,0,1.79,0,0,0,0,0,27.31,2026-01-07 15:28:41,Julie Rodriguez
+SUB-260105-0004,Osmolality,Chemistry,Injectable,Veronica Simpson,Liberty Northstar Outsourcing Facility,503B,0,0.54,0,9.64,0,0,0,0,0,10.18,2026-01-09 21:05:52,Julie Rodriguez
+SUB-260106-0004,Potency (Solution),Chemistry,Component,Phillip Burke,Liberty Northstar Outsourcing Facility,503B,0,2.6,0,3.67,0,0,0,0,0,6.28,2026-01-10 12:04:15,Jonathan Cabrera
+SUB-260106-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Component,Kyle Young,Liberty Northstar Outsourcing Facility,503B,48.54,0.14,0,8.87,0,0,0,0,0,57.54,2026-01-14 08:49:25,Jonathan Cabrera
+SUB-260102-0010,Potency (Non-Solution),Chemistry,Capsule,Jessica Ruiz,Liberty Northstar Outsourcing Facility,503B,0,0.18,0,20.11,0,0,0,0,0,20.29,2026-01-06 08:24:13,Julie Rodriguez
+SUB-260109-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,45.64,0.29,0,5.8,0,0,6.38,0,0,58.11,2026-01-14 19:56:53,William Simmons
+SUB-260109-0004,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,56.56,3.49,0,2.17,0,0,0,0,0,62.22,2026-01-27 18:18:30,Debbie Le
+SUB-260127-0006,Potency (Solution),Chemistry,Injectable,Marco Myers,Mesa Harbor Pharma Services,503B,0,8.52,0,11.42,39.9,0,0,0,0,59.83,2026-02-01 19:04:34,Tammy Mccullough
+SUB-260127-0006,USP <71> Sterility Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,154.17,6.51,0,3.89,0,0,0,0,0,164.57,2026-02-18 21:04:02,Tammy Mccullough
+SUB-260113-0005,USP <71> Sterility Test,Microbiology,Liquid,Kimberly Weber,Mesa Harbor Pharma Services,503B,24.83,0.51,0,14.53,0,0,0,0,0,39.87,2026-02-05 14:39:12,Debbie Le
+SUB-260113-0005,Potency (Solution),Chemistry,Liquid,Patrick Daniel,Mesa Harbor Pharma Services,503B,2.56,0.31,55.24,2.65,0,0,0,0,0,60.75,2026-01-17 14:07:36,Julie Rodriguez
+SUB-260109-0005,Potency (Peptides),Chemistry,Injectable,Johnny Sandoval,Mesa Harbor Pharma Services,503B,0,3.71,1.99,0.82,0,0,0,0,0,6.52,2026-01-20 08:48:05,Julie Rodriguez
+SUB-260109-0005,USP <71> Sterility Test,Microbiology,Injectable,Kristina Williams,Mesa Harbor Pharma Services,503B,0,1.44,0,7.78,0,0,0,0,0,9.21,2026-02-02 07:37:45,Debbie Le
+SUB-260109-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Adrian Frey,Mesa Harbor Pharma Services,503B,8.79,9.05,0,13.81,0,0,0,0,0,31.65,2026-01-14 16:12:18,Debbie Le
+SUB-260114-0002,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,0,6.21,0,1.5,0,0,0,0,0,7.71,2026-02-02 21:39:41,Julie Rodriguez
+SUB-260114-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,31.4,1.1,3.19,9.46,18.7,0,0,0,0,63.86,2026-01-19 09:53:20,Tammy Mccullough
+SUB-260101-0004,USP <71> Sterility Test,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,15.19,0,21.62,0,0,0,0,0,36.81,2026-01-22 12:16:19,Tammy Mccullough
+SUB-260101-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Ethan Underwood,Mesa Harbor Pharma Services,503B,2.82,3.73,0,4.25,0,0,0,0,0,10.8,2026-01-06 17:42:59,Tammy Mccullough
+SUB-260123-0002,Potency (Peptides),Chemistry,Injectable,Charles Fuentes,Mesa Harbor Pharma Services,503B,13.71,3.14,0,3.09,0,0,0,0,0,19.93,2026-01-29 19:56:47,Debbie Le
+SUB-260123-0002,USP <71> Sterility Test,Microbiology,Injectable,Ralph Shepherd,Mesa Harbor Pharma Services,503B,7.06,48.77,0,1.62,0,0,0,0,3,57.45,2026-02-05 12:58:25,Julie Rodriguez
+SUB-260113-0006,Potency (Peptides),Chemistry,Injectable,David Thompson,Mesa Harbor Pharma Services,503B,25.52,2.07,0,1.7,0,0,14.97,0,0,44.26,2026-01-16 13:55:20,Julie Rodriguez
+SUB-260113-0006,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,3,0.7,0,1.04,0,0,0,0,0,4.74,2026-02-03 10:05:06,Debbie Le
+SUB-260113-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jonathan Moon,Mesa Harbor Pharma Services,503B,0,49.47,0,1.92,0,0,0,0,0,51.4,2026-01-17 10:34:15,Debbie Le
+SUB-260129-0004,Potency (Non-Solution),Chemistry,Cream (gm),Christina Choi,Mesa Harbor Pharma Services,503B,55.06,21.39,0,3.09,0,0,0,0,0,79.54,2026-02-02 19:58:58,Julie Rodriguez
+SUB-260114-0003,Potency (Peptides),Chemistry,Lyophilized,Bruce Snow,Mesa Harbor Pharma Services,503B,44.84,3.43,0,0.16,0,0,3.9,0,0,52.33,2026-01-20 21:16:16,Jonathan Cabrera
+SUB-260114-0003,USP <71> Sterility Test,Microbiology,Lyophilized,Morgan Hill,Mesa Harbor Pharma Services,503B,12.13,0.87,0,0.21,0,0,0,0,0,13.2,2026-02-03 19:42:22,Julie Rodriguez
+SUB-260114-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Kimberly Weber,Mesa Harbor Pharma Services,503B,16.99,2.48,0,2.32,0,0,0,0,0,21.79,2026-01-18 09:33:15,William Simmons
+SUB-260128-0005,Potency (Solution),Chemistry,Injectable,Charles Fuentes,Mesa Harbor Pharma Services,503B,0,5.99,0,1.82,0,0,0,0,0,7.81,2026-02-02 12:06:50,Tammy Mccullough
+SUB-260128-0005,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,0,5.42,0,17.12,0,0,0,0,0,22.54,2026-02-12 21:17:29,Kimberly Baker
+SUB-260128-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kyle Young,Mesa Harbor Pharma Services,503B,12.27,0.87,0,0.18,0,0,0,0,0,13.32,2026-02-02 10:10:07,Kimberly Baker
+SUB-260128-0005,USP <71> Sterility Test,Microbiology,Injectable,Roger Colon,Mesa Harbor Pharma Services,503B,0,1.03,8.47,6.66,0,0,26.66,0,0,42.81,2026-02-11 07:07:40,Julie Rodriguez
+SUB-260127-0007,Water Activity,Chemistry,Liquid,Daniel Smith,Mesa Harbor Pharma Services,503B,20.93,13.76,0,5.86,0,0,5.06,0,0,45.62,2026-01-29 12:26:57,Tammy Mccullough
+SUB-260113-0007,Potency (Peptides),Chemistry,Injectable,Ashley Lewis,Mesa Harbor Pharma Services,503B,25.51,1.01,0,4.19,0,0,7.55,0,0,38.25,2026-01-20 16:58:56,Debbie Le
+SUB-260113-0007,USP <71> Sterility Test,Microbiology,Injectable,Shannon Edwards,Mesa Harbor Pharma Services,503B,0,5.28,0,4.27,0,0,0,0,0,9.54,2026-02-03 21:42:48,Kimberly Baker
+SUB-260113-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,29.31,0.86,6.42,3.07,14.55,0,0,0,0,54.21,2026-01-18 18:12:27,William Simmons
+SUB-260126-0004,USP <71> Sterility Test,Microbiology,Injectable,Travis Mora,Mesa Harbor Pharma Services,503B,72.62,3.04,0,6.12,0,0,0,0,0,81.77,2026-02-15 21:10:18,Julie Rodriguez
+SUB-260126-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Amanda Rivera,Mesa Harbor Pharma Services,503B,22.77,0.75,0,0.55,0,0,0,0,0,24.07,2026-01-30 17:24:44,Kimberly Baker
+SUB-260126-0005,Potency (Peptides),Chemistry,Injectable,Evan Steele,Mesa Harbor Pharma Services,503B,0,5.21,0,1.31,0,0,0,0,0,6.53,2026-02-05 15:22:23,Marilyn Young
+SUB-260126-0005,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,160.26,0.99,0,1.06,0,0,0,0,0,162.3,2026-02-15 16:28:43,William Simmons
+SUB-260126-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,13.07,8.39,0,4.29,0,0,0,0,0,25.75,2026-01-30 16:30:37,Tammy Mccullough
+SUB-260119-0007,Potency (Solution),Chemistry,Injectable,Angela Aguilar,Mesa Harbor Pharma Services,503B,0,0.74,0,0.72,0,0,0,0,0,1.46,2026-01-20 15:43:08,Jonathan Cabrera
+SUB-260119-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Amanda Rivera,Mesa Harbor Pharma Services,503B,0,0.88,0,1.05,0,0,0,0,0,1.93,2026-01-20 07:48:54,Debbie Le
+SUB-260128-0006,Potency (Peptides),Chemistry,Injectable,Amanda Stafford,Mesa Harbor Pharma Services,503B,0,4.56,0,1.38,30.73,0,0,0,0,36.67,2026-02-01 16:22:26,Tammy Mccullough
+SUB-260128-0006,USP <71> Sterility Test,Microbiology,Injectable,Shannon Edwards,Mesa Harbor Pharma Services,503B,0,3.75,0.87,33.03,0,0,0,0,0,37.65,2026-02-09 14:42:06,Debbie Le
+SUB-260128-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,51.87,2.41,0,11.36,0,0,0,0,0,65.64,2026-02-01 15:47:24,Debbie Le
+SUB-260112-0003,USP <71> Sterility Test,Microbiology,Cream (gm),Kerry Baker,Mesa Harbor Pharma Services,503B,29.06,1.2,0,1.43,0,0,0,0,0,31.69,2026-02-01 21:26:18,Kimberly Baker
+SUB-260102-0011,Potency (Non-Solution),Chemistry,Cream (gm),Teresa Bartlett,Mesa Harbor Pharma Services,503B,0,21.8,0,29.63,0,0,0,0,0,51.43,2026-01-07 07:56:58,James Dean
+SUB-260102-0012,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rebecca Daniel,Mesa Harbor Pharma Services,503B,4.2,0.04,0,4.43,0,0,0,0,0,8.67,2026-01-08 08:26:20,Debbie Le
+SUB-260102-0012,Potency (Solution),Chemistry,Injectable,Patrick Daniel,Mesa Harbor Pharma Services,503B,0,0.82,0,7.62,0,0,2.2,0,0,10.64,2026-01-08 16:23:13,Marilyn Young
+SUB-260102-0012,USP <71> Sterility Test,Microbiology,Injectable,Adrian Frey,Mesa Harbor Pharma Services,503B,12.23,1.76,0,33.39,0,0,4.97,0,0,52.35,2026-01-21 17:41:56,James Dean
+SUB-260107-0004,Potency (Peptides),Chemistry,Injectable,Jacqueline White,Mesa Harbor Pharma Services,503B,0,3.43,0,3.12,0,0,0,0,0,6.55,2026-01-17 19:28:04,Tammy Mccullough
+SUB-260116-0002,USP <71> Sterility Test,Microbiology,Injectable,Ethan Underwood,Mesa Harbor Pharma Services,503B,0,10.91,0,1.77,0,0,0,0,0,12.69,2026-02-03 12:56:25,William Simmons
+SUB-260106-0005,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Mesa Harbor Pharma Services,503B,25.21,50.17,0,5.09,0,0,0,0,0,80.46,2026-01-14 14:59:29,William Simmons
+SUB-260106-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Anthony Williams,Mesa Harbor Pharma Services,503B,17.43,33.85,0,1.5,0,0,0,0,0,52.78,2026-01-07 21:34:39,Julie Rodriguez
+SUB-260106-0005,Potency (Solution),Chemistry,Injectable,Evan Steele,Mesa Harbor Pharma Services,503B,10.46,2.24,0,0.93,0,0,0,0,0,13.63,2026-01-08 10:35:10,Julie Rodriguez
+SUB-260106-0005,Potency (Non-Solution),Chemistry,Injectable,Frederick Murphy,Mesa Harbor Pharma Services,503B,0,0.03,0,3.09,0,0,0,0,0,3.13,2026-01-09 17:20:59,Julie Rodriguez
+SUB-260128-0007,Potency (Non-Solution),Chemistry,Cream (gm),Evan Steele,Mesa Harbor Pharma Services,503B,0,9.65,0,0.76,0,0,24.77,0,0,35.19,2026-02-01 15:31:07,Marilyn Young
+SUB-260122-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Cream (gm),Travis Mora,Mesa Harbor Pharma Services,503B,0,2.33,0,1.4,0,0,0,0,0,3.73,2026-01-27 10:29:09,Debbie Le
+SUB-260123-0003,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,26.58,1.86,0,3.93,0,0,0,0,0,32.37,2026-02-05 12:07:17,Tammy Mccullough
+SUB-260123-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Carolyn Patel,Mesa Harbor Pharma Services,503B,0,2.01,0,5.93,0,0,0,0,0,7.94,2026-01-28 07:04:44,Debbie Le
+SUB-260123-0003,Assay & Impurities,Chemistry,Injectable,Amanda Martinez,Mesa Harbor Pharma Services,503B,0,0.45,0,3.19,0,0,0,0,0,3.64,2026-01-29 14:12:25,James Dean
+SUB-260129-0006,Potency (Solution),Chemistry,Injectable,Patrick Lopez,Mesa Harbor Pharma Services,503B,39.62,1.91,0,2.07,627.3,0,0,0,0,670.9,2026-02-01 21:58:24,Marilyn Young
+SUB-260102-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kristina Williams,Mesa Harbor Pharma Services,503B,0,1.39,0,12.42,0,0,0,0,0,13.81,2026-01-03 15:10:48,Julie Rodriguez
+SUB-260116-0003,Potency (Peptides),Chemistry,Injectable,Evan Steele,Mesa Harbor Pharma Services,503B,0,24.51,0,16.46,0,0,0,0,0,40.97,2026-01-24 11:54:28,Kimberly Baker
+SUB-260116-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Shannon Edwards,Mesa Harbor Pharma Services,503B,27.03,2.07,0,1.19,0,0,0,0,0,30.28,2026-01-22 17:46:21,Debbie Le
+SUB-260115-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,0,49.66,0,3.53,0,0,28.52,85.7,0,167.42,2026-01-20 10:31:54,Debbie Le
+SUB-260121-0004,Potency (Peptides),Chemistry,Injectable,James Decker,Mesa Harbor Pharma Services,503B,12.81,1.41,0,0.84,0,0,0,0,0,15.06,2026-01-25 11:31:13,Debbie Le
+SUB-260116-0004,Environmental Monitoring Plate Read,Microbiology,Liquid,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,0.98,0,19.23,0,0,0,0,0,20.21,2026-01-20 10:29:40,Julie Rodriguez
+SUB-260126-0006,Potency (Peptides),Chemistry,Injectable,Harry Davis,Mesa Harbor Pharma Services,503B,0,0.3,0,10.06,0,0,0,0,0,10.35,2026-02-01 14:03:14,Tammy Mccullough
+SUB-260126-0006,USP <71> Sterility Test,Microbiology,Injectable,Roger Colon,Mesa Harbor Pharma Services,503B,4.81,3.57,0,1.63,0,0,0,0,0,10.01,2026-02-16 19:03:33,Debbie Le
+SUB-260126-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Roger Colon,Mesa Harbor Pharma Services,503B,0,1.79,0,4.72,0,0,3.66,0,0,10.17,2026-01-29 13:03:56,Jonathan Cabrera
+SUB-260120-0002,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,1.47,0,7.28,52.58,0,0,0,0,61.33,2026-01-22 16:35:05,Debbie Le
+SUB-260107-0005,Potency (Solution),Chemistry,Injectable,Kathleen Schultz,Mesa Harbor Pharma Services,503B,0,7.17,0,0.91,0,0,0,0,0,8.09,2026-01-11 09:37:33,Tammy Mccullough
+SUB-260107-0005,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,10.54,0,8.04,0,0,0,0,0,18.58,2026-01-24 16:37:26,Julie Rodriguez
+SUB-260107-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,3.04,0,1.45,0,0,0,0,0,4.49,2026-01-12 15:27:29,William Simmons
+SUB-260121-0005,Potency (Peptides),Chemistry,Solution,Jim Lewis,Mesa Harbor Pharma Services,503B,0,1.78,0,8.35,0,0,6.67,0,0,16.8,2026-01-25 13:29:01,Jonathan Cabrera
+SUB-260121-0005,USP <71> Sterility Test,Microbiology,Solution,Jonathan Moon,Mesa Harbor Pharma Services,503B,10.29,6.78,0,1.97,0,0,0,0,0,19.05,2026-02-10 17:13:03,Kimberly Baker
+SUB-260121-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Travis Mora,Mesa Harbor Pharma Services,503B,25.13,33.72,0,7.08,0,0,2.45,0,0,68.39,2026-01-25 10:56:47,James Dean
+SUB-260121-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Christopher Terry,Mesa Harbor Pharma Services,503B,0,2.91,0,1.36,0,0,4.07,0,0,8.34,2026-01-25 20:21:20,William Simmons
+SUB-260115-0008,Potency (Peptides),Chemistry,Solution,Tammy Smith,Mesa Harbor Pharma Services,503B,0,1.79,0,4.72,0,0,0,3.81,0,10.33,2026-01-23 15:07:10,Julie Rodriguez
+SUB-260115-0008,USP <71> Sterility Test,Microbiology,Solution,Christopher Terry,Mesa Harbor Pharma Services,503B,0,0.39,0,7.63,0,0,5.33,0,0,13.35,2026-02-03 12:29:40,Kimberly Baker
+SUB-260115-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Jonathan Moon,Mesa Harbor Pharma Services,503B,22.04,4.78,0,0.24,0,0,0,0,0,27.06,2026-01-21 21:33:17,Kimberly Baker
+SUB-260105-0005,USP <71> Sterility Test,Microbiology,Injectable,Adrian Frey,Mesa Harbor Pharma Services,503B,0,0.35,0,1.34,325.34,0,0,0,0,327.03,2026-01-26 18:41:16,Tammy Mccullough
+SUB-260105-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kathleen Calhoun,Mesa Harbor Pharma Services,503B,13.28,0.25,0,13.36,0,0,0,0,0,26.89,2026-01-11 16:44:01,Tammy Mccullough
+SUB-260108-0005,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,10.22,1.07,0,7.6,0,0,0,0,0,18.9,2026-01-29 08:05:35,William Simmons
+SUB-260108-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,1.67,0,1.18,0,0,4.23,0,0,7.08,2026-01-13 16:18:29,Debbie Le
+SUB-260108-0005,Glove Fingertip Plate Read,Microbiology,Injectable,Scott Smith,Mesa Harbor Pharma Services,503B,17.23,9.01,0,1.12,0,0,10.51,0,0,37.87,2026-01-16 13:03:21,Debbie Le
+SUB-260102-0014,Potency (Peptides),Chemistry,Injectable,Jim Lewis,Mesa Harbor Pharma Services,503B,55.27,1.38,0,2.33,0,0,0,0,0,58.97,2026-01-06 14:13:09,Debbie Le
+SUB-260102-0014,USP <71> Sterility Test,Microbiology,Injectable,Kristina Williams,Mesa Harbor Pharma Services,503B,0,0.81,0,3.06,0,0,1.5,0,0,5.38,2026-01-18 18:04:56,Tammy Mccullough
+SUB-260102-0014,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kristina Williams,Mesa Harbor Pharma Services,503B,0,2.33,0,1.45,0,0,0,0,0,3.78,2026-01-04 10:24:43,Kimberly Baker
+SUB-260102-0014,Potency (Solution),Chemistry,Injectable,Frederick Murphy,Mesa Harbor Pharma Services,503B,15.08,0.26,0,3.41,0,0,0,0,0,18.75,2026-01-04 07:08:45,Jonathan Cabrera
+SUB-260102-0015,Potency (Peptides),Chemistry,Injectable,Christina Choi,Mesa Harbor Pharma Services,503B,32.13,3.31,0,5.46,0,0,0,0,0,40.9,2026-01-10 20:59:40,Tammy Mccullough
+SUB-260102-0015,Environmental Monitoring Plate Read,Microbiology,Injectable,Kerry Baker,Mesa Harbor Pharma Services,503B,11.47,1.01,0,1.03,0,0,0,0,0,13.51,2026-01-08 12:21:43,Julie Rodriguez
+SUB-260123-0004,USP <71> Sterility Test,Microbiology,Injectable,Morgan Hill,Mesa Harbor Pharma Services,503B,0,2.39,0,0.83,0,0,0,0,0,3.22,2026-02-12 16:21:52,Debbie Le
+SUB-260123-0004,USP Monograph - Tromethamine,Chemistry,Injectable,Chelsea Sloan,Mesa Harbor Pharma Services,503B,0,1.77,0,32.41,0,0,0,0,0,34.17,2026-02-03 09:20:30,William Simmons
+SUB-260115-0009,Potency (Solution),Chemistry,Injectable,Maria Foley,Mesa Harbor Pharma Services,503B,0,1.8,0,6.3,0,0,0,0,0,8.1,2026-01-18 08:21:46,Julie Rodriguez
+SUB-260115-0009,Bioburden Testing,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,1.19,0,0.46,0,0,0,0,0,1.64,2026-01-22 14:58:17,Tammy Mccullough
+SUB-260101-0005,Potency (Peptides),Chemistry,Injectable,James Decker,Mesa Harbor Pharma Services,503B,0,29.44,0,2.29,0,0,0,0,0,31.73,2026-01-10 16:00:57,James Dean
+SUB-260101-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,0,129.25,0,0.28,0,0,0,0,0,129.53,2026-01-07 10:50:22,Julie Rodriguez
+SUB-260101-0005,USP <71> Sterility Test,Microbiology,Injectable,Scott Smith,Mesa Harbor Pharma Services,503B,0,6.34,0,3.05,0,0,0,0,0,9.38,2026-01-16 10:37:21,Jonathan Cabrera
+SUB-260130-0007,Potency (Non-Solution),Chemistry,Cream (gm),Rachel Lloyd,Mesa Harbor Pharma Services,503B,0,12.42,0,7.13,0,0,18.44,0,0,37.99,2026-02-11 18:53:21,Tammy Mccullough
+SUB-260123-0005,Potency (Peptides),Chemistry,Injectable,Leslie Hudson,Mesa Harbor Pharma Services,503B,18.21,0.74,0,30.84,0,0,0,0,0,49.78,2026-01-30 10:57:34,Jonathan Cabrera
+SUB-260123-0005,USP <71> Sterility Test,Microbiology,Injectable,Shannon Edwards,Mesa Harbor Pharma Services,503B,0,5.5,0,2.77,0,0,0,0,0,8.28,2026-02-14 15:38:42,Debbie Le
+SUB-260107-0006,Potency (Peptides),Chemistry,Injectable,George Richards,Mesa Harbor Pharma Services,503B,34.91,25.35,0,1.75,0,0,0,0,0,62.01,2026-01-14 15:32:08,Tammy Mccullough
+SUB-260113-0009,USP <71> Sterility Test,Microbiology,Injectable,Shannon Edwards,Mesa Harbor Pharma Services,503B,0,0.31,0,0.23,0,0,2.85,0,0,3.39,2026-02-02 07:57:14,Debbie Le
+SUB-260113-0009,USP <61> Microbial Enumeration,Microbiology,Injectable,Ralph Shepherd,Mesa Harbor Pharma Services,503B,0,0.35,0,0.61,0,0,6.51,0,0,7.46,2026-01-20 15:52:10,Debbie Le
+SUB-260128-0008,USP <71> Sterility Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,0,6.2,0,8.85,0,0,5.08,0,0,20.13,2026-02-18 16:20:07,James Dean
+SUB-260116-0005,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Mesa Harbor Pharma Services,503B,0,7.22,0,4.04,0,0,0,0,0,11.26,2026-02-06 21:38:45,Jonathan Cabrera
+SUB-260122-0003,USP <71> Sterility Test,Microbiology,Aqueous Solution,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,1.54,0,1.16,0,0,0,0,0,2.7,2026-02-09 18:22:03,Debbie Le
+SUB-260122-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Christopher Terry,Mesa Harbor Pharma Services,503B,0,1.07,0,3.14,0,0,0,0,0,4.22,2026-02-02 08:50:03,Debbie Le
+SUB-260122-0003,Potency (Peptides),Chemistry,Aqueous Solution,Johnny Sandoval,Mesa Harbor Pharma Services,503B,0,0.44,0,2.28,0,0,0,3.94,0,6.66,2026-01-30 10:06:36,William Simmons
+SUB-260129-0007,Potency (Peptides),Chemistry,Injectable,Matthew Arnold,Mesa Harbor Pharma Services,503B,0,6.84,0,27.55,0,0,0,0,0,34.4,2026-02-04 17:58:08,Tammy Mccullough
+SUB-260129-0007,USP <71> Sterility Test,Microbiology,Injectable,Kathleen Calhoun,Mesa Harbor Pharma Services,503B,0,1.45,0,2.36,0,0,0,0,0,3.8,2026-02-20 08:36:35,Debbie Le
+SUB-260126-0007,Potency (Peptides),Chemistry,Injectable,Tammy Smith,Mesa Harbor Pharma Services,503B,0,1.28,0,4.84,0,0,0,0,0,6.12,2026-01-31 08:39:36,Julie Rodriguez
+SUB-260126-0007,USP <71> Sterility Test,Microbiology,Injectable,Ralph Shepherd,Mesa Harbor Pharma Services,503B,0,23.04,0,0.52,0,0,18.63,0,0,42.19,2026-02-17 10:38:57,Marilyn Young
+SUB-260126-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jennifer Wilson,Mesa Harbor Pharma Services,503B,0,4.86,0,3.27,0,0,9.75,0,0,17.88,2026-01-31 19:24:26,Debbie Le
+SUB-260126-0007,Potency (Peptides),Chemistry,Injectable,Angela Aguilar,Mesa Harbor Pharma Services,503B,9.39,0.92,0,3.85,0,0,1.07,0,0,15.23,2026-02-05 16:35:13,Jonathan Cabrera
+SUB-260126-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,0.22,0,1.55,0,0,0,0,0,1.76,2026-01-31 08:11:41,Debbie Le
+SUB-260114-0004,Potency (Peptides),Chemistry,Injectable,John Melton,Mesa Harbor Pharma Services,503B,15.94,9.9,0,14.35,0,0,0,0,0,40.18,2026-01-20 15:38:54,Tammy Mccullough
+SUB-260114-0004,USP <71> Sterility Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,0,0.62,0,7.91,239.87,0,0,0,0,248.4,2026-01-27 12:25:29,Kimberly Baker
+SUB-260114-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Joshua Chapman,Mesa Harbor Pharma Services,503B,7.83,9.2,0,26.28,0,0,10.97,0,0,54.28,2026-01-20 08:29:30,William Simmons
+SUB-260130-0008,Potency (Solution),Chemistry,Injectable,Ashley Lewis,Mesa Harbor Pharma Services,503B,15.87,2.44,0,25.85,0,0,0,0,0,44.15,2026-02-05 20:22:55,Tammy Mccullough
+SUB-260119-0008,Potency (Peptides),Chemistry,Injectable,Thomas Jefferson,Mesa Harbor Pharma Services,503B,10.78,7.36,0,1.33,0,0,0,0,0,19.47,2026-01-23 13:59:12,Debbie Le
+SUB-260119-0008,USP <71> Sterility Test,Microbiology,Injectable,Scott Smith,Mesa Harbor Pharma Services,503B,44.22,4.72,0,15.18,0,0,0,0,0,64.12,2026-01-30 19:39:50,Debbie Le
+SUB-260109-0006,Potency (Peptides),Chemistry,Injectable,William Kramer,Mesa Harbor Pharma Services,503B,0,0.72,0.64,0.46,0,0,0,0,0,1.82,2026-01-18 13:34:20,Debbie Le
+SUB-260109-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Morgan Hill,Mesa Harbor Pharma Services,503B,13.47,25.26,0,0.17,0,0,0,0,0,38.91,2026-01-14 21:19:23,Julie Rodriguez
+SUB-260109-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Michael Miller,Mesa Harbor Pharma Services,503B,32.5,3.14,0,6.93,0,0,0,0,0,42.56,2026-01-16 20:59:39,Julie Rodriguez
+SUB-260119-0009,USP <71> Sterility Test,Microbiology,Injectable,Michael Miller,Mesa Harbor Pharma Services,503B,8.24,14,0,6.57,0,0,0,0,0,28.81,2026-02-07 15:17:04,William Simmons
+SUB-260106-0006,Potency (Peptides),Chemistry,Solution,Charles Fuentes,Mesa Harbor Pharma Services,503B,0,2.78,0,0.93,10.18,0,2.59,0,0,16.49,2026-01-13 08:50:57,Tammy Mccullough
+SUB-260106-0006,USP <71> Sterility Test,Microbiology,Solution,Amanda Rivera,Mesa Harbor Pharma Services,503B,24.96,10.11,0,1.2,0,0,0,0,0,36.27,2026-01-21 19:47:15,Kimberly Baker
+SUB-260106-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Karen Adams,Mesa Harbor Pharma Services,503B,0,0.87,0,11.43,0,0,29.14,0,0,41.44,2026-01-11 11:33:45,Tammy Mccullough
+SUB-260101-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Cream (gm),Laura Lewis,Mesa Harbor Pharma Services,503B,5.95,0.23,0,8,0,0,0,0,0,14.18,2026-01-08 14:36:35,William Simmons
+SUB-260122-0004,Potency (Peptides),Chemistry,Injectable,David Thompson,Mesa Harbor Pharma Services,503B,0,4.36,0,0.81,0,0,0,0,0,5.17,2026-01-29 08:14:45,Debbie Le
+SUB-260122-0004,USP <71> Sterility Test,Microbiology,Injectable,Brian Proctor,Mesa Harbor Pharma Services,503B,31.13,5.11,0,6.65,0,0,0,0,0,42.88,2026-02-11 14:12:48,Marilyn Young
+SUB-260122-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Renee Simmons,Mesa Harbor Pharma Services,503B,40.06,1.88,0,3.37,0,0,5.98,0,0,51.28,2026-01-24 10:40:06,Debbie Le
+SUB-260112-0004,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Mesa Harbor Pharma Services,503B,0,1.01,0,3.47,0,0,3.94,0,0,8.42,2026-01-28 09:54:11,Debbie Le
+SUB-260112-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Scott Smith,Mesa Harbor Pharma Services,503B,30.23,0.26,0,13.36,0,0,0,0,0,43.85,2026-01-19 21:10:01,Debbie Le
+SUB-260112-0004,Potency (Solution),Chemistry,Injectable,John Melton,Mesa Harbor Pharma Services,503B,10.3,0.5,0,1.78,0,0,0,0,0,12.58,2026-01-22 13:01:11,Tammy Mccullough
+SUB-260108-0006,Potency (Peptides),Chemistry,Injectable,Jaime Burns,Mesa Harbor Pharma Services,503B,0,0.99,0,3.1,0,0,0,0,0,4.08,2026-01-14 07:06:58,Debbie Le
+SUB-260108-0006,Potency (Non-Solution),Chemistry,Injectable,Charles Fuentes,Mesa Harbor Pharma Services,503B,0,11.39,0,3.85,0,0,0,0,0,15.23,2026-01-14 15:45:11,Julie Rodriguez
+SUB-260101-0007,Potency (Non-Solution),Chemistry,Cream (gm),Angela Aguilar,Mesa Harbor Pharma Services,503B,0,2.19,0.77,1.45,0,0,3.29,152.01,0,159.7,2026-01-05 09:24:30,Kimberly Baker
+SUB-260119-0010,Potency (Peptides),Chemistry,Lyophilized,Jacqueline White,Mesa Harbor Pharma Services,503B,0,0.29,0,0.72,0,0,0,0,0,1.01,2026-01-25 19:41:36,Julie Rodriguez
+SUB-260119-0010,USP <71> Sterility Test,Microbiology,Lyophilized,Rebecca Daniel,Mesa Harbor Pharma Services,503B,18.89,24.03,0,4.52,0,0,14.14,0,0,61.57,2026-01-27 08:50:20,Tammy Mccullough
+SUB-260119-0010,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Logan Freeman,Mesa Harbor Pharma Services,503B,0,0.59,0,8.38,0,0,0,0,0,8.96,2026-01-24 19:56:41,Debbie Le
+SUB-260102-0016,Potency (Solution),Chemistry,Injectable,Kimberly Fisher,Mesa Harbor Pharma Services,503B,9.07,1.9,0,1.76,0,0,0,0,0,12.73,2026-01-07 21:21:37,Jonathan Cabrera
+SUB-260102-0016,USP <71> Sterility Test,Microbiology,Injectable,Christopher Terry,Mesa Harbor Pharma Services,503B,11.53,2.27,0,1.18,0,0,0,0,0,14.98,2026-01-24 10:51:21,Debbie Le
+SUB-260102-0016,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Roger Colon,Mesa Harbor Pharma Services,503B,0,8.42,0,23.16,0,0,0,0,0,31.57,2026-01-08 12:31:00,Julie Rodriguez
+SUB-260102-0016,Potency (Solution),Chemistry,Injectable,Savannah Pham,Mesa Harbor Pharma Services,503B,49.06,1.24,0,7.08,0,0,0,0,0,57.37,2026-01-05 19:01:36,Tammy Mccullough
+SUB-260102-0016,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Carolyn Patel,Mesa Harbor Pharma Services,503B,2.71,2,0,4.72,0,0,0,0,0,9.42,2026-01-07 07:22:49,William Simmons
+SUB-260113-0010,Potency (Peptides),Chemistry,Injectable,Patrick Lopez,Mesa Harbor Pharma Services,503B,20.82,0.78,0,3.35,0,0,14.24,0,0,39.19,2026-01-22 10:39:29,Tammy Mccullough
+SUB-260113-0010,USP <71> Sterility Test,Microbiology,Injectable,Rachel Williamson,Mesa Harbor Pharma Services,503B,0,2.58,0,16.29,0,0,0,0,0,18.87,2026-01-27 08:14:47,Julie Rodriguez
+SUB-260113-0010,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kristina Williams,Mesa Harbor Pharma Services,503B,12.99,0.52,0,0.71,0,0,2.69,0,0,16.9,2026-01-20 11:19:47,Debbie Le
+SUB-260119-0011,USP <71> Sterility Test,Microbiology,Injectable,Kristen Garcia,Mesa Harbor Pharma Services,503B,0,1.51,7.49,12.96,0,0,0,0,0,21.96,2026-02-01 18:20:47,Julie Rodriguez
+SUB-260119-0011,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rebecca Daniel,Mesa Harbor Pharma Services,503B,8.62,3.63,0,2.44,0,0,0,0,0,14.69,2026-01-30 20:25:16,Debbie Le
+SUB-260119-0011,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,0.4,0,2.68,0,0,0,0,0,3.08,2026-02-09 10:30:08,Jonathan Cabrera
+SUB-260119-0011,USP <71> Sterility Test,Microbiology,Injectable,Elizabeth Brewer,Mesa Harbor Pharma Services,503B,0,27.08,0,1.88,0,0,0,0,0,28.96,2026-02-08 14:37:57,Jonathan Cabrera
+SUB-260119-0011,USP <71> Sterility Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,13.26,8.49,0,0.14,0,0,4.2,0,0,26.09,2026-02-09 18:51:49,Tammy Mccullough
+SUB-260120-0003,Potency (Peptides),Chemistry,Solution,Bruce Snow,Mesa Harbor Pharma Services,503B,0,0.27,0,1.24,0,0,12.55,0,0,14.06,2026-01-27 15:58:05,Debbie Le
+SUB-260120-0003,USP <71> Sterility Test,Microbiology,Solution,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,20.15,0,0.69,0,0,7.02,0,0,27.86,2026-02-03 19:51:19,Debbie Le
+SUB-260120-0003,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Michael Miller,Mesa Harbor Pharma Services,503B,0,2.25,0,2.75,0,0,0,0,0,5,2026-01-24 11:50:42,Jonathan Cabrera
+SUB-260120-0003,Potency (Non-Solution),Chemistry,Solution,Rachael Torres,Mesa Harbor Pharma Services,503B,0,0.43,0,0.28,0,0,0,0,0,0.71,2026-01-27 16:15:07,Marilyn Young
+SUB-260123-0006,Potency (Non-Solution),Chemistry,Cream (gm),Leslie Hudson,Mesa Harbor Pharma Services,503B,5.23,96.84,0,4.13,0,0,0,0,0,106.2,2026-01-29 10:37:51,Tammy Mccullough
+SUB-260119-0012,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jonathan Moon,Mesa Harbor Pharma Services,503B,29.43,0.29,0,3.48,0,0,0,0,0,33.2,2026-01-26 21:02:50,James Dean
+SUB-260119-0012,USP <71> Sterility Test,Microbiology,Injectable,Kyle Young,Mesa Harbor Pharma Services,503B,0,0.89,0,17.14,0,0,0,0,0,18.03,2026-02-10 21:45:29,Tammy Mccullough
+SUB-260119-0013,Potency (Peptides),Chemistry,Injectable,Michael King,Mesa Harbor Pharma Services,503B,5.99,1.41,0,3.84,0,0,0,0,0,11.24,2026-01-28 21:15:15,William Simmons
+SUB-260119-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Carolyn Patel,Mesa Harbor Pharma Services,503B,0,19.81,0,1.73,0,0,0,0,0,21.54,2026-01-26 09:52:05,Debbie Le
+SUB-260127-0008,USP <71> Sterility Test,Microbiology,Aqueous Solution,Joshua Chapman,Mesa Harbor Pharma Services,503B,15.36,28.82,0,2.82,0,0,0,0,0,47.01,2026-02-17 15:14:24,Jonathan Cabrera
+SUB-260127-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,13.73,0,10.47,0,0,0,0,0,24.2,2026-02-01 17:25:21,Julie Rodriguez
+SUB-260127-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Kimberly Weber,Mesa Harbor Pharma Services,503B,8.85,1.69,0,1.49,0,0,0,0,0,12.03,2026-02-01 16:59:56,Marilyn Young
+SUB-260114-0005,Potency (Peptides),Chemistry,Injectable,Kevin Cooper,Mesa Harbor Pharma Services,503B,2.81,8.18,0,6.03,0,0,0,0,0,17.02,2026-01-23 11:43:35,William Simmons
+SUB-260114-0005,USP <71> Sterility Test,Microbiology,Injectable,Kimberly Weber,Mesa Harbor Pharma Services,503B,16.8,30.13,0,9.21,0,0,0,0,0,56.14,2026-02-04 18:02:41,Julie Rodriguez
+SUB-260114-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,5.39,0.18,0,2.94,0,0,0,0,0,8.51,2026-01-21 10:17:07,Marilyn Young
+SUB-260106-0007,Potency (Peptides),Chemistry,Injectable,Tammy Smith,Mesa Harbor Pharma Services,503B,15.69,0.21,0,6.64,0,0,0,0,0,22.54,2026-01-12 21:40:42,James Dean
+SUB-260106-0007,USP <71> Sterility Test,Microbiology,Injectable,Laura Lewis,Mesa Harbor Pharma Services,503B,15.13,3.32,0,0.58,0,0,0,0,0,19.03,2026-01-26 18:08:41,Tammy Mccullough
+SUB-260106-0007,pH Determination,Chemistry,Injectable,Michael Mitchell,Mesa Harbor Pharma Services,503B,12.69,5.15,0,9.83,0,0,23.4,0,0,51.07,2026-01-12 18:08:35,Jonathan Cabrera
+SUB-260106-0008,USP <71> Sterility Test,Microbiology,Injectable,Christopher Terry,Mesa Harbor Pharma Services,503B,0,2.77,0,3.78,0,0,2.61,0,0,9.16,2026-01-29 12:48:40,Marilyn Young
+SUB-260106-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Alan Mcgee,Mesa Harbor Pharma Services,503B,0,1.9,0,7.05,0,0,0,0,0,8.96,2026-01-13 21:30:44,Julie Rodriguez
+SUB-260106-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Joshua Chapman,Mesa Harbor Pharma Services,503B,0,13.53,0,0.31,0,0,5.55,0,0,19.38,2026-01-12 18:03:16,Julie Rodriguez
+SUB-260112-0005,Potency (Solution),Chemistry,Aqueous Solution,Jaime Burns,Mesa Harbor Pharma Services,503B,10.18,3.14,0,5.13,0,0,6.74,0,0,25.18,2026-01-17 11:19:27,Julie Rodriguez
+SUB-260112-0005,USP <71> Sterility Test,Microbiology,Aqueous Solution,John Hill,Mesa Harbor Pharma Services,503B,0,2.09,0,1.62,0,0,0,0,0,3.71,2026-01-30 21:37:55,Tammy Mccullough
+SUB-260112-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Cheryl Berry,Mesa Harbor Pharma Services,503B,0,9.8,0,1.15,0,0,0,0,0,10.95,2026-01-16 17:37:53,Debbie Le
+SUB-260107-0007,Potency (Peptides),Chemistry,Injectable,George Richards,Highland Mcdonald Compounding Pharmacy,503A,21.15,3.83,0,64.1,0,0,0,0,0,89.08,2026-01-16 20:37:32,Julie Rodriguez
+SUB-260107-0007,USP <71> Sterility Test,Microbiology,Injectable,Travis Mora,Highland Mcdonald Compounding Pharmacy,503A,0,1.8,0,3.98,0,0,0,0,0,5.77,2026-01-28 14:08:15,Tammy Mccullough
+SUB-260112-0006,Potency (Peptides),Chemistry,Injectable,Chelsea Sloan,Highland Mcdonald Compounding Pharmacy,503A,21.59,1.69,0,2.22,0,0,0,0,0,25.51,2026-01-15 18:37:29,Tammy Mccullough
+SUB-260112-0006,USP <71> Sterility Test,Microbiology,Injectable,Kristen Garcia,Highland Mcdonald Compounding Pharmacy,503A,17.17,0.32,0,7.02,0,0,0,0,0,24.51,2026-01-23 10:30:22,Marilyn Young
+SUB-260102-0017,Potency (Solution),Chemistry,Aqueous Solution,Charles Fuentes,Maple Pioneer Compounding Center,503A,38.41,1.44,0,6.7,0,0,0,0,0,46.55,2026-01-07 10:54:15,Julie Rodriguez
+SUB-260102-0017,USP <71> Sterility Test,Microbiology,Aqueous Solution,Alan Mcgee,Maple Pioneer Compounding Center,503A,0,0.63,0,2.23,7.34,0,12.55,0,0,22.74,2026-01-18 08:44:01,Jonathan Cabrera
+SUB-260102-0017,Potency (Peptides),Chemistry,Aqueous Solution,Phillip Burke,Maple Pioneer Compounding Center,503A,0,0.96,0,22.01,0,0,16.83,0,0,39.79,2026-01-09 08:19:44,Jonathan Cabrera
+SUB-260102-0017,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Laura Lewis,Maple Pioneer Compounding Center,503A,0,4.55,0,9.3,0,0,0,0,0,13.85,2026-01-07 17:38:48,William Simmons
+SUB-260102-0017,USP <71> Sterility Test,Microbiology,Aqueous Solution,Kerry Baker,Maple Pioneer Compounding Center,503A,0,7.87,0,2.12,0,0,10.31,0,0,20.31,2026-01-25 12:12:18,Julie Rodriguez
+SUB-260130-0009,Potency (Solution),Chemistry,Injectable,Chelsea Sloan,Maple Pioneer Compounding Center,503A,0,0.74,0,11.46,0,0,0,0,0,12.21,2026-02-02 15:33:12,Julie Rodriguez
+SUB-260130-0009,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Jennifer Wilson,Maple Pioneer Compounding Center,503A,13.33,81.17,0,0.43,0,0,0,0,0,94.93,2026-02-02 08:19:31,Tammy Mccullough
+SUB-260107-0008,Potency (Solution),Chemistry,Injectable,Corey Schwartz,Redwood Northgate Specialty Pharmacy,503A,31.01,0.96,0,81.6,0,0,0,0,0,113.58,2026-01-11 16:26:33,Debbie Le
+SUB-260107-0008,USP <71> Sterility Test,Microbiology,Injectable,Anthony Williams,Redwood Northgate Specialty Pharmacy,503A,23.37,0.41,0,52.43,0,0,0,0,0,76.2,2026-01-17 20:33:29,Debbie Le
+SUB-260107-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,John Hill,Redwood Northgate Specialty Pharmacy,503A,0,10.72,0,5.87,0,0,0,0,0,16.6,2026-01-14 17:16:30,Kimberly Baker
+SUB-260130-0010,USP <71> Sterility Test,Microbiology,Oil Injectable,Kerry Baker,Redwood Northgate Specialty Pharmacy,503A,0,0.41,0,9.22,99.04,0,0,0,0,108.67,2026-02-07 11:05:19,Tammy Mccullough
+SUB-260130-0010,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Logan Freeman,Redwood Northgate Specialty Pharmacy,503A,0,0.51,0,16.1,0,0,0,0,0,16.61,2026-02-01 18:12:22,Debbie Le
+SUB-260130-0010,Potency (Non-Solution),Chemistry,Oil Injectable,Evan Steele,Redwood Northgate Specialty Pharmacy,503A,3.41,13.1,0,6.18,0,0,0.73,0,0,23.42,2026-02-04 21:13:30,Kimberly Baker
+SUB-260122-0005,USP <71> Sterility Test,Microbiology,Injectable,Jennifer Wilson,Redwood Northgate Specialty Pharmacy,503A,13.59,18.2,0,3.91,0,0,0,0,0,35.7,2026-02-03 12:14:14,Tammy Mccullough
+SUB-260122-0005,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Renee Simmons,Redwood Northgate Specialty Pharmacy,503A,3.23,0.11,0,4.23,0,0,0,0,0,7.56,2026-01-26 10:39:38,James Dean
+SUB-260119-0014,Potency (Non-Solution),Chemistry,Capsule,Jessica Ruiz,Redwood Northgate Specialty Pharmacy,503A,0,3.87,0,6.26,0,0,0,0,0,10.13,2026-01-26 18:26:57,Tammy Mccullough
+SUB-260119-0014,Potency (Peptides),Chemistry,Capsule,Matthew Arnold,Redwood Northgate Specialty Pharmacy,503A,5.01,0.64,0,7.5,0,0,0,0,0,13.16,2026-01-26 07:36:11,Julie Rodriguez
+SUB-260119-0014,USP <71> Sterility Test,Microbiology,Capsule,Ralph Shepherd,Redwood Northgate Specialty Pharmacy,503A,0,9.9,0,1.87,0,0,0,0,0,11.77,2026-02-09 21:56:32,Julie Rodriguez
+SUB-260115-0010,Environmental Monitoring Plate Read,Microbiology,Powder Aliquot,Shannon Roberts,Redwood Northgate Specialty Pharmacy,503A,33.42,1.97,0,6.81,0,0,11.72,0,0,53.91,2026-01-22 21:13:59,William Simmons
+SUB-260120-0004,Potency (Solution),Chemistry,Oil Injectable,Haley Barrett,Redwood Northgate Specialty Pharmacy,503A,13.47,3.65,0,14.74,0,0,0,0,0,31.87,2026-01-22 18:25:02,Tammy Mccullough
+SUB-260120-0004,USP <71> Sterility Test,Microbiology,Oil Injectable,Christopher Terry,Redwood Northgate Specialty Pharmacy,503A,22.03,1.76,0,0.77,0,0,0,0,0,24.56,2026-02-04 17:13:31,Julie Rodriguez
+SUB-260120-0004,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Rebecca Daniel,Redwood Northgate Specialty Pharmacy,503A,13.03,1.5,0,0.77,0,0,0,0,0,15.3,2026-01-22 08:20:04,Tammy Mccullough
+SUB-260108-0007,Potency (Solution),Chemistry,Aqueous Solution,Rachael Torres,Redwood Northgate Specialty Pharmacy,503A,10.84,12.42,0,5.05,0,0,0,0,0,28.31,2026-01-10 09:34:37,Julie Rodriguez
+SUB-260108-0007,USP <71> Sterility Test,Microbiology,Aqueous Solution,Adrian Frey,Redwood Northgate Specialty Pharmacy,503A,3.94,3.56,0,1.04,0,0,0,0,0,8.54,2026-01-14 13:08:21,Debbie Le
+SUB-260108-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Roger Colon,Redwood Northgate Specialty Pharmacy,503A,12.19,2.68,0,0.71,0,0,12.23,0,0,27.81,2026-01-09 09:32:33,William Simmons
+SUB-260113-0011,Potency (Solution),Chemistry,Injectable,Chelsea Sloan,Redwood Northgate Specialty Pharmacy,503A,0,1.87,0,6.68,0,0,15.89,0,0,24.44,2026-01-15 07:16:28,William Simmons
+SUB-260113-0011,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Michael Miller,Redwood Northgate Specialty Pharmacy,503A,0,13.86,0,30.1,15.17,0,0,0,0,59.13,2026-01-14 08:12:09,Tammy Mccullough
+SUB-260122-0006,Potency (Peptides),Chemistry,Liquid,Angela Aguilar,Redwood Northgate Specialty Pharmacy,503A,34.14,0.33,0,0.82,0,0,0,0,0,35.29,2026-01-25 11:51:44,Julie Rodriguez
+SUB-260122-0006,Environmental Monitoring Plate Read,Microbiology,Liquid,Kyle Young,Redwood Northgate Specialty Pharmacy,503A,0,1.08,0,5.91,0,0,0,0,0,6.99,2026-01-24 19:40:31,Julie Rodriguez
+SUB-260130-0011,Potency (Solution),Chemistry,Aqueous Solution,Jessica Ruiz,Redwood Northgate Specialty Pharmacy,503A,8.6,0.77,0,8.2,0,0,0,0,0,17.57,2026-02-03 08:51:44,Debbie Le
+SUB-260113-0012,Potency (Solution),Chemistry,Oil Injectable,Veronica Simpson,Redwood Northgate Specialty Pharmacy,503A,0,0.94,0,1,0,0,2.24,0,0,4.18,2026-01-19 11:36:40,Tammy Mccullough
+SUB-260113-0012,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Alan Mcgee,Redwood Northgate Specialty Pharmacy,503A,17.18,0.81,0,21.02,0,0,0,0,0,39.02,2026-01-18 20:18:24,Julie Rodriguez
+SUB-260113-0012,USP <71> Sterility Test,Microbiology,Oil Injectable,Alan Mcgee,Redwood Northgate Specialty Pharmacy,503A,0,3.83,0,1.71,0,0,2.65,0,0,8.18,2026-02-04 18:41:45,Debbie Le
+SUB-260105-0006,Potency (Solution),Chemistry,Injectable,Corey Schwartz,Trinity Sterling Compounding Center,503A,19.84,0.53,0,0.67,0,0,6.73,0,0,27.78,2026-01-10 12:54:27,James Dean
+SUB-260105-0006,USP <71> Sterility Test,Microbiology,Injectable,Logan Freeman,Trinity Sterling Compounding Center,503A,0,1.85,0,0.88,0,0,23.41,0,0,26.13,2026-01-31 13:55:45,James Dean
+SUB-260105-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Anthony Williams,Trinity Sterling Compounding Center,503A,12.31,25.14,0,2.5,0,0,0,0,0,39.95,2026-01-12 11:47:05,William Simmons
+SUB-260105-0006,Identification by HPLC,Chemistry,Injectable,William Kramer,Trinity Sterling Compounding Center,503A,40.18,6.52,0,1.83,0,0,0,0,0,48.53,2026-01-10 09:12:57,Julie Rodriguez
+SUB-260102-0018,Potency (Solution),Chemistry,Injectable,Veronica Simpson,Trinity Sterling Compounding Center,503A,14.36,0.81,0,4.08,0,0,0,0,0,19.26,2026-01-13 17:01:16,Tammy Mccullough
+SUB-260102-0018,USP <71> Sterility Test,Microbiology,Injectable,Rachel Williamson,Trinity Sterling Compounding Center,503A,9.22,0.33,0,0.65,0,0,5.34,0,0,15.54,2026-01-26 10:44:11,Tammy Mccullough
+SUB-260102-0018,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Ralph Shepherd,Trinity Sterling Compounding Center,503A,0,2.9,0,23.62,0,0,19.5,0,0,46.02,2026-01-11 11:40:18,Julie Rodriguez
+SUB-260108-0008,Potency (Solution),Chemistry,Injectable,Matthew Arnold,Trinity Sterling Compounding Center,503A,0,1.98,0,0.32,0,0,0,0,0,2.29,2026-01-13 21:07:51,Tammy Mccullough
+SUB-260108-0009,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Anthony Williams,Liberty Adams Specialty Pharmacy,503A,0,0.25,0,5.24,0,0,0,0,0,5.48,2026-01-15 10:42:44,Debbie Le
+SUB-260105-0007,Potency (Solution),Chemistry,Injectable,Jay Wilson,Evergreen Houston Laboratories,GMP,0,0.17,0,8.99,38.4,0,2.82,0,0,50.38,2026-01-11 14:54:40,Julie Rodriguez
+SUB-260105-0007,USP <71> Sterility Test,Microbiology,Injectable,Brian Proctor,Evergreen Houston Laboratories,GMP,12.45,1.41,0,4,0,0,0,0,0,17.87,2026-01-27 21:27:57,James Dean
+SUB-260109-0007,Potency (Solution),Chemistry,Oil Injectable,Michael King,Trinity Moss Compounding Pharmacy,503A,0,0.41,0,7.62,0,0,0,0,0,8.03,2026-01-13 18:35:01,Kimberly Baker
+SUB-260109-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Kristina Williams,Trinity Moss Compounding Pharmacy,503A,13.8,4.8,0,6.29,0,0,0,0,0,24.89,2026-01-12 07:36:16,James Dean
+SUB-260107-0009,Potency (Non-Solution),Chemistry,Cream (gm),David Elliott,Trinity Moss Compounding Pharmacy,503A,0,4.31,0,1.52,0,0,0,0,0,5.84,2026-01-16 09:22:54,Debbie Le
+SUB-260114-0006,Potency (Solution),Chemistry,Injectable,George Richards,Horizon Freeman Rx,503A,0,0.69,0,34.78,0,0,0,0,0,35.46,2026-01-18 19:21:23,Kimberly Baker
+SUB-260114-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kristen Garcia,Horizon Freeman Rx,503A,0,1.07,0,0.9,0,0,0,0,0,1.96,2026-01-21 20:55:01,Debbie Le
+SUB-260115-0011,Potency (Peptides),Chemistry,Solution,Jason Gibbs,Horizon Freeman Rx,503A,0,7.93,0,100.49,0,0,0,0,0,108.42,2026-01-22 21:58:35,Julie Rodriguez
+SUB-260115-0011,pH Determination,Chemistry,Solution,Christina Miller,Horizon Freeman Rx,503A,0,90.4,0,2.97,0,0,0,0,0,93.36,2026-01-17 09:53:16,William Simmons
+SUB-260115-0012,USP <71> Sterility Test,Microbiology,Solution,Adrian Frey,Horizon Freeman Rx,503A,0,2.42,0,0.16,0,0,0,0,0,2.58,2026-02-01 16:25:15,Debbie Le
+SUB-260115-0012,Media Fill Incubation,Microbiology,Solution,Roger Colon,Horizon Freeman Rx,503A,0,74.41,0,2.88,0,0,0,0,0,77.3,2026-02-04 21:59:22,Debbie Le
+SUB-260121-0006,Potency (Solution),Chemistry,Aqueous Solution,Jessica Ruiz,Horizon Freeman Rx,503A,19.54,11.84,0,2.9,0,0,40.6,0,0,74.88,2026-01-25 10:56:19,Tammy Mccullough
+SUB-260121-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,John Hill,Horizon Freeman Rx,503A,0,0.21,0,3.33,0,0,0,0,0,3.54,2026-01-26 11:07:25,Debbie Le
+SUB-260121-0006,Growth Promotion,Microbiology,Aqueous Solution,Ralph Shepherd,Horizon Freeman Rx,503A,83.69,4.78,0,1.97,0,0,16.1,0,0,106.54,2026-01-30 21:22:51,Tammy Mccullough
+SUB-260116-0006,Potency (Peptides),Chemistry,Lyophilized,Thomas Jefferson,Horizon Freeman Rx,503A,0,184.54,0,1.73,0,0,0,0,0,186.27,2026-01-25 19:10:58,Debbie Le
+SUB-260116-0006,USP <71> Sterility Test,Microbiology,Lyophilized,Rachel Williamson,Horizon Freeman Rx,503A,0,8.38,0,1.49,0,0,24.87,0,0,34.74,2026-02-08 14:12:02,Julie Rodriguez
+SUB-260116-0006,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Ralph Shepherd,Horizon Freeman Rx,503A,0,2.72,0,5.59,0,0,0,0,0,8.31,2026-01-22 19:09:25,Julie Rodriguez
+SUB-260109-0008,Potency (Solution),Chemistry,Injectable,Rachel Lloyd,Horizon Freeman Rx,503A,14.34,0.46,0,2.24,0,0,0,0,0,17.04,2026-01-14 20:17:39,James Dean
+SUB-260109-0008,USP <71> Sterility Test,Microbiology,Injectable,Kathleen Calhoun,Horizon Freeman Rx,503A,0,2.39,0,1.85,0,0,0,0,0,4.24,2026-01-25 16:57:47,Debbie Le
+SUB-260109-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Adrian Frey,Horizon Freeman Rx,503A,10.98,0.57,0,2.37,0,0,0,0,0,13.92,2026-01-13 08:12:16,James Dean
+SUB-260119-0015,USP <71> Sterility Test,Microbiology,Lyophilized,Logan Freeman,Horizon Freeman Rx,503A,0,30.13,0,2.1,0,0,0,0,0,32.22,2026-02-12 07:33:05,William Simmons
+SUB-260119-0015,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Cheryl Berry,Horizon Freeman Rx,503A,0,0.56,0,2.18,0,0,2.33,0,0,5.07,2026-01-24 10:41:17,Tammy Mccullough
+SUB-260121-0007,Potency (Peptides),Chemistry,Lyophilized,Leslie Hudson,Horizon Freeman Rx,503A,0,2.07,0,0.44,0,0,0,0,0,2.52,2026-01-30 09:32:03,Debbie Le
+SUB-260121-0007,USP <71> Sterility Test,Microbiology,Lyophilized,Michael Miller,Horizon Freeman Rx,503A,0,0.88,0,2.28,0,0,0,0,0,3.16,2026-01-27 13:08:59,Julie Rodriguez
+SUB-260121-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Roger Colon,Horizon Freeman Rx,503A,0,3.19,0,1.29,0,0,0,0,0,4.48,2026-01-23 14:11:51,Tammy Mccullough
+SUB-260121-0007,Potency (Solution),Chemistry,Lyophilized,Megan Johnson,Horizon Freeman Rx,503A,19.47,106.32,0,7.56,0,0,0,0,0,133.35,2026-01-23 19:51:54,William Simmons
+SUB-260113-0013,Potency (Peptides),Chemistry,Lyophilized,Kevin Cooper,Horizon Freeman Rx,503A,3.7,1.61,0,4.05,0,0,0,0,0,9.37,2026-01-23 17:06:01,Debbie Le
+SUB-260113-0013,USP <71> Sterility Test,Microbiology,Lyophilized,Kristina Williams,Horizon Freeman Rx,503A,0,1.59,0,0.43,0,0,0,0,0,2.02,2026-02-02 08:35:37,William Simmons
+SUB-260113-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Jeffrey Dodson,Horizon Freeman Rx,503A,0,15.02,0,6.86,26.2,0,0,0,0,48.08,2026-01-19 11:10:15,Debbie Le
+SUB-260113-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Cheryl Berry,Horizon Freeman Rx,503A,18.76,135.41,0,0.82,110.93,0,0,0,0,265.91,2026-01-19 08:16:07,Debbie Le
+SUB-260116-0007,Potency (Non-Solution),Chemistry,Cream (gm),David Thompson,Sage Olson Pharmacy,503A,0,40.6,0,0.94,0,0,0,0,0,41.54,2026-01-22 19:13:13,Debbie Le
+SUB-260114-0007,Potency (Solution),Chemistry,Injectable,Michael King,Union Brightwater Compounding Pharmacy,503A,0,0.61,0,0.42,0,0,0,0,0,1.03,2026-01-17 19:29:13,Jonathan Cabrera
+SUB-260114-0007,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Union Brightwater Compounding Pharmacy,503A,0,0.56,5.16,0.72,0,0,0,0,0,6.45,2026-02-03 14:49:08,Debbie Le
+SUB-260114-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Michael Miller,Union Brightwater Compounding Pharmacy,503A,5.91,25.45,0,0.78,0,0,0,0,0,32.14,2026-01-16 08:15:06,Debbie Le
+SUB-260115-0013,Potency (Solution),Chemistry,Injectable,Lauren Guzman,Union Brightwater Compounding Pharmacy,503A,20.25,0.79,0,0.81,0,0,0,0,0,21.85,2026-01-18 18:05:52,Jonathan Cabrera
+SUB-260115-0013,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Union Brightwater Compounding Pharmacy,503A,0,3.7,0,4.41,0,0,15.01,0,0,23.12,2026-02-04 20:23:47,Julie Rodriguez
+SUB-260115-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Rachel Williamson,Union Brightwater Compounding Pharmacy,503A,22.95,4.85,0,0.96,0,0,0,0,0,28.76,2026-01-23 12:51:46,William Simmons
+SUB-260115-0013,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Union Brightwater Compounding Pharmacy,503A,7.51,7.77,0,18.51,0,0,0,0,0,33.79,2026-01-30 17:54:31,James Dean
+SUB-260129-0008,USP <71> Sterility Test,Microbiology,Injectable,Cheryl Berry,Union Brightwater Compounding Pharmacy,503A,0,0.81,0,1.7,0,0,36.44,0,0,38.95,2026-02-19 07:28:20,Julie Rodriguez
+SUB-260120-0005,Potency (Peptides),Chemistry,Solution,Michael King,Union Brightwater Compounding Pharmacy,503A,19.01,3.55,0,0.83,0,0,8.33,0,0,31.72,2026-01-26 10:32:21,James Dean
+SUB-260120-0005,USP <71> Sterility Test,Microbiology,Solution,Laura Lewis,Union Brightwater Compounding Pharmacy,503A,0,3.94,0,2.56,0,0,9.58,0,0,16.08,2026-02-12 20:44:10,Debbie Le
+SUB-260113-0014,Potency (Peptides),Chemistry,Solution,Leslie Hudson,Union Brightwater Compounding Pharmacy,503A,9.02,6.88,0,6.42,0,0,0,0,0,22.32,2026-01-19 21:20:38,Julie Rodriguez
+SUB-260113-0014,USP <71> Sterility Test,Microbiology,Solution,Travis Mora,Union Brightwater Compounding Pharmacy,503A,4.01,0.81,0,0.78,21.76,0,0,0,0,27.35,2026-01-26 15:47:19,Julie Rodriguez
+SUB-260113-0014,USP <85> Bacterial Endotoxins Test,Microbiology,Solution,Kyle Young,Union Brightwater Compounding Pharmacy,503A,4.19,6.05,0,0.18,0,0,0,0,0,10.42,2026-01-18 19:27:28,Jonathan Cabrera
+SUB-260130-0012,Potency (Solution),Chemistry,Injectable,Angela Aguilar,Union Brightwater Compounding Pharmacy,503A,14.73,14.8,0,0.79,0,0,0,0,0,30.32,2026-02-03 20:02:46,Jonathan Cabrera
+SUB-260130-0012,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Adrian Frey,Union Brightwater Compounding Pharmacy,503A,0,0.3,0,13.53,0,0,0,0,0,13.83,2026-02-05 07:55:52,Tammy Mccullough
+SUB-260109-0009,USP <71> Sterility Test,Microbiology,Injectable,Christy Pollard,Union Brightwater Compounding Pharmacy,503A,0,0.28,0,0.66,0,0,3.55,0,0,4.5,2026-01-23 10:51:00,Julie Rodriguez
+SUB-260109-0009,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Alan Mcgee,Union Brightwater Compounding Pharmacy,503A,47.47,2.09,0,3.77,313,0,0,0,0,366.33,2026-01-12 16:43:39,James Dean
+SUB-260113-0015,Potency (Peptides),Chemistry,Injectable,Corey Schwartz,Union Brightwater Compounding Pharmacy,503A,0,6.58,0,1.27,0,0,4.25,0,0,12.1,2026-01-18 08:05:01,Kimberly Baker
+SUB-260128-0009,Potency (Solution),Chemistry,Injectable,Angela Aguilar,Union Brightwater Compounding Pharmacy,503A,0,5.91,0,2.06,0,0,0,0,0,7.97,2026-02-04 20:38:28,Tammy Mccullough
+SUB-260128-0009,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Union Brightwater Compounding Pharmacy,503A,0,4.83,3.9,3.15,0,0,0,0,0,11.88,2026-02-20 16:24:46,Debbie Le
+SUB-260128-0009,Potency (Peptides),Chemistry,Injectable,Angela Aguilar,Union Brightwater Compounding Pharmacy,503A,0,5.8,0,6.43,0,0,0,0,0,12.23,2026-02-04 19:16:30,Debbie Le
+SUB-260109-0010,Potency (Peptides),Chemistry,Solution,Mark Proctor,Union Brightwater Compounding Pharmacy,503A,0,0.74,0,12.73,0,0,0,0,0,13.47,2026-01-11 21:03:22,Debbie Le
+SUB-260109-0010,USP <71> Sterility Test,Microbiology,Solution,Rebecca Daniel,Union Brightwater Compounding Pharmacy,503A,22.5,5.51,0,0.98,0,0,20.96,0,0,49.95,2026-01-16 19:00:16,Debbie Le
+SUB-260130-0013,Potency (Solution),Chemistry,Oil Injectable,John Melton,Apex Highland Rx,503A,0,5.81,0,2.39,0,0,0,0,0,8.2,2026-02-03 12:12:46,Debbie Le
+SUB-260130-0013,USP <71> Sterility Test,Microbiology,Oil Injectable,Elizabeth Brewer,Apex Highland Rx,503A,0,4.1,0,4.62,0,0,0,0,0,8.73,2026-02-17 09:24:37,Jonathan Cabrera
+SUB-260130-0013,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Kerry Baker,Apex Highland Rx,503A,8.81,4.87,0,12.87,0,0,0,0,0,26.55,2026-02-02 17:51:00,Debbie Le
+SUB-260114-0008,USP <71> Sterility Test,Microbiology,Oil Injectable,Ralph Shepherd,Apex Highland Rx,503A,0,1.15,0,3.22,0,0,0,0,0,4.37,2026-01-23 18:58:56,Julie Rodriguez
+SUB-260114-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Ethan Underwood,Apex Highland Rx,503A,0,2.59,0,1.12,0,0,0,0,0,3.71,2026-01-16 18:37:08,Debbie Le
+SUB-260114-0008,Potency (Solution),Chemistry,Oil Injectable,Bruce Snow,Apex Highland Rx,503A,12.45,7.54,0,0.56,0,0,0,0,0,20.56,2026-01-15 20:07:25,Julie Rodriguez
+SUB-260112-0007,USP <71> Sterility Test,Microbiology,Injectable,Roger Colon,Apex Highland Rx,503A,160.56,5.26,0,6.93,0,0,0,0,0,172.75,2026-01-23 09:40:40,James Dean
+SUB-260112-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Joshua Chapman,Apex Highland Rx,503A,0,4.24,0,3.59,0,0,2.07,0,0,9.9,2026-01-15 21:15:54,William Simmons
+SUB-260112-0007,USP <71> Sterility Test,Microbiology,Injectable,Kerry Baker,Apex Highland Rx,503A,0,3.96,0,17.76,27.5,0,14.38,0,0,63.59,2026-01-30 15:25:29,Julie Rodriguez
+SUB-260112-0007,USP <61> Microbial Enumeration,Microbiology,Injectable,Alan Mcgee,Apex Highland Rx,503A,0,2.46,0,3.53,0,0,0,0,0,5.99,2026-01-17 20:42:55,Tammy Mccullough
+SUB-260122-0007,Potency (Solution),Chemistry,Aqueous Solution,William Kramer,Apex Highland Rx,503A,9.01,6.05,0,2.95,0,0,0,0,0,18.01,2026-01-25 08:52:28,Julie Rodriguez
+SUB-260122-0007,USP <85> Bacterial Endotoxins Test,Microbiology,Aqueous Solution,Rebecca Daniel,Apex Highland Rx,503A,81.23,25.05,0,2.97,0,0,5.87,0,0,115.12,2026-01-27 20:22:15,Julie Rodriguez
+SUB-260122-0007,Potency (Peptides),Chemistry,Aqueous Solution,Justin Palmer,Apex Highland Rx,503A,0,8.36,0,3.78,0,0,0,0,0,12.14,2026-01-27 07:46:48,Tammy Mccullough
+SUB-260119-0016,USP <788> Particulate Matter,Microbiology,Injectable,Kerry Baker,Apex Highland Rx,503A,0,0.76,0,5.85,0,0,0,0,0,6.6,2026-01-22 13:42:49,Tammy Mccullough
+SUB-260102-0019,Environmental Monitoring Plate Read,Microbiology,Plate,Alan Mcgee,Apex Highland Rx,503A,0,0.85,0,8.48,0,0,0,0,0,9.33,2026-01-08 07:33:59,Julie Rodriguez
+SUB-260102-0019,Environmental Monitoring Plate Read,Microbiology,Plate,Rachel Williamson,Apex Highland Rx,503A,0,30.53,0,2.65,0,0,0,0,0,33.19,2026-01-08 12:42:19,Jonathan Cabrera
+SUB-260102-0019,Environmental Monitoring Plate Read,Microbiology,Plate,Ethan Underwood,Apex Highland Rx,503A,0,5.24,0,25.66,0,0,0,0,0,30.9,2026-01-12 16:23:05,Tammy Mccullough
+SUB-260128-0010,USP <71> Sterility Test,Microbiology,Injectable,Laura Lewis,Southpoint Smith Pharmacy,503A,8.31,15.69,0,2.29,0,0,0,0,0,26.29,2026-02-23 16:35:22,Tammy Mccullough
+SUB-260128-0010,Potency (Peptides),Chemistry,Injectable,Angela Aguilar,Southpoint Smith Pharmacy,503A,22.29,2.19,0,0.75,0,0,0,0,0,25.23,2026-02-10 14:56:22,Debbie Le
+SUB-260105-0008,USP <71> Sterility Test,Microbiology,Injectable,Rachel Williamson,Southpoint Smith Pharmacy,503A,0,1.79,0,0.54,0,0,0,0,0,2.34,2026-01-25 15:31:02,Tammy Mccullough
+SUB-260105-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Anthony Williams,Southpoint Smith Pharmacy,503A,0,17.06,0,6.12,0,0,0,0,0,23.18,2026-01-09 19:36:06,Julie Rodriguez
+SUB-260119-0017,Potency (Solution),Chemistry,Injectable,Phillip Burke,Southpoint Smith Pharmacy,503A,0,22.66,0,1.9,0,0,0,0,0,24.56,2026-01-22 16:14:35,Julie Rodriguez
+SUB-260119-0017,USP <71> Sterility Test,Microbiology,Injectable,Adrian Frey,Southpoint Smith Pharmacy,503A,4.62,0.49,0,0.86,0,0,0,0,0,5.97,2026-01-27 13:27:47,Debbie Le
+SUB-260119-0017,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Shannon Edwards,Southpoint Smith Pharmacy,503A,2.95,1.75,0,6.31,0,0,13.8,0,0,24.81,2026-01-22 13:00:38,Julie Rodriguez
+SUB-260119-0017,Potency (Solution),Chemistry,Injectable,Kimberly Fisher,Southpoint Smith Pharmacy,503A,8.58,1.09,0,14.62,0,0,0,0,0,24.3,2026-01-21 07:11:21,James Dean
+SUB-260108-0011,Potency (Solution),Chemistry,Injectable,John Melton,Southpoint Smith Pharmacy,503A,4.13,7.25,0,8.41,0,0,0,0,0,19.8,2026-01-12 08:05:26,Julie Rodriguez
+SUB-260108-0011,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Southpoint Smith Pharmacy,503A,9.93,2.23,0,1.2,0,0,0,0,0,13.36,2026-01-28 15:48:01,William Simmons
+SUB-260108-0011,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Travis Mora,Southpoint Smith Pharmacy,503A,0,0.45,0,3.49,0,0,0,0,0,3.94,2026-01-19 08:12:56,Tammy Mccullough
+SUB-260130-0014,Potency (Solution),Chemistry,Injectable,Michael King,Southpoint Smith Pharmacy,503A,25.4,28.85,0,3.37,0,0,0,0,0,57.61,2026-02-01 14:21:28,Julie Rodriguez
+SUB-260130-0014,USP <71> Sterility Test,Microbiology,Injectable,Alan Mcgee,Southpoint Smith Pharmacy,503A,0,2.74,0,69.78,0,0,0,0,0,72.52,2026-02-09 21:55:38,Debbie Le
+SUB-260130-0014,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Roger Colon,Southpoint Smith Pharmacy,503A,9.36,4.25,0,29.82,0,0,0,0,0,43.43,2026-02-03 08:27:46,Debbie Le
+SUB-260115-0014,Potency (Non-Solution),Chemistry,Capsule,Kevin Cooper,Southpoint Smith Pharmacy,503A,16.02,1.93,0,0.98,0,0,2.99,0,0,21.91,2026-01-21 12:16:48,Kimberly Baker
+SUB-260115-0014,pH Determination,Chemistry,Capsule,Veronica Simpson,Southpoint Smith Pharmacy,503A,27.65,8.82,0,17.58,35.49,0,0,0,0,89.54,2026-01-17 20:01:44,Julie Rodriguez
+SUB-260109-0011,Potency (Non-Solution),Chemistry,Capsule,Ashley Robertson,Southpoint Smith Pharmacy,503A,0,0.65,0,2.21,0,0,0,0,0,2.86,2026-01-17 12:18:40,Debbie Le
+SUB-260112-0008,USP <71> Sterility Test,Microbiology,Lyophilized,Jennifer Wilson,Southpoint Smith Pharmacy,503A,0,15.15,0,8.48,0,0,0,0,0,23.64,2026-02-03 20:50:50,Debbie Le
+SUB-260112-0008,USP <85> Bacterial Endotoxins Test,Microbiology,Lyophilized,Alan Mcgee,Southpoint Smith Pharmacy,503A,0,0.91,0,14.15,0,0,0,23.94,0,39,2026-01-18 16:00:04,Tammy Mccullough
+SUB-260112-0008,Bioburden Testing,Microbiology,Lyophilized,Carolyn Patel,Southpoint Smith Pharmacy,503A,0,71.76,0,0.31,0,0,10.4,0,0,82.47,2026-01-21 08:16:56,Kimberly Baker
+SUB-260129-0009,Potency (Solution),Chemistry,Injectable,Megan Johnson,Southpoint Smith Pharmacy,503A,26.57,10.91,0,1.34,0,0,0,0,0,38.82,2026-02-03 08:09:31,Debbie Le
+SUB-260129-0009,USP <71> Sterility Test,Microbiology,Injectable,Amanda Rivera,Southpoint Smith Pharmacy,503A,7.83,1.24,0,7.88,0,0,0,0,0,16.95,2026-02-08 09:53:39,William Simmons
+SUB-260129-0009,USP <85> Bacterial Endotoxins Test,Microbiology,Injectable,Kathleen Calhoun,Southpoint Smith Pharmacy,503A,4.37,4.85,0,3.13,0,0,0,0,0,12.36,2026-02-01 14:07:10,Debbie Le
+SUB-260120-0006,Environmental Monitoring Plate Read,Microbiology,Plate,Kathleen Calhoun,Sage Pinnacle Compounding Pharmacy,503A,34.37,2.85,0,4.98,0,0,11.42,0,0,53.62,2026-01-24 14:53:43,Marilyn Young
+SUB-260120-0006,Environmental Monitoring Plate Read,Microbiology,Plate,Laura Lewis,Sage Pinnacle Compounding Pharmacy,503A,16.47,7.45,0,1.5,0,0,0,0,0,25.42,2026-01-25 18:52:07,Debbie Le
+SUB-260120-0006,Environmental Monitoring Plate Read,Microbiology,Plate,John Hill,Sage Pinnacle Compounding Pharmacy,503A,0,10.97,0,7.76,0,0,0,0,0,18.73,2026-01-28 19:34:36,Tammy Mccullough
+SUB-260120-0006,Environmental Monitoring Plate Read,Microbiology,Plate,Kathleen Calhoun,Sage Pinnacle Compounding Pharmacy,503A,0,0.56,0,3.09,0,0,1.69,0,0,5.33,2026-01-28 11:35:44,James Dean
+SUB-260120-0006,Environmental Monitoring Plate Read,Microbiology,Plate,Kyle Young,Sage Pinnacle Compounding Pharmacy,503A,0,24.83,0,4.42,0,0,0,0,0,29.25,2026-01-27 19:27:20,Debbie Le
+SUB-260126-0008,Potency (Solution),Chemistry,Injectable,Angela Aguilar,Sage Pinnacle Compounding Pharmacy,503A,16.2,3.92,0,0.49,0,0,0,0,0,20.61,2026-01-29 18:37:20,James Dean
+SUB-260115-0015,Potency (Solution),Chemistry,Oil Injectable,Kathleen Schultz,Apex Coleman Compounding Center,503A,0,73.09,0,1.75,0,0,0,0,0,74.84,2026-01-19 21:47:36,Tammy Mccullough
+SUB-260115-0015,USP <71> Sterility Test,Microbiology,Oil Injectable,Alan Mcgee,Apex Coleman Compounding Center,503A,4.07,116.82,0,5.6,0,0,1.6,20.37,0,148.46,2026-01-25 17:30:04,Debbie Le
+SUB-260115-0015,USP <85> Bacterial Endotoxins Test,Microbiology,Oil Injectable,Rebecca Daniel,Apex Coleman Compounding Center,503A,17.15,0.37,0,11.98,0,0,0,0,0,29.5,2026-01-19 12:00:47,Marilyn Young
+SUB-260115-0015,USP <71> Sterility Test,Microbiology,Oil Injectable,Cheryl Berry,Apex Coleman Compounding Center,503A,0,22.47,0,5.63,0,0,0,0,0,28.09,2026-01-29 19:41:53,Marilyn Young

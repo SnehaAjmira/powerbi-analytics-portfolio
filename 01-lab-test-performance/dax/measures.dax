@@ -1,0 +1,612 @@
+// Measures exported from the report model.
+// Paste into DAX query view and click "Update model with changes" to recreate them.
+
+DEFINE
+    MEASURE 'Tests Release'[T.Tests Released] =
+        COUNT('Tests Release'[Test_Id])
+
+    MEASURE 'Tests Complete'[T.Tests Completed] =
+        COUNT('Tests Complete'[Test_Id])
+
+    MEASURE 'Tests Complete'[Avg Tests] =
+        AVERAGE ('Tests Complete'[Completion_Date])
+
+    MEASURE '_Measures'[Completed Early] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[TAT_Status] = "Early"
+        )
+
+    MEASURE '_Measures'[Completed On Time] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[TAT_Status] = "On Time"
+        )
+
+    MEASURE '_Measures'[Completed Late] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[TAT_Status] = "Late"
+        )
+
+    MEASURE '_Measures'[TAT Status Unknown] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[TAT_Status] = "Unknown"
+        )
+
+    MEASURE '_Measures'[% Completed Early] =
+        DIVIDE(
+            [Completed Early],
+            [T.Tests Completed] ,
+            0
+        )
+
+    MEASURE '_Measures'[% Completed On Time] =
+        DIVIDE(
+            [Completed On Time],
+            [T.Tests Completed] ,
+            0
+        )
+
+    MEASURE '_Measures'[% Completed Late] =
+        DIVIDE(
+            [Completed Late],
+            [T.Tests Completed],
+            0
+        )
+
+    MEASURE '_Measures'[Rush Completed] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[Rush] = "Y"
+        )
+
+    MEASURE '_Measures'[Non-Rush Completed] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[Rush] = "N"
+        )
+
+    MEASURE '_Measures'[Rush Completed Late] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[Rush] = "Y",
+            'Tests Complete'[TAT_Status] = "Late"
+        )
+
+    MEASURE '_Measures'[Non-Rush Completed Late] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[Rush] = "N",
+            'Tests Complete'[TAT_Status] = "Late"
+        )
+
+    MEASURE '_Measures'[Rush Completed Early] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            'Tests Complete'[Rush] = "Y",
+            'Tests Complete'[TAT_Status] = "Early"
+        )
+
+    MEASURE '_Measures'[% Rush] =
+        DIVIDE(
+            [Rush Completed],
+            [T.Tests Completed],
+            0
+        )
+
+    MEASURE '_Measures'[Active Clients] =
+        DISTINCTCOUNT('Tests Complete'[Client_Facility])
+
+    MEASURE '_Measures'[Active Clients Prior Period] =
+        CALCULATE(
+            DISTINCTCOUNT('Tests Complete'[Client_Facility]),
+            PREVIOUSMONTH('DimCalender'[Date])
+        )
+
+    MEASURE '_Measures'[Client Count Change] =
+        [Active Clients] - [Active Clients Prior Period]
+
+    MEASURE '_Measures'[% Client Growth] =
+        DIVIDE(
+            [Client Count Change],
+            [Active Clients Prior Period],
+            0
+        )
+
+    MEASURE '_Measures'[New Clients] =
+        CALCULATE(
+            DISTINCTCOUNT('Tests Complete'[Client_Facility]),
+            FILTER(
+                VALUES('Tests Complete'[Client_Facility]),
+                CALCULATE(
+                    COUNTROWS('Tests Complete'),
+                    PREVIOUSMONTH('DimCalender'[Date])
+                ) = 0
+            )
+        )
+
+    MEASURE '_Measures'[Lost Clients] =
+        CALCULATE(
+            DISTINCTCOUNT('Tests Complete'[Client_Facility]),
+            PREVIOUSMONTH('DimCalender'[Date]),
+            FILTER(
+                VALUES('Tests Complete'[Client_Facility]),
+                CALCULATE(
+                    COUNTROWS('Tests Complete')
+                ) = 0
+            )
+        )
+
+    MEASURE '_Measures'[Total Analytes] =
+        DISTINCTCOUNT('Tests Complete'[Analyte])
+
+    MEASURE '_Measures'[Total Analyte Volume] =
+        COUNTROWS('Tests Complete')
+
+    MEASURE '_Measures'[Analyte Volume Prior Period] =
+        CALCULATE(
+            COUNTROWS('Tests Complete'),
+            PREVIOUSMONTH('DimCalender'[Date])
+        )
+
+    MEASURE '_Measures'[Analyte Volume Change] =
+        [Total Analyte Volume] - [Analyte Volume Prior Period]
+
+    MEASURE '_Measures'[Top Analyte] =
+        CALCULATE(
+            FIRSTNONBLANK('Tests Complete'[Analyte], 1),
+            TOPN(
+                1,
+                SUMMARIZE(
+                    'Tests Complete',
+                    'Tests Complete'[Analyte],
+                    "Vol", COUNTROWS('Tests Complete')
+                ),
+                [Vol],
+                DESC
+            )
+        )
+
+    MEASURE '_Measures'[Avg TAT Days] =
+        AVERAGE('Tests Complete'[TAT_Days])
+
+    MEASURE '_Measures'[Avg TAT Days Early] =
+        CALCULATE(
+            AVERAGE('Tests Complete'[TAT_Days]),
+            'Tests Complete'[TAT_Status] = "Early"
+        )
+
+    MEASURE '_Measures'[Avg TAT Days Late] =
+        CALCULATE(
+            AVERAGE('Tests Complete'[TAT_Days]),
+            'Tests Complete'[TAT_Status] = "Late"
+        )
+
+    MEASURE '_Measures'[Avg TAT Variance] =
+        AVERAGE('Tests Complete'[TAT_Variance])
+
+    MEASURE '_Measures'[Released Not Completed] =
+        VAR ReleasedSubmissions =
+            CALCULATETABLE(
+                VALUES('Tests Release'[Submission_Number])
+            )
+        VAR CompletedSubmissions =
+            CALCULATETABLE(
+                VALUES('Tests Complete'[Submission_Number])
+            )
+        RETURN
+            COUNTROWS(
+                EXCEPT(ReleasedSubmissions, CompletedSubmissions)
+            )
+
+    MEASURE '_Measures'[Completion Rate] =
+        DIVIDE(
+            [T.Tests Completed],
+            [T.Tests Released],
+            0
+        )
+
+    MEASURE '_Measures'[Late Rush Flag Breakdown] =
+        CALCULATE(
+            [Completed Late],
+            ALLEXCEPT('Tests Complete', 'Tests Complete'[Rush])
+        )
+
+    MEASURE '_Measures'[Late by Test] =
+        CALCULATE(
+            [Completed Late],
+            ALLEXCEPT('Tests Complete', 'Tests Complete'[Test_Name])
+        )
+
+    MEASURE '_Measures'[Late by Facility Type] =
+        CALCULATE(
+            [Completed Late],
+            ALLEXCEPT('Tests Complete', 'Tests Complete'[Facility_Type])
+        )
+
+    MEASURE '_Measures'[Total Lot Numbers] =
+        DISTINCTCOUNT('Tests Complete'[Lot_Number])
+
+    MEASURE '_Measures'[Lot Numbers Prior Period] =
+        CALCULATE(
+            DISTINCTCOUNT('Tests Complete'[Lot_Number]),
+            PREVIOUSMONTH('DimCalender'[Date])
+        )
+
+    MEASURE '_Measures'[Lot Number Change] =
+        [Total Lot Numbers] - [Lot Numbers Prior Period]
+
+    MEASURE '_Measures'[% Lot Number Growth] =
+        DIVIDE(
+            [Lot Number Change],
+            [Lot Numbers Prior Period],
+            0
+        )
+
+    MEASURE '_Measures'[Lots With Late Tests] =
+        CALCULATE(
+            DISTINCTCOUNT('Tests Complete'[Lot_Number]),
+            'Tests Complete'[TAT_Status] = "Late"
+        )
+
+    MEASURE '_Measures'[% Lots With Late Tests] =
+        DIVIDE(
+            [Lots With Late Tests],
+            [Total Lot Numbers],
+            0
+        )
+
+    MEASURE 'Quality Data'[QA Total Approvals] =
+        COUNTROWS('Quality Data')
+
+    MEASURE 'Quality Data'[QA Distinct Clients] =
+        DISTINCTCOUNT('Quality Data'[Client_Name])
+
+    MEASURE 'Quality Data'[QA Distinct Test Types] =
+        DISTINCTCOUNT('Quality Data'[Test_Name])
+
+    MEASURE 'Quality Data'[QA Avg Approvals Per Day] =
+        DIVIDE(
+            COUNTROWS('Quality Data'),
+            DISTINCTCOUNT('Quality Data'[Approval_Date]),
+            0
+        )
+
+    MEASURE 'Quality Data'[QA Avg Per Approver Per Day] =
+        DIVIDE(
+            COUNTROWS('Quality Data'),
+            DISTINCTCOUNT('Quality Data'[Approved_By])
+                * DISTINCTCOUNT('Quality Data'[Completed]),
+            0
+        )
+
+    MEASURE 'Quality Data'[QA Approvals Prior Month] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            PREVIOUSMONTH('DimCalender'[Date])
+        )
+
+    MEASURE 'Quality Data'[QA Approvals Change] =
+        [QA Total Approvals] - [QA Approvals Prior Month]
+
+    MEASURE 'Quality Data'[QA Approvals % Change] =
+        DIVIDE(
+            [QA Approvals Change],
+            [QA Approvals Prior Month],
+            0
+        )
+
+    MEASURE 'Quality Data'[QA Approvals SPLY] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            SAMEPERIODLASTYEAR('DimCalender'[Date])
+        )
+
+    MEASURE 'Quality Data'[QA Approvals YOY %] =
+        DIVIDE(
+            [QA Total Approvals] - [QA Approvals SPLY],
+            [QA Approvals SPLY],
+            0
+        )
+
+    MEASURE 'Quality Data'[QA Approvals QTD] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            DATESQTD('DimCalender'[Date])
+        )
+
+    MEASURE 'Quality Data'[QA Approvals By Approver] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            ALLEXCEPT('Quality Data', 'Quality Data'[Approved_By])
+        )
+
+    MEASURE 'Quality Data'[QA Approvals By Department] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            ALLEXCEPT('Quality Data', 'Quality Data'[Department])
+        )
+
+    MEASURE 'Quality Data'[QA Approvals By Facility Type] =
+        CALCULATE(
+            COUNTROWS('Quality Data'),
+            ALLEXCEPT('Quality Data', 'Quality Data'[Facility_Type])
+        )
+
+    MEASURE 'Tests Complete'[T.Completed Rev] =
+        SUM('Tests Complete'[Price])
+
+    MEASURE '_Measures'[Completion Variance] =
+        [T.Tests Completed] - [T.Tests Released]
+
+    MEASURE '_Measures'[Completion Variance %] =
+        DIVIDE([T.Tests Completed] - [T.Tests Released], [T.Tests Released])
+
+    MEASURE '_Measures'[Completion Variance Indicator] =
+        VAR rel = [T.Tests Released]
+        VAR comp = [T.Tests Completed]
+        VAR pct = [Completion Variance %]
+        RETURN
+            IF(
+                ISBLANK(rel) && ISBLANK(comp),
+                BLANK(),
+                SWITCH(
+                    TRUE(),
+                    ISBLANK(pct), "—",
+                    pct = 0, "—",
+                    pct > 0, "▲ " & FORMAT(pct, "0.0%"),
+                    "▼ " & FORMAT(pct, "0.0%")
+                )
+            )
+
+    MEASURE '_Measures'[Completion Variance Color] =
+        VAR pct = [Completion Variance %]
+        RETURN
+            SWITCH(
+                TRUE(),
+                ISBLANK(pct) || pct = 0, "#808080",
+                pct > 0, "#2E7D32",   -- green: completed more than released (working down backlog)
+                "#D32F2F"             -- red/orange: completed less than released (backlog growing)
+            )
+
+    MEASURE '_Measures'[Min TAT Days] =
+        MIN('Tests Complete'[TAT_Days])
+
+    MEASURE '_Measures'[Max TAT Days] =
+        MAX('Tests Complete'[TAT_Days])
+
+    MEASURE '_Measures'[TAT Days StdDev] =
+        STDEV.P('Tests Complete'[TAT_Days])
+
+    MEASURE '_Measures'[Avg TAT Days On Time] =
+        CALCULATE(AVERAGE('Tests Complete'[TAT_Days]), 'Tests Complete'[TAT_Status] = "On Time")
+
+    MEASURE '_Measures'[Avg. Price] =
+        AVERAGE('Tests Complete'[Price])
+
+    MEASURE '_Measures'[Last Update] =
+        MAX('Tests Release'[Completion_Date])
+
+    MEASURE '_Measures'[Released Prior Month] =
+        CALCULATE(
+            [T.Tests Released],
+            PREVIOUSMONTH('DimCalender'[Date])
+        )
+
+    MEASURE '_Measures'[Released MoM Change] =
+        [T.Tests Released] - [Released Prior Month]
+
+    MEASURE '_Measures'[Released MoM %] =
+        DIVIDE([Released MoM Change], [Released Prior Month], 0)
+
+    MEASURE '_Measures'[Analyst Tests Completed Prior Month] =
+        CALCULATE([T.Tests Completed] , DATEADD('DimCalender'[Date], -1, MONTH))
+
+    MEASURE '_Measures'[Analyst MoM Variance %] =
+        DIVIDE(
+            [T.Tests Completed] - [Analyst Tests Completed Prior Month],
+            [Analyst Tests Completed Prior Month],
+            0
+        )
+
+    MEASURE '_Measures'[Analyst Growth Label] =
+        VAR pct = [Analyst MoM Variance %]
+        VAR avgPct = [Overall Avg Analyst MoM Variance %]
+        VAR diff = pct - avgPct
+        RETURN
+            IF(
+                ISINSCOPE('DimCalender'[Month]),
+                BLANK(),
+                SWITCH(
+                    TRUE(),
+                    ISBLANK(pct) || pct = 0, "No Prior Data",
+                    diff > 0.02, "Growing",
+                    diff < -0.02, "Below Average",
+                    "Stable"
+                )
+            )
+
+    MEASURE '_Measures'[Analyst MoM Indicator] =
+        VAR prior = [Analyst Tests Completed Prior Month]
+        VAR curr = [T.Tests Completed]
+        VAR pct = [Analyst MoM Variance %]
+        RETURN
+            IF(
+                ISBLANK(prior) && ISBLANK(curr),
+                BLANK(),
+                SWITCH(
+                    TRUE(),
+                    ISBLANK(pct), "—",
+                    pct = 0, "—",
+                    pct > 0, "▲ " & FORMAT(pct, "0.0%"),
+                    "▼ " & FORMAT(pct, "0.0%")
+                )
+            )
+
+    MEASURE '_Measures'[Analyst MoM Color] =
+        VAR pct = [Analyst MoM Variance %]
+        RETURN
+            SWITCH(
+                TRUE(),
+                ISBLANK(pct) || pct = 0, "#808080",
+                pct > 0, "#2E7D32",
+                "#D32F2F"
+            )
+
+    MEASURE '_Measures'[Overall Avg Analyst MoM Variance %] =
+        AVERAGEX(ALLSELECTED('DimAnalyst'[Analyst]), [Analyst MoM Variance %])
+
+    MEASURE 'DimClient'[Client Rank] =
+        IF(
+            ISBLANK([T.Tests Completed]),
+            BLANK(),
+            RANKX(
+                ALLSELECTED(DimClient[Client_Facility]),
+                CALCULATE([T.Tests Completed], ALL(DimCalender)),
+                ,
+                DESC,
+                Dense
+            )
+        )
+
+    MEASURE '_OOS Measures'[OOS Client Events] =
+        COUNTROWS(OosByClient)
+
+    MEASURE '_OOS Measures'[OOS Client Rate] =
+        DIVIDE([OOS Client Events], [T.Tests Completed])
+
+    MEASURE '_OOS Measures'[Overall OOS Rate] =
+        CALCULATE([OOS Client Rate], ALLSELECTED())
+
+    MEASURE '_OOS Measures'[OOS Client Index] =
+        DIVIDE([OOS Client Rate], [OOS Client Rate])
+
+    MEASURE '_OOS Measures'[OOS Colour] =
+        SWITCH(TRUE(), [OOS Client Index] >= 1.5, "#C00000", [OOS Client Index] >= 1.1, "#F4B183", "#7DBB91")
+
+    MEASURE '_OOS Measures'[OOS Tech Incidents] =
+        SUM(OosByTechnician[NumberOfOOS])
+
+    MEASURE '_OOS Measures'[OOS Client Clients Affected] =
+        DISTINCTCOUNT(OosByClient[ClientName])
+
+    MEASURE '_OOS Measures'[OOS Client Rate Trend] =
+        VAR FirstD = CALCULATE(MIN('Tests Complete'[Completion_Date]), ALLSELECTED())
+        VAR LastD  = CALCULATE(MAX('Tests Complete'[Completion_Date]), ALLSELECTED())
+        VAR R1 = CALCULATE([OOS Client Rate], DATESBETWEEN(DimCalender[Date], EOMONTH(FirstD,-1)+1, EOMONTH(FirstD,0)))
+        VAR R2 = CALCULATE([OOS Client Rate], DATESBETWEEN(DimCalender[Date], EOMONTH(LastD,-1)+1, EOMONTH(LastD,0)))
+        RETURN DIVIDE(R2 - R1, R1)
+
+    MEASURE '_OOS Measures'[OOS Tech Analysts Affected] =
+        DISTINCTCOUNT(OosByTechnician[Analyst])
+
+    MEASURE '_OOS Measures'[r Tests Completed vs OOS Client Rate] =
+        VAR t = FILTER(ADDCOLUMNS(VALUES(DimCalender[Month]), "x", [T.Tests Completed], "y", [OOS Client Rate]), NOT ISBLANK([x]))
+        VAR mx = AVERAGEX(t, [x])  VAR my = AVERAGEX(t, [y])
+        RETURN DIVIDE(SUMX(t, ([x]-mx)*([y]-my)), SQRT(SUMX(t, ([x]-mx)^2) * SUMX(t, ([y]-my)^2)))
+
+    MEASURE '_OOS Measures'[r OOS Tech vs OOS Client] =
+        VAR t = FILTER(ADDCOLUMNS(VALUES(DimCalender[Month]), "x", [OOS Tech Incidents], "y", [OOS Client Events]), NOT ISBLANK([x]))
+        VAR mx = AVERAGEX(t, [x])  VAR my = AVERAGEX(t, [y])
+        RETURN DIVIDE(SUMX(t, ([x]-mx)*([y]-my)), SQRT(SUMX(t, ([x]-mx)^2) * SUMX(t, ([y]-my)^2)))
+
+    MEASURE '_OOS Measures'[Past Due Rate] =
+        DIVIDE([Completed Late], [T.Tests Completed])
+
+    MEASURE '_OOS Measures'[Lab Past Due Rate] =
+        CALCULATE([Past Due Rate], REMOVEFILTERS(DimClient), REMOVEFILTERS(DimAnalyte))
+
+    MEASURE '_OOS Measures'[Past Due Index] =
+        DIVIDE([Past Due Rate], [Lab Past Due Rate])
+
+    MEASURE '_OOS Measures'[Tests Completed LM] =
+        CALCULATE([T.Tests Completed], DATEADD(DimCalender[Date], -1, MONTH))
+
+    MEASURE '_OOS Measures'[Past Due Rate LM] =
+        CALCULATE([Past Due Rate], DATEADD(DimCalender[Date], -1, MONTH))
+
+    MEASURE '_OOS Measures'[OOS Client Events LM] =
+        CALCULATE([OOS Client Events], DATEADD(DimCalender[Date], -1, MONTH))
+
+    MEASURE '_OOS Measures'[OOS Client Rate LM] =
+        CALCULATE([OOS Client Rate], DATEADD(DimCalender[Date], -1, MONTH))
+
+    MEASURE '_OOS Measures'[OOS Tech Incidents LM] =
+        CALCULATE([OOS Tech Incidents], DATEADD(DimCalender[Date], -1, MONTH))
+
+    MEASURE '_OOS Measures'[Tests Completed MoM Label] =
+        VAR d = DIVIDE([T.Tests Completed] - [Tests Completed LM], [Tests Completed LM])
+        RETURN IF(d > 0, "▲ ", IF(d < 0, "▼ ", "→ ")) & FORMAT(ABS(d), "0.0%") & " | LM " & FORMAT([Tests Completed LM], "#,##0")
+
+    MEASURE '_OOS Measures'[Past Due MoM Label] =
+        VAR d = [Past Due Rate] - [Past Due Rate LM]
+        RETURN IF(d > 0, "▲ ", IF(d < 0, "▼ ", "→ ")) & FORMAT(ABS(d) * 100, "0.00") & " pts | LM " & FORMAT([Past Due Rate LM], "0.0%")
+
+    MEASURE '_OOS Measures'[OOS Client Events MoM Label] =
+        VAR d = DIVIDE([OOS Client Events] - [OOS Client Events LM], [OOS Client Events LM])
+        RETURN IF(d > 0, "▲ ", IF(d < 0, "▼ ", "→ ")) & FORMAT(ABS(d), "0.0%") & " | LM " & FORMAT([OOS Client Events LM], "#,##0")
+
+    MEASURE '_OOS Measures'[OOS Client Rate MoM Label] =
+        VAR d = [OOS Client Rate] - [OOS Client Rate LM]
+        RETURN IF(d > 0, "▲ ", IF(d < 0, "▼ ", "→ ")) & FORMAT(ABS(d) * 100, "0.00") & " pts | LM " & FORMAT([OOS Client Rate LM], "0.00%")
+
+    MEASURE '_OOS Measures'[OOS Tech MoM Label] =
+        VAR d = DIVIDE([OOS Tech Incidents] - [OOS Tech Incidents LM], [OOS Tech Incidents LM])
+        RETURN IF(d > 0, "▲ ", IF(d < 0, "▼ ", "→ ")) & FORMAT(ABS(d), "0.0%") & " | LM " & FORMAT([OOS Tech Incidents LM], "#,##0")
+
+    MEASURE '_OOS Measures'[Tests Completed MoM Colour] =
+        IF([T.Tests Completed] >= [Tests Completed LM], "#2E7D32", "#C00000")
+
+    MEASURE '_OOS Measures'[Past Due MoM Colour] =
+        IF([Past Due Rate] > [Past Due Rate LM], "#C00000", "#2E7D32")
+
+    MEASURE '_OOS Measures'[OOS Client Events MoM Colour] =
+        IF([OOS Client Events] > [OOS Client Events LM], "#C00000", "#2E7D32")
+
+    MEASURE '_OOS Measures'[OOS Client Rate MoM Colour] =
+        IF([OOS Client Rate] > [OOS Client Rate LM], "#C00000", "#2E7D32")
+
+    MEASURE '_OOS Measures'[OOS Tech MoM Colour] =
+        IF([OOS Tech Incidents] > [OOS Tech Incidents LM], "#C00000", "#2E7D32")
+
+    MEASURE '_OOS Measures'[Client Volume Rank] =
+        IF(ISINSCOPE(DimClient[Client_Facility]),
+                              RANKX(ALLSELECTED(DimClient[Client_Facility]), [T.Tests Completed], , DESC, Dense))
+
+    MEASURE '_OOS Measures'[Analyte Volume Rank] =
+        IF(ISINSCOPE(DimAnalyte[Analyte]),
+                              RANKX(ALLSELECTED(DimAnalyte[Analyte]), [T.Tests Completed], , DESC, Dense))
+
+    MEASURE '_OOS Measures'[Keep Review Flag] =
+        VAR n = [T.Tests Completed]
+        RETURN SWITCH(TRUE(),
+            ISBLANK(n), BLANK(),
+            n < 50, "Low Volume",
+            [OOS Client Index] >= 2 && [Past Due Index] >= 1.2, "Review",
+            [OOS Client Index] >= 1.5 || [Past Due Index] >= 1.5, "Watch",
+            "Keep")
+
+    MEASURE '_OOS Measures'[Flag Colour] =
+        SWITCH([Keep Review Flag], "Review","#C00000", "Watch","#F4B183", "Keep","#7DBB91", "#BFBFBF")
+
+    MEASURE '_OOS Measures'[Lab OOS Client Rate] =
+        CALCULATE([OOS Client Rate], REMOVEFILTERS(DimClient), REMOVEFILTERS(DimAnalyte))
+
+    MEASURE '_OOS Measures'[Analyte Lab OOS Rate] =
+        CALCULATE([OOS Client Rate], REMOVEFILTERS(DimAnalyte), DimAnalyte[Analyte] <> "")
+
+    MEASURE '_OOS Measures'[Analyte Lab Past Due Rate] =
+        CALCULATE([Past Due Rate], REMOVEFILTERS(DimAnalyte), DimAnalyte[Analyte] <> "")
+
+    MEASURE '_OOS Measures'[Analyte OOS Index] =
+        DIVIDE([OOS Client Rate], [Analyte Lab OOS Rate])
+
+    MEASURE '_OOS Measures'[Analyte Past Due Index] =
+        DIVIDE([Past Due Rate], [Analyte Lab Past Due Rate])
+
+    MEASURE '_OOS Measures'[Analyst OOS Rate] =
+        DIVIDE( [OOS Tech Incidents], [T.Tests Completed])
+
+EVALUATE { 1 }

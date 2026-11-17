@@ -1,0 +1,98 @@
+// Calculated tables and columns (Modeling > New table / New column)
+
+// ---- calculated table
+Volume Change =
+GENERATESERIES(-5000, 50000, 1)
+
+// ---- calculated table
+Price Change =
+GENERATESERIES(-1000,1000,1)
+
+// ---- calculated table
+ScenarioMultiplier =
+GENERATESERIES(0, 0.50,0.01)
+
+// ---- calculated table
+Date =
+ADDCOLUMNS(
+    CALENDAR(DATE(2019,1,1), EOMONTH(TODAY(), 12)),
+    "Year", YEAR([Date]),
+    "MonthNum", MONTH([Date]),
+    "MonthName", FORMAT([Date], "MMM"),
+    "YearMonth", FORMAT([Date], "YYYY-MM"),
+    "MonthStart", DATE(YEAR([Date]), MONTH([Date]), 1),
+    "MonthIndex", DATEDIFF(DATE(2019,1,1), DATE(YEAR([Date]), MONTH([Date]), 1), MONTH),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Week", WEEKNUM([Date])
+)
+
+// ---- calculated table
+Dim Client =
+DISTINCT(
+    UNION(
+        DISTINCT('Fact Table (Services)'[Client_Facility]),
+        DISTINCT('Fact Table (Products)'[Client_Facility]),
+        DISTINCT('Consulting Activities'[Client_Facility_Name])
+    )
+)
+
+// ---- calculated table
+Behavior Cohort Table =
+DATATABLE(
+    "Behavior Cohort", STRING,
+    {
+        {"Champions (Growing)"},
+        {"Champions (Stable)"},
+        {"High Value Declining"},
+        {"High Value At Risk"},
+        {"Loyal High Frequency"},
+        {"Consistent Clients"},
+        {"Growing Mid-Tier"},
+        {"New High Potential"},
+        {"Emerging Clients"},
+        {"Upsell Candidates"},
+        {"At Risk Loyal"},
+        {"Declining Clients"},
+        {"Churn Risk"},
+        {"Lost High Value"},
+        {"Dormant"},
+        {"One-Time Clients"},
+        {"Others"}
+    }
+)
+
+// ---- calculated table
+Client Behavior Base =
+SUMMARIZE(
+    'Fact Table (Services)',
+    'Fact Table (Services)'[Client_Facility],
+     'Fact Table (Services)'[Test_Name]  -- includes tests + products
+)
+
+// ---- calculated table
+Early Warning Table =
+DATATABLE(
+    "Early Warning Band", STRING,
+    {
+        {"Accelerating"},
+        {"Improving"},
+        {"Stable"},
+        {"Early Decline"},
+        {"Sharp Decline"},
+        {"No Prior Period"}
+    }
+)
+
+// ---- calculated table
+Dim Test Facility =
+DISTINCT(
+    UNION(
+        DISTINCT('Fact Table (Services)'[Test_Facility]),
+        DISTINCT('Fact Table (Products)'[Test Facility]),
+        DISTINCT('Consulting Activities'[Test Facility])
+    )
+)
+
+// ---- calculated table
+Dim Test =
+DISTINCT('Fact Table (Services)'[Test_Name])

@@ -1,0 +1,134 @@
+// Calculated tables and columns (Modeling > New table / New column)
+
+// ---- calculated table
+DimCalender =
+ADDCOLUMNS(
+    CALENDAR(DATE(2024,1,1), DATE(2026,12,31)),
+    "Year", YEAR([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "Quarter", FORMAT([Date], "Q"),
+    "Week", WEEKNUM([Date]))
+
+// ---- calculated table
+DimAnalyte =
+DISTINCT(
+    UNION(
+        ALL('Tests Complete'[Analyte]),
+        ALL('Tests Release'[Analyte])
+    ))
+
+// ---- calculated table
+DimAnalyst =
+DISTINCT(
+    UNION(
+        ALL('Tests Complete'[Analyst]),
+        ALL('Tests Release'[Analyst])
+    ))
+
+// ---- calculated table
+DimTest =
+DISTINCT(
+    UNION(
+        ALL('Tests Complete'[Test_Name]),
+        ALL('Tests Release'[Test_Name])
+    ))
+
+// ---- calculated table
+DimRush =
+DISTINCT(
+    UNION(
+        ALL('Tests Complete'[Rush]),
+        ALL('Tests Release'[Rush])
+    ))
+
+// ---- calculated table
+DimClient =
+DISTINCT(
+    UNION(
+        ALL('Tests Complete'[Client_Facility]),
+        ALL('Tests Release'[Client_Facility])
+    ))
+
+// ---- calculated table
+_OOS Measures =
+{BLANK()}
+
+// ---- calculated column
+Tests Complete[TAT_Days] =
+DATEDIFF(
+    'Tests Complete'[Submission_Release_Date],
+    'Tests Complete'[Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Tests Complete[TAT_Target_Days] =
+DATEDIFF(
+    'Tests Complete'[Submission_Release_Date],
+    'Tests Complete'[Estimated_Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Tests Complete[TAT_Variance] =
+DATEDIFF(
+    'Tests Complete'[Completion_Date],
+    'Tests Complete'[Estimated_Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Tests Complete[TAT_Status] =
+SWITCH(
+    TRUE(),
+    'Tests Complete'[Completion_Date] < 'Tests Complete'[Estimated_Completion_Date], "Early",
+    'Tests Complete'[Completion_Date] = 'Tests Complete'[Estimated_Completion_Date], "On Time",
+    'Tests Complete'[Completion_Date] > 'Tests Complete'[Estimated_Completion_Date], "Late",
+    "Unknown"
+)
+
+// ---- calculated column
+Tests Release[TAT_Status] =
+SWITCH(
+    TRUE(),
+    'Tests Release'[Completion_Date] < 'Tests Release'[Estimated_Completion_Date], "Early",
+    'Tests Release'[Completion_Date] = 'Tests Release'[Estimated_Completion_Date], "On Time",
+    'Tests Release'[Completion_Date] > 'Tests Release'[Estimated_Completion_Date], "Late",
+    "Unknown"
+)
+
+// ---- calculated column
+Tests Release[TAT_Variance] =
+DATEDIFF(
+    'Tests Release'[Completion_Date],
+    'Tests Release'[Estimated_Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Tests Release[TAT_Target_Days] =
+DATEDIFF(
+    'Tests Release'[Submission_Release_Date],
+    'Tests Release'[Estimated_Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Tests Release[TAT_Days] =
+DATEDIFF(
+    'Tests Release'[Submission_Release_Date],
+    'Tests Release'[Completion_Date],
+    DAY
+)
+
+// ---- calculated column
+Quality Data[Approval_Date] =
+DATE(
+    YEAR('Quality Data'[Completed]),
+    MONTH('Quality Data'[Completed]),
+    DAY('Quality Data'[Completed])
+)
+
+// ---- calculated column
+Tests Release[DayOfWeek_Received] =
+FORMAT('Tests Release'[Submission_Release_Date], "dddd")
