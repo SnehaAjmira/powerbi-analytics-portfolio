@@ -48,11 +48,17 @@ main{padding:20px 32px 40px;max-width:1440px;margin:0 auto}
 .card.wide{grid-column:1/-1} .card h3{margin:0 0 2px;font-size:15px;font-weight:600}
 .card .sub{font-size:12px;color:#6b6a66;margin-bottom:4px}
 footer{color:#8a8985;font-size:12px;padding:0 32px 28px;max-width:1440px;margin:0 auto}
-.badge{display:inline-block;background:#e8f5e8;color:#2e6b34;border-radius:999px;padding:2px 10px;font-size:12px;margin-left:8px;vertical-align:middle}
+.dl{display:inline-block;margin-top:10px;margin-right:8px;background:#ffffff;border:1px solid #7cc47f;color:#2e6b34;border-radius:8px;padding:6px 12px;font-size:13px;text-decoration:none;font-weight:600}
+.dl:hover{background:#e8f5e8} .badge{display:inline-block;background:#e8f5e8;color:#2e6b34;border-radius:999px;padding:2px 10px;font-size:12px;margin-left:8px;vertical-align:middle}
 .links a{display:block;background:#f6fbf6;border:1px solid #d6ecd6;border-radius:10px;padding:16px 18px;margin-bottom:12px;color:#0b0b0b;text-decoration:none}
 .links a b{display:block;font-size:17px;margin-bottom:4px} .links a span{color:#52514e;font-size:13px}
 """
 
+DOWNLOADS = {"lab-test-performance.html": ("01-lab-test-performance", "lab-data-v1.0"),
+             "pareto-80-20.html": ("02-pareto-80-20-analysis", "lab-data-v1.0"),
+             "client-rfm.html": ("03-client-segmentation-rfm", "lab-data-v1.0"),
+             "gigafactory-project-analytics.html": ("04-gigafactory-project-analytics", "gigafactory-data-v1.0")}
+REPO = "https://github.com/SnehaAjmira/powerbi-analytics-portfolio"
 PAGES = [("lab-test-performance.html", "Lab Test Performance"), ("pareto-80-20.html", "Pareto 80/20"),
          ("client-rfm.html", "Client RFM & Early Warning"), ("gigafactory-project-analytics.html", "Gigafactory Project Analytics")]
 
@@ -85,6 +91,10 @@ def hbar(labels, values, color=C[0], fmt=",.0f", height=340, text=None, colors=N
 
 def page(fname, title, subtitle, kpis, cards, out_dir, note):
     nav = "".join(f'<a class="{"on" if f == fname else ""}" href="{f}">{t}</a>' for f, t in PAGES)
+    proj, tag = DOWNLOADS[fname]
+    dl = (f'<a class="dl" href="downloads/{proj}-powerbi.zip">Download Power BI file (.pbip)</a>'
+          f'<a class="dl" href="{REPO}/releases/tag/{tag}">Download the data</a>'
+          f'<a class="dl" href="{REPO}/tree/main/{proj}">Source and DAX</a>')
     kp = "".join(f'<div class="kpi"><div class="l">{l}</div><div class="v">{v}</div><div class="n">{n}</div></div>'
                  for l, v, n in kpis)
     body = []
@@ -94,7 +104,7 @@ def page(fname, title, subtitle, kpis, cards, out_dir, note):
         body.append(f'<div class="card{" wide" if wide else ""}"><h3>{t}</h3><div class="sub">{sub}</div>{html}</div>')
     doc = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><script src="assets/plotly.min.js"></script><style>{CSS}</style></head><body>
-<header><h1>{title}<span class="badge">Synthetic data</span></h1><p>{subtitle}</p></header><nav><a href="index.html">Home</a>{nav}</nav>
+<header><h1>{title}<span class="badge">Synthetic data</span></h1><p>{subtitle}</p>{dl}</header><nav><a href="index.html">Home</a>{nav}</nav>
 <main><div class="kpis">{kp}</div><div class="grid">{''.join(body)}</div></main>
 <footer>{note} All companies, people and figures are randomly generated. Built by Sai Sneha Ajmira.</footer></body></html>"""
     open(os.path.join(out_dir, fname), "w", encoding="utf-8").write(doc)
@@ -525,7 +535,9 @@ def index_page(out):
              ("client-rfm.html", "Client RFM Segmentation & Early Warning", "Behavior cohorts, declining clients and a call list."),
              ("gigafactory-project-analytics.html", "Gigafactory Project Analytics",
               "Engineering, RFIs, procurement, earned value, completions and safety from six data sources.")]
-    links = "".join(f'<a href="{f}"><b>{t}</b><span>{s}</span></a>' for f, t, s in items)
+    links = "".join(f'<a href="{f}"><b>{t}</b><span>{s}</span></a>'
+                    f'<div style="margin:-6px 0 16px 2px"><a class="dl" style="display:inline-block;padding:4px 10px;margin:0" href="downloads/{DOWNLOADS[f][0]}-powerbi.zip">Power BI file (.pbip zip)</a></div>'
+                    for f, t, s in items)
     doc = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Power BI & Analytics Portfolio: Sai Sneha Ajmira</title><style>{CSS}</style></head><body>
 <header><h1>Power BI & Analytics Portfolio<span class="badge">Synthetic data</span></h1>

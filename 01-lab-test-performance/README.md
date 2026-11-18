@@ -6,7 +6,7 @@ Operational dashboard for a contract testing laboratory: test throughput, turnar
 
 ![Dashboard](screenshots/dashboard.png)
 
-**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/lab-test-performance.html)** · **[Power BI project](pbip/)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
+**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/lab-test-performance.html)** · **[Download Power BI file (.zip)](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/01-lab-test-performance-powerbi.zip)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
 
 ## Business questions
 
@@ -41,7 +41,7 @@ Fact tables: `Tests Complete`, `Tests Release`, `Quality Data`, `OosByClient`, `
 
 ## Open it in Power BI Desktop
 
-The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub.
+The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub. A `.pbip` file only opens together with its `.Report` and `.SemanticModel` folders, so download the **[ready-made zip](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/01-lab-test-performance-powerbi.zip)** and unzip it rather than downloading single files.
 
 1. Download the data from the [lab-data-v1.0 release](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0) and unzip it into `C:\PowerBI\` (it creates the `lab` folder).
 2. Open `pbip/Lab Test Performance.pbip` in Power BI Desktop (Windows, a recent version).

@@ -22,7 +22,7 @@ Business Systems Analyst and Product Owner with a background in regulated labora
 | [![Lab](docs/img/lab-test-performance.png)](https://snehaajmira.github.io/powerbi-analytics-portfolio/lab-test-performance.html) | [![Pareto](docs/img/pareto-80-20.png)](https://snehaajmira.github.io/powerbi-analytics-portfolio/pareto-80-20.html) |
 | [![RFM](docs/img/client-rfm.png)](https://snehaajmira.github.io/powerbi-analytics-portfolio/client-rfm.html) | [![Gigafactory](docs/img/gigafactory-project-analytics.png)](https://snehaajmira.github.io/powerbi-analytics-portfolio/gigafactory-project-analytics.html) |
 
-Each project folder also has a `pbip/` Power BI Project (report + model) connected to the synthetic data through a folder parameter. Open it in Power BI Desktop, refresh, and save as .pbix if you want a single file.
+**Power BI files (one zip each, unzip and open the `.pbip`):** [01 Lab Test Performance](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/01-lab-test-performance-powerbi.zip) · [02 Pareto 80/20](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/02-pareto-80-20-analysis-powerbi.zip) · [03 Client RFM](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/03-client-segmentation-rfm-powerbi.zip) · [04 Gigafactory](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/04-gigafactory-project-analytics-powerbi.zip). Each one is a Power BI Project (report + model) connected to the synthetic data through a folder parameter. Open it in Power BI Desktop, click Refresh, then File > Save as .pbix if you want a single file.
 
 ## Repository layout
 

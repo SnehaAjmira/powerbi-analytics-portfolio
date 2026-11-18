@@ -6,7 +6,7 @@ Commercial dashboard combining lab services, product sales (environmental monito
 
 ![Dashboard](screenshots/dashboard.png)
 
-**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/client-rfm.html)** · **[Power BI project](pbip/)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
+**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/client-rfm.html)** · **[Download Power BI file (.zip)](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/03-client-segmentation-rfm-powerbi.zip)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
 
 ## Pages
 
@@ -34,7 +34,7 @@ Full code: [dax/measures.dax](dax/measures.dax), [dax/calculated_tables_and_colu
 
 ## Open it in Power BI Desktop
 
-The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub.
+The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub. A `.pbip` file only opens together with its `.Report` and `.SemanticModel` folders, so download the **[ready-made zip](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/03-client-segmentation-rfm-powerbi.zip)** and unzip it rather than downloading single files.
 
 1. Download the data from the [lab-data-v1.0 release](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0) and unzip it into `C:\PowerBI\` (it creates the `lab` folder).
 2. Open `pbip/Client Segmentation RFM.pbip` in Power BI Desktop (Windows, a recent version).

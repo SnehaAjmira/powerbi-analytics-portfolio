@@ -6,7 +6,7 @@ Shows which clients and which tests generate most of the lab's revenue and volum
 
 ![Dashboard](screenshots/dashboard.png)
 
-**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/pareto-80-20.html)** · **[Power BI project](pbip/)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
+**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/pareto-80-20.html)** · **[Download Power BI file (.zip)](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/02-pareto-80-20-analysis-powerbi.zip)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0)**
 
 ## Pages
 
@@ -37,7 +37,7 @@ Full code: [dax/measures.dax](dax/measures.dax), [dax/calculated_tables_and_colu
 
 ## Open it in Power BI Desktop
 
-The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub.
+The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub. A `.pbip` file only opens together with its `.Report` and `.SemanticModel` folders, so download the **[ready-made zip](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/02-pareto-80-20-analysis-powerbi.zip)** and unzip it rather than downloading single files.
 
 1. Download the data from the [lab-data-v1.0 release](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/lab-data-v1.0) and unzip it into `C:\PowerBI\` (it creates the `lab` folder).
 2. Open `pbip/Pareto 80-20 Analysis.pbip` in Power BI Desktop (Windows, a recent version).

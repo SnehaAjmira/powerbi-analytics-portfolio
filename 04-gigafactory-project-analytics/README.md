@@ -8,7 +8,7 @@ Like a real project, the data sits in **six different systems**. The work here i
 
 ![Dashboard](screenshots/dashboard.png)
 
-**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/gigafactory-project-analytics.html)** · **[Power BI project](pbip/)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/gigafactory-data-v1.0)**
+**[Open the interactive dashboard](https://snehaajmira.github.io/powerbi-analytics-portfolio/gigafactory-project-analytics.html)** · **[Download Power BI file (.zip)](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/04-gigafactory-project-analytics-powerbi.zip)** · **[Data download](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/gigafactory-data-v1.0)**
 
 ## Source systems
 
@@ -80,7 +80,7 @@ Connecting to and integrating SQL Server, Excel, CSV folders, JSON APIs and Shar
 
 ## Open it in Power BI Desktop
 
-The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub.
+The `pbip/` folder is a Power BI Project: the full report and model saved as text files, so they can be tracked on GitHub. A `.pbip` file only opens together with its `.Report` and `.SemanticModel` folders, so download the **[ready-made zip](https://snehaajmira.github.io/powerbi-analytics-portfolio/downloads/04-gigafactory-project-analytics-powerbi.zip)** and unzip it rather than downloading single files.
 
 1. Download the data from the [gigafactory-data-v1.0 release](https://github.com/SnehaAjmira/powerbi-analytics-portfolio/releases/tag/gigafactory-data-v1.0) and unzip it into `C:\PowerBI\` (it creates the `gigafactory` folder).
 2. Set up the SQL Server database first (see *Build steps* above).
