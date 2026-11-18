@@ -1,0 +1,446 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "f8edfdb77162ecae0256",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 8000,
+    "height": 22.388059701492537,
+    "width": 320,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Location"
+                      }
+                    },
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "8pt"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Value"
+                      }
+                    },
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "8pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "Fact Table (Services)",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "Top Revenue City Amount"
+                                },
+                                "Name": "Fact Table.Top Revenue City Amount"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "Fact Table.Top Revenue City Amount"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Value",
+                      "utterance": "top revenue city amount"
+                    }
+                  }
+                }
+              }
+            },
+            "formatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "'\\$#,0;(\\$#,0);\\$#,0'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Value"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "Fact Table (Services)",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "Top Revenue City"
+                                },
+                                "Name": "Fact Table.Top Revenue City"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "Fact Table.Top Revenue City"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Location",
+                      "utterance": "top revenue city"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Location"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "Dim Client",
+                                "Type": 0
+                              },
+                              {
+                                "Name": "f",
+                                "Entity": "Fact Table (Services)",
+                                "Type": 0
+                              },
+                              {
+                                "Name": "subquery",
+                                "Expression": {
+                                  "Subquery": {
+                                    "Query": {
+                                      "Version": 2,
+                                      "From": [
+                                        {
+                                          "Name": "sd",
+                                          "Entity": "Dim Client",
+                                          "Type": 0
+                                        },
+                                        {
+                                          "Name": "sf",
+                                          "Entity": "Fact Table (Services)",
+                                          "Type": 0
+                                        }
+                                      ],
+                                      "Select": [
+                                        {
+                                          "Column": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Source": "sd"
+                                              }
+                                            },
+                                            "Property": "Client_Facility"
+                                          },
+                                          "Name": "Dim Client.Client_Facility"
+                                        }
+                                      ],
+                                      "Where": [
+                                        {
+                                          "Condition": {
+                                            "Exists": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "sf"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "Target": [
+                                            {
+                                              "SourceRef": {
+                                                "Source": "sd"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "OrderBy": [
+                                        {
+                                          "Direction": 2,
+                                          "Expression": {
+                                            "Measure": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "sf"
+                                                }
+                                              },
+                                              "Property": "Rev QoQ"
+                                            }
+                                          }
+                                        }
+                                      ],
+                                      "Top": 1
+                                    }
+                                  }
+                                },
+                                "Type": 2
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  },
+                                  "Property": "Client_Facility"
+                                },
+                                "Name": "Dim Client.Client_Facility"
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "d"
+                                            }
+                                          },
+                                          "Property": "Client_Facility"
+                                        }
+                                      }
+                                    ],
+                                    "Table": {
+                                      "SourceRef": {
+                                        "Source": "subquery"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "Condition": {
+                                  "Exists": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    }
+                                  }
+                                },
+                                "Target": [
+                                  {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 2,
+                                "Expression": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "Rev QoQ"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "Dim Client.Client_Facility"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Value 2",
+                      "utterance": "Top Client"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Value 2"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "30D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

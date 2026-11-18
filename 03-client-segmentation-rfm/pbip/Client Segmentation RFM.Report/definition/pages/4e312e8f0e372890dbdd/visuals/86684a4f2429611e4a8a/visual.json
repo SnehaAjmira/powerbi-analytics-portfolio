@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "86684a4f2429611e4a8a",
+  "position": {
+    "x": 0,
+    "y": 29.253731343283583,
+    "z": 0,
+    "height": 210.7462686567164,
+    "width": 320,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table (Services)"
+                    }
+                  },
+                  "Property": "Test_Name"
+                }
+              },
+              "queryRef": "Fact Table (Services).Test_Name",
+              "nativeQueryRef": "Test_Name"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table (Services)"
+                    }
+                  },
+                  "Property": "Total Tests"
+                }
+              },
+              "queryRef": "Fact Table (Services).Total Tests",
+              "nativeQueryRef": "Total Tests"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact Table (Services)"
+                  }
+                },
+                "Property": "Test_Name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "218.5522405824676D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Fact Table (Services).Test_Name"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": []
+  }
+}

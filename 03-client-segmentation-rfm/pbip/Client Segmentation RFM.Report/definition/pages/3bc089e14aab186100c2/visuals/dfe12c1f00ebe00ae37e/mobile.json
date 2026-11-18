@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.3.0/schema.json",
+  "position": {
+    "x": 3.0159574468085104,
+    "y": 0,
+    "z": 3000,
+    "height": 649.9507389162561,
+    "width": 320.98404255319144,
+    "tabOrder": 1000
+  },
+  "objects": {
+    "values": [],
+    "grid": [],
+    "rowHeaders": [],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "156D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Dim Client.Client_Facility"
+        }
+      }
+    ],
+    "columnHeaders": [],
+    "columnFormatting": []
+  }
+}

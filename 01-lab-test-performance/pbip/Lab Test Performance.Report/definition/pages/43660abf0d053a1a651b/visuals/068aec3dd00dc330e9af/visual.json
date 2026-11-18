@@ -1,0 +1,181 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "068aec3dd00dc330e9af",
+  "position": {
+    "x": 10.289389067524116,
+    "y": 0,
+    "z": 0,
+    "height": 720.2572347266881,
+    "width": 1269.710610932476,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "Analyte Volume Rank"
+                }
+              },
+              "queryRef": "_OOS Measures.Analyte Volume Rank",
+              "nativeQueryRef": "Analyte Volume Rank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimAnalyte"
+                    }
+                  },
+                  "Property": "Analyte"
+                }
+              },
+              "queryRef": "DimAnalyte.Analyte",
+              "nativeQueryRef": "Analyte"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tests Complete"
+                    }
+                  },
+                  "Property": "T.Tests Completed"
+                }
+              },
+              "queryRef": "Tests Complete.T.Tests Completed",
+              "nativeQueryRef": "T.Tests Completed"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "OOS Client Events"
+                }
+              },
+              "queryRef": "_OOS Measures.OOS Client Events",
+              "nativeQueryRef": "OOS Client Events"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "OOS Client Rate"
+                }
+              },
+              "queryRef": "_OOS Measures.OOS Client Rate",
+              "nativeQueryRef": "OOS Client Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Completed Late"
+                }
+              },
+              "queryRef": "_Measures.Completed Late",
+              "nativeQueryRef": "Completed Late"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "Past Due Rate"
+                }
+              },
+              "queryRef": "_OOS Measures.Past Due Rate",
+              "nativeQueryRef": "Past Due Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "OOS Client Index"
+                }
+              },
+              "queryRef": "_OOS Measures.OOS Client Index",
+              "nativeQueryRef": "OOS Client Index"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "Past Due Index"
+                }
+              },
+              "queryRef": "_OOS Measures.Past Due Index",
+              "nativeQueryRef": "Past Due Index"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "Keep Review Flag"
+                }
+              },
+              "queryRef": "_OOS Measures.Keep Review Flag",
+              "nativeQueryRef": "Keep Review Flag"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tests Complete"
+                  }
+                },
+                "Property": "T.Tests Completed"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

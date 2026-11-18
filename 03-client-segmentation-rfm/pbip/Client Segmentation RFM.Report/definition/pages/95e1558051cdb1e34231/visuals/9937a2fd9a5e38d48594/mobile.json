@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.3.0/schema.json",
+  "position": {
+    "x": 2,
+    "y": 0,
+    "z": 1000,
+    "height": 653,
+    "width": 320,
+    "tabOrder": 1000
+  },
+  "objects": {
+    "values": [],
+    "columnFormatting": [],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "177D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Client_Facility.ClientFacilityName"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "66D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Consulting Activities.T. Consultations"
+        }
+      }
+    ],
+    "grid": [],
+    "rowHeaders": []
+  }
+}

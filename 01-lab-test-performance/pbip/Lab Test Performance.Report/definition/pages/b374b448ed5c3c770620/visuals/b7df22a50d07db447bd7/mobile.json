@@ -1,0 +1,168 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.3.0/schema.json",
+  "position": {
+    "x": 0,
+    "y": 312,
+    "z": 1000,
+    "height": 270,
+    "width": 324,
+    "tabOrder": 1000
+  },
+  "objects": {
+    "tree": [
+      {
+        "properties": {
+          "effectiveBarsPerLevel": {
+            "expr": {
+              "Literal": {
+                "Value": "3L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "insights": [
+      {
+        "properties": {
+          "isAINode": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "LocalDateTable_8ec9f6af-a199-4a05-a570-44fc2d50c16a"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'March'"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Departments"
+                        }
+                      },
+                      "Property": "Test_Name"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Potency (Solution)'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "properties": {
+          "isAINode": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "LocalDateTable_8ec9f6af-a199-4a05-a570-44fc2d50c16a"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'March'"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Departments"
+                        }
+                      },
+                      "Property": "Test_Name"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Potency (Solution)'"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimAnalyte"
+                        }
+                      },
+                      "Property": "Analyte"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Benzyl Alcohol'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

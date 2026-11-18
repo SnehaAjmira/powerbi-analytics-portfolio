@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "4356ba80cf0e244e1a75",
+  "position": {
+    "x": 6.796559048016215,
+    "y": 3.8381692570491097,
+    "z": 5000,
+    "height": 82.23279742765273,
+    "width": 212.09613153445815,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tests Complete"
+                    }
+                  },
+                  "Property": "T.Tests Completed"
+                }
+              },
+              "queryRef": "Tests Complete.T.Tests Completed",
+              "nativeQueryRef": "T.Tests Completed"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tests Complete"
+                  }
+                },
+                "Property": "T.Tests Completed"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "2c3747cf315ad6fe5525"
+}

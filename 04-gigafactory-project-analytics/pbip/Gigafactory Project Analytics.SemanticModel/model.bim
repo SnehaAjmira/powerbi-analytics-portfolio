@@ -1,0 +1,4002 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "_Measures",
+        "lineageTag": "3fadf48c-466f-4a7c-a04a-f74b36cc4a16",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "x",
+            "dataType": "string",
+            "isHidden": true,
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[x]",
+            "lineageTag": "e7656ddc-80e8-450a-9327-2d7566dd4df2",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measures",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": [
+                "ROW ( \"x\", BLANK () )"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Data Date",
+            "expression": [
+              "MAX ( project_info[Data_Date] )"
+            ],
+            "lineageTag": "3d02cb20-f2f1-4f6d-8d12-0452b344292f",
+            "formatString": "dd mmm yyyy"
+          },
+          {
+            "name": "Curve End Date",
+            "expression": [
+              "// last date on the axis, capped at the data date (used by actual curves and KPIs)",
+              "MIN ( MAX ( dim_date[Date] ), [Data Date] )"
+            ],
+            "lineageTag": "347bcf35-362b-4edf-8421-f31ec746f68f",
+            "formatString": "dd mmm yyyy"
+          },
+          {
+            "name": "Documents",
+            "expression": [
+              "CALCULATE ( DISTINCTCOUNT ( fact_document_revisions[Doc_No] ), REMOVEFILTERS ( dim_date ) )"
+            ],
+            "lineageTag": "ec2aab36-5a7f-4980-af41-e6590be19445",
+            "formatString": "#,0"
+          },
+          {
+            "name": "IFC Planned (Cum)",
+            "expression": [
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN",
+              "    CALCULATE (",
+              "        COUNTROWS ( fact_document_revisions ),",
+              "        REMOVEFILTERS ( dim_date ),",
+              "        fact_document_revisions[Revision] = \"0\",",
+              "        fact_document_revisions[Planned_Issue_Date] <= d",
+              "    )"
+            ],
+            "lineageTag": "99dab6fd-8c75-4ca1-96a2-d3d4cc8bc33d",
+            "formatString": "#,0"
+          },
+          {
+            "name": "IFC Actual (Cum)",
+            "expression": [
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE (",
+              "            COUNTROWS ( fact_document_revisions ),",
+              "            REMOVEFILTERS ( dim_date ),",
+              "            fact_document_revisions[Revision] = \"0\",",
+              "            fact_document_revisions[Actual_Issue_Date] <= d",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "d4072ff5-c943-4570-b67b-6445a84336ed",
+            "formatString": "#,0"
+          },
+          {
+            "name": "IFC % Planned",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    DIVIDE (",
+              "        CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),",
+              "            fact_document_revisions[Revision] = \"0\", fact_document_revisions[Planned_Issue_Date] <= dd ),",
+              "        CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),",
+              "            fact_document_revisions[Revision] = \"0\" )",
+              "    )"
+            ],
+            "lineageTag": "91c093b0-7faf-4acd-ad86-40be9b7c0b22",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "IFC % Complete",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    DIVIDE (",
+              "        CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),",
+              "            fact_document_revisions[Revision] = \"0\", fact_document_revisions[Actual_Issue_Date] <= dd ),",
+              "        CALCULATE ( COUNTROWS ( fact_document_revisions ), REMOVEFILTERS ( dim_date ),",
+              "            fact_document_revisions[Revision] = \"0\" )",
+              "    )"
+            ],
+            "lineageTag": "4fabfe0f-1b90-4f9d-b13f-06763865a04c",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "IFC Variance (pts)",
+            "expression": [
+              "( [IFC % Complete] - [IFC % Planned] ) * 100"
+            ],
+            "lineageTag": "d3ac6f57-8008-4eea-b78a-77ebbf9d2919",
+            "formatString": "#,0"
+          },
+          {
+            "name": "IFC Behind Plan",
+            "expression": [
+              "// documents whose IFC was planned by the data date but not yet issued",
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    CALCULATE (",
+              "        COUNTROWS ( fact_document_revisions ),",
+              "        REMOVEFILTERS ( dim_date ),",
+              "        fact_document_revisions[Revision] = \"0\",",
+              "        fact_document_revisions[Planned_Issue_Date] <= dd,",
+              "        ISBLANK ( fact_document_revisions[Actual_Issue_Date] )",
+              "    )"
+            ],
+            "lineageTag": "e55ae344-41d8-467f-9295-6ff5062d2c16",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Reviews Outstanding",
+            "expression": [
+              "CALCULATE (",
+              "    COUNTROWS ( fact_document_revisions ),",
+              "    REMOVEFILTERS ( dim_date ),",
+              "    NOT ISBLANK ( fact_document_revisions[Review_Due_Date] ),",
+              "    ISBLANK ( fact_document_revisions[Review_Return_Date] )",
+              ")"
+            ],
+            "lineageTag": "f3c5a5cd-a637-4625-866b-e24c49ceff58",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Reviews Overdue",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    CALCULATE (",
+              "        COUNTROWS ( fact_document_revisions ),",
+              "        REMOVEFILTERS ( dim_date ),",
+              "        NOT ISBLANK ( fact_document_revisions[Review_Due_Date] ),",
+              "        ISBLANK ( fact_document_revisions[Review_Return_Date] ),",
+              "        fact_document_revisions[Review_Due_Date] < dd",
+              "    )"
+            ],
+            "lineageTag": "505c79de-9d8f-4587-9e5f-f381b410f1cb",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Avg Review Cycle (days)",
+            "expression": [
+              "AVERAGE ( fact_document_revisions[Review Cycle Days] )"
+            ],
+            "lineageTag": "23200f88-a80e-4995-bf7f-918549a908d9",
+            "formatString": "#,0.0"
+          },
+          {
+            "name": "First-Pass Approval %",
+            "expression": [
+              "// share of first submissions (Rev A) returned Code 1 or 2",
+              "VAR Returned =",
+              "    CALCULATE ( COUNTROWS ( fact_document_revisions ),",
+              "        fact_document_revisions[Revision] = \"A\", fact_document_revisions[Review_Code] <> \"\" )",
+              "VAR Approved =",
+              "    CALCULATE ( COUNTROWS ( fact_document_revisions ),",
+              "        fact_document_revisions[Revision] = \"A\", fact_document_revisions[Review_Code] IN { \"1\", \"2\" } )",
+              "RETURN DIVIDE ( Approved, Returned )"
+            ],
+            "lineageTag": "e505122f-b452-4b26-b9a0-1cdd0c740a13",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "RFIs Raised",
+            "expression": [
+              "COUNTROWS ( fact_rfi )"
+            ],
+            "lineageTag": "3b46f0f9-cbdb-4890-af13-5f59ebb0f53f",
+            "formatString": "#,0"
+          },
+          {
+            "name": "RFIs Open",
+            "expression": [
+              "// open as of the axis date (or the data date on a card)",
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE (",
+              "            COUNTROWS ( fact_rfi ),",
+              "            REMOVEFILTERS ( dim_date ),",
+              "            fact_rfi[Status] <> \"Void\",",
+              "            fact_rfi[Date_Raised] <= d,",
+              "            ISBLANK ( fact_rfi[Date_Closed] ) || fact_rfi[Date_Closed] > d",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "23f38a0e-4602-43c3-8001-1d9cb750e60f",
+            "formatString": "#,0"
+          },
+          {
+            "name": "RFIs Overdue",
+            "expression": [
+              "// no response yet and past the required date",
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE (",
+              "            COUNTROWS ( fact_rfi ),",
+              "            REMOVEFILTERS ( dim_date ),",
+              "            fact_rfi[Status] <> \"Void\",",
+              "            fact_rfi[Date_Raised] <= d,",
+              "            fact_rfi[Date_Required] < d,",
+              "            ISBLANK ( fact_rfi[Date_Responded] ) || fact_rfi[Date_Responded] > d",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "4a5e837e-6bce-46dd-b6e2-b817663dd75d",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Avg Days to Respond",
+            "expression": [
+              "AVERAGEX (",
+              "    FILTER ( fact_rfi, NOT ISBLANK ( fact_rfi[Date_Responded] ) ),",
+              "    INT ( fact_rfi[Date_Responded] - fact_rfi[Date_Raised] )",
+              ")"
+            ],
+            "lineageTag": "35a67f39-dbb0-490b-9c98-7eaff8635095",
+            "formatString": "#,0.0"
+          },
+          {
+            "name": "RFI On-Time Response %",
+            "expression": [
+              "VAR Responded = FILTER ( fact_rfi, NOT ISBLANK ( fact_rfi[Date_Responded] ) )",
+              "RETURN",
+              "    DIVIDE (",
+              "        COUNTROWS ( FILTER ( Responded, fact_rfi[Date_Responded] <= fact_rfi[Date_Required] ) ),",
+              "        COUNTROWS ( Responded )",
+              "    )"
+            ],
+            "lineageTag": "f2036887-a499-42b1-978d-0d05549a264c",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "RFIs with Cost Impact",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_rfi ), fact_rfi[Cost_Impact] = \"Y\" )"
+            ],
+            "lineageTag": "743fb131-c05c-4f79-aeee-702d8849984c",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Submittals",
+            "expression": [
+              "COUNTROWS ( fact_submittals )"
+            ],
+            "lineageTag": "c9a69ac6-6651-4ec4-a9aa-3a8670fa7c89",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Submittals Under Review",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_submittals ), REMOVEFILTERS ( dim_date ), fact_submittals[Status] = \"Under Review\" )"
+            ],
+            "lineageTag": "e91b82d9-cedb-4759-ae34-aa5ea774e936",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Submittals Overdue",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    CALCULATE (",
+              "        COUNTROWS ( fact_submittals ),",
+              "        REMOVEFILTERS ( dim_date ),",
+              "        fact_submittals[Status] = \"Under Review\",",
+              "        fact_submittals[Date_Due] < dd",
+              "    )"
+            ],
+            "lineageTag": "25d521c5-b417-4243-b693-a638c9a6dcb1",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Submittal Approval %",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( COUNTROWS ( fact_submittals ),",
+              "        fact_submittals[Action_Code] IN { \"A - Approved\", \"B - Approved as Noted\" } ),",
+              "    CALCULATE ( COUNTROWS ( fact_submittals ), fact_submittals[Status] = \"Returned\" )",
+              ")"
+            ],
+            "lineageTag": "2d157755-e3f6-432a-8f8c-46348b20c4ff",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Avg Submittal Turnaround (days)",
+            "expression": [
+              "AVERAGEX (",
+              "    FILTER ( fact_submittals, NOT ISBLANK ( fact_submittals[Date_Returned] ) ),",
+              "    INT ( fact_submittals[Date_Returned] - fact_submittals[Date_Submitted] )",
+              ")"
+            ],
+            "lineageTag": "c543867f-dfde-4a42-b05d-7f3914b625da",
+            "formatString": "#,0.0"
+          },
+          {
+            "name": "PO Value",
+            "expression": [
+              "SUM ( fact_procurement[Line_Value_USD] )"
+            ],
+            "lineageTag": "8a5594b4-63a6-477b-9b89-468923ed39e6",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0"
+          },
+          {
+            "name": "PO Lines",
+            "expression": [
+              "COUNTROWS ( fact_procurement )"
+            ],
+            "lineageTag": "f08297bb-bfd1-4f5e-bea3-9df32d95e8ae",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Lines Delivered %",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( COUNTROWS ( fact_procurement ), NOT ISBLANK ( fact_procurement[Actual_Delivery_Date] ) ),",
+              "    [PO Lines]",
+              ")"
+            ],
+            "lineageTag": "17880896-883c-46f9-9bde-5e348d708b17",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Delivered On Time %",
+            "expression": [
+              "VAR Delivered = FILTER ( fact_procurement, NOT ISBLANK ( fact_procurement[Actual_Delivery_Date] ) )",
+              "RETURN",
+              "    DIVIDE (",
+              "        COUNTROWS ( FILTER ( Delivered, fact_procurement[Actual_Delivery_Date] <= fact_procurement[ROS_Date] ) ),",
+              "        COUNTROWS ( Delivered )",
+              "    )"
+            ],
+            "lineageTag": "a2f0fc74-a408-4a46-baff-451586de6d0e",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Lines Late vs ROS",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_procurement ), fact_procurement[Expediting_Status] = \"Late vs ROS\" )"
+            ],
+            "lineageTag": "f7a81e0b-a21b-42b8-866f-f6f50b11e5b3",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Value at Risk",
+            "expression": [
+              "CALCULATE ( [PO Value], fact_procurement[Expediting_Status] IN { \"Late vs ROS\", \"At Risk\" } )"
+            ],
+            "lineageTag": "ceb25b78-d00f-4331-957e-8178602e57cb",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0"
+          },
+          {
+            "name": "Avg Float (open lines, days)",
+            "expression": [
+              "CALCULATE (",
+              "    AVERAGE ( fact_procurement[Float Days] ),",
+              "    ISBLANK ( fact_procurement[Actual_Delivery_Date] )",
+              ")"
+            ],
+            "lineageTag": "87ba8239-aaa7-4734-b18a-4f2ab93f2c65",
+            "formatString": "#,0.0"
+          },
+          {
+            "name": "Long-Lead Items Open",
+            "expression": [
+              "CALCULATE (",
+              "    COUNTROWS ( fact_procurement ),",
+              "    fact_procurement[Long_Lead] = \"Y\",",
+              "    ISBLANK ( fact_procurement[Actual_Delivery_Date] )",
+              ")"
+            ],
+            "lineageTag": "b65aed30-08cd-4253-9219-6ccc6a7b5506",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Budget Hours",
+            "expression": [
+              "SUM ( dim_cwp[Budget_Hours] )"
+            ],
+            "lineageTag": "9d1d3206-0d8d-43d7-a0d5-044d6e80ceb0",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Planned Hours (Cum)",
+            "expression": [
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN",
+              "    CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "        fact_progress_weekly[Week_Ending] <= d )"
+            ],
+            "lineageTag": "520e7052-1b88-4d64-ab73-bb0dba71b7be",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Earned Hours (Cum)",
+            "expression": [
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "            fact_progress_weekly[Week_Ending] <= d )",
+              "    )"
+            ],
+            "lineageTag": "44517fb7-1203-4739-aba7-359844795118",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Actual Hours (Cum)",
+            "expression": [
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE ( SUM ( fact_progress_weekly[Actual_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "            fact_progress_weekly[Week_Ending] <= d )",
+              "    )"
+            ],
+            "lineageTag": "3a29b780-6310-47fc-96e2-2911b7c3f575",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Planned % (Cum)",
+            "expression": [
+              "DIVIDE ( [Planned Hours (Cum)], [Budget Hours] )"
+            ],
+            "lineageTag": "ac6d0b82-cc78-4c16-8795-8f5ce3e91a8d",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Earned % (Cum)",
+            "expression": [
+              "DIVIDE ( [Earned Hours (Cum)], [Budget Hours] )"
+            ],
+            "lineageTag": "abca3581-40e6-4af3-b097-eb49bdb8669c",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Planned % to Date",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    DIVIDE (",
+              "        CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "            fact_progress_weekly[Week_Ending] <= dd ),",
+              "        [Budget Hours]",
+              "    )"
+            ],
+            "lineageTag": "322b73a1-7e0d-4606-b94b-577ba8aa4443",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Earned % to Date",
+            "expression": [
+              "DIVIDE ( CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ) ), [Budget Hours] )"
+            ],
+            "lineageTag": "6590b045-235e-49ab-8310-cc1cc33b266b",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "SPI",
+            "expression": [
+              "// schedule performance index, cumulative to the axis date / data date",
+              "VAR d = [Curve End Date]",
+              "VAR Earned =",
+              "    CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "        fact_progress_weekly[Week_Ending] <= d )",
+              "VAR Planned =",
+              "    CALCULATE ( SUM ( fact_progress_weekly[Planned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "        fact_progress_weekly[Week_Ending] <= d )",
+              "RETURN IF ( MIN ( dim_date[Date] ) <= [Data Date], DIVIDE ( Earned, Planned ) )"
+            ],
+            "lineageTag": "6616c255-5ed2-4ce1-9428-792e78f7e7bf",
+            "formatString": "0.00"
+          },
+          {
+            "name": "CPI",
+            "expression": [
+              "// cost (hours) performance index: earned / actual",
+              "VAR d = [Curve End Date]",
+              "VAR Earned =",
+              "    CALCULATE ( SUM ( fact_progress_weekly[Earned_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "        fact_progress_weekly[Week_Ending] <= d )",
+              "VAR Actual =",
+              "    CALCULATE ( SUM ( fact_progress_weekly[Actual_Hours] ), REMOVEFILTERS ( dim_date ),",
+              "        fact_progress_weekly[Week_Ending] <= d )",
+              "RETURN IF ( MIN ( dim_date[Date] ) <= [Data Date], DIVIDE ( Earned, Actual ) )"
+            ],
+            "lineageTag": "d69a5fd1-4af9-49d3-a4dd-75fdc3e037c5",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Productivity Factor",
+            "expression": [
+              "DIVIDE ( 1, [CPI] )   // > 1.0 means more hours spent than earned"
+            ],
+            "lineageTag": "5f53c86e-298e-4a29-b5e3-a99d5b3ccc06",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Weekly SPI",
+            "expression": [
+              "DIVIDE ( SUM ( fact_progress_weekly[Earned_Hours] ), SUM ( fact_progress_weekly[Planned_Hours] ) )"
+            ],
+            "lineageTag": "3fda0860-e4e6-4c32-8a8c-65338efaa6d9",
+            "formatString": "0.00"
+          },
+          {
+            "name": "SPI Status Color",
+            "expression": [
+              "SWITCH ( TRUE (), ISBLANK ( [SPI] ), \"#BFBFBF\", [SPI] >= 0.98, \"#2E7D32\", [SPI] >= 0.92, \"#F4B183\", \"#C00000\" )"
+            ],
+            "lineageTag": "5a3f6787-d3c7-4dff-b1d1-01aea6e08af7"
+          },
+          {
+            "name": "CPI Status Color",
+            "expression": [
+              "SWITCH ( TRUE (), ISBLANK ( [CPI] ), \"#BFBFBF\", [CPI] >= 0.98, \"#2E7D32\", [CPI] >= 0.92, \"#F4B183\", \"#C00000\" )"
+            ],
+            "lineageTag": "125168b9-7166-4e28-844b-10addc78d0ed"
+          },
+          {
+            "name": "Tags",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_tag_register ), REMOVEFILTERS ( dim_date ) )"
+            ],
+            "lineageTag": "f42cb039-54e9-41a1-b531-6dab6b3ccb1b",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Tags Installed %",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( COUNTROWS ( fact_tag_register ), REMOVEFILTERS ( dim_date ),",
+              "        fact_tag_register[Install_Status] = \"Installed\" ),",
+              "    [Tags]",
+              ")"
+            ],
+            "lineageTag": "486239e7-2d3d-4a8e-812d-e486a33469f9",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "ITR A Total",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = \"A\" )"
+            ],
+            "lineageTag": "4acde8fd-402f-42c5-a8b9-6fdd5ddae823",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITR A Complete",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = \"A\",",
+              "    NOT ISBLANK ( fact_itr[Completed_Date] ) )"
+            ],
+            "lineageTag": "0ba43f51-23ca-4021-9f81-1edc75c34a53",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITR A %",
+            "expression": [
+              "DIVIDE ( [ITR A Complete], [ITR A Total] )"
+            ],
+            "lineageTag": "aa0d482d-cdd7-4848-9b8c-7d5d2dcb615c",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "ITR B Total",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = \"B\" )"
+            ],
+            "lineageTag": "2bc1a011-1906-461f-8312-d9c54ade27b9",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITR B Complete",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Stage] = \"B\",",
+              "    NOT ISBLANK ( fact_itr[Completed_Date] ) )"
+            ],
+            "lineageTag": "28312ec4-5bf7-4e94-9ff5-27736dbc6eba",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITR B %",
+            "expression": [
+              "DIVIDE ( [ITR B Complete], [ITR B Total] )"
+            ],
+            "lineageTag": "4b62e9b6-07d5-4348-b0cc-9c8a65ca77ea",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "ITR Planned (Cum)",
+            "expression": [
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN",
+              "    CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Planned_Date] <= d )"
+            ],
+            "lineageTag": "805c1bb3-b9a0-490c-80ad-cfb40640c7ee",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITR Completed (Cum)",
+            "expression": [
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ), fact_itr[Completed_Date] <= d )",
+              "    )"
+            ],
+            "lineageTag": "c7cecff4-6ca8-44cd-b76d-52d223a1882e",
+            "formatString": "#,0"
+          },
+          {
+            "name": "ITRs Behind Plan",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    CALCULATE ( COUNTROWS ( fact_itr ), REMOVEFILTERS ( dim_date ),",
+              "        fact_itr[Planned_Date] <= dd, ISBLANK ( fact_itr[Completed_Date] ) )"
+            ],
+            "lineageTag": "1f4237a6-a6ed-4729-a328-f9981b237f5c",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Punch Open",
+            "expression": [
+              "// open as of the axis date (burndown) or the data date (card)",
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF (",
+              "        MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE (",
+              "            COUNTROWS ( fact_punch ),",
+              "            REMOVEFILTERS ( dim_date ),",
+              "            fact_punch[Date_Raised] <= d,",
+              "            ISBLANK ( fact_punch[Date_Cleared] ) || fact_punch[Date_Cleared] > d",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "e0b44df6-dbfc-4f6c-83ed-403ccd27e50b",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Punch A Open",
+            "expression": [
+              "CALCULATE ( [Punch Open], fact_punch[Category] = \"A\" )"
+            ],
+            "lineageTag": "081c9f30-bf4f-44c6-b910-1b16a4247d61",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Punch Raised",
+            "expression": [
+              "COUNTROWS ( fact_punch )"
+            ],
+            "lineageTag": "3a424d0d-d77c-4c88-a550-60ee68377a7e",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Punch Cleared",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_punch ), USERELATIONSHIP ( fact_punch[Date_Cleared], dim_date[Date] ) )"
+            ],
+            "lineageTag": "db610509-0f67-44ff-ba54-f323fcc9c14b",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Punch Overdue",
+            "expression": [
+              "VAR dd = [Data Date]",
+              "RETURN",
+              "    CALCULATE ( COUNTROWS ( fact_punch ), REMOVEFILTERS ( dim_date ),",
+              "        fact_punch[Status] = \"Open\", fact_punch[Target_Date] < dd )"
+            ],
+            "lineageTag": "9618e4a8-296a-45fc-84fc-79e7a49af2a8",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Subsystems",
+            "expression": [
+              "COUNTROWS ( dim_subsystem )"
+            ],
+            "lineageTag": "77581867-4196-48b4-a3a2-7e8aafb0ddb0",
+            "formatString": "#,0"
+          },
+          {
+            "name": "MC Planned (Cum)",
+            "expression": [
+              "// dim_subsystem has no relationship to dim_date, so the axis date is applied directly",
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Planned_MC_Date] <= d )"
+            ],
+            "lineageTag": "32f41fea-65ca-4dc0-98c0-0a7c5fa65943",
+            "formatString": "#,0"
+          },
+          {
+            "name": "MC Actual (Cum)",
+            "expression": [
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF ( MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Actual_MC_Date] <= d ) )"
+            ],
+            "lineageTag": "47f1ab63-d0b3-4a7a-b493-98b73d91905e",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Turnover Planned (Cum)",
+            "expression": [
+              "VAR d = MAX ( dim_date[Date] )",
+              "RETURN CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Planned_Turnover_Date] <= d )"
+            ],
+            "lineageTag": "5e9af97c-d180-4d7c-b1b1-e6f231e6d214",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Turnover Actual (Cum)",
+            "expression": [
+              "VAR d = [Curve End Date]",
+              "RETURN",
+              "    IF ( MIN ( dim_date[Date] ) <= [Data Date],",
+              "        CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[Actual_Turnover_Date] <= d ) )"
+            ],
+            "lineageTag": "f5e06d67-5175-47d9-9ff7-d21f2401c633",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Subsystems Behind MC Plan",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( dim_subsystem ), dim_subsystem[MC Status] = \"Behind Plan\" )"
+            ],
+            "lineageTag": "39a710af-9063-4d31-a23f-61a3a71db481",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Subsystem Ready for MC",
+            "expression": [
+              "// for a subsystem table visual: all A sheets done and no open category A punch",
+              "IF (",
+              "    HASONEVALUE ( dim_subsystem[Subsystem_Code] ),",
+              "    IF ( [ITR A %] = 1 && COALESCE ( [Punch A Open], 0 ) = 0, \"Ready\", \"Not Ready\" )",
+              ")"
+            ],
+            "lineageTag": "5f7e8696-9d36-4b66-8005-65391127e5d2",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Manhours",
+            "expression": [
+              "SUM ( fact_safety_weekly[Manhours] )"
+            ],
+            "lineageTag": "88b386af-b538-4130-bd95-1c6c143d00d2",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Recordables",
+            "expression": [
+              "SUM ( fact_safety_weekly[Recordables] )"
+            ],
+            "lineageTag": "b9606ec2-b70d-462a-9560-a3fc1e9fc36c",
+            "formatString": "#,0"
+          },
+          {
+            "name": "TRIR",
+            "expression": [
+              "// total recordable incident rate per 200,000 hours (OSHA basis)",
+              "DIVIDE ( [Recordables] * 200000, [Manhours] )"
+            ],
+            "lineageTag": "d7a8c498-baae-45fd-9cd2-057a733bfb84",
+            "formatString": "0.00"
+          },
+          {
+            "name": "LTIR",
+            "expression": [
+              "DIVIDE ( SUM ( fact_safety_weekly[Lost_Time_Injuries] ) * 200000, [Manhours] )"
+            ],
+            "lineageTag": "1664bb23-805b-4e52-8546-4a5ffc5953f9",
+            "formatString": "0.00"
+          },
+          {
+            "name": "TRIR Rolling 12M",
+            "expression": [
+              "CALCULATE ( [TRIR], DATESINPERIOD ( dim_date[Date], MAX ( dim_date[Date] ), -12, MONTH ) )"
+            ],
+            "lineageTag": "7cf9e493-10b0-48dc-af95-ba29676afdf8",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Near Miss Ratio",
+            "expression": [
+              "// near misses reported per recordable (higher = stronger reporting culture)",
+              "DIVIDE ( SUM ( fact_safety_weekly[Near_Misses] ), [Recordables] )"
+            ],
+            "lineageTag": "43f16b8a-19af-4d67-9558-df68e5a1f5f8",
+            "formatString": "0.00"
+          },
+          {
+            "name": "NCRs Raised",
+            "expression": [
+              "COUNTROWS ( fact_ncr )"
+            ],
+            "lineageTag": "8d102749-2908-45f3-8dd4-fa4991996601",
+            "formatString": "#,0"
+          },
+          {
+            "name": "NCRs Open",
+            "expression": [
+              "CALCULATE ( COUNTROWS ( fact_ncr ), REMOVEFILTERS ( dim_date ), fact_ncr[Status] = \"Open\" )"
+            ],
+            "lineageTag": "d948bff5-5817-46b6-9b2a-ab1d878be764",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Avg Days to Close NCR",
+            "expression": [
+              "AVERAGEX (",
+              "    FILTER ( fact_ncr, NOT ISBLANK ( fact_ncr[Date_Closed] ) ),",
+              "    INT ( fact_ncr[Date_Closed] - fact_ncr[Date_Opened] )",
+              ")"
+            ],
+            "lineageTag": "21bc1c9e-a118-4508-a910-de3a1c5f74de",
+            "formatString": "#,0.0"
+          }
+        ]
+      },
+      {
+        "name": "dim_date",
+        "dataCategory": "Time",
+        "lineageTag": "78cf2d5e-fc0a-4c5b-86d6-9f0f780fd915",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "b1b0a626-45d1-422f-bce3-6e8dbb3426a1",
+            "summarizeBy": "none",
+            "isKey": true,
+            "formatString": "Short Date"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Year",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Year]",
+            "lineageTag": "63318fd4-7ff9-4579-bee7-05df0f2044d6",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Month No",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Month No]",
+            "lineageTag": "13a61f80-12b3-4887-8c68-55e950f6c20b",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Month",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Month]",
+            "lineageTag": "f2c2d076-db30-4a13-a624-66df35129033",
+            "summarizeBy": "none",
+            "sortByColumn": "Month No"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Year Month",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Year Month]",
+            "lineageTag": "d15251b0-569d-4ffb-9065-3ff62b99d0c9",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Quarter",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Quarter]",
+            "lineageTag": "398cb921-ab99-455c-b5cc-87d0e5cd14c8",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Year Quarter",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Year Quarter]",
+            "lineageTag": "919d377b-02a2-4055-a406-3ad126183d21",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Week Ending",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Week Ending]",
+            "lineageTag": "4123955f-8e0c-4d66-b67f-8b339cb24bda",
+            "summarizeBy": "none",
+            "formatString": "Short Date"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_date",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": [
+                "VAR StartDate = DATE ( 2024, 1, 1 )",
+                "VAR EndDate = DATE ( 2027, 12, 31 )",
+                "RETURN",
+                "    ADDCOLUMNS (",
+                "        CALENDAR ( StartDate, EndDate ),",
+                "        \"Year\", YEAR ( [Date] ),",
+                "        \"Month No\", MONTH ( [Date] ),",
+                "        \"Month\", FORMAT ( [Date], \"MMM\" ),",
+                "        \"Year Month\", FORMAT ( [Date], \"YYYY-MM\" ),",
+                "        \"Quarter\", \"Q\" & FORMAT ( [Date], \"Q\" ),",
+                "        \"Year Quarter\", YEAR ( [Date] ) & \" Q\" & FORMAT ( [Date], \"Q\" ),",
+                "        \"Week Ending\", [Date] + MOD ( 6 - WEEKDAY ( [Date], 1 ), 7 )   // Friday week-ending, matches progress data",
+                "    )"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_discipline",
+        "lineageTag": "f1c1778d-5451-4ef0-8828-2dcea2416403",
+        "columns": [
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "aba9c857-3856-44e2-bb36-09164e8fb454",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline",
+            "dataType": "string",
+            "sourceColumn": "Discipline",
+            "lineageTag": "e00b1ea6-26e3-45bd-aec0-3d219a494b06",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Group",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Group",
+            "lineageTag": "f7943d81-4f7b-4a5a-b05e-6e8ad850b87a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_discipline",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"discipline\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_area",
+        "lineageTag": "3e033cde-b80d-4288-9440-b81b79967660",
+        "columns": [
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "07031055-e0ba-499f-a9e9-d771c5c33810",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Building_Code",
+            "dataType": "string",
+            "sourceColumn": "Building_Code",
+            "lineageTag": "488b54b1-ed91-4bfc-bfeb-22dba456654a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Building",
+            "dataType": "string",
+            "sourceColumn": "Building",
+            "lineageTag": "9ff5016e-cd02-4ac5-aed8-e9022b307f1e",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Level",
+            "dataType": "string",
+            "sourceColumn": "Level",
+            "lineageTag": "9df7639a-008b-485c-b3bb-d52cf3657ccb",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Zone",
+            "dataType": "string",
+            "sourceColumn": "Zone",
+            "lineageTag": "162acf14-1296-46e1-8ba3-ce79747d74da",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Sort",
+            "dataType": "int64",
+            "sourceColumn": "Area_Sort",
+            "lineageTag": "ae6e16a0-4fd8-4286-b2e5-f5aa396c0c57",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_area",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"area\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_company",
+        "lineageTag": "e7022af6-7313-4d1f-b724-5a0c9758d96c",
+        "columns": [
+          {
+            "name": "Company_ID",
+            "dataType": "string",
+            "sourceColumn": "Company_ID",
+            "lineageTag": "3c8b10c0-3488-40be-8d91-5ef57b3f8e23",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_Name",
+            "dataType": "string",
+            "sourceColumn": "Company_Name",
+            "lineageTag": "ab35ce45-f6c5-48c1-b51d-01216afa12bd",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_Type",
+            "dataType": "string",
+            "sourceColumn": "Company_Type",
+            "lineageTag": "c904defa-ad3d-4d3b-9e6b-4814e8a21c5e",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Primary_Discipline",
+            "dataType": "string",
+            "sourceColumn": "Primary_Discipline",
+            "lineageTag": "1cfc50ee-3e5f-457e-ae5e-95d50042d6f9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_company",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"company\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_system",
+        "lineageTag": "f84851c4-f414-499e-9fd0-586a5e2f6abe",
+        "columns": [
+          {
+            "name": "System_Code",
+            "dataType": "string",
+            "sourceColumn": "System_Code",
+            "lineageTag": "ffcf3687-0338-4610-bdea-3a3965bda2d1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "System_Name",
+            "dataType": "string",
+            "sourceColumn": "System_Name",
+            "lineageTag": "3d5e7547-011f-4b18-8127-0ca0fa31752f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "579d3397-56c6-41a1-a083-89872a9d0f7d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Building_Code",
+            "dataType": "string",
+            "sourceColumn": "Building_Code",
+            "lineageTag": "0b3aa3da-b15c-4955-a730-98fc5dffc603",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Priority_Group",
+            "dataType": "int64",
+            "sourceColumn": "Priority_Group",
+            "lineageTag": "6462a314-b5f6-4c51-89e8-8f7ec0898d77",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_system",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"facility_system\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_subsystem",
+        "lineageTag": "fc8c0326-f0d5-448a-ba45-9e32ca7eca0c",
+        "columns": [
+          {
+            "name": "Subsystem_Code",
+            "dataType": "string",
+            "sourceColumn": "Subsystem_Code",
+            "lineageTag": "dfd279d9-d2e7-400c-b636-973367ad018d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "System_Code",
+            "dataType": "string",
+            "sourceColumn": "System_Code",
+            "lineageTag": "f356b04b-65bb-4972-9b25-8147ba995fec",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Subsystem_Name",
+            "dataType": "string",
+            "sourceColumn": "Subsystem_Name",
+            "lineageTag": "b260832b-d1ba-4f7e-9f40-26311c675125",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "b63fa443-bd4c-4384-8643-ed6603ae178b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_MC_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_MC_Date",
+            "lineageTag": "6de29eaf-8b72-4b96-820f-73cad3ca5868",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Turnover_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_Turnover_Date",
+            "lineageTag": "c14096b2-50fe-4413-b6eb-4810fcedf0bc",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Actual_MC_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Actual_MC_Date",
+            "lineageTag": "26b3381b-8de8-44fc-9404-2872c83790b5",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Actual_Turnover_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Actual_Turnover_Date",
+            "lineageTag": "f93001a2-0c20-47ba-b06c-afefb2ad83ee",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MC Status",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": [
+              "VAR DataDate = MAX ( project_info[Data_Date] )",
+              "RETURN",
+              "    SWITCH (",
+              "        TRUE (),",
+              "        NOT ISBLANK ( dim_subsystem[Actual_Turnover_Date] ), \"Turned Over\",",
+              "        NOT ISBLANK ( dim_subsystem[Actual_MC_Date] ), \"Mechanically Complete\",",
+              "        dim_subsystem[Planned_MC_Date] < DataDate, \"Behind Plan\",",
+              "        \"In Progress\"",
+              "    )"
+            ],
+            "lineageTag": "502f2834-f02b-4bf5-9385-5652ac597990",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_subsystem",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"subsystem\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "project_info",
+        "lineageTag": "f74f6841-da95-4121-a0d5-ce1b15fa5e00",
+        "columns": [
+          {
+            "name": "Data_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Data_Date",
+            "lineageTag": "be502c84-1e59-4a04-b452-df065308e458",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Project",
+            "dataType": "string",
+            "sourceColumn": "Project",
+            "lineageTag": "cca133cb-5638-4aa0-9bbc-ff88e0a99f61",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Owner",
+            "dataType": "string",
+            "sourceColumn": "Owner",
+            "lineageTag": "7fa1e8fb-4fd6-49c9-a029-e47b95179fc9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "project_info",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"ref\", Item = \"project_info\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_document_revisions",
+        "lineageTag": "3f6a7d07-e488-49a5-a56c-ac9409f4db78",
+        "columns": [
+          {
+            "name": "Doc_Rev_ID",
+            "dataType": "int64",
+            "sourceColumn": "Doc_Rev_ID",
+            "lineageTag": "242cb0da-22b5-40ee-bd78-b349d55e74af",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Doc_No",
+            "dataType": "string",
+            "sourceColumn": "Doc_No",
+            "lineageTag": "1e407986-22e9-4682-9c6a-16bab04c220d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Revision",
+            "dataType": "string",
+            "sourceColumn": "Revision",
+            "lineageTag": "2c8e7c92-a1a6-4560-a9b4-f05f911a62c1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Purpose_Code",
+            "dataType": "string",
+            "sourceColumn": "Purpose_Code",
+            "lineageTag": "c82b32fa-4f02-41f1-a774-7d3772811ed2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "76f12bb0-d5bc-4310-8976-95dd56b67512",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Doc_Type",
+            "dataType": "string",
+            "sourceColumn": "Doc_Type",
+            "lineageTag": "c31b63b3-a261-4127-882d-ab5deab32087",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "23473187-66df-4b01-8545-3f158366a313",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Originator_ID",
+            "dataType": "string",
+            "sourceColumn": "Originator_ID",
+            "lineageTag": "66401040-87c6-441d-a646-eac8fbd6a5db",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Is_Vendor_Doc",
+            "dataType": "string",
+            "sourceColumn": "Is_Vendor_Doc",
+            "lineageTag": "5090b94f-10cb-4d70-b52a-fd7d0d2d5f97",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Issue_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_Issue_Date",
+            "lineageTag": "67cdc501-f257-4204-9475-f14ed72f345c",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Actual_Issue_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Actual_Issue_Date",
+            "lineageTag": "224c9d8d-396f-41bc-85bf-f0020904de59",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Review_Due_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Review_Due_Date",
+            "lineageTag": "8463e3eb-8d1b-4e80-8b35-a825e24f3277",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Review_Return_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Review_Return_Date",
+            "lineageTag": "ac68eca2-0909-4eca-ad94-8f50ae63cfb3",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Review_Code",
+            "dataType": "string",
+            "sourceColumn": "Review_Code",
+            "lineageTag": "b791445a-334b-4bae-a6f3-46131bb0887b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Is_Latest_Planned",
+            "dataType": "string",
+            "sourceColumn": "Is_Latest_Planned",
+            "lineageTag": "e6e9f585-d7a0-4b96-b828-3451142f94d5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Review Cycle Days",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "IF (",
+              "    NOT ISBLANK ( fact_document_revisions[Review_Return_Date] ),",
+              "    INT ( fact_document_revisions[Review_Return_Date] - fact_document_revisions[Actual_Issue_Date] )",
+              ")"
+            ],
+            "lineageTag": "ca6b76f7-6023-430b-a340-8f5c5ded3b5b",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_document_revisions",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"eng\", Item = \"document_revision\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_rfi",
+        "lineageTag": "e3ac1910-ffb4-4583-bd68-e90f5ecd8525",
+        "columns": [
+          {
+            "name": "RFI_No",
+            "dataType": "string",
+            "sourceColumn": "RFI_No",
+            "lineageTag": "c6b8ec52-1404-486c-86fe-9a48a0871635",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "48835a8c-db24-445c-ad38-9de271c09919",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "e4538b07-b06c-41e5-abbf-b2da7618c2c0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Raised_By_ID",
+            "dataType": "string",
+            "sourceColumn": "Raised_By_ID",
+            "lineageTag": "356f8a5d-2781-4674-af1f-26814d479f0f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Subject_Category",
+            "dataType": "string",
+            "sourceColumn": "Subject_Category",
+            "lineageTag": "70188eee-4e49-42a6-8fc6-a0033cf10c19",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Priority",
+            "dataType": "string",
+            "sourceColumn": "Priority",
+            "lineageTag": "f5b4cb4a-a1c6-472c-941e-640f34ea7442",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Raised",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Raised",
+            "lineageTag": "678f0e44-ff75-42fd-a223-4c434725ab10",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Required",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Required",
+            "lineageTag": "caf0b176-cffe-47dd-9749-dbf02efc1e89",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Responded",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Responded",
+            "lineageTag": "1b83fcd0-f207-4b8d-8cf3-96f10b5d7046",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Closed",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Closed",
+            "lineageTag": "65a7ac30-e161-4c24-bc0a-1a1166bd8c19",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "lineageTag": "e44c5fcb-8c9d-425c-b23c-60fcb71b5137",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Cost_Impact",
+            "dataType": "string",
+            "sourceColumn": "Cost_Impact",
+            "lineageTag": "2c67a76e-e175-45e0-88b6-ff3a8b23f9df",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Schedule_Impact_Days",
+            "dataType": "int64",
+            "sourceColumn": "Schedule_Impact_Days",
+            "lineageTag": "9d0ee931-496c-42f3-8675-e99a9fd1a577",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Linked_Doc_No",
+            "dataType": "string",
+            "sourceColumn": "Linked_Doc_No",
+            "lineageTag": "49a5473a-1937-4c5e-abe5-1d25ccf6babe",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Age Days",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "VAR DataDate = MAX ( project_info[Data_Date] )",
+              "VAR EndDate =",
+              "    IF ( ISBLANK ( fact_rfi[Date_Closed] ), DataDate, fact_rfi[Date_Closed] )",
+              "RETURN",
+              "    INT ( EndDate - fact_rfi[Date_Raised] )"
+            ],
+            "lineageTag": "d4011992-ac64-424b-91b6-8d39dccc13a1",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculated",
+            "name": "Age Bucket",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": [
+              "SWITCH (",
+              "    TRUE (),",
+              "    fact_rfi[Age Days] <= 7, \"0-7 days\",",
+              "    fact_rfi[Age Days] <= 14, \"8-14 days\",",
+              "    fact_rfi[Age Days] <= 30, \"15-30 days\",",
+              "    \"Over 30 days\"",
+              ")"
+            ],
+            "lineageTag": "565021d2-757e-4441-985f-fbb6ad8ed209",
+            "summarizeBy": "none",
+            "sortByColumn": "Age Bucket Sort"
+          },
+          {
+            "type": "calculated",
+            "name": "Age Bucket Sort",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "SWITCH ( fact_rfi[Age Bucket], \"0-7 days\", 1, \"8-14 days\", 2, \"15-30 days\", 3, 4 )",
+              "// Sort [Age Bucket] by [Age Bucket Sort]."
+            ],
+            "lineageTag": "25c7d917-0270-4d24-b4af-ff8448cef415",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_rfi",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"eng\", Item = \"rfi\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_submittals",
+        "lineageTag": "55efb01d-7c05-45d9-b92f-e56fb1d36160",
+        "columns": [
+          {
+            "name": "Submittal_No",
+            "dataType": "string",
+            "sourceColumn": "Submittal_No",
+            "lineageTag": "0af19a4e-5c17-49b3-8931-721c1fbfc4d8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Spec_Section",
+            "dataType": "string",
+            "sourceColumn": "Spec_Section",
+            "lineageTag": "f2b6f95d-f95c-45de-9327-81f9d60bcd53",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "21189b98-1546-4c6c-b644-8503533e9fcf",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_ID",
+            "dataType": "string",
+            "sourceColumn": "Company_ID",
+            "lineageTag": "ff45da82-3fb0-4c29-ac44-c26aac558736",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Submittal_Type",
+            "dataType": "string",
+            "sourceColumn": "Submittal_Type",
+            "lineageTag": "21a49fc9-db64-42e7-baed-968907704d2b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Revision",
+            "dataType": "int64",
+            "sourceColumn": "Revision",
+            "lineageTag": "5e6c6f38-6a7a-461e-85bd-807aaa1f25b6",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Submitted",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Submitted",
+            "lineageTag": "096f2e4e-035e-4b98-808c-bbfb132127c2",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Due",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Due",
+            "lineageTag": "e7d0f7b1-d992-4c73-b151-5fed73d788f2",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Returned",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Returned",
+            "lineageTag": "b922f98f-978f-4d01-a20a-7bda423a6313",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Action_Code",
+            "dataType": "string",
+            "sourceColumn": "Action_Code",
+            "lineageTag": "dcb1af10-e26b-4a6b-a4c4-e94a248bbe78",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "lineageTag": "e3bae315-88ab-4d99-bc30-ab94a8763122",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Critical_Path",
+            "dataType": "string",
+            "sourceColumn": "Critical_Path",
+            "lineageTag": "05104250-72fd-4eaa-a3dd-96fb11abeda4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_submittals",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, SqlDatabase),",
+                "    Data = Source{[Schema = \"eng\", Item = \"submittal\"]}[Data]",
+                "in",
+                "    Data"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_procurement",
+        "lineageTag": "91cf5ceb-889d-4ef3-b441-08d74427c610",
+        "columns": [
+          {
+            "name": "PO_No",
+            "dataType": "string",
+            "sourceColumn": "PO_No",
+            "lineageTag": "475e7381-512b-41c3-ac90-0be68e11a9c5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Vendor_No",
+            "dataType": "string",
+            "sourceColumn": "Vendor_No",
+            "lineageTag": "42ee6889-0f23-472c-af74-f4d77ed3a691",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Commodity",
+            "dataType": "string",
+            "sourceColumn": "Commodity",
+            "lineageTag": "86990873-9c2d-4363-bd7c-294f5f64690c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Unit",
+            "dataType": "string",
+            "sourceColumn": "Unit",
+            "lineageTag": "83a62663-62e3-4945-823e-421e9a749cc0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Quantity",
+            "dataType": "int64",
+            "sourceColumn": "Quantity",
+            "lineageTag": "5820f858-27a8-4479-856d-649017ea8316",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Line_Value_USD",
+            "dataType": "double",
+            "sourceColumn": "Line_Value_USD",
+            "lineageTag": "80a169f6-bc71-44df-9d80-49c318708848",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Order_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Order_Date",
+            "lineageTag": "1d88180e-7481-4210-9ebf-2730b33403bb",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ROS_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "ROS_Date",
+            "lineageTag": "686e26f5-ea17-4de7-89cf-8b8b8ba1f1a7",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Promised_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Promised_Date",
+            "lineageTag": "dde6860a-0ece-4bfe-810c-97fa7f4b56ab",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Forecast_Delivery_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Forecast_Delivery_Date",
+            "lineageTag": "63a0886c-628a-4328-b23a-36f6efd84658",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Actual_Delivery_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Actual_Delivery_Date",
+            "lineageTag": "b4d36bc6-ac5a-4e18-aba6-83a1352ada7f",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "2a113663-46d9-425a-ba19-5458a9c2b810",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "fdfe0868-f974-41aa-9d87-82e83a4eb120",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Expediting_Status",
+            "dataType": "string",
+            "sourceColumn": "Expediting_Status",
+            "lineageTag": "50b2bdef-2ab8-45da-b376-16cbbbe58033",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PO_Line",
+            "dataType": "int64",
+            "sourceColumn": "PO_Line",
+            "lineageTag": "5b5e2db0-735c-4525-8431-101a87c83492",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Long_Lead",
+            "dataType": "string",
+            "sourceColumn": "Long_Lead",
+            "lineageTag": "e7d8ec82-d82c-4751-9cff-f8e436fb8145",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Supplier_ID",
+            "dataType": "string",
+            "sourceColumn": "Supplier_ID",
+            "lineageTag": "4424d0b3-0b97-4a2a-ada7-e7ff86f42287",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Float Days",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "INT ( fact_procurement[ROS_Date] - fact_procurement[Forecast_Delivery_Date] )"
+            ],
+            "lineageTag": "16d9edc9-3d65-49c7-b16e-1ebf7ed22ff1",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_procurement",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(SourceRoot & \"erp_procurement\\PO_Lines_Export.xlsx\"), null, true),",
+                "    Sheet = Source{[Item = \"PO_Lines\", Kind = \"Sheet\"]}[Data],",
+                "    Promoted = Table.PromoteHeaders(Sheet, [PromoteAllScalars = true]),",
+                "    Typed = Table.TransformColumnTypes(Promoted, {",
+                "        {\"PO Number\", type text}, {\"Item\", Int64.Type}, {\"Vendor No\", type text}, {\"Material Description\", type text},",
+                "        {\"UoM\", type text}, {\"Order Qty\", Int64.Type}, {\"Net Value (USD)\", type number}, {\"Long Lead Flag\", type text},",
+                "        {\"PO Date\", type date}, {\"Required On Site\", type date}, {\"Vendor Promised Date\", type date},",
+                "        {\"Expedited Forecast Date\", type date}, {\"Goods Receipt Date\", type date}, {\"Discipline\", type text},",
+                "        {\"Delivery Area\", type text}, {\"Expediting Status\", type text}}),",
+                "    Renamed = Table.RenameColumns(Typed, {",
+                "        {\"PO Number\", \"PO_No\"}, {\"Vendor No\", \"Vendor_No\"}, {\"Material Description\", \"Commodity\"}, {\"UoM\", \"Unit\"},",
+                "        {\"Order Qty\", \"Quantity\"}, {\"Net Value (USD)\", \"Line_Value_USD\"}, {\"PO Date\", \"Order_Date\"},",
+                "        {\"Required On Site\", \"ROS_Date\"}, {\"Vendor Promised Date\", \"Promised_Date\"},",
+                "        {\"Expedited Forecast Date\", \"Forecast_Delivery_Date\"}, {\"Goods Receipt Date\", \"Actual_Delivery_Date\"},",
+                "        {\"Discipline\", \"Discipline_Code\"}, {\"Delivery Area\", \"Area_Code\"}, {\"Expediting Status\", \"Expediting_Status\"}}),",
+                "    // ERP line items count in steps of 10 (10, 20, 30...)",
+                "    AddLine = Table.AddColumn(Renamed, \"PO_Line\", each Number.IntegerDivide([Item], 10), Int64.Type),",
+                "    AddLongLead = Table.AddColumn(AddLine, \"Long_Lead\", each if [Long Lead Flag] = \"X\" then \"Y\" else \"N\", type text),",
+                "    // map ERP vendor numbers to project company IDs through the SQL cross-reference table",
+                "    Merged = Table.NestedJoin(AddLongLead, {\"Vendor_No\"}, company_erp_xref, {\"ERP_Vendor_No\"}, \"xref\", JoinKind.LeftOuter),",
+                "    Expanded = Table.ExpandTableColumn(Merged, \"xref\", {\"Company_ID\"}, {\"Supplier_ID\"}),",
+                "    Result = Table.RemoveColumns(Expanded, {\"Item\", \"Long Lead Flag\"})",
+                "in",
+                "    Result"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_cwp",
+        "lineageTag": "9fcb6bce-77e4-43c2-985a-bd47f8c8d2d5",
+        "columns": [
+          {
+            "name": "CWP_ID",
+            "dataType": "string",
+            "sourceColumn": "CWP_ID",
+            "lineageTag": "2599af56-141b-4678-aaf4-31dd019827b9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "6f039181-681d-442e-bec7-9f08c35997fa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "963c3785-4811-47f9-a6ad-b72ec8c423f9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_ID",
+            "dataType": "string",
+            "sourceColumn": "Company_ID",
+            "lineageTag": "47e31aa4-2326-4ee1-bac5-73e0fea29aa9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Start",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_Start",
+            "lineageTag": "96eecc58-432f-4d66-83aa-7075559a2cde",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Finish",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_Finish",
+            "lineageTag": "22a9ab81-b4e7-488c-a59a-7e130c0c022d",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Budget_Hours",
+            "dataType": "double",
+            "sourceColumn": "Budget_Hours",
+            "lineageTag": "25e52f07-5dca-4ddc-9dc1-9626d90bbef1",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_cwp",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(SourceRoot & \"p6_schedule\\Construction_Progress_Export.xlsx\"), null, true),",
+                "    Sheet = Source{[Item = \"WBS_CWP\", Kind = \"Sheet\"]}[Data],",
+                "    Promoted = Table.PromoteHeaders(Sheet, [PromoteAllScalars = true]),",
+                "    Renamed = Table.RenameColumns(Promoted, {",
+                "        {\"CWP ID\", \"CWP_ID\"}, {\"Area\", \"Area_Code\"}, {\"Discipline\", \"Discipline_Code\"}, {\"Contractor\", \"Company_ID\"},",
+                "        {\"Planned Start\", \"Planned_Start\"}, {\"Planned Finish\", \"Planned_Finish\"}, {\"Budgeted Units (hrs)\", \"Budget_Hours\"}}),",
+                "    Typed = Table.TransformColumnTypes(Renamed, {",
+                "        {\"CWP_ID\", type text}, {\"Area_Code\", type text}, {\"Discipline_Code\", type text}, {\"Company_ID\", type text},",
+                "        {\"Planned_Start\", type date}, {\"Planned_Finish\", type date}, {\"Budget_Hours\", type number}})",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_progress_weekly",
+        "lineageTag": "1499569e-ed3a-4863-a88f-023d3d9d218d",
+        "columns": [
+          {
+            "name": "Week_Ending",
+            "dataType": "dateTime",
+            "sourceColumn": "Week_Ending",
+            "lineageTag": "8c7370b5-15b5-4e09-bc27-f7d9609b9240",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CWP_ID",
+            "dataType": "string",
+            "sourceColumn": "CWP_ID",
+            "lineageTag": "654444b5-c588-4fbd-b3de-579eacc9aa61",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Hours",
+            "dataType": "double",
+            "sourceColumn": "Planned_Hours",
+            "lineageTag": "02365213-c2da-45f7-9605-68e55544f318",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Earned_Hours",
+            "dataType": "double",
+            "sourceColumn": "Earned_Hours",
+            "lineageTag": "0e7c9204-d0cf-48e8-baca-271150536d01",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Actual_Hours",
+            "dataType": "double",
+            "sourceColumn": "Actual_Hours",
+            "lineageTag": "ec85be18-9ca7-4deb-a7e0-c56fb6aa1fba",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_progress_weekly",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(SourceRoot & \"p6_schedule\\Construction_Progress_Export.xlsx\"), null, true),",
+                "    Sheet = Source{[Item = \"Weekly_Progress\", Kind = \"Sheet\"]}[Data],",
+                "    Promoted = Table.PromoteHeaders(Sheet, [PromoteAllScalars = true]),",
+                "    Renamed = Table.RenameColumns(Promoted, {",
+                "        {\"Week Ending\", \"Week_Ending\"}, {\"CWP ID\", \"CWP_ID\"}, {\"Planned Units\", \"Planned_Hours\"},",
+                "        {\"Earned Units\", \"Earned_Hours\"}, {\"Actual Units\", \"Actual_Hours\"}}),",
+                "    Typed = Table.TransformColumnTypes(Renamed, {",
+                "        {\"Week_Ending\", type date}, {\"CWP_ID\", type text}, {\"Planned_Hours\", type number},",
+                "        {\"Earned_Hours\", type number}, {\"Actual_Hours\", type number}})",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_itr",
+        "lineageTag": "435618db-62d4-4898-a022-d5783f55e302",
+        "columns": [
+          {
+            "name": "Source_File",
+            "dataType": "string",
+            "sourceColumn": "Source_File",
+            "lineageTag": "904d5028-fcc6-4976-820d-14b2429bf48b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ITR_ID",
+            "dataType": "string",
+            "sourceColumn": "ITR_ID",
+            "lineageTag": "0637ef9f-7796-48c3-a8e0-34ee63e086d8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Tag_No",
+            "dataType": "string",
+            "sourceColumn": "Tag_No",
+            "lineageTag": "08de74bd-c430-465d-ba06-4afe158df5ed",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Subsystem_Code",
+            "dataType": "string",
+            "sourceColumn": "Subsystem_Code",
+            "lineageTag": "abd095d8-f2c6-42e4-bb63-72622305fd53",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "13f7c4c6-2dea-4f45-a472-cb6c7a2c283b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ITR_Form",
+            "dataType": "string",
+            "sourceColumn": "ITR_Form",
+            "lineageTag": "a926b56e-33d4-45a0-9326-5565d0702482",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ITR_Description",
+            "dataType": "string",
+            "sourceColumn": "ITR_Description",
+            "lineageTag": "a829a91e-53bf-4bd3-965f-7f97aa1422be",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Stage",
+            "dataType": "string",
+            "sourceColumn": "Stage",
+            "lineageTag": "d30b1459-29d6-4dd9-90dc-097f863bc610",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Planned_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Planned_Date",
+            "lineageTag": "e2da3da4-52e1-4bbe-b04c-f5efd72878ee",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Completed_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Completed_Date",
+            "lineageTag": "22423597-1d34-4b5b-aa04-7b71982ec37b",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "lineageTag": "1ceb72e1-6177-4ba8-93d8-71d0ca164c21",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Completed_By_ID",
+            "dataType": "string",
+            "sourceColumn": "Completed_By_ID",
+            "lineageTag": "63847fb5-4fc9-4d47-acf9-8815da170b92",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_itr",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Folder.Files(SourceRoot & \"completions_system\\itr_extracts\"),",
+                "    Extracts = Table.SelectRows(Source, each Text.StartsWith([Name], \"itr_extract_\") and [Extension] = \".csv\"),",
+                "    Parsed = Table.AddColumn(Extracts, \"Data\", each",
+                "        Table.PromoteHeaders(Csv.Document([Content], [Delimiter = \",\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),",
+                "            [PromoteAllScalars = true])),",
+                "    Kept = Table.SelectColumns(Parsed, {\"Name\", \"Data\"}),",
+                "    Expanded = Table.ExpandTableColumn(Kept, \"Data\",",
+                "        {\"ITR_ID\", \"Tag_No\", \"Subsystem_Code\", \"Discipline_Code\", \"ITR_Form\", \"ITR_Description\", \"Stage\",",
+                "         \"Planned_Date\", \"Completed_Date\", \"Status\", \"Completed_By_ID\"}),",
+                "    Renamed = Table.RenameColumns(Expanded, {{\"Name\", \"Source_File\"}}),",
+                "    Typed = Table.TransformColumnTypes(Renamed, {",
+                "        {\"Planned_Date\", type date}, {\"Completed_Date\", type date}, {\"ITR_ID\", type text}, {\"Tag_No\", type text},",
+                "        {\"Subsystem_Code\", type text}, {\"Discipline_Code\", type text}, {\"ITR_Form\", type text},",
+                "        {\"ITR_Description\", type text}, {\"Stage\", type text}, {\"Status\", type text}, {\"Completed_By_ID\", type text}}, \"en-US\"),",
+                "    // extracts can overlap; keep one row per ITR",
+                "    Deduped = Table.Distinct(Typed, {\"ITR_ID\"})",
+                "in",
+                "    Deduped"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_tag_register",
+        "lineageTag": "59112351-4297-4f6c-b93e-2b764edbfbc8",
+        "columns": [
+          {
+            "name": "Tag_No",
+            "dataType": "string",
+            "sourceColumn": "Tag_No",
+            "lineageTag": "f5893200-f022-47b5-a961-6634af03a4ef",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Tag_Type",
+            "dataType": "string",
+            "sourceColumn": "Tag_Type",
+            "lineageTag": "cd46a2e5-b660-45f6-8d5a-293ffcf5871d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "ce219f67-51df-4ec2-89a0-67ac372840c4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "System_Code",
+            "dataType": "string",
+            "sourceColumn": "System_Code",
+            "lineageTag": "f5ea1162-55fc-440c-8f85-d91aa28005ae",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Subsystem_Code",
+            "dataType": "string",
+            "sourceColumn": "Subsystem_Code",
+            "lineageTag": "feea924c-0298-4e3a-93c8-e610849675e0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "866d22a5-db03-44a8-8ee4-c51a7ca5d884",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Install_Status",
+            "dataType": "string",
+            "sourceColumn": "Install_Status",
+            "lineageTag": "d503d6dc-6f6d-48e3-9ad0-c1649e29f263",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Install_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Install_Date",
+            "lineageTag": "c7d739a5-cb9a-4a39-a429-e4ee04f20214",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_tag_register",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(SourceRoot & \"completions_system\\tag_register.csv\"),",
+                "        [Delimiter = \",\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),",
+                "    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),",
+                "    Typed = Table.TransformColumnTypes(Promoted, {",
+                "        {\"Tag_No\", type text}, {\"Tag_Type\", type text}, {\"Discipline_Code\", type text}, {\"System_Code\", type text},",
+                "        {\"Subsystem_Code\", type text}, {\"Area_Code\", type text}, {\"Install_Status\", type text},",
+                "        {\"Install_Date\", type date}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_punch",
+        "lineageTag": "466f82c9-78b2-446a-b311-6ae0e8505ac2",
+        "columns": [
+          {
+            "name": "Punch_No",
+            "dataType": "string",
+            "sourceColumn": "Punch_No",
+            "lineageTag": "85ac7c44-31fb-4223-99cd-2c81bb00b3e2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Subsystem_Code",
+            "dataType": "string",
+            "sourceColumn": "Subsystem_Code",
+            "lineageTag": "6c4ba910-bf32-4829-9dd6-958cd7cce16d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Tag_No",
+            "dataType": "string",
+            "sourceColumn": "Tag_No",
+            "lineageTag": "44620487-20e1-4434-8a7c-af688a725ab2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "86d83001-76fe-4e9c-aea5-fc99a1f3a89f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "d30f947b-8331-453d-b842-713befbcd86f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Category",
+            "dataType": "string",
+            "sourceColumn": "Category",
+            "lineageTag": "33defdb9-64d2-44fb-9895-ab4ec06defb8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Punch_Type",
+            "dataType": "string",
+            "sourceColumn": "Punch_Type",
+            "lineageTag": "ae55b720-9878-45a1-bc9a-0bf8175f537f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Raised",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Raised",
+            "lineageTag": "d888951a-3c78-4085-aa67-d8a5df9ee731",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Target_Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Target_Date",
+            "lineageTag": "04241687-f6cf-4c85-a758-53de2ea5c347",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Cleared",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Cleared",
+            "lineageTag": "4994d7ac-9fce-4ac2-b105-11281544747e",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Raised_By_ID",
+            "dataType": "string",
+            "sourceColumn": "Raised_By_ID",
+            "lineageTag": "ea0c17fb-c7ad-4b2b-bd27-e306c881216d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Responsible_ID",
+            "dataType": "string",
+            "sourceColumn": "Responsible_ID",
+            "lineageTag": "18ece9a1-bff6-4301-9d70-b4fe16698793",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "lineageTag": "c7086621-b29b-4050-b6bf-9f40de5a6309",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_punch",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(SourceRoot & \"completions_system\\punch_list.csv\"),",
+                "        [Delimiter = \",\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),",
+                "    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),",
+                "    Typed = Table.TransformColumnTypes(Promoted, {",
+                "        {\"Punch_No\", type text}, {\"Subsystem_Code\", type text}, {\"Tag_No\", type text}, {\"Area_Code\", type text},",
+                "        {\"Discipline_Code\", type text}, {\"Category\", type text}, {\"Punch_Type\", type text}, {\"Date_Raised\", type date},",
+                "        {\"Target_Date\", type date}, {\"Date_Cleared\", type date}, {\"Raised_By_ID\", type text},",
+                "        {\"Responsible_ID\", type text}, {\"Status\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_safety_weekly",
+        "lineageTag": "128d9be6-4a41-48ec-8bb9-6853d00eb7fe",
+        "columns": [
+          {
+            "name": "Week_Ending",
+            "dataType": "dateTime",
+            "sourceColumn": "Week_Ending",
+            "lineageTag": "5878cb11-eb60-4b86-8c8c-8c4e7d1f49f2",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_ID",
+            "dataType": "string",
+            "sourceColumn": "Company_ID",
+            "lineageTag": "d993158f-5020-446e-b089-c70adf932084",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Headcount",
+            "dataType": "int64",
+            "sourceColumn": "Headcount",
+            "lineageTag": "4cea1f74-dd2c-47a8-a683-563f43982566",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Manhours",
+            "dataType": "int64",
+            "sourceColumn": "Manhours",
+            "lineageTag": "6ce4897b-ac57-41e9-911a-56ef733cbb43",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Recordables",
+            "dataType": "int64",
+            "sourceColumn": "Recordables",
+            "lineageTag": "f9a60c2a-9c97-4277-be5e-464d32530365",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Lost_Time_Injuries",
+            "dataType": "int64",
+            "sourceColumn": "Lost_Time_Injuries",
+            "lineageTag": "5e86d76f-e084-4549-844e-584cd032dabb",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "First_Aids",
+            "dataType": "int64",
+            "sourceColumn": "First_Aids",
+            "lineageTag": "b4db152c-7002-4640-83f0-9fa94a350416",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Near_Misses",
+            "dataType": "int64",
+            "sourceColumn": "Near_Misses",
+            "lineageTag": "79716fcb-5657-488d-82bc-12f467932bd3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Safety_Observations",
+            "dataType": "int64",
+            "sourceColumn": "Safety_Observations",
+            "lineageTag": "1ee6d020-68e4-4fd6-8086-1f1a23780f6d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_safety_weekly",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    // Offline copy of the API response. For the live API replace the next line with:",
+                "    //   Source = Json.Document(Web.Contents(\"https://hse.example.com\",",
+                "    //       [RelativePath = \"api/v1/WeeklyStatistics\", Headers = [Accept = \"application/json\"]])),",
+                "    // Keep the base URL fixed and use RelativePath so scheduled refresh works in the Power BI service.",
+                "    Source = Json.Document(File.Contents(SourceRoot & \"hse_api\\safety_weekly.json\")),",
+                "    Rows = Table.FromRecords(Source[value]),",
+                "    Renamed = Table.RenameColumns(Rows, {",
+                "        {\"weekEnding\", \"Week_Ending\"}, {\"companyId\", \"Company_ID\"}, {\"headcount\", \"Headcount\"},",
+                "        {\"manhours\", \"Manhours\"}, {\"recordables\", \"Recordables\"}, {\"lostTimeInjuries\", \"Lost_Time_Injuries\"},",
+                "        {\"firstAids\", \"First_Aids\"}, {\"nearMisses\", \"Near_Misses\"}, {\"observations\", \"Safety_Observations\"}}),",
+                "    Typed = Table.TransformColumnTypes(Renamed, {",
+                "        {\"Week_Ending\", type date}, {\"Company_ID\", type text}, {\"Headcount\", Int64.Type}, {\"Manhours\", Int64.Type},",
+                "        {\"Recordables\", Int64.Type}, {\"Lost_Time_Injuries\", Int64.Type}, {\"First_Aids\", Int64.Type},",
+                "        {\"Near_Misses\", Int64.Type}, {\"Safety_Observations\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_ncr",
+        "lineageTag": "e016421c-61cd-4f44-9ee5-3e3b460e42f2",
+        "columns": [
+          {
+            "name": "NCR_No",
+            "dataType": "string",
+            "sourceColumn": "NCR_No",
+            "lineageTag": "ff40b0de-492c-46d0-97df-a8ed1bccd10c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Discipline_Code",
+            "dataType": "string",
+            "sourceColumn": "Discipline_Code",
+            "lineageTag": "638b85a8-bf50-4e42-a83d-b7fd58c1e476",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Company_ID",
+            "dataType": "string",
+            "sourceColumn": "Company_ID",
+            "lineageTag": "79d07d9b-0573-4f8c-bec7-61b6835bc5c9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Area_Code",
+            "dataType": "string",
+            "sourceColumn": "Area_Code",
+            "lineageTag": "0e7263a5-3b69-4dd7-aaee-b380d8d68629",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Category",
+            "dataType": "string",
+            "sourceColumn": "Category",
+            "lineageTag": "d4416265-89ad-456a-b20a-ef11e6c97d06",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Severity",
+            "dataType": "string",
+            "sourceColumn": "Severity",
+            "lineageTag": "93d38e65-3ebd-43e9-b564-84386cb12497",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Root_Cause",
+            "dataType": "string",
+            "sourceColumn": "Root_Cause",
+            "lineageTag": "40b0b1b2-90a9-4462-8047-7b83fb03a50b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Opened",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Opened",
+            "lineageTag": "6793cdbe-0561-4488-b288-13dac9d1f860",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date_Closed",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Closed",
+            "lineageTag": "9d7c99d7-8815-43df-9dd5-d194d4e726eb",
+            "summarizeBy": "none",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "lineageTag": "786133e6-0da3-4288-bd0b-c38e71135bee",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_ncr",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    // Offline copy exported from the list. For the live list replace the next three lines with:",
+                "    //   Source = SharePoint.Tables(\"https://<tenant>.sharepoint.com/sites/ProjectSaguaro\", [Implementation = \"2.0\"]),",
+                "    //   Promoted = Source{[Title = \"NCR Log\"]}[Items],",
+                "    Source = Excel.Workbook(File.Contents(SourceRoot & \"quality_sharepoint\\NCR_Log.xlsx\"), null, true),",
+                "    Sheet = Source{[Item = \"NCR Log\", Kind = \"Sheet\"]}[Data],",
+                "    Promoted = Table.PromoteHeaders(Sheet, [PromoteAllScalars = true]),",
+                "    // drop SharePoint system columns",
+                "    NoMeta = Table.RemoveColumns(Promoted, {\"ID\", \"Created\", \"Modified\", \"Item Type\", \"Path\"}, MissingField.Ignore),",
+                "    Renamed = Table.RenameColumns(NoMeta, {",
+                "        {\"Title\", \"NCR_No\"}, {\"Discipline\", \"Discipline_Code\"}, {\"Contractor\", \"Company_ID\"}, {\"Area\", \"Area_Code\"},",
+                "        {\"Root Cause\", \"Root_Cause\"}, {\"Date Opened\", \"Date_Opened\"}, {\"Date Closed\", \"Date_Closed\"},",
+                "        {\"NCR Status\", \"Status\"}}),",
+                "    Typed = Table.TransformColumnTypes(Renamed, {",
+                "        {\"NCR_No\", type text}, {\"Discipline_Code\", type text}, {\"Company_ID\", type text}, {\"Area_Code\", type text},",
+                "        {\"Category\", type text}, {\"Severity\", type text}, {\"Root_Cause\", type text}, {\"Date_Opened\", type date},",
+                "        {\"Date_Closed\", type date}, {\"Status\", type text}})",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "2feefeb4-a438-4b05-83a2-649a4f165ab7",
+        "fromTable": "fact_document_revisions",
+        "fromColumn": "Actual_Issue_Date",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "8475e7ad-1fd2-4dae-887e-ee1bad759a8b",
+        "fromTable": "fact_document_revisions",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "a7597a57-0baa-4cc8-a175-d66f0161a5e3",
+        "fromTable": "fact_document_revisions",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "57f23a75-6f2c-4360-8682-df4c06714e7c",
+        "fromTable": "fact_document_revisions",
+        "fromColumn": "Originator_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "9af96c8f-ba30-4333-b91b-6622a00b7836",
+        "fromTable": "fact_rfi",
+        "fromColumn": "Date_Raised",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "a1bca332-fea0-4490-a095-1306360dd3be",
+        "fromTable": "fact_rfi",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "b18cf2f8-6420-488c-a065-3485a836e25f",
+        "fromTable": "fact_rfi",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "2e3115c4-bcc1-4d5d-ba85-2a882883d93b",
+        "fromTable": "fact_rfi",
+        "fromColumn": "Raised_By_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "b7d2496f-e41b-429e-add5-dbdcb227c0f7",
+        "fromTable": "fact_submittals",
+        "fromColumn": "Date_Submitted",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "0f3f024b-79d4-425a-abbe-5b3b869fb062",
+        "fromTable": "fact_submittals",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "38c04d38-7d10-47e2-b8d0-d98421e90416",
+        "fromTable": "fact_submittals",
+        "fromColumn": "Company_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "8045318d-0201-4f15-84cd-a8a36894e34e",
+        "fromTable": "fact_procurement",
+        "fromColumn": "ROS_Date",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "2449c5d6-cdfb-494b-a394-6243cf1a8584",
+        "fromTable": "fact_procurement",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "e079d482-df2c-4a57-a3db-55d1497e57d7",
+        "fromTable": "fact_procurement",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "4d77b7f1-a24f-49b9-b237-ecd6e7668a8d",
+        "fromTable": "fact_procurement",
+        "fromColumn": "Supplier_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "6d9315b9-3964-42c2-a3cf-25936103643e",
+        "fromTable": "fact_progress_weekly",
+        "fromColumn": "Week_Ending",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "a235b084-2217-423f-833a-f51c057e4c4f",
+        "fromTable": "fact_progress_weekly",
+        "fromColumn": "CWP_ID",
+        "toTable": "dim_cwp",
+        "toColumn": "CWP_ID"
+      },
+      {
+        "name": "2a364b8f-f920-40b9-aacf-da008fb673a3",
+        "fromTable": "dim_cwp",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "b5ff2e32-fd93-4d58-9a36-d791ed99e9b6",
+        "fromTable": "dim_cwp",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "98071284-5ac4-47eb-b5b1-98e81178f71e",
+        "fromTable": "dim_cwp",
+        "fromColumn": "Company_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "929491a1-15cc-4b4e-aa3e-833f9cf0a6f7",
+        "fromTable": "dim_subsystem",
+        "fromColumn": "System_Code",
+        "toTable": "dim_system",
+        "toColumn": "System_Code"
+      },
+      {
+        "name": "bb73bf31-f0b3-4a4a-baca-de6857301ce5",
+        "fromTable": "dim_subsystem",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "50d8a714-a0c1-4844-abd8-e2c81f755977",
+        "fromTable": "fact_tag_register",
+        "fromColumn": "Subsystem_Code",
+        "toTable": "dim_subsystem",
+        "toColumn": "Subsystem_Code"
+      },
+      {
+        "name": "85cdd86a-1551-4e21-984b-46e2cc7a0c5f",
+        "fromTable": "fact_tag_register",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "aaf604ae-1054-46c0-bd10-224e9642336b",
+        "fromTable": "fact_tag_register",
+        "fromColumn": "Install_Date",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "658d7ca2-8180-4a54-bc88-c6be17d388a9",
+        "fromTable": "fact_itr",
+        "fromColumn": "Completed_Date",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "6bdad2f1-e6cf-4698-be70-0358a7f34ea0",
+        "fromTable": "fact_itr",
+        "fromColumn": "Subsystem_Code",
+        "toTable": "dim_subsystem",
+        "toColumn": "Subsystem_Code"
+      },
+      {
+        "name": "45424641-8049-4d46-8156-0e6dcd072cc7",
+        "fromTable": "fact_itr",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "d3826d4b-f624-4d95-9419-4ae6a33d2691",
+        "fromTable": "fact_itr",
+        "fromColumn": "Completed_By_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "2309a8c1-4492-4bb0-80dc-3c067925f788",
+        "fromTable": "fact_punch",
+        "fromColumn": "Date_Raised",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "690d5758-40c8-4ed0-9ca4-cb62d25f93ac",
+        "fromTable": "fact_punch",
+        "fromColumn": "Date_Cleared",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "isActive": false,
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "938453ac-f60f-41bd-b474-2583fff6d7a9",
+        "fromTable": "fact_punch",
+        "fromColumn": "Subsystem_Code",
+        "toTable": "dim_subsystem",
+        "toColumn": "Subsystem_Code"
+      },
+      {
+        "name": "0ad0638d-b043-41ae-91cc-b071218a1103",
+        "fromTable": "fact_punch",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "6dd5d07c-3f45-423c-9fe8-fa7cdabe4ed5",
+        "fromTable": "fact_punch",
+        "fromColumn": "Responsible_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "54db527d-2fe8-49cc-935c-b45631aee4c8",
+        "fromTable": "fact_safety_weekly",
+        "fromColumn": "Week_Ending",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "e3168e93-ee3f-4eea-8781-c8c6139c32fd",
+        "fromTable": "fact_safety_weekly",
+        "fromColumn": "Company_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      },
+      {
+        "name": "d8801dbd-60b6-4098-8097-6187f7ccc804",
+        "fromTable": "fact_ncr",
+        "fromColumn": "Date_Opened",
+        "toTable": "dim_date",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "aaaea74a-de66-4b9f-9d58-793deb50a8ce",
+        "fromTable": "fact_ncr",
+        "fromColumn": "Discipline_Code",
+        "toTable": "dim_discipline",
+        "toColumn": "Discipline_Code"
+      },
+      {
+        "name": "be335045-df61-4bcd-bad5-896c223de7a9",
+        "fromTable": "fact_ncr",
+        "fromColumn": "Area_Code",
+        "toTable": "dim_area",
+        "toColumn": "Area_Code"
+      },
+      {
+        "name": "9fc2e38d-c1f3-4b91-9bed-05334ba0d26b",
+        "fromTable": "fact_ncr",
+        "fromColumn": "Company_ID",
+        "toTable": "dim_company",
+        "toColumn": "Company_ID"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "SqlServer",
+        "kind": "m",
+        "lineageTag": "b8a12a60-4263-4fb7-8338-074f82214396",
+        "expression": [
+          "\"localhost\\SQLEXPRESS\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "SqlDatabase",
+        "kind": "m",
+        "lineageTag": "56199583-a787-4f44-ae8f-4763f1b9fce4",
+        "expression": [
+          "\"SaguaroPIIM\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "SourceRoot",
+        "kind": "m",
+        "lineageTag": "cd2517fe-82db-4752-9bfe-f49387db9975",
+        "expression": [
+          "\"C:\\PowerBI\\gigafactory\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "company_erp_xref",
+        "kind": "m",
+        "lineageTag": "cef26a82-5704-41eb-ac22-e978df6cf768",
+        "expression": [
+          "let",
+          "    Source = Sql.Database(SqlServer, SqlDatabase),",
+          "    Data = Source{[Schema = \"ref\", Item = \"company_erp_xref\"]}[Data]",
+          "in",
+          "    Data"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"SqlServer\", \"SqlDatabase\", \"SourceRoot\", \"dim_discipline\", \"dim_area\", \"dim_company\", \"company_erp_xref\", \"dim_system\", \"dim_subsystem\", \"project_info\", \"fact_document_revisions\", \"fact_rfi\", \"fact_submittals\", \"fact_procurement\", \"dim_cwp\", \"fact_progress_weekly\", \"fact_itr\", \"fact_tag_register\", \"fact_punch\", \"fact_safety_weekly\", \"fact_ncr\"]"
+      }
+    ]
+  }
+}

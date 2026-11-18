@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Client Segmentation RFM"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6802d451-eb07-4648-b3c2-ce3d62629a00"
+  }
+}

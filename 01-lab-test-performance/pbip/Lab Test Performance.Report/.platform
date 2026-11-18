@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Lab Test Performance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "52b40a2d-f39a-4605-93cd-29cb4f5b675e"
+  }
+}

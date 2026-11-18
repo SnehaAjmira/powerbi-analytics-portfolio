@@ -1,0 +1,309 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU08",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Accessible_Tidal5147178307589936.json",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c932e932c812e1b430c7",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim Client"
+              }
+            },
+            "Property": "Client_Facility"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "73798624b0eb0d199056",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table (Services)"
+              }
+            },
+            "Property": "BUD_Test_Points"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "d3e121cf134367125cb5",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table (Services)"
+              }
+            },
+            "Property": "Facility_Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "b4b01dda551ec7f34f53",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Client_Facility"
+              }
+            },
+            "Property": "BillTo_City"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "64ea1e9bd6262209bbe3",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table (Services)"
+              }
+            },
+            "Property": "Rush"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "1824dc4a5ebb31c46276",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table (Services)"
+              }
+            },
+            "Property": "Test_Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "b831bac70f39c163547f",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table (Products)"
+              }
+            },
+            "Property": "Item"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "8c3718a54ffb90e2fac9",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim Test Facility"
+              }
+            },
+            "Property": "Test_Facility"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "InforiverCharts582F6C55AB6442EF8FA129089285CB47"
+  ],
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU08",
+          "path": "BaseThemes/CY26SU08.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Accessible_Tidal5147178307589936.json",
+          "path": "Accessible_Tidal5147178307589936.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Avg_icon62320713752247.webp",
+          "path": "Avg_icon62320713752247.webp",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop11726822145277438.png",
+          "path": "Backdrop11726822145277438.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop42151162471462433.png",
+          "path": "Backdrop42151162471462433.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop45486472443957027.png",
+          "path": "Backdrop45486472443957027.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop48188812190776387.png",
+          "path": "Backdrop48188812190776387.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop6308175583439034.png",
+          "path": "Backdrop6308175583439034.png",
+          "type": "Image"
+        },
+        {
+          "name": "Batch_Icon7994984498796591.jpg",
+          "path": "Batch_Icon7994984498796591.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "client35773890315604484.png",
+          "path": "client35773890315604484.png",
+          "type": "Image"
+        },
+        {
+          "name": "client9824132711666135.png",
+          "path": "client9824132711666135.png",
+          "type": "Image"
+        },
+        {
+          "name": "Lab_Icon2054546101358361.jpg",
+          "path": "Lab_Icon2054546101358361.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "People_Icon07925844692611539.png",
+          "path": "People_Icon07925844692611539.png",
+          "type": "Image"
+        },
+        {
+          "name": "Revenue_Icon6626446924316065.png",
+          "path": "Revenue_Icon6626446924316065.png",
+          "type": "Image"
+        },
+        {
+          "name": "streams953393119379254.png",
+          "path": "streams953393119379254.png",
+          "type": "Image"
+        },
+        {
+          "name": "swab_kit7297139218821345.webp",
+          "path": "swab_kit7297139218821345.webp",
+          "type": "Image"
+        },
+        {
+          "name": "user048475132618251204.png",
+          "path": "user048475132618251204.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Client Segmentation RFM"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "37f99cbd-537e-4433-b1eb-34fbad9e625e"
+  }
+}

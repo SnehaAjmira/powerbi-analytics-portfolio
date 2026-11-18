@@ -1,0 +1,222 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU08",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Accessible_Tidal5578743975350227.json",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5b246dd6d73ae9b9b555",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimAnalyst"
+              }
+            },
+            "Property": "Analyst"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "646666ec37d38212299a",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimClient"
+              }
+            },
+            "Property": "Client_Facility"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "d88b098086958b8942a3",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Departments"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2b35af6eebaa2d310101",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimRush"
+              }
+            },
+            "Property": "Rush"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "25c50dcf60551a9c6a17",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Departments"
+              }
+            },
+            "Property": "Sub - Department"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2f3068f7724b0d06766c",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Departments"
+              }
+            },
+            "Property": "Test_Name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "histogrammeperso617D19C842BC4DB48BE9AA56788C1821"
+  ],
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU08",
+          "path": "BaseThemes/CY26SU08.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Accessible_Tidal5578743975350227.json",
+          "path": "Accessible_Tidal5578743975350227.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Backdrop05949293158624491.png",
+          "path": "Backdrop05949293158624491.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop45759093053656985.png",
+          "path": "Backdrop45759093053656985.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop593818635603079.png",
+          "path": "Backdrop593818635603079.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop6411426782411286.png",
+          "path": "Backdrop6411426782411286.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop6900531320292477.png",
+          "path": "Backdrop6900531320292477.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop7898615635061693.png",
+          "path": "Backdrop7898615635061693.png",
+          "type": "Image"
+        },
+        {
+          "name": "Backdrop9884941569419081.png",
+          "path": "Backdrop9884941569419081.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}
