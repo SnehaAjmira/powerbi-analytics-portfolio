@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "4b21f7f9cdb74d90a658",
+  "position": {
+    "x": 220,
+    "y": 62,
+    "z": 101,
+    "width": 200,
+    "height": 118,
+    "tabOrder": 101
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tests Release"
+                    }
+                  },
+                  "Property": "T.Tests Released"
+                }
+              },
+              "queryRef": "Tests Release.T.Tests Released",
+              "nativeQueryRef": "T.Tests Released"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

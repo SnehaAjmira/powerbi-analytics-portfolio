@@ -430,7 +430,7 @@ def main(out_dir, scale):
                         Submission_Number=sub_no, Submission_Date=sdate, Client_Facility=c["name"], Select=select,
                         Facility_Type=c["ftype"], Sample_Name=sname, Dosage_Form=form, Lot_Number=lot,
                         BUD_Test_Points=bud, Test_Point=test_point, Test_Name=tname,
-                        Analyte=analyte if needs_an else "", Test_Id=f"T{test_seq:07d}",
+                        Analyte=analyte, Test_Id=f"T{test_seq:07d}",
                         Submission_Release_Date=rel_date, Estimated_Completion_Date=est, Completion_Date=comp,
                         Rush=rush, Analyst=an, Controlled_Substance_Class=ANALYTES[analyte][3] if analyte else "N/A",
                         Hazardous_Drug=ANALYTES[analyte][4] if analyte else "N", Price=pr, Department=dept,
@@ -570,7 +570,12 @@ def main(out_dir, scale):
             if r["Submission_Number"] not in inv_by_sub:
                 inv_seq += int(rng.integers(1, 4))
                 inv_by_sub[r["Submission_Number"]] = str(inv_seq)
-            ttype = f"{r['Test_Name']} ({r['Analyte']})" if r["Analyte"] else r["Test_Name"]
+            if not r["Analyte"]:
+                ttype = r["Test_Name"]
+            elif r["Test_Name"].endswith(")"):
+                ttype = f"{r['Test_Name']} ({r['Analyte']})"
+            else:
+                ttype = f"{r['Test_Name']} Samples ({r['Analyte']})"
             oos_rows.append((r["Department"], ttype, r["Completion_Date"], r["Submission_Number"], r["Client_Facility"],
                              inv_by_sub[r["Submission_Number"]], r["Dosage_Form"]))
     wb = StreamingWorkbook(os.path.join(out_dir, "OosByClient.xlsx"))
@@ -602,7 +607,7 @@ def main(out_dir, scale):
             continue
         test_seq += 1
         ca_rows.append((f"CAN-{sdate.strftime('%y%m%d')}-{i:04d}", sdate, "Complete", c["name"], "", "503A", sname, form,
-                        str(900000 + i), "", "", tname, a if tests[tname][5] else "", f"T{test_seq:07d}", sdate, est, comp,
+                        str(900000 + i), "", "", tname, a, f"T{test_seq:07d}", sdate, est, comp,
                         "N", "Completed", micro_analysts[int(rng.integers(len(micro_analysts)))][0], "N/A", "N",
                         int(tests[tname][2] * 1.35), FACILITY_CA))
     ca_cols = ["Submission_Number", "Submission_Date", "Submission_Status", "Client_Facility", "Select", "Facility_Type",

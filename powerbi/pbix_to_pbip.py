@@ -18,6 +18,7 @@ Usage
          [--blocked-values values.txt] [--block-substring TEXT] [--backdrop new.png]
 """
 import argparse
+import glob
 import json
 import os
 import re
@@ -60,6 +61,13 @@ def build_model(p, data_folder):
     for a in ann:
         ann_by.setdefault((a["ObjectType"], a["ObjectID"]), []).append({"name": a["Name"], "value": a["Value"]})
     fsd = {f["ID"]: f["Expression"] for f in q(conn, "select * from FormatStringDefinition")}
+    ext_by = {}
+    for e in q(conn, "select * from ExtendedProperty"):
+        try:
+            val = {"type": "json", "name": e["Name"], "value": json.loads(e["Value"])}
+        except (TypeError, ValueError):
+            val = {"type": "string", "name": e["Name"], "value": e["Value"]}
+        ext_by.setdefault((e["ObjectType"], e["ObjectID"]), []).append(val)
     rels = q(conn, "select * from Relationship")
     rel_name = {r["ID"]: r["Name"] for r in rels}
     hier = q(conn, "select * from Hierarchy")
@@ -124,6 +132,8 @@ def build_model(p, data_folder):
                                             "isDefault": bool(v["IsDefault"])})
             a = ann_by.get((4, c["ID"]))
             if a: j["annotations"] = a
+            x = ext_by.get((4, c["ID"]))
+            if x: j["extendedProperties"] = x
             cj.append(j)
         tj["columns"] = cj
         mj = []
@@ -138,6 +148,8 @@ def build_model(p, data_folder):
                 j["formatStringDefinition"] = {"expression": lines(fsd[m["FormatStringDefinitionID"]])}
             a = ann_by.get((8, m["ID"]))
             if a: j["annotations"] = a
+            x = ext_by.get((8, m["ID"]))
+            if x: j["extendedProperties"] = x
             mj.append(j)
         if mj: tj["measures"] = mj
         hj = []
@@ -260,6 +272,25 @@ def write_report(pbix, name, out_dir, bad, backdrop):
     return rep_dir
 
 
+def drop_broken_visuals(rep, bim):
+    """Remove visuals that reference tables missing from the model (left over in the source file)."""
+    tables = {t["name"] for t in json.load(open(bim, encoding="utf-8"))["model"]["tables"]}
+
+    def ents(o, out):
+        if isinstance(o, dict):
+            if isinstance(o.get("Entity"), str):
+                out.add(o["Entity"])
+            for v in o.values():
+                ents(v, out)
+        elif isinstance(o, list):
+            for v in o:
+                ents(v, out)
+        return out
+    for vf in glob.glob(os.path.join(rep, "definition", "pages", "*", "visuals", "*", "visual.json")):
+        if ents(json.load(open(vf, encoding="utf-8")).get("visual", {}), set()) - tables:
+            shutil.rmtree(os.path.dirname(vf))
+
+
 def platform(d, kind, name):
     json.dump({"$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
                "metadata": {"type": kind, "displayName": name}, "config": {"version": "2.0", "logicalId": str(uuid.uuid4())}},
@@ -298,7 +329,8 @@ def main():
         if any(b.lower() in lv for b in a.block_substring) or v in blocked:
             return True
         return allowed is not None and v not in allowed and not re.fullmatch(r"[\d.,\-\s%:/TZ]*", v) and v not in ("true", "false")
-    write_report(a.pbix, a.name, a.out_dir, bad, a.backdrop)
+    rep = write_report(a.pbix, a.name, a.out_dir, bad, a.backdrop)
+    drop_broken_visuals(rep, os.path.join(a.out_dir, f"{a.name}.SemanticModel", "model.bim"))
     print("wrote", os.path.join(a.out_dir, a.name + ".pbip"))
 
 

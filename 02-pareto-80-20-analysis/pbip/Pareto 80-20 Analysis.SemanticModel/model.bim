@@ -6428,6 +6428,15 @@
                 "name": "SummarizationSetBy",
                 "value": "User"
               }
+            ],
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
             ]
           }
         ],
@@ -7942,7 +7951,7 @@
         "expression": [
           "\"C:\\PowerBI\\lab\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
         ],
-        "lineageTag": "261bf653-cc69-4d6e-b5a4-3d3b7fd5d678",
+        "lineageTag": "4c07f2d1-a8cf-47f7-8787-3b0d20214cdb",
         "annotations": [
           {
             "name": "PBI_ResultType",

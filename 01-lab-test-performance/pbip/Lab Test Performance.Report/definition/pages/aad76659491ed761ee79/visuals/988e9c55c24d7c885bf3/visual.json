@@ -11,6 +11,28 @@
   },
   "visual": {
     "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tests Release"
+                    }
+                  },
+                  "Property": "T.Tests Released"
+                }
+              },
+              "queryRef": "Tests Release.T.Tests Released",
+              "nativeQueryRef": "T.Tests Released"
+            }
+          ]
+        }
+      }
+    },
     "drillFilterOtherVisuals": true
   }
 }

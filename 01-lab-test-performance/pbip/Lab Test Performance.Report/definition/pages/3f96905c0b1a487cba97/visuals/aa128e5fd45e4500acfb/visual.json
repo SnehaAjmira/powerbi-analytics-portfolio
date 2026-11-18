@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "aa128e5fd45e4500acfb",
+  "position": {
+    "x": 1068,
+    "y": 62,
+    "z": 105,
+    "width": 200,
+    "height": 118,
+    "tabOrder": 105
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Active Clients"
+                }
+              },
+              "queryRef": "_Measures.Active Clients",
+              "nativeQueryRef": "Active Clients"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

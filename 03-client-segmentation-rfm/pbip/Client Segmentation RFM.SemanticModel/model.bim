@@ -1756,7 +1756,17 @@
               "        )",
               "    )"
             ],
-            "lineageTag": "13a8262e-a15c-495c-97ce-11bf8b4fa4de"
+            "lineageTag": "13a8262e-a15c-495c-97ce-11bf8b4fa4de",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "MeasureTemplate",
+                "value": {
+                  "version": 0,
+                  "daxTemplateName": "ConcatenateValues"
+                }
+              }
+            ]
           },
           {
             "name": "Services Revenue",
@@ -2143,6 +2153,15 @@
                 "name": "SummarizationSetBy",
                 "value": "User"
               }
+            ],
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
             ]
           }
         ],
@@ -2197,6 +2216,15 @@
                 "name": "SummarizationSetBy",
                 "value": "User"
               }
+            ],
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
             ]
           }
         ],
@@ -2250,6 +2278,15 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
+              }
+            ],
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
               }
             ]
           }
@@ -8861,7 +8898,7 @@
         "expression": [
           "\"C:\\PowerBI\\lab\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
         ],
-        "lineageTag": "2395c76f-ddc6-4b0d-b977-7fffa38afdc9",
+        "lineageTag": "951686ae-3a93-40b2-bddc-33d143a7ec5d",
         "annotations": [
           {
             "name": "PBI_ResultType",

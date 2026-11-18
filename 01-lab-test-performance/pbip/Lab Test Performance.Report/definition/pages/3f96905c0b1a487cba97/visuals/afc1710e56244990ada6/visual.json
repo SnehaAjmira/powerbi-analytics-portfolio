@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "afc1710e56244990ada6",
+  "position": {
+    "x": 856,
+    "y": 62,
+    "z": 104,
+    "width": 200,
+    "height": 118,
+    "tabOrder": 104
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_OOS Measures"
+                    }
+                  },
+                  "Property": "OOS Client Rate"
+                }
+              },
+              "queryRef": "_OOS Measures.OOS Client Rate",
+              "nativeQueryRef": "OOS Client Rate"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

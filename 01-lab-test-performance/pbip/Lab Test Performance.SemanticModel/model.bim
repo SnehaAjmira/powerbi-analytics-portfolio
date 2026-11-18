@@ -5797,7 +5797,7 @@
         "expression": [
           "\"C:\\PowerBI\\lab\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
         ],
-        "lineageTag": "e4e14027-3e1b-4355-bd5f-6e15b5aabac4",
+        "lineageTag": "1c267884-c71b-4e15-96b7-b4281b23482f",
         "annotations": [
           {
             "name": "PBI_ResultType",
