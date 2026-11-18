@@ -15,7 +15,7 @@ No data rows are copied: the model is empty until it is refreshed in Power BI De
 
 Usage
   python pbix_to_pbip.py report.pbix OutName out_dir --data-folder "C:\\PowerBI\\lab\\"
-         [--allowed-values values.txt] [--backdrop new.png]
+         [--blocked-values values.txt] [--block-substring TEXT] [--backdrop new.png]
 """
 import argparse
 import json
@@ -283,6 +283,8 @@ def main():
     ap.add_argument("--data-folder", required=True)
     ap.add_argument("--allowed-values", help="text file, one value per line, that may stay in saved filters")
     ap.add_argument("--blocked-values", help="text file, one value per line, that must be removed")
+    ap.add_argument("--block-substring", action="append", default=[],
+                    help="remove saved filter values containing this text (case-insensitive); repeatable")
     ap.add_argument("--backdrop")
     a = ap.parse_args()
     os.makedirs(a.out_dir, exist_ok=True)
@@ -293,7 +295,7 @@ def main():
 
     def bad(v):
         lv = v.lower()
-        if "eagle" in lv or v in blocked:
+        if any(b.lower() in lv for b in a.block_substring) or v in blocked:
             return True
         return allowed is not None and v not in allowed and not re.fullmatch(r"[\d.,\-\s%:/TZ]*", v) and v not in ("true", "false")
     write_report(a.pbix, a.name, a.out_dir, bad, a.backdrop)
